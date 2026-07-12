@@ -1,5 +1,5 @@
 import type { Body } from '../../types'
-import { bodyById } from '../../data'
+import { bodies, bodyById } from '../../data'
 import { DetailSheet } from '../shell/DetailSheet'
 import {
   formatNumber,
@@ -7,8 +7,19 @@ import {
   formatRotationHours,
 } from '../../lib/format'
 
-export function BodyDetail({ body, onClose }: { body: Body; onClose: () => void }) {
+export function BodyDetail({
+  body,
+  onClose,
+  onSelectBody,
+}: {
+  body: Body
+  onClose: () => void
+  onSelectBody?: (id: string) => void
+}) {
   const parent = body.parent ? bodyById.get(body.parent) : undefined
+  const moons = bodies
+    .filter((b) => b.parent === body.id && b.type === 'moon')
+    .sort((a, b) => b.radiusEarth - a.radiusEarth)
 
   return (
     <DetailSheet
@@ -61,6 +72,26 @@ export function BodyDetail({ body, onClose }: { body: Body; onClose: () => void 
           {body.discovery.by}
         </dd>
       </dl>
+
+      {moons.length > 0 && (
+        <>
+          <h3 style={{ fontSize: '0.95rem', margin: '14px 0 4px' }}>
+            Major moons ({moons.length} of {formatNumber(body.moonCount)} known)
+          </h3>
+          <div className="chips">
+            {moons.map((moon) => (
+              <button
+                key={moon.id}
+                className="chip"
+                style={{ cursor: 'pointer' }}
+                onClick={() => onSelectBody?.(moon.id)}
+              >
+                {moon.name}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
 
       {body.missions.length > 0 && (
         <>
