@@ -1,0 +1,1663 @@
+[
+  {
+    "id": "alpha-centauri",
+    "name": "Alpha Centauri",
+    "distanceLy": 4.37,
+    "ra": 219.9,
+    "dec": -60.83,
+    "stars": [
+      { "name": "Alpha Centauri A", "spectralClass": "G2V", "radiusSun": 1.22, "massSun": 1.08, "tempK": 5790 },
+      { "name": "Alpha Centauri B", "spectralClass": "K1V", "radiusSun": 0.86, "massSun": 0.91, "tempK": 5260 },
+      { "name": "Proxima Centauri", "spectralClass": "M5.5V", "radiusSun": 0.154, "massSun": 0.122, "tempK": 3042 }
+    ],
+    "planets": [
+      {
+        "name": "Proxima b",
+        "massEarth": 1.07,
+        "orbitAU": 0.04857,
+        "periodDays": 11.184,
+        "discoveryYear": 2016,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "closest known exoplanet"
+      },
+      {
+        "name": "Proxima d",
+        "massEarth": 0.26,
+        "orbitAU": 0.02885,
+        "periodDays": 5.122,
+        "discoveryYear": 2022,
+        "method": "radial velocity",
+        "inHabitableZone": false,
+        "note": "one of the lightest exoplanets detected by radial velocity"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.032, "outerAU": 0.082 },
+    "note": "nearest star system; habitable zone given for planet host Proxima"
+  },
+  {
+    "id": "barnards-star",
+    "name": "Barnard's Star",
+    "distanceLy": 5.96,
+    "ra": 269.45,
+    "dec": 4.69,
+    "stars": [
+      { "name": "Barnard's Star", "spectralClass": "M4V", "radiusSun": 0.19, "massSun": 0.16, "tempK": 3220 }
+    ],
+    "planets": [
+      {
+        "name": "Barnard's Star b",
+        "massEarth": 0.3,
+        "orbitAU": 0.0229,
+        "periodDays": 3.154,
+        "discoveryYear": 2024,
+        "method": "radial velocity",
+        "inHabitableZone": false,
+        "note": "sub-Earth found by ESPRESSO in 2024"
+      },
+      {
+        "name": "Barnard's Star c",
+        "massEarth": 0.34,
+        "orbitAU": 0.0274,
+        "periodDays": 4.124,
+        "discoveryYear": 2025,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      },
+      {
+        "name": "Barnard's Star d",
+        "massEarth": 0.26,
+        "orbitAU": 0.0188,
+        "periodDays": 2.34,
+        "discoveryYear": 2025,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      },
+      {
+        "name": "Barnard's Star e",
+        "massEarth": 0.19,
+        "orbitAU": 0.0381,
+        "periodDays": 6.739,
+        "discoveryYear": 2025,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      }
+    ],
+    "habitableZone": { "innerAU": 0.056, "outerAU": 0.11 },
+    "note": "fastest proper motion of any star; four sub-Earths confirmed 2024-2025"
+  },
+  {
+    "id": "wolf-359",
+    "name": "Wolf 359",
+    "distanceLy": 7.86,
+    "ra": 164.12,
+    "dec": 7.01,
+    "stars": [
+      { "name": "Wolf 359", "spectralClass": "M6V", "radiusSun": 0.144, "massSun": 0.11, "tempK": 2800 }
+    ],
+    "planets": [],
+    "note": "one of the faintest, lowest-mass stars known; planet candidates remain unconfirmed"
+  },
+  {
+    "id": "lalande-21185",
+    "name": "Lalande 21185",
+    "distanceLy": 8.3,
+    "ra": 165.83,
+    "dec": 35.97,
+    "stars": [
+      { "name": "Lalande 21185", "spectralClass": "M2V", "radiusSun": 0.39, "massSun": 0.39, "tempK": 3550 }
+    ],
+    "planets": [
+      {
+        "name": "Lalande 21185 b",
+        "massEarth": 2.69,
+        "orbitAU": 0.0788,
+        "periodDays": 12.946,
+        "discoveryYear": 2021,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      },
+      {
+        "name": "Lalande 21185 c",
+        "massEarth": 14,
+        "orbitAU": 2.94,
+        "periodDays": 2946,
+        "discoveryYear": 2022,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      }
+    ],
+    "habitableZone": { "innerAU": 0.15, "outerAU": 0.3 },
+    "note": "brightest red dwarf visible from the northern hemisphere"
+  },
+  {
+    "id": "sirius",
+    "name": "Sirius",
+    "distanceLy": 8.6,
+    "ra": 101.29,
+    "dec": -16.72,
+    "stars": [
+      { "name": "Sirius A", "spectralClass": "A1V", "radiusSun": 1.71, "massSun": 2.06, "tempK": 9940 },
+      { "name": "Sirius B", "spectralClass": "DA2", "radiusSun": 0.008, "massSun": 1.02, "tempK": 25200 }
+    ],
+    "planets": [],
+    "note": "brightest star in the night sky, with the nearest white dwarf"
+  },
+  {
+    "id": "luyten-726-8",
+    "name": "Luyten 726-8",
+    "distanceLy": 8.73,
+    "ra": 24.76,
+    "dec": -17.95,
+    "stars": [
+      { "name": "BL Ceti", "spectralClass": "M5.5V", "radiusSun": 0.14, "massSun": 0.1, "tempK": 2670 },
+      { "name": "UV Ceti", "spectralClass": "M6V", "radiusSun": 0.14, "massSun": 0.1, "tempK": 2650 }
+    ],
+    "planets": [],
+    "note": "UV Ceti is the prototype flare star"
+  },
+  {
+    "id": "ross-154",
+    "name": "Ross 154",
+    "distanceLy": 9.7,
+    "ra": 282.46,
+    "dec": -23.84,
+    "stars": [
+      { "name": "Ross 154", "spectralClass": "M3.5V", "radiusSun": 0.24, "massSun": 0.17, "tempK": 3340 }
+    ],
+    "planets": [],
+    "note": "young flare star, nearest star in Sagittarius"
+  },
+  {
+    "id": "ross-248",
+    "name": "Ross 248",
+    "distanceLy": 10.29,
+    "ra": 355.48,
+    "dec": 44.18,
+    "stars": [
+      { "name": "Ross 248", "spectralClass": "M5.5V", "radiusSun": 0.16, "massSun": 0.14, "tempK": 2800 }
+    ],
+    "planets": [],
+    "note": "Voyager 2 will pass within 1.7 ly of it in about 40,000 years"
+  },
+  {
+    "id": "epsilon-eridani",
+    "name": "Epsilon Eridani",
+    "distanceLy": 10.47,
+    "ra": 53.23,
+    "dec": -9.46,
+    "stars": [
+      { "name": "Epsilon Eridani", "spectralClass": "K2V", "radiusSun": 0.74, "massSun": 0.82, "tempK": 5084 }
+    ],
+    "planets": [
+      {
+        "name": "Epsilon Eridani b",
+        "massEarth": 210,
+        "orbitAU": 3.48,
+        "periodDays": 2690,
+        "discoveryYear": 2000,
+        "method": "radial velocity",
+        "inHabitableZone": false,
+        "note": "Jupiter analog in a young, dusty system"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.56, "outerAU": 1.1 },
+    "note": "young Sun-like star with debris belts; sci-fi staple"
+  },
+  {
+    "id": "lacaille-9352",
+    "name": "Lacaille 9352",
+    "distanceLy": 10.72,
+    "ra": 346.47,
+    "dec": -35.85,
+    "stars": [
+      { "name": "Lacaille 9352", "spectralClass": "M0.5V", "radiusSun": 0.47, "massSun": 0.49, "tempK": 3688 }
+    ],
+    "planets": [
+      {
+        "name": "GJ 887 b",
+        "massEarth": 4.2,
+        "orbitAU": 0.068,
+        "periodDays": 9.262,
+        "discoveryYear": 2020,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      },
+      {
+        "name": "GJ 887 c",
+        "massEarth": 7.6,
+        "orbitAU": 0.12,
+        "periodDays": 21.789,
+        "discoveryYear": 2020,
+        "method": "radial velocity",
+        "inHabitableZone": false,
+        "note": "just inside the habitable zone's inner edge"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.17, "outerAU": 0.34 },
+    "note": "also known as GJ 887; unusually quiet red dwarf with two super-Earths"
+  },
+  {
+    "id": "ross-128",
+    "name": "Ross 128",
+    "distanceLy": 11.01,
+    "ra": 176.94,
+    "dec": 0.8,
+    "stars": [
+      { "name": "Ross 128", "spectralClass": "M4V", "radiusSun": 0.2, "massSun": 0.17, "tempK": 3192 }
+    ],
+    "planets": [
+      {
+        "name": "Ross 128 b",
+        "massEarth": 1.4,
+        "orbitAU": 0.0496,
+        "periodDays": 9.866,
+        "discoveryYear": 2017,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "temperate Earth-mass planet around a quiet red dwarf; optimistic habitable zone"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.045, "outerAU": 0.115 },
+    "note": "quiet red dwarf hosting a nearby temperate planet"
+  },
+  {
+    "id": "ez-aquarii",
+    "name": "EZ Aquarii",
+    "distanceLy": 11.27,
+    "ra": 339.64,
+    "dec": -15.28,
+    "stars": [
+      { "name": "EZ Aquarii A", "spectralClass": "M5.5V", "radiusSun": 0.14, "massSun": 0.11, "tempK": 2900 },
+      { "name": "EZ Aquarii B", "spectralClass": "M5.5V", "radiusSun": 0.13, "massSun": 0.11, "tempK": 2900 },
+      { "name": "EZ Aquarii C", "spectralClass": "M6.5V", "radiusSun": 0.12, "massSun": 0.09, "tempK": 2700 }
+    ],
+    "planets": [],
+    "note": "tight triple system of red dwarf flare stars"
+  },
+  {
+    "id": "61-cygni",
+    "name": "61 Cygni",
+    "distanceLy": 11.4,
+    "ra": 316.72,
+    "dec": 38.75,
+    "stars": [
+      { "name": "61 Cygni A", "spectralClass": "K5V", "radiusSun": 0.665, "massSun": 0.7, "tempK": 4530 },
+      { "name": "61 Cygni B", "spectralClass": "K7V", "radiusSun": 0.595, "massSun": 0.63, "tempK": 4080 }
+    ],
+    "planets": [],
+    "note": "first star with a measured parallax (Bessel, 1838)"
+  },
+  {
+    "id": "procyon",
+    "name": "Procyon",
+    "distanceLy": 11.46,
+    "ra": 114.83,
+    "dec": 5.22,
+    "stars": [
+      { "name": "Procyon A", "spectralClass": "F5IV-V", "radiusSun": 2.05, "massSun": 1.5, "tempK": 6530 },
+      { "name": "Procyon B", "spectralClass": "DQZ", "radiusSun": 0.012, "massSun": 0.6, "tempK": 7740 }
+    ],
+    "planets": [],
+    "note": "eighth-brightest star, a subgiant with a white dwarf companion"
+  },
+  {
+    "id": "struve-2398",
+    "name": "Struve 2398",
+    "distanceLy": 11.49,
+    "ra": 280.69,
+    "dec": 59.62,
+    "stars": [
+      { "name": "Struve 2398 A", "spectralClass": "M3V", "radiusSun": 0.35, "massSun": 0.33, "tempK": 3440 },
+      { "name": "Struve 2398 B", "spectralClass": "M3.5V", "radiusSun": 0.25, "massSun": 0.25, "tempK": 3345 }
+    ],
+    "planets": [],
+    "note": "red dwarf binary in Draco; planet candidates unconfirmed"
+  },
+  {
+    "id": "groombridge-34",
+    "name": "Groombridge 34",
+    "distanceLy": 11.62,
+    "ra": 4.6,
+    "dec": 44.02,
+    "stars": [
+      { "name": "Groombridge 34 A (GX And)", "spectralClass": "M1.5V", "radiusSun": 0.38, "massSun": 0.38, "tempK": 3607 },
+      { "name": "Groombridge 34 B (GQ And)", "spectralClass": "M3.5V", "radiusSun": 0.16, "massSun": 0.15, "tempK": 3304 }
+    ],
+    "planets": [
+      {
+        "name": "GJ 15 A b",
+        "massEarth": 3.03,
+        "orbitAU": 0.072,
+        "periodDays": 11.441,
+        "discoveryYear": 2014,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      },
+      {
+        "name": "GJ 15 A c",
+        "massEarth": 36,
+        "orbitAU": 5.4,
+        "periodDays": 7600,
+        "discoveryYear": 2018,
+        "method": "radial velocity",
+        "inHabitableZone": false,
+        "note": "cold Neptune on a very wide orbit"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.14, "outerAU": 0.28 },
+    "note": "red dwarf binary with planets around the primary"
+  },
+  {
+    "id": "dx-cancri",
+    "name": "DX Cancri",
+    "distanceLy": 11.83,
+    "ra": 127.45,
+    "dec": 26.78,
+    "stars": [
+      { "name": "DX Cancri", "spectralClass": "M6.5V", "radiusSun": 0.11, "massSun": 0.09, "tempK": 2840 }
+    ],
+    "planets": [],
+    "note": "tiny flare star, barely above the hydrogen-burning limit"
+  },
+  {
+    "id": "epsilon-indi",
+    "name": "Epsilon Indi",
+    "distanceLy": 11.87,
+    "ra": 330.84,
+    "dec": -56.79,
+    "stars": [
+      { "name": "Epsilon Indi A", "spectralClass": "K5V", "radiusSun": 0.71, "massSun": 0.76, "tempK": 4650 },
+      { "name": "Epsilon Indi Ba", "spectralClass": "T1.5", "radiusSun": 0.09, "massSun": 0.066, "tempK": 1300 },
+      { "name": "Epsilon Indi Bb", "spectralClass": "T6", "radiusSun": 0.08, "massSun": 0.047, "tempK": 875 }
+    ],
+    "planets": [
+      {
+        "name": "Epsilon Indi Ab",
+        "massEarth": 2000,
+        "orbitAU": 28.4,
+        "discoveryYear": 2024,
+        "method": "direct imaging",
+        "inHabitableZone": false,
+        "note": "coldest exoplanet ever directly imaged (JWST, 2024)"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.47, "outerAU": 0.9 },
+    "note": "K dwarf with a binary brown dwarf companion and a JWST-imaged giant planet"
+  },
+  {
+    "id": "tau-ceti",
+    "name": "Tau Ceti",
+    "distanceLy": 11.91,
+    "ra": 26.02,
+    "dec": -15.94,
+    "stars": [
+      { "name": "Tau Ceti", "spectralClass": "G8V", "radiusSun": 0.79, "massSun": 0.78, "tempK": 5344 }
+    ],
+    "planets": [
+      {
+        "name": "Tau Ceti e",
+        "massEarth": 3.93,
+        "orbitAU": 0.538,
+        "periodDays": 162.87,
+        "discoveryYear": 2017,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "near the inner edge of the habitable zone"
+      },
+      {
+        "name": "Tau Ceti f",
+        "massEarth": 3.93,
+        "orbitAU": 1.334,
+        "periodDays": 636.13,
+        "discoveryYear": 2017,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "near the outer edge of the habitable zone"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.55, "outerAU": 1.35 },
+    "note": "nearest single Sun-like star, with a massive debris disk"
+  },
+  {
+    "id": "gj-1061",
+    "name": "GJ 1061",
+    "distanceLy": 11.98,
+    "ra": 54.0,
+    "dec": -44.51,
+    "stars": [
+      { "name": "GJ 1061", "spectralClass": "M5.5V", "radiusSun": 0.156, "massSun": 0.125, "tempK": 2953 }
+    ],
+    "planets": [
+      {
+        "name": "GJ 1061 b",
+        "massEarth": 1.37,
+        "orbitAU": 0.021,
+        "periodDays": 3.204,
+        "discoveryYear": 2019,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      },
+      {
+        "name": "GJ 1061 c",
+        "massEarth": 1.74,
+        "orbitAU": 0.035,
+        "periodDays": 6.689,
+        "discoveryYear": 2019,
+        "method": "radial velocity",
+        "inHabitableZone": true
+      },
+      {
+        "name": "GJ 1061 d",
+        "massEarth": 1.64,
+        "orbitAU": 0.054,
+        "periodDays": 13.031,
+        "discoveryYear": 2019,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "Earth-mass planet receiving roughly Earth-like insolation"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.033, "outerAU": 0.062 },
+    "note": "three Earth-mass planets around a quiet red dwarf"
+  },
+  {
+    "id": "yz-ceti",
+    "name": "YZ Ceti",
+    "distanceLy": 12.1,
+    "ra": 18.13,
+    "dec": -16.99,
+    "stars": [
+      { "name": "YZ Ceti", "spectralClass": "M4.5V", "radiusSun": 0.168, "massSun": 0.13, "tempK": 3053 }
+    ],
+    "planets": [
+      {
+        "name": "YZ Ceti b",
+        "massEarth": 0.7,
+        "orbitAU": 0.0163,
+        "periodDays": 2.021,
+        "discoveryYear": 2017,
+        "method": "radial velocity",
+        "inHabitableZone": false,
+        "note": "possible star-planet radio interaction detected"
+      },
+      {
+        "name": "YZ Ceti c",
+        "massEarth": 1.14,
+        "orbitAU": 0.0216,
+        "periodDays": 3.06,
+        "discoveryYear": 2017,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      },
+      {
+        "name": "YZ Ceti d",
+        "massEarth": 1.09,
+        "orbitAU": 0.0285,
+        "periodDays": 4.656,
+        "discoveryYear": 2017,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      }
+    ],
+    "habitableZone": { "innerAU": 0.045, "outerAU": 0.09 },
+    "note": "compact system of three sub-Earth to Earth-mass planets"
+  },
+  {
+    "id": "luytens-star",
+    "name": "Luyten's Star",
+    "distanceLy": 12.35,
+    "ra": 111.85,
+    "dec": 5.23,
+    "stars": [
+      { "name": "Luyten's Star", "spectralClass": "M3.5V", "radiusSun": 0.293, "massSun": 0.29, "tempK": 3382 }
+    ],
+    "planets": [
+      {
+        "name": "Luyten b (GJ 273 b)",
+        "massEarth": 2.89,
+        "orbitAU": 0.0911,
+        "periodDays": 18.65,
+        "discoveryYear": 2017,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "one of the nearest potentially habitable super-Earths"
+      },
+      {
+        "name": "GJ 273 c",
+        "massEarth": 1.18,
+        "orbitAU": 0.0365,
+        "periodDays": 4.723,
+        "discoveryYear": 2017,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      }
+    ],
+    "habitableZone": { "innerAU": 0.085, "outerAU": 0.17 },
+    "note": "quiet red dwarf just 1.2 ly from Procyon"
+  },
+  {
+    "id": "teegardens-star",
+    "name": "Teegarden's Star",
+    "distanceLy": 12.5,
+    "ra": 43.25,
+    "dec": 16.88,
+    "stars": [
+      { "name": "Teegarden's Star", "spectralClass": "M7V", "radiusSun": 0.107, "massSun": 0.093, "tempK": 2904 }
+    ],
+    "planets": [
+      {
+        "name": "Teegarden's Star b",
+        "massEarth": 1.05,
+        "orbitAU": 0.0252,
+        "periodDays": 4.91,
+        "discoveryYear": 2019,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "among the most Earth-like planets by mass and insolation"
+      },
+      {
+        "name": "Teegarden's Star c",
+        "massEarth": 1.11,
+        "orbitAU": 0.0443,
+        "periodDays": 11.409,
+        "discoveryYear": 2019,
+        "method": "radial velocity",
+        "inHabitableZone": true
+      },
+      {
+        "name": "Teegarden's Star d",
+        "massEarth": 0.82,
+        "orbitAU": 0.0791,
+        "periodDays": 26.13,
+        "discoveryYear": 2024,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      }
+    ],
+    "habitableZone": { "innerAU": 0.021, "outerAU": 0.047 },
+    "note": "ultracool dwarf discovered only in 2003, hosting two temperate Earth-mass planets"
+  },
+  {
+    "id": "kapteyns-star",
+    "name": "Kapteyn's Star",
+    "distanceLy": 12.83,
+    "ra": 77.92,
+    "dec": -45.02,
+    "stars": [
+      { "name": "Kapteyn's Star", "spectralClass": "sdM1", "radiusSun": 0.29, "massSun": 0.28, "tempK": 3550 }
+    ],
+    "planets": [],
+    "note": "ancient halo star on a retrograde galactic orbit; its claimed planets were refuted in 2021"
+  },
+  {
+    "id": "lacaille-8760",
+    "name": "Lacaille 8760",
+    "distanceLy": 12.87,
+    "ra": 319.31,
+    "dec": -38.87,
+    "stars": [
+      { "name": "Lacaille 8760 (AX Mic)", "spectralClass": "M0V", "radiusSun": 0.51, "massSun": 0.6, "tempK": 3800 }
+    ],
+    "planets": [],
+    "note": "one of the brightest red dwarfs in the sky"
+  },
+  {
+    "id": "kruger-60",
+    "name": "Kruger 60",
+    "distanceLy": 13.07,
+    "ra": 337.0,
+    "dec": 57.7,
+    "stars": [
+      { "name": "Kruger 60 A", "spectralClass": "M3V", "radiusSun": 0.35, "massSun": 0.27, "tempK": 3180 },
+      { "name": "Kruger 60 B (DO Cep)", "spectralClass": "M4V", "radiusSun": 0.24, "massSun": 0.18, "tempK": 3040 }
+    ],
+    "planets": [],
+    "note": "close red dwarf binary; B is a flare star"
+  },
+  {
+    "id": "ross-614",
+    "name": "Ross 614",
+    "distanceLy": 13.35,
+    "ra": 97.35,
+    "dec": -2.81,
+    "stars": [
+      { "name": "Ross 614 A", "spectralClass": "M4.5V", "radiusSun": 0.17, "massSun": 0.22, "tempK": 3140 },
+      { "name": "Ross 614 B", "spectralClass": "M5.5V", "radiusSun": 0.1, "massSun": 0.11, "tempK": 2900 }
+    ],
+    "planets": [],
+    "note": "low-mass binary used to test early stellar mass-luminosity relations"
+  },
+  {
+    "id": "wolf-1061",
+    "name": "Wolf 1061",
+    "distanceLy": 14.05,
+    "ra": 247.58,
+    "dec": -12.66,
+    "stars": [
+      { "name": "Wolf 1061", "spectralClass": "M3.5V", "radiusSun": 0.307, "massSun": 0.29, "tempK": 3342 }
+    ],
+    "planets": [
+      {
+        "name": "Wolf 1061 b",
+        "massEarth": 1.91,
+        "orbitAU": 0.0375,
+        "periodDays": 4.887,
+        "discoveryYear": 2015,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      },
+      {
+        "name": "Wolf 1061 c",
+        "massEarth": 3.41,
+        "orbitAU": 0.089,
+        "periodDays": 17.87,
+        "discoveryYear": 2015,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "super-Earth near the inner edge of the habitable zone"
+      },
+      {
+        "name": "Wolf 1061 d",
+        "massEarth": 7.7,
+        "orbitAU": 0.47,
+        "periodDays": 217.2,
+        "discoveryYear": 2015,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      }
+    ],
+    "habitableZone": { "innerAU": 0.085, "outerAU": 0.2 },
+    "note": "three-planet red dwarf system with a habitable-zone super-Earth"
+  },
+  {
+    "id": "van-maanens-star",
+    "name": "Van Maanen's Star",
+    "distanceLy": 14.07,
+    "ra": 12.29,
+    "dec": 5.39,
+    "stars": [
+      { "name": "Van Maanen's Star", "spectralClass": "DZ8", "radiusSun": 0.011, "massSun": 0.67, "tempK": 6130 }
+    ],
+    "planets": [],
+    "note": "nearest solitary white dwarf; metal-polluted atmosphere hints at devoured planetary debris"
+  },
+  {
+    "id": "gliese-1",
+    "name": "Gliese 1",
+    "distanceLy": 14.17,
+    "ra": 1.35,
+    "dec": -37.36,
+    "stars": [
+      { "name": "Gliese 1", "spectralClass": "M1.5V", "radiusSun": 0.4, "massSun": 0.45, "tempK": 3600 }
+    ],
+    "planets": [],
+    "note": "high proper-motion red dwarf, first entry of the Gliese catalog"
+  },
+  {
+    "id": "wolf-424",
+    "name": "Wolf 424",
+    "distanceLy": 14.31,
+    "ra": 188.32,
+    "dec": 9.02,
+    "stars": [
+      { "name": "Wolf 424 A", "spectralClass": "M5.5V", "radiusSun": 0.14, "massSun": 0.13, "tempK": 2800 },
+      { "name": "Wolf 424 B", "spectralClass": "M7V", "radiusSun": 0.13, "massSun": 0.11, "tempK": 2700 }
+    ],
+    "planets": [],
+    "note": "very low-mass flare star binary in Virgo"
+  },
+  {
+    "id": "tz-arietis",
+    "name": "TZ Arietis",
+    "distanceLy": 14.59,
+    "ra": 30.05,
+    "dec": 13.05,
+    "stars": [
+      { "name": "TZ Arietis", "spectralClass": "M4.5V", "radiusSun": 0.15, "massSun": 0.14, "tempK": 3100 }
+    ],
+    "planets": [],
+    "note": "flare star; a claimed long-period giant planet remains unconfirmed"
+  },
+  {
+    "id": "gj-1245",
+    "name": "GJ 1245",
+    "distanceLy": 14.81,
+    "ra": 298.48,
+    "dec": 44.41,
+    "stars": [
+      { "name": "GJ 1245 A", "spectralClass": "M5.5V", "radiusSun": 0.14, "massSun": 0.11, "tempK": 2930 },
+      { "name": "GJ 1245 B", "spectralClass": "M6V", "radiusSun": 0.13, "massSun": 0.1, "tempK": 2850 },
+      { "name": "GJ 1245 C", "spectralClass": "M8V", "radiusSun": 0.1, "massSun": 0.074, "tempK": 2300 }
+    ],
+    "planets": [],
+    "note": "triple red dwarf system in Cygnus"
+  },
+  {
+    "id": "gliese-687",
+    "name": "Gliese 687",
+    "distanceLy": 14.84,
+    "ra": 264.11,
+    "dec": 68.34,
+    "stars": [
+      { "name": "Gliese 687", "spectralClass": "M3V", "radiusSun": 0.42, "massSun": 0.4, "tempK": 3439 }
+    ],
+    "planets": [
+      {
+        "name": "Gliese 687 b",
+        "massEarth": 18,
+        "orbitAU": 0.164,
+        "periodDays": 38.14,
+        "discoveryYear": 2014,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "temperate Neptune-mass planet, so unlikely to be rocky"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.14, "outerAU": 0.28 },
+    "note": "one of the brightest M dwarfs in the northern sky"
+  },
+  {
+    "id": "gliese-674",
+    "name": "Gliese 674",
+    "distanceLy": 14.85,
+    "ra": 262.17,
+    "dec": -46.9,
+    "stars": [
+      { "name": "Gliese 674", "spectralClass": "M2.5V", "radiusSun": 0.36, "massSun": 0.35, "tempK": 3404 }
+    ],
+    "planets": [
+      {
+        "name": "Gliese 674 b",
+        "massEarth": 11.8,
+        "orbitAU": 0.039,
+        "periodDays": 4.694,
+        "discoveryYear": 2007,
+        "method": "radial velocity",
+        "inHabitableZone": false,
+        "note": "hot Neptune-mass planet"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.12, "outerAU": 0.24 },
+    "note": "active red dwarf with a close-in Neptune"
+  },
+  {
+    "id": "lhs-292",
+    "name": "LHS 292",
+    "distanceLy": 14.9,
+    "ra": 162.05,
+    "dec": -11.34,
+    "stars": [
+      { "name": "LHS 292", "spectralClass": "M6.5V", "radiusSun": 0.12, "massSun": 0.08, "tempK": 2800 }
+    ],
+    "planets": [],
+    "note": "faint flare star in Sextans"
+  },
+  {
+    "id": "gliese-440",
+    "name": "Gliese 440",
+    "distanceLy": 15.12,
+    "ra": 176.43,
+    "dec": -64.84,
+    "stars": [
+      { "name": "Gliese 440", "spectralClass": "DQ6", "radiusSun": 0.01, "massSun": 0.75, "tempK": 7500 }
+    ],
+    "planets": [],
+    "note": "one of the nearest white dwarfs, in Musca"
+  },
+  {
+    "id": "gliese-876",
+    "name": "Gliese 876",
+    "distanceLy": 15.25,
+    "ra": 343.32,
+    "dec": -14.26,
+    "stars": [
+      { "name": "Gliese 876", "spectralClass": "M4V", "radiusSun": 0.376, "massSun": 0.37, "tempK": 3129 }
+    ],
+    "planets": [
+      {
+        "name": "Gliese 876 d",
+        "massEarth": 6.83,
+        "orbitAU": 0.0208,
+        "periodDays": 1.938,
+        "discoveryYear": 2005,
+        "method": "radial velocity",
+        "inHabitableZone": false,
+        "note": "one of the first known super-Earths"
+      },
+      {
+        "name": "Gliese 876 c",
+        "massEarth": 226,
+        "orbitAU": 0.13,
+        "periodDays": 30.09,
+        "discoveryYear": 2001,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "gas giant in the habitable zone"
+      },
+      {
+        "name": "Gliese 876 b",
+        "massEarth": 723,
+        "orbitAU": 0.208,
+        "periodDays": 61.12,
+        "discoveryYear": 1998,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "first planet discovered around a red dwarf"
+      },
+      {
+        "name": "Gliese 876 e",
+        "massEarth": 14.6,
+        "orbitAU": 0.334,
+        "periodDays": 124.26,
+        "discoveryYear": 2010,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      }
+    ],
+    "habitableZone": { "innerAU": 0.1, "outerAU": 0.21 },
+    "note": "four planets locked in a 1:2:4 Laplace resonance chain"
+  },
+  {
+    "id": "gliese-1002",
+    "name": "Gliese 1002",
+    "distanceLy": 15.81,
+    "ra": 1.68,
+    "dec": -7.54,
+    "stars": [
+      { "name": "Gliese 1002", "spectralClass": "M5.5V", "radiusSun": 0.137, "massSun": 0.12, "tempK": 3024 }
+    ],
+    "planets": [
+      {
+        "name": "Gliese 1002 b",
+        "massEarth": 1.08,
+        "orbitAU": 0.0457,
+        "periodDays": 10.346,
+        "discoveryYear": 2022,
+        "method": "radial velocity",
+        "inHabitableZone": true
+      },
+      {
+        "name": "Gliese 1002 c",
+        "massEarth": 1.36,
+        "orbitAU": 0.0738,
+        "periodDays": 21.202,
+        "discoveryYear": 2022,
+        "method": "radial velocity",
+        "inHabitableZone": true
+      }
+    ],
+    "habitableZone": { "innerAU": 0.033, "outerAU": 0.075 },
+    "note": "two Earth-mass planets, both in the habitable zone"
+  },
+  {
+    "id": "groombridge-1618",
+    "name": "Groombridge 1618",
+    "distanceLy": 15.88,
+    "ra": 152.84,
+    "dec": 49.45,
+    "stars": [
+      { "name": "Groombridge 1618", "spectralClass": "K7.5V", "radiusSun": 0.6, "massSun": 0.64, "tempK": 4000 }
+    ],
+    "planets": [],
+    "note": "orange dwarf flare star in Ursa Major"
+  },
+  {
+    "id": "ad-leonis",
+    "name": "AD Leonis",
+    "distanceLy": 16.2,
+    "ra": 154.9,
+    "dec": 19.87,
+    "stars": [
+      { "name": "AD Leonis", "spectralClass": "M3.5V", "radiusSun": 0.43, "massSun": 0.42, "tempK": 3390 }
+    ],
+    "planets": [],
+    "note": "one of the most-studied flare stars; a claimed planet was refuted"
+  },
+  {
+    "id": "gliese-832",
+    "name": "Gliese 832",
+    "distanceLy": 16.2,
+    "ra": 323.39,
+    "dec": -49.01,
+    "stars": [
+      { "name": "Gliese 832", "spectralClass": "M1.5V", "radiusSun": 0.48, "massSun": 0.45, "tempK": 3620 }
+    ],
+    "planets": [
+      {
+        "name": "Gliese 832 b",
+        "massEarth": 216,
+        "orbitAU": 3.56,
+        "periodDays": 3657,
+        "discoveryYear": 2008,
+        "method": "radial velocity",
+        "inHabitableZone": false,
+        "note": "cold Jupiter analog"
+      },
+      {
+        "name": "Gliese 832 c",
+        "massEarth": 5.4,
+        "orbitAU": 0.163,
+        "periodDays": 35.68,
+        "discoveryYear": 2014,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "existence disputed; 2022 analysis attributes the signal to stellar activity"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.13, "outerAU": 0.28 },
+    "note": "red dwarf with a Jupiter analog and a disputed habitable-zone super-Earth"
+  },
+  {
+    "id": "gliese-682",
+    "name": "Gliese 682",
+    "distanceLy": 16.34,
+    "ra": 264.27,
+    "dec": -44.32,
+    "stars": [
+      { "name": "Gliese 682", "spectralClass": "M4V", "radiusSun": 0.3, "massSun": 0.27, "tempK": 3028 }
+    ],
+    "planets": [
+      {
+        "name": "Gliese 682 b",
+        "massEarth": 4.4,
+        "orbitAU": 0.08,
+        "periodDays": 17.478,
+        "discoveryYear": 2014,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "habitable-zone candidate, still awaiting confirmation"
+      },
+      {
+        "name": "Gliese 682 c",
+        "massEarth": 8.7,
+        "orbitAU": 0.176,
+        "periodDays": 57.32,
+        "discoveryYear": 2014,
+        "method": "radial velocity",
+        "inHabitableZone": false,
+        "note": "unconfirmed candidate"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.048, "outerAU": 0.1 },
+    "note": "faint red dwarf near the tail of Scorpius"
+  },
+  {
+    "id": "40-eridani",
+    "name": "40 Eridani",
+    "distanceLy": 16.34,
+    "ra": 63.82,
+    "dec": -7.65,
+    "stars": [
+      { "name": "40 Eridani A", "spectralClass": "K0.5V", "radiusSun": 0.81, "massSun": 0.78, "tempK": 5072 },
+      { "name": "40 Eridani B", "spectralClass": "DA4", "radiusSun": 0.014, "massSun": 0.57, "tempK": 16500 },
+      { "name": "40 Eridani C", "spectralClass": "M4.5V", "radiusSun": 0.31, "massSun": 0.2, "tempK": 3100 }
+    ],
+    "planets": [
+      {
+        "name": "40 Eridani b",
+        "massEarth": 8.47,
+        "orbitAU": 0.224,
+        "periodDays": 42.38,
+        "discoveryYear": 2018,
+        "method": "radial velocity",
+        "inHabitableZone": false,
+        "note": "popularly 'Vulcan'; later shown to be a stellar activity artifact (2023)"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.65, "outerAU": 1.35 },
+    "note": "triple system famous as Star Trek's Vulcan home star"
+  },
+  {
+    "id": "ev-lacertae",
+    "name": "EV Lacertae",
+    "distanceLy": 16.48,
+    "ra": 341.71,
+    "dec": 44.33,
+    "stars": [
+      { "name": "EV Lacertae", "spectralClass": "M4.0V", "radiusSun": 0.35, "massSun": 0.32, "tempK": 3325 }
+    ],
+    "planets": [],
+    "note": "produced one of the most powerful stellar flares ever recorded (2008)"
+  },
+  {
+    "id": "70-ophiuchi",
+    "name": "70 Ophiuchi",
+    "distanceLy": 16.59,
+    "ra": 271.36,
+    "dec": 2.5,
+    "stars": [
+      { "name": "70 Ophiuchi A", "spectralClass": "K0V", "radiusSun": 0.91, "massSun": 0.9, "tempK": 5300 },
+      { "name": "70 Ophiuchi B", "spectralClass": "K4V", "radiusSun": 0.71, "massSun": 0.7, "tempK": 4250 }
+    ],
+    "planets": [],
+    "note": "orange dwarf binary, site of infamous 19th-century false planet claims"
+  },
+  {
+    "id": "altair",
+    "name": "Altair",
+    "distanceLy": 16.73,
+    "ra": 297.7,
+    "dec": 8.87,
+    "stars": [
+      { "name": "Altair", "spectralClass": "A7V", "radiusSun": 1.79, "massSun": 1.79, "tempK": 7550 }
+    ],
+    "planets": [],
+    "note": "rapidly rotating star, visibly flattened at the poles"
+  },
+  {
+    "id": "gliese-3323",
+    "name": "Gliese 3323",
+    "distanceLy": 17.53,
+    "ra": 75.49,
+    "dec": -6.95,
+    "stars": [
+      { "name": "Gliese 3323", "spectralClass": "M4V", "radiusSun": 0.124, "massSun": 0.164, "tempK": 3159 }
+    ],
+    "planets": [
+      {
+        "name": "Gliese 3323 b",
+        "massEarth": 2.02,
+        "orbitAU": 0.0328,
+        "periodDays": 5.364,
+        "discoveryYear": 2017,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "near the optimistic inner edge of the habitable zone"
+      },
+      {
+        "name": "Gliese 3323 c",
+        "massEarth": 2.31,
+        "orbitAU": 0.1264,
+        "periodDays": 40.54,
+        "discoveryYear": 2017,
+        "method": "radial velocity",
+        "inHabitableZone": false,
+        "note": "beyond the habitable zone's outer edge"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.031, "outerAU": 0.062 },
+    "note": "small red dwarf with two nearby super-Earths"
+  },
+  {
+    "id": "sigma-draconis",
+    "name": "Sigma Draconis",
+    "distanceLy": 18.77,
+    "ra": 293.09,
+    "dec": 69.66,
+    "stars": [
+      { "name": "Sigma Draconis", "spectralClass": "G9V", "radiusSun": 0.78, "massSun": 0.85, "tempK": 5297 }
+    ],
+    "planets": [],
+    "note": "nearby Sun-like star, a long-time SETI target"
+  },
+  {
+    "id": "gliese-570",
+    "name": "Gliese 570",
+    "distanceLy": 19.0,
+    "ra": 224.36,
+    "dec": -21.41,
+    "stars": [
+      { "name": "Gliese 570 A", "spectralClass": "K4V", "radiusSun": 0.74, "massSun": 0.77, "tempK": 4745 },
+      { "name": "Gliese 570 B", "spectralClass": "M1V", "radiusSun": 0.55, "massSun": 0.55, "tempK": 3700 },
+      { "name": "Gliese 570 C", "spectralClass": "M3V", "radiusSun": 0.4, "massSun": 0.39, "tempK": 3400 },
+      { "name": "Gliese 570 D", "spectralClass": "T7.5", "radiusSun": 0.09, "massSun": 0.05, "tempK": 800 }
+    ],
+    "planets": [],
+    "note": "quadruple system including a cold T dwarf"
+  },
+  {
+    "id": "eta-cassiopeiae",
+    "name": "Eta Cassiopeiae",
+    "distanceLy": 19.33,
+    "ra": 12.28,
+    "dec": 57.82,
+    "stars": [
+      { "name": "Eta Cassiopeiae A", "spectralClass": "G0V", "radiusSun": 1.04, "massSun": 0.97, "tempK": 5973 },
+      { "name": "Eta Cassiopeiae B", "spectralClass": "K7V", "radiusSun": 0.66, "massSun": 0.57, "tempK": 4036 }
+    ],
+    "planets": [],
+    "note": "nearby Sun-like binary ('Achird'), a science-fiction favorite"
+  },
+  {
+    "id": "hr-7703",
+    "name": "HR 7703",
+    "distanceLy": 19.32,
+    "ra": 302.8,
+    "dec": -36.1,
+    "stars": [
+      { "name": "HR 7703 A", "spectralClass": "K3V", "radiusSun": 0.68, "massSun": 0.75, "tempK": 4800 },
+      { "name": "HR 7703 B", "spectralClass": "M3.5V", "radiusSun": 0.29, "massSun": 0.24, "tempK": 3300 }
+    ],
+    "planets": [],
+    "note": "high proper-motion K dwarf with a red dwarf companion"
+  },
+  {
+    "id": "36-ophiuchi",
+    "name": "36 Ophiuchi",
+    "distanceLy": 19.5,
+    "ra": 258.84,
+    "dec": -26.6,
+    "stars": [
+      { "name": "36 Ophiuchi A", "spectralClass": "K2V", "radiusSun": 0.69, "massSun": 0.85, "tempK": 5100 },
+      { "name": "36 Ophiuchi B", "spectralClass": "K1V", "radiusSun": 0.66, "massSun": 0.85, "tempK": 5100 },
+      { "name": "36 Ophiuchi C", "spectralClass": "K5V", "radiusSun": 0.71, "massSun": 0.71, "tempK": 4550 }
+    ],
+    "planets": [],
+    "note": "triple system of orange dwarfs"
+  },
+  {
+    "id": "82-g-eridani",
+    "name": "82 G. Eridani",
+    "distanceLy": 19.7,
+    "ra": 49.98,
+    "dec": -43.07,
+    "stars": [
+      { "name": "82 G. Eridani", "spectralClass": "G6V", "radiusSun": 0.92, "massSun": 0.81, "tempK": 5401 }
+    ],
+    "planets": [
+      {
+        "name": "HD 20794 b",
+        "massEarth": 2.15,
+        "orbitAU": 0.127,
+        "periodDays": 18.31,
+        "discoveryYear": 2011,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      },
+      {
+        "name": "HD 20794 c",
+        "massEarth": 2.98,
+        "orbitAU": 0.366,
+        "periodDays": 89.68,
+        "discoveryYear": 2011,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      },
+      {
+        "name": "HD 20794 d",
+        "massEarth": 5.82,
+        "orbitAU": 1.36,
+        "periodDays": 647.6,
+        "discoveryYear": 2025,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "eccentric orbit sweeps through the habitable zone; confirmed 2025"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.82, "outerAU": 1.65 },
+    "note": "nearby Sun-like star with super-Earths, one crossing the habitable zone"
+  },
+  {
+    "id": "delta-pavonis",
+    "name": "Delta Pavonis",
+    "distanceLy": 19.89,
+    "ra": 302.18,
+    "dec": -66.18,
+    "stars": [
+      { "name": "Delta Pavonis", "spectralClass": "G8IV", "radiusSun": 1.2, "massSun": 1.05, "tempK": 5604 }
+    ],
+    "planets": [],
+    "note": "nearby solar-type subgiant, rated a top SETI target"
+  },
+  {
+    "id": "eq-pegasi",
+    "name": "EQ Pegasi",
+    "distanceLy": 20.38,
+    "ra": 352.97,
+    "dec": 19.94,
+    "stars": [
+      { "name": "EQ Pegasi A", "spectralClass": "M3.5V", "radiusSun": 0.35, "massSun": 0.39, "tempK": 3300 },
+      { "name": "EQ Pegasi B", "spectralClass": "M4.5V", "radiusSun": 0.25, "massSun": 0.25, "tempK": 3100 }
+    ],
+    "planets": [],
+    "note": "binary of flare stars in Pegasus"
+  },
+  {
+    "id": "vega",
+    "name": "Vega",
+    "distanceLy": 25.04,
+    "ra": 279.23,
+    "dec": 38.78,
+    "stars": [
+      { "name": "Vega", "spectralClass": "A0V", "radiusSun": 2.36, "massSun": 2.14, "tempK": 9602 }
+    ],
+    "planets": [],
+    "note": "former pole star with a debris disk; the original photometric standard"
+  },
+  {
+    "id": "fomalhaut",
+    "name": "Fomalhaut",
+    "distanceLy": 25.13,
+    "ra": 344.41,
+    "dec": -29.62,
+    "stars": [
+      { "name": "Fomalhaut", "spectralClass": "A3V", "radiusSun": 1.84, "massSun": 1.92, "tempK": 8590 }
+    ],
+    "planets": [],
+    "note": "spectacular debris ring; 'Fomalhaut b' proved to be an expanding dust cloud"
+  },
+  {
+    "id": "trappist-1",
+    "name": "TRAPPIST-1",
+    "distanceLy": 40.7,
+    "ra": 346.62,
+    "dec": -5.04,
+    "stars": [
+      { "name": "TRAPPIST-1", "spectralClass": "M8V", "radiusSun": 0.119, "massSun": 0.09, "tempK": 2566 }
+    ],
+    "planets": [
+      {
+        "name": "TRAPPIST-1b",
+        "massEarth": 1.374,
+        "radiusEarth": 1.116,
+        "orbitAU": 0.01154,
+        "periodDays": 1.511,
+        "discoveryYear": 2016,
+        "method": "transit",
+        "inHabitableZone": false,
+        "note": "JWST found it likely airless"
+      },
+      {
+        "name": "TRAPPIST-1c",
+        "massEarth": 1.308,
+        "radiusEarth": 1.097,
+        "orbitAU": 0.0158,
+        "periodDays": 2.422,
+        "discoveryYear": 2016,
+        "method": "transit",
+        "inHabitableZone": false
+      },
+      {
+        "name": "TRAPPIST-1d",
+        "massEarth": 0.388,
+        "radiusEarth": 0.788,
+        "orbitAU": 0.02227,
+        "periodDays": 4.05,
+        "discoveryYear": 2017,
+        "method": "transit",
+        "inHabitableZone": false
+      },
+      {
+        "name": "TRAPPIST-1e",
+        "massEarth": 0.692,
+        "radiusEarth": 0.92,
+        "orbitAU": 0.02925,
+        "periodDays": 6.101,
+        "discoveryYear": 2017,
+        "method": "transit",
+        "inHabitableZone": true,
+        "note": "best habitability prospect of the seven"
+      },
+      {
+        "name": "TRAPPIST-1f",
+        "massEarth": 1.039,
+        "radiusEarth": 1.045,
+        "orbitAU": 0.03849,
+        "periodDays": 9.208,
+        "discoveryYear": 2017,
+        "method": "transit",
+        "inHabitableZone": true
+      },
+      {
+        "name": "TRAPPIST-1g",
+        "massEarth": 1.321,
+        "radiusEarth": 1.129,
+        "orbitAU": 0.04683,
+        "periodDays": 12.352,
+        "discoveryYear": 2017,
+        "method": "transit",
+        "inHabitableZone": true
+      },
+      {
+        "name": "TRAPPIST-1h",
+        "massEarth": 0.326,
+        "radiusEarth": 0.755,
+        "orbitAU": 0.06189,
+        "periodDays": 18.773,
+        "discoveryYear": 2017,
+        "method": "transit",
+        "inHabitableZone": false
+      }
+    ],
+    "habitableZone": { "innerAU": 0.024, "outerAU": 0.049 },
+    "note": "seven Earth-size planets around an ultracool dwarf, in a resonant chain"
+  },
+  {
+    "id": "55-cancri",
+    "name": "55 Cancri",
+    "distanceLy": 41.06,
+    "ra": 133.15,
+    "dec": 28.33,
+    "stars": [
+      { "name": "55 Cancri A", "spectralClass": "K0IV-V", "radiusSun": 0.94, "massSun": 0.91, "tempK": 5196 },
+      { "name": "55 Cancri B", "spectralClass": "M4.5V", "radiusSun": 0.3, "massSun": 0.26, "tempK": 3100 }
+    ],
+    "planets": [
+      {
+        "name": "55 Cancri e",
+        "massEarth": 7.99,
+        "radiusEarth": 1.88,
+        "orbitAU": 0.01544,
+        "periodDays": 0.7365,
+        "discoveryYear": 2004,
+        "method": "radial velocity",
+        "inHabitableZone": false,
+        "note": "lava-world super-Earth with a possible secondary atmosphere (JWST)"
+      },
+      {
+        "name": "55 Cancri b",
+        "massEarth": 264,
+        "orbitAU": 0.1134,
+        "periodDays": 14.652,
+        "discoveryYear": 1996,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      },
+      {
+        "name": "55 Cancri c",
+        "massEarth": 54,
+        "orbitAU": 0.2373,
+        "periodDays": 44.36,
+        "discoveryYear": 2002,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      },
+      {
+        "name": "55 Cancri f",
+        "massEarth": 45,
+        "orbitAU": 0.774,
+        "periodDays": 259.9,
+        "discoveryYear": 2007,
+        "method": "radial velocity",
+        "inHabitableZone": true,
+        "note": "Saturn-mass planet in the habitable zone"
+      },
+      {
+        "name": "55 Cancri d",
+        "massEarth": 1200,
+        "orbitAU": 5.5,
+        "periodDays": 5170,
+        "discoveryYear": 2002,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      }
+    ],
+    "habitableZone": { "innerAU": 0.72, "outerAU": 1.45 },
+    "note": "five-planet system including the famous lava world 55 Cancri e"
+  },
+  {
+    "id": "lhs-1140",
+    "name": "LHS 1140",
+    "distanceLy": 48.8,
+    "ra": 11.25,
+    "dec": -15.27,
+    "stars": [
+      { "name": "LHS 1140", "spectralClass": "M4.5V", "radiusSun": 0.21, "massSun": 0.18, "tempK": 3096 }
+    ],
+    "planets": [
+      {
+        "name": "LHS 1140 b",
+        "massEarth": 5.6,
+        "radiusEarth": 1.73,
+        "orbitAU": 0.0946,
+        "periodDays": 24.737,
+        "discoveryYear": 2017,
+        "method": "transit",
+        "inHabitableZone": true,
+        "note": "possible water world in the habitable zone (JWST 2024)"
+      },
+      {
+        "name": "LHS 1140 c",
+        "massEarth": 1.91,
+        "radiusEarth": 1.27,
+        "orbitAU": 0.027,
+        "periodDays": 3.778,
+        "discoveryYear": 2018,
+        "method": "transit",
+        "inHabitableZone": false
+      }
+    ],
+    "habitableZone": { "innerAU": 0.058, "outerAU": 0.12 },
+    "note": "prime target in the search for habitable water worlds"
+  },
+  {
+    "id": "51-pegasi",
+    "name": "51 Pegasi",
+    "distanceLy": 50.6,
+    "ra": 344.37,
+    "dec": 20.77,
+    "stars": [
+      { "name": "51 Pegasi", "spectralClass": "G2IV", "radiusSun": 1.27, "massSun": 1.11, "tempK": 5768 }
+    ],
+    "planets": [
+      {
+        "name": "51 Pegasi b",
+        "massEarth": 146,
+        "orbitAU": 0.0527,
+        "periodDays": 4.231,
+        "discoveryYear": 1995,
+        "method": "radial velocity",
+        "inHabitableZone": false,
+        "note": "first exoplanet found around a Sun-like star; 2019 Nobel Prize"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.95, "outerAU": 1.9 },
+    "note": "birthplace of exoplanet science (1995)"
+  },
+  {
+    "id": "hd-189733",
+    "name": "HD 189733",
+    "distanceLy": 64.5,
+    "ra": 300.18,
+    "dec": 22.71,
+    "stars": [
+      { "name": "HD 189733 A", "spectralClass": "K1.5V", "radiusSun": 0.76, "massSun": 0.81, "tempK": 4875 }
+    ],
+    "planets": [
+      {
+        "name": "HD 189733 b",
+        "massEarth": 359,
+        "radiusEarth": 12.7,
+        "orbitAU": 0.0313,
+        "periodDays": 2.219,
+        "discoveryYear": 2005,
+        "method": "transit",
+        "inHabitableZone": false,
+        "note": "cobalt-blue hot Jupiter with supersonic winds and glass rain"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.6, "outerAU": 1.2 },
+    "note": "one of the best-studied hot Jupiters"
+  },
+  {
+    "id": "toi-700",
+    "name": "TOI-700",
+    "distanceLy": 101.4,
+    "ra": 97.1,
+    "dec": -65.58,
+    "stars": [
+      { "name": "TOI-700", "spectralClass": "M2.5V", "radiusSun": 0.42, "massSun": 0.42, "tempK": 3480 }
+    ],
+    "planets": [
+      {
+        "name": "TOI-700 d",
+        "radiusEarth": 1.19,
+        "orbitAU": 0.163,
+        "periodDays": 37.42,
+        "discoveryYear": 2020,
+        "method": "transit",
+        "inHabitableZone": true,
+        "note": "TESS's first Earth-size habitable-zone planet"
+      },
+      {
+        "name": "TOI-700 e",
+        "radiusEarth": 0.95,
+        "orbitAU": 0.134,
+        "periodDays": 27.81,
+        "discoveryYear": 2023,
+        "method": "transit",
+        "inHabitableZone": true,
+        "note": "in the optimistic habitable zone"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.13, "outerAU": 0.3 },
+    "note": "quiet red dwarf with two Earth-size habitable-zone planets"
+  },
+  {
+    "id": "k2-18",
+    "name": "K2-18",
+    "distanceLy": 124.0,
+    "ra": 172.56,
+    "dec": 7.59,
+    "stars": [
+      { "name": "K2-18", "spectralClass": "M2.5V", "radiusSun": 0.41, "massSun": 0.36, "tempK": 3457 }
+    ],
+    "planets": [
+      {
+        "name": "K2-18b",
+        "massEarth": 8.63,
+        "radiusEarth": 2.61,
+        "orbitAU": 0.159,
+        "periodDays": 32.94,
+        "discoveryYear": 2015,
+        "method": "transit",
+        "inHabitableZone": true,
+        "note": "candidate hycean world; JWST 2023 hinted at DMS, but 2025 follow-ups left the claim disputed"
+      },
+      {
+        "name": "K2-18c",
+        "massEarth": 5.62,
+        "orbitAU": 0.06,
+        "periodDays": 9.21,
+        "discoveryYear": 2019,
+        "method": "radial velocity",
+        "inHabitableZone": false
+      }
+    ],
+    "habitableZone": { "innerAU": 0.12, "outerAU": 0.25 },
+    "note": "home of the most debated biosignature claim of the JWST era"
+  },
+  {
+    "id": "hd-209458",
+    "name": "HD 209458",
+    "distanceLy": 159.0,
+    "ra": 330.79,
+    "dec": 18.88,
+    "stars": [
+      { "name": "HD 209458", "spectralClass": "G0V", "radiusSun": 1.16, "massSun": 1.12, "tempK": 6065 }
+    ],
+    "planets": [
+      {
+        "name": "HD 209458 b",
+        "massEarth": 219,
+        "radiusEarth": 15.5,
+        "orbitAU": 0.0475,
+        "periodDays": 3.525,
+        "discoveryYear": 1999,
+        "method": "transit",
+        "inHabitableZone": false,
+        "note": "'Osiris' — first transiting exoplanet and first with a detected atmosphere"
+      }
+    ],
+    "habitableZone": { "innerAU": 1.0, "outerAU": 2.0 },
+    "note": "the system that launched transit science"
+  },
+  {
+    "id": "kepler-186",
+    "name": "Kepler-186",
+    "distanceLy": 580.0,
+    "ra": 298.65,
+    "dec": 43.96,
+    "stars": [
+      { "name": "Kepler-186", "spectralClass": "M1V", "radiusSun": 0.47, "massSun": 0.48, "tempK": 3755 }
+    ],
+    "planets": [
+      {
+        "name": "Kepler-186f",
+        "radiusEarth": 1.17,
+        "orbitAU": 0.393,
+        "periodDays": 129.9,
+        "discoveryYear": 2014,
+        "method": "transit",
+        "inHabitableZone": true,
+        "note": "first Earth-size planet found in a habitable zone; outermost of five"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.22, "outerAU": 0.4 },
+    "note": "landmark system for Earth-size habitable-zone planets"
+  },
+  {
+    "id": "kepler-22",
+    "name": "Kepler-22",
+    "distanceLy": 640.0,
+    "ra": 289.22,
+    "dec": 47.88,
+    "stars": [
+      { "name": "Kepler-22", "spectralClass": "G5V", "radiusSun": 0.98, "massSun": 0.97, "tempK": 5518 }
+    ],
+    "planets": [
+      {
+        "name": "Kepler-22b",
+        "radiusEarth": 2.38,
+        "orbitAU": 0.849,
+        "periodDays": 289.86,
+        "discoveryYear": 2011,
+        "method": "transit",
+        "inHabitableZone": true,
+        "note": "first Kepler planet confirmed in a Sun-like star's habitable zone"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.85, "outerAU": 1.7 },
+    "note": "early poster child of the habitable-zone hunt"
+  },
+  {
+    "id": "wasp-96",
+    "name": "WASP-96",
+    "distanceLy": 1120.0,
+    "ra": 1.05,
+    "dec": -47.36,
+    "stars": [
+      { "name": "WASP-96", "spectralClass": "G8V", "radiusSun": 1.05, "massSun": 1.06, "tempK": 5540 }
+    ],
+    "planets": [
+      {
+        "name": "WASP-96 b",
+        "massEarth": 152,
+        "radiusEarth": 13.4,
+        "orbitAU": 0.0453,
+        "periodDays": 3.425,
+        "discoveryYear": 2014,
+        "method": "transit",
+        "inHabitableZone": false,
+        "note": "subject of JWST's first exoplanet spectrum (2022), showing clear water features"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.85, "outerAU": 1.7 },
+    "note": "hot Saturn made famous by JWST's debut"
+  },
+  {
+    "id": "kepler-452",
+    "name": "Kepler-452",
+    "distanceLy": 1800.0,
+    "ra": 296.0,
+    "dec": 44.28,
+    "stars": [
+      { "name": "Kepler-452", "spectralClass": "G2V", "radiusSun": 1.11, "massSun": 1.04, "tempK": 5757 }
+    ],
+    "planets": [
+      {
+        "name": "Kepler-452b",
+        "radiusEarth": 1.63,
+        "orbitAU": 1.046,
+        "periodDays": 384.84,
+        "discoveryYear": 2015,
+        "method": "transit",
+        "inHabitableZone": true,
+        "note": "'Earth's cousin' — Earth-like orbit around a Sun-like star"
+      }
+    ],
+    "habitableZone": { "innerAU": 0.95, "outerAU": 1.9 },
+    "note": "the most Earth-Sun-like pairing Kepler found"
+  }
+]
