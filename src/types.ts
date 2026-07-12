@@ -32,6 +32,7 @@ export interface Body {
   hillSphereKm: number | null
 
   // Curiosities
+  composition: string // estimated bulk make-up
   atmosphere: string
   moonCount: number
   rings: boolean
@@ -61,6 +62,7 @@ export interface Telescope {
   signalLabel?: string // GW/neutrino: 'GW 10–1000 Hz', 'ν TeV–PeV'
 
   aperture: string // '6.5 m segmented', '2×4 km arms'
+  apertureM?: number // effective diameter in meters, for ratio comparisons
   fieldOfView?: string
   limitingMagnitude?: string
   location: string // 'Sun–Earth L2', 'Cerro Pachón, Chile'
@@ -103,6 +105,21 @@ export interface StarSystem {
   planets: Exoplanet[]
   habitableZone?: { innerAU: number; outerAU: number }
   note?: string
+}
+
+export type BlackHoleType = 'dormant' | 'x-ray-binary' | 'supermassive'
+
+export interface BlackHole {
+  id: string
+  name: string
+  distanceLy: number
+  ra: number // degrees J2000
+  dec: number // degrees J2000
+  massSun: number
+  type: BlackHoleType
+  companion: string
+  discoveryYear: number
+  note: string
 }
 
 // ---------- News ----------

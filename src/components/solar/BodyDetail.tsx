@@ -60,6 +60,8 @@ export function BodyDetail({
         <dd>{formatNumber(body.rocheLimitKm, 'km')}</dd>
         <dt>Hill sphere</dt>
         <dd>{formatNumber(body.hillSphereKm, 'km')}</dd>
+        <dt>Composition</dt>
+        <dd>{body.composition}</dd>
         <dt>Atmosphere</dt>
         <dd>{body.atmosphere}</dd>
         <dt>Moons</dt>

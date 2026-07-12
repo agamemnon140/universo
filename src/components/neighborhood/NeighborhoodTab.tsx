@@ -1,15 +1,23 @@
 import { useState } from 'react'
-import type { StarSystem } from '../../types'
+import type { BlackHole, StarSystem } from '../../types'
 import type { NewsState } from '../../hooks/useNews'
 import { GalacticMap } from './GalacticMap'
 import { ZoomControl, ZOOM_LEVELS, type ZoomLy } from './ZoomControl'
 import { SystemDetail } from './SystemDetail'
 import { SearchBox } from './SearchBox'
+import { StarCompare } from './StarCompare'
+import { BlackHolesSection } from './BlackHoles'
 import { NewsSection } from '../news/NewsSection'
 
+function zoomFromUrl(): ZoomLy {
+  const z = Number(new URLSearchParams(window.location.search).get('zoom'))
+  return (ZOOM_LEVELS as readonly number[]).includes(z) ? (z as ZoomLy) : ZOOM_LEVELS[0]
+}
+
 export function NeighborhoodTab({ news }: { news: NewsState }) {
-  const [zoom, setZoom] = useState<ZoomLy>(ZOOM_LEVELS[0])
+  const [zoom, setZoom] = useState<ZoomLy>(zoomFromUrl)
   const [detail, setDetail] = useState<StarSystem | null>(null)
+  const [bhDetail, setBhDetail] = useState<BlackHole | null>(null)
 
   const pickSystem = (system: StarSystem) => {
     // zoom the map out just enough for the picked system to be visible
@@ -27,8 +35,10 @@ export function NeighborhoodTab({ news }: { news: NewsState }) {
       </p>
       <SearchBox onPick={pickSystem} />
       <ZoomControl zoom={zoom} onZoom={setZoom} />
-      <GalacticMap maxLy={zoom} onSelect={setDetail} />
+      <GalacticMap maxLy={zoom} onSelect={setDetail} onSelectBlackHole={setBhDetail} />
       {detail && <SystemDetail system={detail} onClose={() => setDetail(null)} />}
+      <StarCompare />
+      <BlackHolesSection detail={bhDetail} onSelect={setBhDetail} />
       <NewsSection news={news} theme="exoplanets" />
     </>
   )

@@ -1,5 +1,5 @@
-import type { StarSystem } from '../../types'
-import { systems } from '../../data'
+import type { BlackHole, StarSystem } from '../../types'
+import { blackHoles, systems } from '../../data'
 import { galacticLongitude, logRadial } from '../../lib/project'
 import { spectralColor, markerRadius } from '../../lib/spectral'
 
@@ -12,14 +12,17 @@ const RINGS: Record<number, number[]> = {
   20: [5, 10, 15, 20],
   100: [10, 25, 50, 100],
   1500: [50, 200, 600, 1500],
+  30000: [100, 1000, 8000, 30000],
 }
 
 export function GalacticMap({
   maxLy,
   onSelect,
+  onSelectBlackHole,
 }: {
   maxLy: number
   onSelect: (s: StarSystem) => void
+  onSelectBlackHole?: (bh: BlackHole) => void
 }) {
   const visible = systems.filter((s) => s.distanceLy <= maxLy)
   const rings = RINGS[maxLy] ?? [maxLy / 4, maxLy / 2, maxLy]
@@ -107,6 +110,44 @@ export function GalacticMap({
           )
         })}
 
+        {/* black holes */}
+        {blackHoles
+          .filter((bh) => bh.distanceLy <= maxLy)
+          .map((bh) => {
+            const l = galacticLongitude(bh.ra, bh.dec)
+            const r = logRadial(bh.distanceLy, maxLy) * PLOT_R
+            const x = CENTER + r * Math.cos(l)
+            const y = CENTER - r * Math.sin(l)
+            const dotR = bh.type === 'supermassive' ? 7 : 4.5
+            return (
+              <g
+                key={bh.id}
+                className="map-star"
+                onClick={() => onSelectBlackHole?.(bh)}
+              >
+                <circle
+                  cx={x}
+                  cy={y}
+                  r={dotR + 4}
+                  fill="none"
+                  stroke="#c084fc"
+                  strokeWidth="1.6"
+                />
+                <circle cx={x} cy={y} r={dotR} fill="#0a0410" stroke="#3b2a52" strokeWidth="1" />
+                <circle cx={x} cy={y} r={Math.max(dotR + 8, 12)} fill="transparent" />
+                <text
+                  x={x}
+                  y={y - dotR - 8}
+                  textAnchor="middle"
+                  fill="#c084fc"
+                  fontSize="10.5"
+                >
+                  {bh.name}
+                </text>
+              </g>
+            )
+          })}
+
         <text x={CENTER} y={SIZE - 6} textAnchor="middle" fill="var(--text-faint)" fontSize="10.5">
           log distance scale · galactic center toward the right · {visible.length} systems shown
         </text>
@@ -130,6 +171,13 @@ export function GalacticMap({
             style={{ background: 'transparent', border: '1.5px solid var(--accent-amber)' }}
           />
           has exoplanets
+        </span>
+        <span>
+          <span
+            className="dot"
+            style={{ background: '#0a0410', border: '1.5px solid #c084fc' }}
+          />
+          black hole
         </span>
       </div>
     </div>

@@ -4,7 +4,10 @@
     "name": "Sun",
     "type": "star",
     "color": "#ffd166",
-    "gradient": ["#fff3c4", "#ff9f1c"],
+    "gradient": [
+      "#fff3c4",
+      "#ff9f1c"
+    ],
     "massEarth": 333054.25,
     "volumeEarth": 1301016,
     "radiusEarth": 109.3,
@@ -24,14 +27,22 @@
     "atmosphere": "Plasma: hydrogen (73%), helium (25%)",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": null, "by": "Known since antiquity" },
-    "missions": ["Parker Solar Probe (2018–)", "Solar Orbiter (2020–)", "SOHO (1995–)"],
+    "discovery": {
+      "year": null,
+      "by": "Known since antiquity"
+    },
+    "missions": [
+      "Parker Solar Probe (2018–)",
+      "Solar Orbiter (2020–)",
+      "SOHO (1995–)"
+    ],
     "facts": [
       "Contains 99.86% of the solar system's mass.",
       "Core temperature reaches about 15 million °C.",
       "Light from its surface takes 8 minutes 20 seconds to reach Earth.",
       "Parker Solar Probe flew through its corona in 2021 — the first spacecraft to 'touch' the Sun."
-    ]
+    ],
+    "composition": "Plasma — hydrogen 73%, helium 25%, heavier elements 2%"
   },
   {
     "id": "jupiter",
@@ -39,7 +50,10 @@
     "type": "planet",
     "parent": "sun",
     "color": "#d9a066",
-    "gradient": ["#e8c39e", "#b06f2f"],
+    "gradient": [
+      "#e8c39e",
+      "#b06f2f"
+    ],
     "massEarth": 317.82,
     "volumeEarth": 1321.33,
     "radiusEarth": 10.97,
@@ -59,14 +73,25 @@
     "atmosphere": "Hydrogen (90%), helium (10%), traces of methane and ammonia",
     "moonCount": 95,
     "rings": true,
-    "discovery": { "year": null, "by": "Known since antiquity" },
-    "missions": ["Pioneer 10/11", "Voyager 1/2 (1979)", "Galileo (1995–2003)", "Juno (2016–)", "JUICE (arriving 2031)", "Europa Clipper (arriving 2030)"],
+    "discovery": {
+      "year": null,
+      "by": "Known since antiquity"
+    },
+    "missions": [
+      "Pioneer 10/11",
+      "Voyager 1/2 (1979)",
+      "Galileo (1995–2003)",
+      "Juno (2016–)",
+      "JUICE (arriving 2031)",
+      "Europa Clipper (arriving 2030)"
+    ],
     "facts": [
       "More massive than all other planets combined — 2.5 times over.",
       "The Great Red Spot is a storm larger than Earth, raging for at least 350 years.",
       "Its fastest rotation of any planet flattens it visibly at the poles.",
       "Its magnetic field is the strongest of any planet — 20,000× Earth's."
-    ]
+    ],
+    "composition": "Gas giant — H/He envelope over metallic hydrogen; dense core of ~10–20 M⊕"
   },
   {
     "id": "saturn",
@@ -74,7 +99,10 @@
     "type": "planet",
     "parent": "sun",
     "color": "#e8ce9d",
-    "gradient": ["#f4e3bc", "#c9a86a"],
+    "gradient": [
+      "#f4e3bc",
+      "#c9a86a"
+    ],
     "massEarth": 95.16,
     "volumeEarth": 763.71,
     "radiusEarth": 9.14,
@@ -94,14 +122,22 @@
     "atmosphere": "Hydrogen (96%), helium (3%)",
     "moonCount": 274,
     "rings": true,
-    "discovery": { "year": null, "by": "Known since antiquity" },
-    "missions": ["Pioneer 11 (1979)", "Voyager 1/2 (1980–81)", "Cassini–Huygens (2004–2017)"],
+    "discovery": {
+      "year": null,
+      "by": "Known since antiquity"
+    },
+    "missions": [
+      "Pioneer 11 (1979)",
+      "Voyager 1/2 (1980–81)",
+      "Cassini–Huygens (2004–2017)"
+    ],
     "facts": [
       "Less dense than water — it would float in a big enough bathtub.",
       "Its rings span 282,000 km but are on average only about 10 m thick.",
       "Holds the record for known moons: 274 confirmed as of 2025.",
       "Cassini ended its mission by diving into Saturn's atmosphere in 2017."
-    ]
+    ],
+    "composition": "Gas giant — H/He with helium rain; diffuse rock/ice core"
   },
   {
     "id": "uranus",
@@ -109,7 +145,10 @@
     "type": "planet",
     "parent": "sun",
     "color": "#9fd8e0",
-    "gradient": ["#c8ecf1", "#6fb8c4"],
+    "gradient": [
+      "#c8ecf1",
+      "#6fb8c4"
+    ],
     "massEarth": 14.54,
     "volumeEarth": 63.09,
     "radiusEarth": 3.98,
@@ -129,14 +168,20 @@
     "atmosphere": "Hydrogen (83%), helium (15%), methane (2%)",
     "moonCount": 28,
     "rings": true,
-    "discovery": { "year": 1781, "by": "William Herschel" },
-    "missions": ["Voyager 2 (1986 flyby — the only visit so far)"],
+    "discovery": {
+      "year": 1781,
+      "by": "William Herschel"
+    },
+    "missions": [
+      "Voyager 2 (1986 flyby — the only visit so far)"
+    ],
     "facts": [
       "Rotates on its side: its axis is tilted 98°, so it rolls around the Sun.",
       "The coldest planetary atmosphere in the solar system: −224 °C minimum.",
       "A season lasts 21 Earth years on each hemisphere.",
       "Its 28 moons are named after Shakespeare and Pope characters."
-    ]
+    ],
+    "composition": "Ice giant — water/ammonia/methane ice mantle, H/He atmosphere, rocky core"
   },
   {
     "id": "neptune",
@@ -144,7 +189,10 @@
     "type": "planet",
     "parent": "sun",
     "color": "#5b7fde",
-    "gradient": ["#88a4f0", "#3556b8"],
+    "gradient": [
+      "#88a4f0",
+      "#3556b8"
+    ],
     "massEarth": 17.15,
     "volumeEarth": 57.75,
     "radiusEarth": 3.86,
@@ -164,14 +212,20 @@
     "atmosphere": "Hydrogen (80%), helium (19%), methane (1%)",
     "moonCount": 16,
     "rings": true,
-    "discovery": { "year": 1846, "by": "Le Verrier, Galle & d'Arrest (predicted by math)" },
-    "missions": ["Voyager 2 (1989 flyby — the only visit so far)"],
+    "discovery": {
+      "year": 1846,
+      "by": "Le Verrier, Galle & d'Arrest (predicted by math)"
+    },
+    "missions": [
+      "Voyager 2 (1989 flyby — the only visit so far)"
+    ],
     "facts": [
       "First planet found by mathematical prediction before observation.",
       "Hosts the fastest winds in the solar system: up to 2,100 km/h.",
       "Has completed only one orbit since its 1846 discovery (in 2011).",
       "Radiates 2.6× more heat than it receives from the Sun."
-    ]
+    ],
+    "composition": "Ice giant — water/ammonia/methane ice mantle, H/He atmosphere, rocky core"
   },
   {
     "id": "earth",
@@ -179,34 +233,43 @@
     "type": "planet",
     "parent": "sun",
     "color": "#4d9de0",
-    "gradient": ["#7cc4f0", "#2d6fba"],
-    "massEarth": 1.0,
-    "volumeEarth": 1.0,
-    "radiusEarth": 1.0,
+    "gradient": [
+      "#7cc4f0",
+      "#2d6fba"
+    ],
+    "massEarth": 1,
+    "volumeEarth": 1,
+    "radiusEarth": 1,
     "radiusKm": 6371,
-    "surfaceGravityG": 1.0,
+    "surfaceGravityG": 1,
     "densityGcm3": 5.514,
     "meanTempC": 15,
     "escapeVelocityKms": 11.19,
     "orbitDistanceKm": 149600000,
-    "orbitDistanceAU": 1.0,
+    "orbitDistanceAU": 1,
     "orbitalPeriodDays": 365.25,
     "rotationPeriodHours": 23.93,
     "eccentricity": 0.0167,
-    "inclinationDeg": 0.0,
+    "inclinationDeg": 0,
     "rocheLimitKm": 18000,
     "hillSphereKm": 1496000,
     "atmosphere": "Nitrogen (78%), oxygen (21%), argon (1%)",
     "moonCount": 1,
     "rings": false,
-    "discovery": { "year": null, "by": "Home" },
-    "missions": ["Thousands of satellites in orbit; humanity's home port"],
+    "discovery": {
+      "year": null,
+      "by": "Home"
+    },
+    "missions": [
+      "Thousands of satellites in orbit; humanity's home port"
+    ],
     "facts": [
       "The densest planet in the solar system.",
       "The only known world with liquid surface water — and life.",
       "Its large Moon stabilizes the axial tilt, keeping climate steady.",
       "Plate tectonics constantly recycle the surface — unique among known planets."
-    ]
+    ],
+    "composition": "Rocky — iron/nickel core (~32% of mass), silicate mantle, thin crust, surface water"
   },
   {
     "id": "venus",
@@ -214,7 +277,10 @@
     "type": "planet",
     "parent": "sun",
     "color": "#e6c37a",
-    "gradient": ["#f2dba4", "#c99b4e"],
+    "gradient": [
+      "#f2dba4",
+      "#c99b4e"
+    ],
     "massEarth": 0.81,
     "volumeEarth": 0.86,
     "radiusEarth": 0.95,
@@ -234,14 +300,23 @@
     "atmosphere": "Carbon dioxide (96.5%), nitrogen (3.5%) — crushing 92-bar pressure",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": null, "by": "Known since antiquity" },
-    "missions": ["Venera series (1961–84)", "Magellan (1990–94)", "Akatsuki (2015–)", "DAVINCI & VERITAS (planned)"],
+    "discovery": {
+      "year": null,
+      "by": "Known since antiquity"
+    },
+    "missions": [
+      "Venera series (1961–84)",
+      "Magellan (1990–94)",
+      "Akatsuki (2015–)",
+      "DAVINCI & VERITAS (planned)"
+    ],
     "facts": [
       "The hottest planet — a runaway greenhouse keeps it at 464 °C, hotter than Mercury.",
       "A day (243 Earth days) is longer than its year (225 Earth days).",
       "Spins backwards: the Sun rises in the west.",
       "Surface pressure equals a 900 m dive in Earth's oceans."
-    ]
+    ],
+    "composition": "Rocky — large iron core, silicate mantle and basaltic crust"
   },
   {
     "id": "mars",
@@ -249,7 +324,10 @@
     "type": "planet",
     "parent": "sun",
     "color": "#d1603d",
-    "gradient": ["#e58a63", "#a83c22"],
+    "gradient": [
+      "#e58a63",
+      "#a83c22"
+    ],
     "massEarth": 0.107,
     "volumeEarth": 0.151,
     "radiusEarth": 0.53,
@@ -269,14 +347,25 @@
     "atmosphere": "Carbon dioxide (95%), nitrogen (2.8%), argon (2%) — thin, 0.6% of Earth's",
     "moonCount": 2,
     "rings": false,
-    "discovery": { "year": null, "by": "Known since antiquity" },
-    "missions": ["Viking 1/2 (1976)", "Pathfinder (1997)", "Spirit & Opportunity (2004)", "Curiosity (2012–)", "Perseverance & Ingenuity (2021–)", "Tianwen-1 & Zhurong (2021–)"],
+    "discovery": {
+      "year": null,
+      "by": "Known since antiquity"
+    },
+    "missions": [
+      "Viking 1/2 (1976)",
+      "Pathfinder (1997)",
+      "Spirit & Opportunity (2004)",
+      "Curiosity (2012–)",
+      "Perseverance & Ingenuity (2021–)",
+      "Tianwen-1 & Zhurong (2021–)"
+    ],
     "facts": [
       "Home to Olympus Mons, the tallest volcano known: 21.9 km high.",
       "Valles Marineris canyon would stretch across the entire USA.",
       "Ancient riverbeds and lake deposits show it was once warm and wet.",
       "Its moon Phobos orbits so low it will crash or shred into a ring in ~50 million years."
-    ]
+    ],
+    "composition": "Rocky — iron/sulfur core, basaltic mantle, iron-oxide dust surface"
   },
   {
     "id": "mercury",
@@ -284,7 +373,10 @@
     "type": "planet",
     "parent": "sun",
     "color": "#a8998a",
-    "gradient": ["#c9bcae", "#7d7166"],
+    "gradient": [
+      "#c9bcae",
+      "#7d7166"
+    ],
     "massEarth": 0.055,
     "volumeEarth": 0.056,
     "radiusEarth": 0.383,
@@ -298,20 +390,28 @@
     "orbitalPeriodDays": 88,
     "rotationPeriodHours": 1407.6,
     "eccentricity": 0.2056,
-    "inclinationDeg": 7.0,
+    "inclinationDeg": 7,
     "rocheLimitKm": 5410,
     "hillSphereKm": 177000,
     "atmosphere": "None — only a trace exosphere of oxygen, sodium, hydrogen",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": null, "by": "Known since antiquity" },
-    "missions": ["Mariner 10 (1974–75)", "MESSENGER (2011–2015)", "BepiColombo (arriving 2026)"],
+    "discovery": {
+      "year": null,
+      "by": "Known since antiquity"
+    },
+    "missions": [
+      "Mariner 10 (1974–75)",
+      "MESSENGER (2011–2015)",
+      "BepiColombo (arriving 2026)"
+    ],
     "facts": [
       "Surface swings from −180 °C at night to +430 °C by day — the largest range of any planet.",
       "One solar day (sunrise to sunrise) lasts 176 Earth days.",
       "Its huge iron core spans about 85% of the planet's radius.",
       "Despite the heat, water ice hides in permanently shadowed polar craters."
-    ]
+    ],
+    "composition": "Rocky — enormous iron core (~85% of radius), thin silicate mantle"
   },
   {
     "id": "ganymede",
@@ -338,14 +438,23 @@
     "atmosphere": "Trace oxygen exosphere",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1610, "by": "Galileo Galilei" },
-    "missions": ["Voyager 1/2", "Galileo", "Juno (2021 flyby)", "JUICE (orbiting 2034)"],
+    "discovery": {
+      "year": 1610,
+      "by": "Galileo Galilei"
+    },
+    "missions": [
+      "Voyager 1/2",
+      "Galileo",
+      "Juno (2021 flyby)",
+      "JUICE (orbiting 2034)"
+    ],
     "facts": [
       "The largest moon in the solar system — bigger than Mercury.",
       "The only moon with its own magnetic field.",
       "Hides a saltwater ocean with more water than all of Earth's oceans.",
       "ESA's JUICE will become the first spacecraft to orbit another planet's moon."
-    ]
+    ],
+    "composition": "~60% rock/iron, ~40% water ice; internal ocean sandwiched between ice layers"
   },
   {
     "id": "titan",
@@ -372,14 +481,22 @@
     "atmosphere": "Nitrogen (95%), methane (5%) — denser than Earth's",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1655, "by": "Christiaan Huygens" },
-    "missions": ["Voyager 1 (1980)", "Cassini–Huygens (2004–17, lander 2005)", "Dragonfly (launch 2028)"],
+    "discovery": {
+      "year": 1655,
+      "by": "Christiaan Huygens"
+    },
+    "missions": [
+      "Voyager 1 (1980)",
+      "Cassini–Huygens (2004–17, lander 2005)",
+      "Dragonfly (launch 2028)"
+    ],
     "facts": [
       "The only moon with a thick atmosphere — and lakes of liquid methane.",
       "Huygens made the most distant landing in history here in 2005.",
       "Rain, rivers and seas exist, but of methane and ethane at −179 °C.",
       "NASA's Dragonfly rotorcraft will fly across its dunes in the 2030s."
-    ]
+    ],
+    "composition": "About half water ice, half rock; internal water ocean; methane lakes above"
   },
   {
     "id": "callisto",
@@ -406,14 +523,22 @@
     "atmosphere": "Trace carbon dioxide exosphere",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1610, "by": "Galileo Galilei" },
-    "missions": ["Voyager 1/2", "Galileo", "JUICE (flybys from 2031)"],
+    "discovery": {
+      "year": 1610,
+      "by": "Galileo Galilei"
+    },
+    "missions": [
+      "Voyager 1/2",
+      "Galileo",
+      "JUICE (flybys from 2031)"
+    ],
     "facts": [
       "The most heavily cratered body in the solar system.",
       "Its ancient surface is about 4 billion years old, nearly unchanged.",
       "Orbits outside Jupiter's worst radiation — a candidate site for future human bases.",
       "Likely hides a subsurface ocean beneath 100 km of ice."
-    ]
+    ],
+    "composition": "Nearly even ice/rock mix, only partly differentiated; possible deep ocean"
   },
   {
     "id": "io",
@@ -440,14 +565,22 @@
     "atmosphere": "Trace sulfur dioxide",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1610, "by": "Galileo Galilei" },
-    "missions": ["Voyager 1/2", "Galileo", "Juno (close flybys 2023–24)"],
+    "discovery": {
+      "year": 1610,
+      "by": "Galileo Galilei"
+    },
+    "missions": [
+      "Voyager 1/2",
+      "Galileo",
+      "Juno (close flybys 2023–24)"
+    ],
     "facts": [
       "The most volcanically active world known: 400+ active volcanoes.",
       "Jupiter's tides knead its interior, melting it from within.",
       "Volcanic plumes shoot sulfur 500 km into space.",
       "Its surface repaints itself in yellows and reds faster than craters can form."
-    ]
+    ],
+    "composition": "Rocky — iron/iron-sulfide core, silicate mantle, sulfur-coated surface"
   },
   {
     "id": "moon",
@@ -474,14 +607,22 @@
     "atmosphere": "None — negligible exosphere",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": null, "by": "Known since antiquity" },
-    "missions": ["Apollo 11–17 (1969–72, 12 humans walked)", "Chang'e 4/5/6 (2019–24)", "Artemis program (2020s)"],
+    "discovery": {
+      "year": null,
+      "by": "Known since antiquity"
+    },
+    "missions": [
+      "Apollo 11–17 (1969–72, 12 humans walked)",
+      "Chang'e 4/5/6 (2019–24)",
+      "Artemis program (2020s)"
+    ],
     "facts": [
       "The only other world humans have set foot on.",
       "Likely born from a Mars-sized impact with the young Earth.",
       "Drifts away from Earth by 3.8 cm every year.",
       "Chang'e 6 returned the first samples from the lunar far side in 2024."
-    ]
+    ],
+    "composition": "Rocky — small iron core, silicate mantle, anorthosite/basalt crust"
   },
   {
     "id": "europa",
@@ -508,14 +649,22 @@
     "atmosphere": "Trace oxygen",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1610, "by": "Galileo Galilei" },
-    "missions": ["Voyager 1/2", "Galileo", "Europa Clipper (arriving 2030)"],
+    "discovery": {
+      "year": 1610,
+      "by": "Galileo Galilei"
+    },
+    "missions": [
+      "Voyager 1/2",
+      "Galileo",
+      "Europa Clipper (arriving 2030)"
+    ],
     "facts": [
       "A global ocean of liquid water hides under its icy shell — a top candidate for life.",
       "Its ocean may hold twice the water of all Earth's oceans.",
       "The smoothest solid surface in the solar system, constantly resurfaced by ice.",
       "NASA's Europa Clipper launched in 2024 to scan it with 49 flybys."
-    ]
+    ],
+    "composition": "Rocky interior, saltwater ocean beneath a 15–25 km water-ice shell"
   },
   {
     "id": "triton",
@@ -534,7 +683,7 @@
     "orbitDistanceKm": 354760,
     "orbitDistanceAU": 0.002,
     "orbitalPeriodDays": 5.88,
-    "rotationPeriodHours": -141.0,
+    "rotationPeriodHours": -141,
     "eccentricity": 0.00002,
     "inclinationDeg": 156.9,
     "rocheLimitKm": 1200,
@@ -542,14 +691,20 @@
     "atmosphere": "Trace nitrogen and methane",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1846, "by": "William Lassell (17 days after Neptune)" },
-    "missions": ["Voyager 2 (1989 flyby — the only visit)"],
+    "discovery": {
+      "year": 1846,
+      "by": "William Lassell (17 days after Neptune)"
+    },
+    "missions": [
+      "Voyager 2 (1989 flyby — the only visit)"
+    ],
     "facts": [
       "Orbits backwards — the only large moon that does, likely a captured Kuiper Belt object.",
       "One of the coldest places measured in the solar system: −235 °C.",
       "Geysers of nitrogen erupt through its pink nitrogen-ice cap.",
       "Neptune's tides are slowly pulling it inward toward eventual destruction."
-    ]
+    ],
+    "composition": "Rock core (~2/3 of mass) with water-ice mantle; nitrogen-ice surface"
   },
   {
     "id": "pluto",
@@ -576,14 +731,20 @@
     "atmosphere": "Thin nitrogen, methane, carbon monoxide — freezes out when far from the Sun",
     "moonCount": 5,
     "rings": false,
-    "discovery": { "year": 1930, "by": "Clyde Tombaugh" },
-    "missions": ["New Horizons (2015 flyby)"],
+    "discovery": {
+      "year": 1930,
+      "by": "Clyde Tombaugh"
+    },
+    "missions": [
+      "New Horizons (2015 flyby)"
+    ],
     "facts": [
       "Reclassified as a dwarf planet in 2006 — the decision still stirs debate.",
       "Its heart-shaped nitrogen glacier, Sputnik Planitia, is the size of Texas.",
       "Its moon Charon is so large they orbit a point outside Pluto itself.",
       "A year here lasts 248 Earth years — it hasn't completed one since discovery."
-    ]
+    ],
+    "composition": "~2/3 rock, ~1/3 ices (N2, CH4, CO, H2O); nitrogen-ice glaciers"
   },
   {
     "id": "titania",
@@ -602,7 +763,7 @@
     "orbitDistanceKm": 435900,
     "orbitDistanceAU": 0.003,
     "orbitalPeriodDays": 8.71,
-    "rotationPeriodHours": 209.0,
+    "rotationPeriodHours": 209,
     "eccentricity": 0.0011,
     "inclinationDeg": 0.34,
     "rocheLimitKm": 900,
@@ -610,14 +771,20 @@
     "atmosphere": "None detected",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1787, "by": "William Herschel" },
-    "missions": ["Voyager 2 (1986 flyby — the only visit)"],
+    "discovery": {
+      "year": 1787,
+      "by": "William Herschel"
+    },
+    "missions": [
+      "Voyager 2 (1986 flyby — the only visit)"
+    ],
     "facts": [
       "The largest moon of Uranus, named after the fairy queen in Shakespeare's A Midsummer Night's Dream.",
       "Slashed by enormous canyons up to 1,600 km long.",
       "Seen up close only once, by Voyager 2 in 1986.",
       "May hide a thin liquid ocean at its ice–rock boundary."
-    ]
+    ],
+    "composition": "Roughly half water ice, half rock"
   },
   {
     "id": "rhea",
@@ -644,14 +811,21 @@
     "atmosphere": "Extremely thin oxygen and carbon dioxide exosphere",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1672, "by": "Giovanni Cassini" },
-    "missions": ["Voyager 1 (1980)", "Cassini (multiple flybys 2005–13)"],
+    "discovery": {
+      "year": 1672,
+      "by": "Giovanni Cassini"
+    },
+    "missions": [
+      "Voyager 1 (1980)",
+      "Cassini (multiple flybys 2005–13)"
+    ],
     "facts": [
       "Saturn's second-largest moon, made of about 75% water ice.",
       "The first moon where an oxygen-bearing exosphere was directly detected.",
       "Cassini data once hinted at faint rings — which would be unique for a moon.",
       "Its wispy trailing hemisphere is streaked by bright ice cliffs."
-    ]
+    ],
+    "composition": "Mostly water ice (~75%) with a small rocky interior"
   },
   {
     "id": "iapetus",
@@ -678,14 +852,21 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1671, "by": "Giovanni Cassini" },
-    "missions": ["Voyager 2 (1981)", "Cassini (2007 close flyby)"],
+    "discovery": {
+      "year": 1671,
+      "by": "Giovanni Cassini"
+    },
+    "missions": [
+      "Voyager 2 (1981)",
+      "Cassini (2007 close flyby)"
+    ],
     "facts": [
       "A two-toned world: one hemisphere is coal-dark, the other bright ice.",
       "A mysterious mountain ridge runs along its equator, up to 20 km high — near walnut-shaped.",
       "Cassini could only see its bright side from Earth, and correctly guessed why.",
       "Its distant, tilted orbit gives it the best views of Saturn's rings of any major moon."
-    ]
+    ],
+    "composition": "Mostly water ice (~80%) with a little rock; dark organic coating on one side"
   },
   {
     "id": "phobos",
@@ -712,14 +893,21 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1877, "by": "Asaph Hall" },
-    "missions": ["Imaged by most Mars orbiters", "MMX sample return (launch 2026)"],
+    "discovery": {
+      "year": 1877,
+      "by": "Asaph Hall"
+    },
+    "missions": [
+      "Imaged by most Mars orbiters",
+      "MMX sample return (launch 2026)"
+    ],
     "facts": [
       "Orbits Mars faster than the planet rotates — it rises in the west, twice a day.",
       "Spirals inward ~1.8 m per century; doomed to crash or become a ring in ~50 Myr.",
       "One of the darkest objects in the solar system.",
       "Its huge Stickney crater is nearly half the moon's width."
-    ]
+    ],
+    "composition": "Carbon-rich rubble similar to C-type asteroids; likely porous"
   },
   {
     "id": "deimos",
@@ -746,14 +934,20 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1877, "by": "Asaph Hall" },
-    "missions": ["Hope orbiter close flybys (2023)"],
+    "discovery": {
+      "year": 1877,
+      "by": "Asaph Hall"
+    },
+    "missions": [
+      "Hope orbiter close flybys (2023)"
+    ],
     "facts": [
       "One of the smallest known moons of any planet — about 12 km across.",
       "So small its gravity is a hundred-thousandth of Earth's; you could jump off it.",
       "From Mars it looks like a bright star, not a disk.",
       "Likely a captured asteroid or debris from a giant impact, like Phobos."
-    ]
+    ],
+    "composition": "Carbon-rich rubble similar to C-type asteroids"
   },
   {
     "id": "amalthea",
@@ -762,7 +956,7 @@
     "parent": "jupiter",
     "color": "#b5654a",
     "massEarth": 3.48e-7,
-    "volumeEarth": 2.25e-6,
+    "volumeEarth": 0.00000225,
     "radiusEarth": 0.0131,
     "radiusKm": 83.5,
     "surfaceGravityG": 0.002,
@@ -780,14 +974,21 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1892, "by": "E. E. Barnard" },
-    "missions": ["Voyager 1/2", "Galileo (2002 flyby)"],
+    "discovery": {
+      "year": 1892,
+      "by": "E. E. Barnard"
+    },
+    "missions": [
+      "Voyager 1/2",
+      "Galileo (2002 flyby)"
+    ],
     "facts": [
       "The reddest object in the solar system, likely dusted with sulfur from Io.",
       "The last moon discovered by direct visual observation.",
       "Radiates slightly more heat than it receives — warmed by Jupiter's tides.",
       "Feeds one of Jupiter's faint gossamer rings with its dust."
-    ]
+    ],
+    "composition": "Porous water ice and rubble, coated in sulfur from Io"
   },
   {
     "id": "himalia",
@@ -795,8 +996,8 @@
     "type": "moon",
     "parent": "jupiter",
     "color": "#8a8378",
-    "massEarth": 7.0e-7,
-    "volumeEarth": 1.3e-6,
+    "massEarth": 7e-7,
+    "volumeEarth": 0.0000013,
     "radiusEarth": 0.011,
     "radiusKm": 69.8,
     "surfaceGravityG": 0.001,
@@ -814,14 +1015,20 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1904, "by": "Charles Perrine" },
-    "missions": ["Distant imaging by Cassini and New Horizons"],
+    "discovery": {
+      "year": 1904,
+      "by": "Charles Perrine"
+    },
+    "missions": [
+      "Distant imaging by Cassini and New Horizons"
+    ],
     "facts": [
       "The largest of Jupiter's irregular outer moons.",
       "Probably a captured asteroid — it orbits far out, tilted 27°.",
       "Gives its name to a whole family of moons with similar orbits.",
       "Orbits 15× farther from Jupiter than Callisto."
-    ]
+    ],
+    "composition": "Rock similar to C-type asteroids (captured)"
   },
   {
     "id": "mimas",
@@ -829,8 +1036,8 @@
     "type": "moon",
     "parent": "saturn",
     "color": "#b4b8bc",
-    "massEarth": 6.28e-6,
-    "volumeEarth": 3.0e-5,
+    "massEarth": 0.00000628,
+    "volumeEarth": 0.00003,
     "radiusEarth": 0.0311,
     "radiusKm": 198.2,
     "surfaceGravityG": 0.0065,
@@ -848,14 +1055,21 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1789, "by": "William Herschel" },
-    "missions": ["Voyager 1/2", "Cassini"],
+    "discovery": {
+      "year": 1789,
+      "by": "William Herschel"
+    },
+    "missions": [
+      "Voyager 1/2",
+      "Cassini"
+    ],
     "facts": [
       "The 'Death Star moon': crater Herschel spans a third of its diameter.",
       "The smallest body known to be rounded by its own gravity.",
       "In 2024, its wobble revealed a surprisingly young hidden ocean.",
       "The impact that made Herschel nearly shattered it."
-    ]
+    ],
+    "composition": "Almost pure water ice with a small amount of rock; young internal ocean"
   },
   {
     "id": "enceladus",
@@ -863,8 +1077,8 @@
     "type": "moon",
     "parent": "saturn",
     "color": "#e8f2f5",
-    "massEarth": 1.81e-5,
-    "volumeEarth": 6.2e-5,
+    "massEarth": 0.0000181,
+    "volumeEarth": 0.000062,
     "radiusEarth": 0.0396,
     "radiusKm": 252.1,
     "surfaceGravityG": 0.0113,
@@ -882,14 +1096,21 @@
     "atmosphere": "Trace water vapor over the south pole",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1789, "by": "William Herschel" },
-    "missions": ["Voyager 1/2", "Cassini (flew through its plumes)"],
+    "discovery": {
+      "year": 1789,
+      "by": "William Herschel"
+    },
+    "missions": [
+      "Voyager 1/2",
+      "Cassini (flew through its plumes)"
+    ],
     "facts": [
       "Geysers at its south pole shoot ocean water hundreds of km into space.",
       "A global saltwater ocean hides beneath the ice — with organics detected.",
       "The most reflective body in the solar system: nearly pure fresh snow.",
       "Its plume material forms Saturn's entire E ring."
-    ]
+    ],
+    "composition": "Rocky core beneath a global saltwater ocean and water-ice shell"
   },
   {
     "id": "tethys",
@@ -897,8 +1118,8 @@
     "type": "moon",
     "parent": "saturn",
     "color": "#c8ccd0",
-    "massEarth": 1.03e-4,
-    "volumeEarth": 5.8e-4,
+    "massEarth": 0.000103,
+    "volumeEarth": 0.00058,
     "radiusEarth": 0.0834,
     "radiusKm": 531.1,
     "surfaceGravityG": 0.015,
@@ -916,14 +1137,21 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1684, "by": "Giovanni Cassini" },
-    "missions": ["Voyager 1/2", "Cassini"],
+    "discovery": {
+      "year": 1684,
+      "by": "Giovanni Cassini"
+    },
+    "missions": [
+      "Voyager 1/2",
+      "Cassini"
+    ],
     "facts": [
       "Less dense than water — essentially a giant ball of ice.",
       "Ithaca Chasma, a canyon 100 km wide, stretches 3/4 of the way around it.",
       "Shares its orbit with two small trojan moons, Telesto and Calypso.",
       "Crater Odysseus is 450 km wide — 2/5 of the moon's diameter."
-    ]
+    ],
+    "composition": "Nearly pure water ice — one of the least dense large moons"
   },
   {
     "id": "dione",
@@ -931,8 +1159,8 @@
     "type": "moon",
     "parent": "saturn",
     "color": "#bfc4c9",
-    "massEarth": 1.83e-4,
-    "volumeEarth": 6.8e-4,
+    "massEarth": 0.000183,
+    "volumeEarth": 0.00068,
     "radiusEarth": 0.0881,
     "radiusKm": 561.4,
     "surfaceGravityG": 0.0237,
@@ -950,14 +1178,21 @@
     "atmosphere": "Extremely thin oxygen exosphere",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1684, "by": "Giovanni Cassini" },
-    "missions": ["Voyager 1/2", "Cassini (close flybys)"],
+    "discovery": {
+      "year": 1684,
+      "by": "Giovanni Cassini"
+    },
+    "missions": [
+      "Voyager 1/2",
+      "Cassini (close flybys)"
+    ],
     "facts": [
       "Bright ice cliffs hundreds of meters tall streak its trailing side.",
       "May hide a liquid ocean deep beneath its icy crust.",
       "Shares its orbit with trojan moons Helene and Polydeuces.",
       "Keeps the same face toward Saturn, like most large moons."
-    ]
+    ],
+    "composition": "Water ice with a substantial rocky core"
   },
   {
     "id": "hyperion",
@@ -966,7 +1201,7 @@
     "parent": "saturn",
     "color": "#c3a982",
     "massEarth": 9.4e-7,
-    "volumeEarth": 9.5e-6,
+    "volumeEarth": 0.0000095,
     "radiusEarth": 0.0212,
     "radiusKm": 135,
     "surfaceGravityG": 0.002,
@@ -984,14 +1219,21 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1848, "by": "Bond & Lassell" },
-    "missions": ["Voyager 2", "Cassini (2005 flyby)"],
+    "discovery": {
+      "year": 1848,
+      "by": "Bond & Lassell"
+    },
+    "missions": [
+      "Voyager 2",
+      "Cassini (2005 flyby)"
+    ],
     "facts": [
       "Tumbles chaotically — its rotation is genuinely unpredictable.",
       "Looks like a giant sponge: deep, sharp-edged craters everywhere.",
       "More than 40% empty space inside — a loose rubble pile of ice.",
       "The largest known non-round moon in the solar system."
-    ]
+    ],
+    "composition": "Porous water ice — over 40% empty space"
   },
   {
     "id": "phoebe",
@@ -999,8 +1241,8 @@
     "type": "moon",
     "parent": "saturn",
     "color": "#6f6a63",
-    "massEarth": 1.39e-6,
-    "volumeEarth": 4.7e-6,
+    "massEarth": 0.00000139,
+    "volumeEarth": 0.0000047,
     "radiusEarth": 0.0167,
     "radiusKm": 106.5,
     "surfaceGravityG": 0.004,
@@ -1018,14 +1260,20 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1899, "by": "William Pickering" },
-    "missions": ["Cassini (2004 close flyby)"],
+    "discovery": {
+      "year": 1899,
+      "by": "William Pickering"
+    },
+    "missions": [
+      "Cassini (2004 close flyby)"
+    ],
     "facts": [
       "Orbits backwards — a captured wanderer from the outer solar system.",
       "Source of Saturn's colossal, nearly invisible Phoebe ring.",
       "Its dark dust paints one face of Iapetus black.",
       "First moon discovered by photography."
-    ]
+    ],
+    "composition": "Ice/rock mix of a captured outer-solar-system body"
   },
   {
     "id": "miranda",
@@ -1033,8 +1281,8 @@
     "type": "moon",
     "parent": "uranus",
     "color": "#a5adb5",
-    "massEarth": 1.08e-5,
-    "volumeEarth": 5.1e-5,
+    "massEarth": 0.0000108,
+    "volumeEarth": 0.000051,
     "radiusEarth": 0.037,
     "radiusKm": 235.8,
     "surfaceGravityG": 0.008,
@@ -1052,14 +1300,20 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1948, "by": "Gerard Kuiper" },
-    "missions": ["Voyager 2 (1986 flyby)"],
+    "discovery": {
+      "year": 1948,
+      "by": "Gerard Kuiper"
+    },
+    "missions": [
+      "Voyager 2 (1986 flyby)"
+    ],
     "facts": [
       "Home to Verona Rupes, a ~20 km cliff — the tallest known in the solar system.",
       "A jumbled patchwork surface, as if shattered and reassembled.",
       "You'd fall from its great cliff for about 12 minutes.",
       "Named after Prospero's daughter in Shakespeare's The Tempest."
-    ]
+    ],
+    "composition": "Water ice and silicate rock in similar parts"
   },
   {
     "id": "ariel",
@@ -1067,8 +1321,8 @@
     "type": "moon",
     "parent": "uranus",
     "color": "#b8bfc6",
-    "massEarth": 2.1e-4,
-    "volumeEarth": 7.5e-4,
+    "massEarth": 0.00021,
+    "volumeEarth": 0.00075,
     "radiusEarth": 0.0909,
     "radiusKm": 578.9,
     "surfaceGravityG": 0.0254,
@@ -1086,14 +1340,20 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1851, "by": "William Lassell" },
-    "missions": ["Voyager 2 (1986 flyby)"],
+    "discovery": {
+      "year": 1851,
+      "by": "William Lassell"
+    },
+    "missions": [
+      "Voyager 2 (1986 flyby)"
+    ],
     "facts": [
       "The brightest and likely youngest surface among Uranus's big moons.",
       "JWST found CO2 ice hinting at a possible subsurface ocean.",
       "Criss-crossed by huge canyons where fresh ice welled up.",
       "Named after a sprite in The Tempest."
-    ]
+    ],
+    "composition": "Roughly half water ice, half rock; CO2 ice detected"
   },
   {
     "id": "umbriel",
@@ -1101,8 +1361,8 @@
     "type": "moon",
     "parent": "uranus",
     "color": "#7d838b",
-    "massEarth": 2.14e-4,
-    "volumeEarth": 7.7e-4,
+    "massEarth": 0.000214,
+    "volumeEarth": 0.00077,
     "radiusEarth": 0.0918,
     "radiusKm": 584.7,
     "surfaceGravityG": 0.023,
@@ -1120,14 +1380,20 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1851, "by": "William Lassell" },
-    "missions": ["Voyager 2 (1986 flyby)"],
+    "discovery": {
+      "year": 1851,
+      "by": "William Lassell"
+    },
+    "missions": [
+      "Voyager 2 (1986 flyby)"
+    ],
     "facts": [
       "The darkest of Uranus's major moons.",
       "A mysterious bright ring, nicknamed the 'fluorescent cheerio', sits at crater Wunda.",
       "Its ancient surface has changed little in billions of years.",
       "Named after a melancholy sprite in Pope's The Rape of the Lock."
-    ]
+    ],
+    "composition": "Water ice and rock with a dark surface layer"
   },
   {
     "id": "oberon",
@@ -1135,7 +1401,7 @@
     "type": "moon",
     "parent": "uranus",
     "color": "#9aa1a9",
-    "massEarth": 5.04e-4,
+    "massEarth": 0.000504,
     "volumeEarth": 0.0017,
     "radiusEarth": 0.1195,
     "radiusKm": 761.4,
@@ -1154,14 +1420,20 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1787, "by": "William Herschel" },
-    "missions": ["Voyager 2 (1986 flyby)"],
+    "discovery": {
+      "year": 1787,
+      "by": "William Herschel"
+    },
+    "missions": [
+      "Voyager 2 (1986 flyby)"
+    ],
     "facts": [
       "The outermost and second-largest moon of Uranus.",
       "An unidentified dark material coats many of its crater floors.",
       "A mountain ~11 km tall pokes over its limb in Voyager images.",
       "Named after the king of the fairies in A Midsummer Night's Dream."
-    ]
+    ],
+    "composition": "Roughly half ice, half rock; dark material in crater floors"
   },
   {
     "id": "proteus",
@@ -1169,8 +1441,8 @@
     "type": "moon",
     "parent": "neptune",
     "color": "#8b929c",
-    "massEarth": 7.4e-6,
-    "volumeEarth": 3.6e-5,
+    "massEarth": 0.0000074,
+    "volumeEarth": 0.000036,
     "radiusEarth": 0.033,
     "radiusKm": 210,
     "surfaceGravityG": 0.0076,
@@ -1188,14 +1460,20 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1989, "by": "Voyager 2 imaging team" },
-    "missions": ["Voyager 2 (1989)"],
+    "discovery": {
+      "year": 1989,
+      "by": "Voyager 2 imaging team"
+    },
+    "missions": [
+      "Voyager 2 (1989)"
+    ],
     "facts": [
       "Neptune's second-largest moon, yet unknown until Voyager 2 arrived.",
       "As dark as soot — it reflects only 10% of sunlight.",
       "About as large as a body can get while staying non-spherical.",
       "Missed by telescopes for so long because it hides in Neptune's glare."
-    ]
+    ],
+    "composition": "Dirty water ice, undifferentiated"
   },
   {
     "id": "nereid",
@@ -1203,8 +1481,8 @@
     "type": "moon",
     "parent": "neptune",
     "color": "#a3aab3",
-    "massEarth": 6.0e-6,
-    "volumeEarth": 2.2e-5,
+    "massEarth": 0.000006,
+    "volumeEarth": 0.000022,
     "radiusEarth": 0.028,
     "radiusKm": 178.5,
     "surfaceGravityG": 0.007,
@@ -1222,14 +1500,20 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1949, "by": "Gerard Kuiper" },
-    "missions": ["Voyager 2 (distant imaging, 1989)"],
+    "discovery": {
+      "year": 1949,
+      "by": "Gerard Kuiper"
+    },
+    "missions": [
+      "Voyager 2 (distant imaging, 1989)"
+    ],
     "facts": [
       "The most eccentric orbit of any known moon: 1.4 to 9.7 million km from Neptune.",
       "Its wild orbit is likely a scar from Triton's violent capture.",
       "A year on Nereid lasts almost exactly one Earth year.",
       "Discovered from a photographic plate in 1949 — Neptune's last pre-space-age moon."
-    ]
+    ],
+    "composition": "Water ice and rock (poorly constrained)"
   },
   {
     "id": "charon",
@@ -1237,7 +1521,7 @@
     "type": "moon",
     "parent": "pluto",
     "color": "#b3a698",
-    "massEarth": 2.66e-4,
+    "massEarth": 0.000266,
     "volumeEarth": 0.00086,
     "radiusEarth": 0.0951,
     "radiusKm": 606,
@@ -1256,14 +1540,20 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1978, "by": "James Christy" },
-    "missions": ["New Horizons (2015 flyby)"],
+    "discovery": {
+      "year": 1978,
+      "by": "James Christy"
+    },
+    "missions": [
+      "New Horizons (2015 flyby)"
+    ],
     "facts": [
       "Half the size of Pluto — the largest moon relative to its planet.",
       "Pluto and Charon face each other forever, locked in a mutual embrace.",
       "Its north pole is stained red by gases escaped from Pluto ('Mordor Macula').",
       "A canyon system four times longer than the Grand Canyon splits its surface."
-    ]
+    ],
+    "composition": "Rock and water ice in similar parts; ammonia hydrates on the surface"
   },
   {
     "id": "janus",
@@ -1272,7 +1562,7 @@
     "parent": "saturn",
     "color": "#b7ab99",
     "massEarth": 3.18e-7,
-    "volumeEarth": 2.77e-6,
+    "volumeEarth": 0.00000277,
     "radiusEarth": 0.014,
     "radiusKm": 89.5,
     "surfaceGravityG": 0.0014,
@@ -1290,14 +1580,21 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1966, "by": "Audouin Dollfus" },
-    "missions": ["Voyager 1/2", "Cassini"],
+    "discovery": {
+      "year": 1966,
+      "by": "Audouin Dollfus"
+    },
+    "missions": [
+      "Voyager 1/2",
+      "Cassini"
+    ],
     "facts": [
       "Shares nearly the same orbit with Epimetheus — they swap places every four years.",
       "The pair was so confusing that for years astronomers thought it was one moon.",
       "A porous rubble pile, less dense than water ice.",
       "Named after the two-faced Roman god of doorways."
-    ]
+    ],
+    "composition": "Porous water-ice rubble pile"
   },
   {
     "id": "epimetheus",
@@ -1324,14 +1621,21 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1977, "by": "Fountain & Larson (confirmed by Voyager 1, 1980)" },
-    "missions": ["Voyager 1/2", "Cassini"],
+    "discovery": {
+      "year": 1977,
+      "by": "Fountain & Larson (confirmed by Voyager 1, 1980)"
+    },
+    "missions": [
+      "Voyager 1/2",
+      "Cassini"
+    ],
     "facts": [
       "Locked in a gravitational dance with Janus — the only true co-orbital pair known.",
       "The two moons never come closer than about 15,000 km when they trade orbits.",
       "Its low density suggests a loosely packed pile of icy rubble.",
       "Named after the Titan of afterthought, brother of Prometheus."
-    ]
+    ],
+    "composition": "Porous water-ice rubble pile"
   },
   {
     "id": "puck",
@@ -1340,7 +1644,7 @@
     "parent": "uranus",
     "color": "#8d949c",
     "massEarth": 4.86e-7,
-    "volumeEarth": 2.05e-6,
+    "volumeEarth": 0.00000205,
     "radiusEarth": 0.0127,
     "radiusKm": 81,
     "surfaceGravityG": 0.0028,
@@ -1358,14 +1662,20 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1985, "by": "Voyager 2 imaging team" },
-    "missions": ["Voyager 2 (1986)"],
+    "discovery": {
+      "year": 1985,
+      "by": "Voyager 2 imaging team"
+    },
+    "missions": [
+      "Voyager 2 (1986)"
+    ],
     "facts": [
       "The largest of Uranus's small inner moons.",
       "Discovered in Voyager 2 images just weeks before the flyby.",
       "Roughly spherical despite its small size, with large craters.",
       "Named after the mischievous sprite in A Midsummer Night's Dream."
-    ]
+    ],
+    "composition": "Water ice with dark carbonaceous material"
   },
   {
     "id": "sycorax",
@@ -1374,7 +1684,7 @@
     "parent": "uranus",
     "color": "#9c8a80",
     "massEarth": 3.85e-7,
-    "volumeEarth": 1.87e-6,
+    "volumeEarth": 0.00000187,
     "radiusEarth": 0.0123,
     "radiusKm": 78.5,
     "surfaceGravityG": 0.0023,
@@ -1392,14 +1702,20 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1997, "by": "Nicholson, Gladman, Burns & Kavelaars" },
-    "missions": ["None — known only from ground-based telescopes"],
+    "discovery": {
+      "year": 1997,
+      "by": "Nicholson, Gladman, Burns & Kavelaars"
+    },
+    "missions": [
+      "None — known only from ground-based telescopes"
+    ],
     "facts": [
       "The largest irregular moon of Uranus, orbiting backwards far from the planet.",
       "Takes 3.5 years to complete one highly stretched orbit.",
       "Probably a captured object from the Kuiper Belt region.",
       "Slightly red in color, like many distant captured bodies."
-    ]
+    ],
+    "composition": "Ice/rock mix of a captured body, reddish surface"
   },
   {
     "id": "portia",
@@ -1408,7 +1724,7 @@
     "parent": "uranus",
     "color": "#878e96",
     "massEarth": 2.85e-7,
-    "volumeEarth": 1.19e-6,
+    "volumeEarth": 0.00000119,
     "radiusEarth": 0.0106,
     "radiusKm": 67.6,
     "surfaceGravityG": 0.0022,
@@ -1426,14 +1742,20 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1986, "by": "Voyager 2 imaging team" },
-    "missions": ["Voyager 2 (1986)"],
+    "discovery": {
+      "year": 1986,
+      "by": "Voyager 2 imaging team"
+    },
+    "missions": [
+      "Voyager 2 (1986)"
+    ],
     "facts": [
       "Second-largest of Uranus's inner moons and leader of its own group.",
       "Orbits inside the synchronous radius, slowly spiraling inward.",
       "May one day collide with a neighboring moon and form a ring.",
       "Named after the heroine of The Merchant of Venice."
-    ]
+    ],
+    "composition": "Dark water ice (poorly constrained)"
   },
   {
     "id": "larissa",
@@ -1442,7 +1764,7 @@
     "parent": "neptune",
     "color": "#8f97a1",
     "massEarth": 7.03e-7,
-    "volumeEarth": 3.53e-6,
+    "volumeEarth": 0.00000353,
     "radiusEarth": 0.0152,
     "radiusKm": 97,
     "surfaceGravityG": 0.0031,
@@ -1460,14 +1782,20 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1981, "by": "Reitsema et al. (occultation); confirmed by Voyager 2" },
-    "missions": ["Voyager 2 (1989)"],
+    "discovery": {
+      "year": 1981,
+      "by": "Reitsema et al. (occultation); confirmed by Voyager 2"
+    },
+    "missions": [
+      "Voyager 2 (1989)"
+    ],
     "facts": [
       "First spotted when it briefly blocked a star's light in 1981.",
       "A dark, heavily cratered rubble pile.",
       "Orbits below the synchronous altitude and is slowly falling toward Neptune.",
       "Named after a lover of Poseidon in Greek mythology."
-    ]
+    ],
+    "composition": "Dark, dirty water ice"
   },
   {
     "id": "galatea",
@@ -1476,7 +1804,7 @@
     "parent": "neptune",
     "color": "#8a929c",
     "massEarth": 3.55e-7,
-    "volumeEarth": 2.58e-6,
+    "volumeEarth": 0.00000258,
     "radiusEarth": 0.0137,
     "radiusKm": 87.4,
     "surfaceGravityG": 0.0019,
@@ -1494,14 +1822,20 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1989, "by": "Voyager 2 imaging team" },
-    "missions": ["Voyager 2 (1989)"],
+    "discovery": {
+      "year": 1989,
+      "by": "Voyager 2 imaging team"
+    },
+    "missions": [
+      "Voyager 2 (1989)"
+    ],
     "facts": [
       "Shepherd of Neptune's strange, clumpy Adams ring.",
       "Its gravity confines the ring arcs Liberté, Égalité and Fraternité.",
       "Orbits Neptune in just over 10 hours.",
       "Destined to eventually spiral into Neptune or break into a ring."
-    ]
+    ],
+    "composition": "Porous water ice, low density"
   },
   {
     "id": "despina",
@@ -1510,7 +1844,7 @@
     "parent": "neptune",
     "color": "#949ca6",
     "massEarth": 3.68e-7,
-    "volumeEarth": 1.63e-6,
+    "volumeEarth": 0.00000163,
     "radiusEarth": 0.0118,
     "radiusKm": 75,
     "surfaceGravityG": 0.0027,
@@ -1520,7 +1854,7 @@
     "orbitDistanceKm": 52526,
     "orbitDistanceAU": null,
     "orbitalPeriodDays": 0.335,
-    "rotationPeriodHours": 8.0,
+    "rotationPeriodHours": 8,
     "eccentricity": 0.0002,
     "inclinationDeg": 0.06,
     "rocheLimitKm": null,
@@ -1528,13 +1862,19 @@
     "atmosphere": "None",
     "moonCount": 0,
     "rings": false,
-    "discovery": { "year": 1989, "by": "Voyager 2 imaging team" },
-    "missions": ["Voyager 2 (1989)"],
+    "discovery": {
+      "year": 1989,
+      "by": "Voyager 2 imaging team"
+    },
+    "missions": [
+      "Voyager 2 (1989)"
+    ],
     "facts": [
       "Orbits just inside Neptune's Le Verrier ring, acting as its shepherd.",
       "Circles Neptune three times in a single Earth day.",
       "Doomed by tidal forces to eventually crash into Neptune.",
       "Named after a daughter of Poseidon and Demeter."
-    ]
+    ],
+    "composition": "Dirty water ice"
   }
 ]
