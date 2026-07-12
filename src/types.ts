@@ -64,7 +64,9 @@ export interface Telescope {
   aperture: string // '6.5 m segmented', '2×4 km arms'
   apertureM?: number // effective diameter in meters, for ratio comparisons
   fieldOfView?: string
+  fovDeg2?: number // field of view in square degrees, for ratio comparisons
   limitingMagnitude?: string
+  limitingMag?: number // deepest documented magnitude, for comparisons
   location: string // 'Sun–Earth L2', 'Cerro Pachón, Chile'
   launched?: number // launch or first-light year
   retired?: number

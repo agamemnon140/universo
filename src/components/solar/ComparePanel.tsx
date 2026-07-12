@@ -6,7 +6,15 @@ const MAX_R = 130 // px radius of the larger circle
 const MIN_R = 2 // floor so tiny bodies stay visible
 const SCALE_LIMIT = 45 // beyond this ratio the drawing stops being to scale
 
-export function ComparePanel({ a, b }: { a: Body; b: Body }) {
+export function ComparePanel({
+  a,
+  b,
+  onDetail,
+}: {
+  a: Body
+  b: Body
+  onDetail?: (id: string) => void
+}) {
   const ratio = a.radiusEarth / b.radiusEarth
   const larger = ratio >= 1 ? a : b
   const smaller = ratio >= 1 ? b : a
@@ -24,7 +32,10 @@ export function ComparePanel({ a, b }: { a: Body; b: Body }) {
   const cxSmall = width * 0.78
 
   const circle = (body: Body, cx: number, r: number) => (
-    <>
+    <g
+      onClick={() => onDetail?.(body.id)}
+      style={onDetail ? { cursor: 'pointer' } : undefined}
+    >
       <defs>
         <radialGradient id={`grad-${body.id}`} cx="35%" cy="30%" r="80%">
           <stop offset="0%" stopColor={body.gradient?.[0] ?? body.color} />
@@ -42,7 +53,18 @@ export function ComparePanel({ a, b }: { a: Body; b: Body }) {
       >
         {body.name}
       </text>
-    </>
+      {onDetail && (
+        <text
+          x={cx}
+          y={cy + Math.max(r, 14) + 42}
+          textAnchor="middle"
+          fill="var(--accent-cyan)"
+          fontSize="12"
+        >
+          view details
+        </text>
+      )}
+    </g>
   )
 
   return (

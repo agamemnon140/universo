@@ -22,9 +22,11 @@ function bandX(logValue: number): number {
 export function SpectrumChart({
   telescopes,
   onSelect,
+  highlightIds = [],
 }: {
   telescopes: Telescope[]
   onSelect: (t: Telescope) => void
+  highlightIds?: string[]
 }) {
   const em = telescopes
     .filter((t) => t.kind === 'em' && t.wavelengthMinM && t.wavelengthMaxM)
@@ -86,14 +88,22 @@ export function SpectrumChart({
           const x0 = LABEL_W + wavelengthToX(t.wavelengthMinM!) * PLOT_W
           const x1 = LABEL_W + wavelengthToX(t.wavelengthMaxM!) * PLOT_W
           const color = STATUS_COLORS[t.status]
+          const highlighted = highlightIds.includes(t.id)
           return (
             <g key={t.id} className="spectrum-bar" onClick={() => onSelect(t)}>
-              <rect x={0} y={y} width={WIDTH} height={ROW_H} fill="transparent" />
+              <rect
+                x={0}
+                y={y}
+                width={WIDTH}
+                height={ROW_H}
+                fill={highlighted ? 'rgba(255, 184, 77, 0.08)' : 'transparent'}
+              />
               <text
                 x={LABEL_W - 8}
                 y={y + ROW_H / 2 + 4}
                 textAnchor="end"
-                fill="var(--text-dim)"
+                fill={highlighted ? 'var(--accent-amber)' : 'var(--text-dim)'}
+                fontWeight={highlighted ? '700' : '400'}
                 fontSize="11.5"
               >
                 {t.flag ? `${t.flag} ` : ''}
@@ -107,6 +117,8 @@ export function SpectrumChart({
                 rx={4}
                 fill={color}
                 opacity={t.status === 'retired' ? 0.55 : 0.9}
+                stroke={highlighted ? 'var(--accent-amber)' : 'none'}
+                strokeWidth={highlighted ? 1.8 : 0}
               />
             </g>
           )
@@ -140,14 +152,22 @@ export function SpectrumChart({
                 {lane.items.map((t, j) => {
                   const ry = laneTop + 22 + j * ROW_H
                   const color = STATUS_COLORS[t.status]
+                  const highlighted = highlightIds.includes(t.id)
                   return (
                     <g key={t.id} className="spectrum-bar" onClick={() => onSelect(t)}>
-                      <rect x={0} y={ry} width={WIDTH} height={ROW_H} fill="transparent" />
+                      <rect
+                        x={0}
+                        y={ry}
+                        width={WIDTH}
+                        height={ROW_H}
+                        fill={highlighted ? 'rgba(255, 184, 77, 0.08)' : 'transparent'}
+                      />
                       <text
                         x={LABEL_W - 8}
                         y={ry + ROW_H / 2 + 4}
                         textAnchor="end"
-                        fill="var(--text-dim)"
+                        fill={highlighted ? 'var(--accent-amber)' : 'var(--text-dim)'}
+                        fontWeight={highlighted ? '700' : '400'}
                         fontSize="11.5"
                       >
                         {t.flag ? `${t.flag} ` : ''}
@@ -161,6 +181,8 @@ export function SpectrumChart({
                         rx={4}
                         fill={color}
                         opacity={0.9}
+                        stroke={highlighted ? 'var(--accent-amber)' : 'none'}
+                        strokeWidth={highlighted ? 1.8 : 0}
                       />
                       <text
                         x={LABEL_W + PLOT_W * 0.35 + 10}

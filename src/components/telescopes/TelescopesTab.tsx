@@ -13,6 +13,8 @@ export function TelescopesTab({ news }: { news: NewsState }) {
   const [statusFilter, setStatusFilter] = useState<TelescopeStatus | 'all'>('all')
   const [domainFilter, setDomainFilter] = useState<DomainFilter>('all')
   const [detail, setDetail] = useState<Telescope | null>(null)
+  const [compareA, setCompareA] = useState('jwst')
+  const [compareB, setCompareB] = useState('vera-rubin')
 
   const filtered = useMemo(
     () =>
@@ -37,8 +39,17 @@ export function TelescopesTab({ news }: { news: NewsState }) {
         onStatus={setStatusFilter}
         onDomain={setDomainFilter}
       />
-      <SpectrumChart telescopes={filtered} onSelect={setDetail} />
-      <TelescopeCompare />
+      <SpectrumChart
+        telescopes={filtered}
+        onSelect={setDetail}
+        highlightIds={[compareA, compareB]}
+      />
+      <TelescopeCompare
+        aId={compareA}
+        bId={compareB}
+        onAChange={setCompareA}
+        onBChange={setCompareB}
+      />
       {detail && <TelescopeDetail telescope={detail} onClose={() => setDetail(null)} />}
       <NewsSection news={news} theme="telescopes" />
     </>
