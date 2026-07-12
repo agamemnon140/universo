@@ -56,8 +56,10 @@ export function MoonsView({
       <p className="hint">
         {planet.name} has {formatNumber(planet.moonCount)} known{' '}
         {planet.moonCount === 1 ? 'moon' : 'moons'}
-        {moons.length < planet.moonCount ? ` — the ${moons.length} most important are shown` : ''}.
-        Orbits on a log scale. Tap a moon to select it for comparison; tap ⓘ on a card for
+        {moons.length < planet.moonCount
+          ? ` — the ${moons.length} at least ~100 km across are shown (larger than almost every asteroid); the rest are small captured rocks`
+          : ''}
+        . Orbits on a log scale. Tap a moon to select it for comparison; tap ⓘ on a card for
         details.
       </p>
 

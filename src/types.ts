@@ -52,6 +52,7 @@ export interface Telescope {
   domain: 'space' | 'ground'
   status: TelescopeStatus
   agency: string // 'NASA/ESA/CSA', 'CAS (China)'
+  flag?: string // country flag emoji, e.g. '🇺🇸🇪🇺🇨🇦'
 
   // EM coverage (kind === 'em'): bar endpoints in meters
   wavelengthMinM?: number

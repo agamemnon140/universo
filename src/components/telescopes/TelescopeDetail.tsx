@@ -11,7 +11,11 @@ export function TelescopeDetail({
 }) {
   const t = telescope
   return (
-    <DetailSheet title={t.name} subtitle={t.fullName} onClose={onClose}>
+    <DetailSheet
+      title={`${t.flag ? `${t.flag} ` : ''}${t.name}`}
+      subtitle={t.fullName}
+      onClose={onClose}
+    >
       <div className="chips">
         <span className="chip">{STATUS_LABELS[t.status]}</span>
         <span className="chip">{t.domain === 'space' ? 'Space' : 'Ground'}</span>
