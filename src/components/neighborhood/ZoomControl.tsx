@@ -1,5 +1,12 @@
-export const ZOOM_LEVELS = [20, 100, 1500] as const
+export const ZOOM_LEVELS = [20, 100, 1500, 30000] as const
 export type ZoomLy = (typeof ZOOM_LEVELS)[number]
+
+const LABELS: Record<ZoomLy, string> = {
+  20: '20 ly',
+  100: '100 ly',
+  1500: '1500 ly',
+  30000: '30k ly',
+}
 
 export function ZoomControl({ zoom, onZoom }: { zoom: ZoomLy; onZoom: (z: ZoomLy) => void }) {
   return (
@@ -10,7 +17,7 @@ export function ZoomControl({ zoom, onZoom }: { zoom: ZoomLy; onZoom: (z: ZoomLy
           className={zoom === level ? 'active' : ''}
           onClick={() => onZoom(level)}
         >
-          {level} ly
+          {LABELS[level]}
         </button>
       ))}
     </div>

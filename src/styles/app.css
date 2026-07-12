@@ -609,6 +609,62 @@
   margin: 10px 0;
 }
 
+/* ---------- Black holes ---------- */
+.bh-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.bh-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 14px 10px 12px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.bh-card:hover {
+  background: var(--panel-hover);
+  border-color: #c084fc55;
+}
+
+.bh-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bh-ring {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #05020a;
+  border: 2px solid #c084fc;
+  box-shadow: 0 0 14px 2px rgba(192, 132, 252, 0.45), inset 0 0 6px rgba(192, 132, 252, 0.5);
+}
+
+.bh-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.bh-meta {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+}
+
+.bh-type {
+  color: #c084fc;
+  font-size: 0.72rem;
+}
+
 /* ---------- Facts / lists inside sheets ---------- */
 .fact-list {
   margin: 8px 0;

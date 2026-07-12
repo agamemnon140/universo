@@ -1,0 +1,86 @@
+[
+  {
+    "id": "gaia-bh1",
+    "name": "Gaia BH1",
+    "distanceLy": 1560,
+    "ra": 262.171,
+    "dec": -0.581,
+    "massSun": 9.6,
+    "type": "dormant",
+    "companion": "Sun-like G star in a 186-day orbit",
+    "discoveryYear": 2022,
+    "note": "The nearest known black hole — found by the wobble it imposes on its companion star."
+  },
+  {
+    "id": "gaia-bh3",
+    "name": "Gaia BH3",
+    "distanceLy": 1926,
+    "ra": 294.828,
+    "dec": 14.931,
+    "massSun": 32.7,
+    "type": "dormant",
+    "companion": "Ancient, metal-poor giant star",
+    "discoveryYear": 2024,
+    "note": "The most massive stellar black hole known in the Milky Way — likely born from a nearly metal-free star."
+  },
+  {
+    "id": "gaia-bh2",
+    "name": "Gaia BH2",
+    "distanceLy": 3800,
+    "ra": 207.570,
+    "dec": -59.239,
+    "massSun": 8.9,
+    "type": "dormant",
+    "companion": "Red giant in a 1,277-day orbit",
+    "discoveryYear": 2023,
+    "note": "Its wide orbit shows truly dormant black holes exist — no X-rays at all."
+  },
+  {
+    "id": "a0620",
+    "name": "A0620-00 (V616 Mon)",
+    "distanceLy": 3300,
+    "ra": 95.686,
+    "dec": -0.346,
+    "massSun": 6.6,
+    "type": "x-ray-binary",
+    "companion": "K-type star being slowly devoured",
+    "discoveryYear": 1975,
+    "note": "For decades the closest known black hole, revealed by a 1975 X-ray nova outburst."
+  },
+  {
+    "id": "cygnus-x1",
+    "name": "Cygnus X-1",
+    "distanceLy": 7200,
+    "ra": 299.590,
+    "dec": 35.202,
+    "massSun": 21.2,
+    "type": "x-ray-binary",
+    "companion": "Blue supergiant feeding it via stellar wind",
+    "discoveryYear": 1964,
+    "note": "The first widely accepted black hole — subject of the famous Hawking–Thorne bet."
+  },
+  {
+    "id": "v404-cygni",
+    "name": "V404 Cygni",
+    "distanceLy": 7800,
+    "ra": 306.016,
+    "dec": 33.867,
+    "massSun": 9,
+    "type": "x-ray-binary",
+    "companion": "Early K giant in a 6.5-day orbit",
+    "discoveryYear": 1989,
+    "note": "Erupted spectacularly in 2015; one of the first black holes with a precise parallax distance."
+  },
+  {
+    "id": "sgr-a-star",
+    "name": "Sagittarius A*",
+    "distanceLy": 26700,
+    "ra": 266.417,
+    "dec": -29.008,
+    "massSun": 4150000,
+    "type": "supermassive",
+    "companion": "Orbited by the S-star cluster at the heart of the Milky Way",
+    "discoveryYear": 1974,
+    "note": "Our galaxy's central supermassive black hole — imaged by the Event Horizon Telescope in 2022 (Nobel Prize 2020 for proving its existence)."
+  }
+]

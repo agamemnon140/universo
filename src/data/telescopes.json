@@ -32,7 +32,8 @@
       "FGS/NIRISS"
     ],
     "url": "https://webb.nasa.gov",
-    "flag": "🇺🇸🇪🇺🇨🇦"
+    "flag": "🇺🇸🇪🇺🇨🇦",
+    "apertureM": 6.5
   },
   {
     "id": "hubble",
@@ -67,7 +68,8 @@
       "FGS"
     ],
     "url": "https://hubblesite.org",
-    "flag": "🇺🇸🇪🇺"
+    "flag": "🇺🇸🇪🇺",
+    "apertureM": 2.4
   },
   {
     "id": "gaia",
@@ -100,7 +102,8 @@
       "RVS radial-velocity spectrometer"
     ],
     "url": "https://www.esa.int/Science_Exploration/Space_Science/Gaia",
-    "flag": "🇪🇺"
+    "flag": "🇪🇺",
+    "apertureM": 1.45
   },
   {
     "id": "euclid",
@@ -131,7 +134,8 @@
       "NISP near-IR imager/spectrometer"
     ],
     "url": "https://www.esa.int/Science_Exploration/Space_Science/Euclid",
-    "flag": "🇪🇺🇺🇸"
+    "flag": "🇪🇺🇺🇸",
+    "apertureM": 1.2
   },
   {
     "id": "nancy-grace-roman",
@@ -162,7 +166,8 @@
       "Coronagraph Instrument (CGI)"
     ],
     "url": "https://roman.gsfc.nasa.gov",
-    "flag": "🇺🇸"
+    "flag": "🇺🇸",
+    "apertureM": 2.4
   },
   {
     "id": "chandra",
@@ -193,7 +198,8 @@
       "LETG"
     ],
     "url": "https://chandra.harvard.edu",
-    "flag": "🇺🇸"
+    "flag": "🇺🇸",
+    "apertureM": 1.2
   },
   {
     "id": "xrism",
@@ -222,7 +228,8 @@
       "Xtend (wide-field CCD imager)"
     ],
     "url": "https://xrism.isas.jaxa.jp/en/",
-    "flag": "🇯🇵🇺🇸"
+    "flag": "🇯🇵🇺🇸",
+    "apertureM": 0.45
   },
   {
     "id": "fermi",
@@ -281,7 +288,8 @@
       "Four 24° × 24° CCD cameras"
     ],
     "url": "https://tess.mit.edu",
-    "flag": "🇺🇸"
+    "flag": "🇺🇸",
+    "apertureM": 0.1
   },
   {
     "id": "kepler",
@@ -311,7 +319,8 @@
       "42-CCD photometer (95 megapixels)"
     ],
     "url": "https://www.nasa.gov/mission_pages/kepler/main/index.html",
-    "flag": "🇺🇸"
+    "flag": "🇺🇸",
+    "apertureM": 0.95
   },
   {
     "id": "spitzer",
@@ -342,7 +351,8 @@
       "MIPS"
     ],
     "url": "https://www.spitzer.caltech.edu",
-    "flag": "🇺🇸"
+    "flag": "🇺🇸",
+    "apertureM": 0.85
   },
   {
     "id": "herschel",
@@ -373,7 +383,8 @@
       "HIFI"
     ],
     "url": "https://www.esa.int/Science_Exploration/Space_Science/Herschel",
-    "flag": "🇪🇺"
+    "flag": "🇪🇺",
+    "apertureM": 3.5
   },
   {
     "id": "planck",
@@ -404,7 +415,8 @@
       "HFI (100–857 GHz)"
     ],
     "url": "https://www.esa.int/Science_Exploration/Space_Science/Planck",
-    "flag": "🇪🇺"
+    "flag": "🇪🇺",
+    "apertureM": 1.9
   },
   {
     "id": "plato",
@@ -433,7 +445,8 @@
       "2 fast cameras (2.5 s cadence)"
     ],
     "url": "https://platomission.com",
-    "flag": "🇪🇺"
+    "flag": "🇪🇺",
+    "apertureM": 0.12
   },
   {
     "id": "ariel",
@@ -463,7 +476,8 @@
       "FGS photometers/spectrometer"
     ],
     "url": "https://arielmission.space",
-    "flag": "🇪🇺"
+    "flag": "🇪🇺",
+    "apertureM": 1.1
   },
   {
     "id": "lisa",
@@ -521,7 +535,8 @@
       "UV/optical imagers and spectrographs (concept)"
     ],
     "url": "https://habitableworldsobservatory.org",
-    "flag": "🇺🇸"
+    "flag": "🇺🇸",
+    "apertureM": 6
   },
   {
     "id": "vera-rubin",
@@ -554,7 +569,8 @@
       "ugrizy filter set"
     ],
     "url": "https://rubinobservatory.org",
-    "flag": "🇺🇸🇨🇱"
+    "flag": "🇺🇸🇨🇱",
+    "apertureM": 8.4
   },
   {
     "id": "elt",
@@ -586,7 +602,8 @@
       "MORFEO (adaptive optics)"
     ],
     "url": "https://elt.eso.org",
-    "flag": "🇪🇺🇨🇱"
+    "flag": "🇪🇺🇨🇱",
+    "apertureM": 39.3
   },
   {
     "id": "giant-magellan",
@@ -618,7 +635,8 @@
       "GMagAO-X"
     ],
     "url": "https://giantmagellan.org",
-    "flag": "🇺🇸🇨🇱"
+    "flag": "🇺🇸🇨🇱",
+    "apertureM": 25.4
   },
   {
     "id": "tmt",
@@ -650,7 +668,8 @@
       "MODHIS"
     ],
     "url": "https://www.tmt.org",
-    "flag": "🇺🇸🇯🇵🇮🇳"
+    "flag": "🇺🇸🇯🇵🇮🇳",
+    "apertureM": 30
   },
   {
     "id": "vlt",
@@ -685,7 +704,8 @@
       "GRAVITY (VLTI)"
     ],
     "url": "https://www.eso.org/public/teles-instr/paranal-observatory/vlt/",
-    "flag": "🇪🇺🇨🇱"
+    "flag": "🇪🇺🇨🇱",
+    "apertureM": 8.2
   },
   {
     "id": "keck",
@@ -720,7 +740,8 @@
       "KPF"
     ],
     "url": "https://www.keckobservatory.org",
-    "flag": "🇺🇸"
+    "flag": "🇺🇸",
+    "apertureM": 10
   },
   {
     "id": "alma",
@@ -750,7 +771,8 @@
       "64-antenna correlator"
     ],
     "url": "https://www.almaobservatory.org",
-    "flag": "🇪🇺🇺🇸🇯🇵"
+    "flag": "🇪🇺🇺🇸🇯🇵",
+    "apertureM": 12
   },
   {
     "id": "ska",
@@ -843,7 +865,8 @@
       "NIRI"
     ],
     "url": "https://www.gemini.edu",
-    "flag": "🇺🇸🇨🇱"
+    "flag": "🇺🇸🇨🇱",
+    "apertureM": 8.1
   },
   {
     "id": "subaru",
@@ -876,7 +899,8 @@
       "SCExAO/CHARIS"
     ],
     "url": "https://subarutelescope.org",
-    "flag": "🇯🇵"
+    "flag": "🇯🇵",
+    "apertureM": 8.2
   },
   {
     "id": "jcmt",
@@ -906,7 +930,8 @@
       "Nāmakanui"
     ],
     "url": "https://www.eaobservatory.org/jcmt/",
-    "flag": "🇨🇳🇯🇵🇰🇷"
+    "flag": "🇨🇳🇯🇵🇰🇷",
+    "apertureM": 15
   },
   {
     "id": "icecube",
@@ -1073,7 +1098,8 @@
       "Active reflector surface"
     ],
     "url": "https://fast.bao.ac.cn",
-    "flag": "🇨🇳"
+    "flag": "🇨🇳",
+    "apertureM": 500
   },
   {
     "id": "xuntian",
@@ -1108,7 +1134,8 @@
       "Terahertz module"
     ],
     "url": "http://www.bao.ac.cn",
-    "flag": "🇨🇳"
+    "flag": "🇨🇳",
+    "apertureM": 2
   },
   {
     "id": "lamost",
@@ -1139,7 +1166,8 @@
       "Medium-resolution mode"
     ],
     "url": "http://www.lamost.org",
-    "flag": "🇨🇳"
+    "flag": "🇨🇳",
+    "apertureM": 4
   },
   {
     "id": "hxmt",
@@ -1258,7 +1286,8 @@
       "UV/Optical Telescope (UVOT)"
     ],
     "url": "https://swift.gsfc.nasa.gov",
-    "flag": "🇺🇸🇬🇧🇮🇹"
+    "flag": "🇺🇸🇬🇧🇮🇹",
+    "apertureM": 0.3
   },
   {
     "id": "ixpe",
@@ -1286,7 +1315,8 @@
       "Three gas pixel detector (GPD) polarimeters"
     ],
     "url": "https://ixpe.msfc.nasa.gov",
-    "flag": "🇺🇸🇮🇹"
+    "flag": "🇺🇸🇮🇹",
+    "apertureM": 0.3
   },
   {
     "id": "spherex",
@@ -1315,7 +1345,8 @@
       "Six H2RG detector arrays"
     ],
     "url": "https://spherex.caltech.edu",
-    "flag": "🇺🇸🇰🇷"
+    "flag": "🇺🇸🇰🇷",
+    "apertureM": 0.2
   },
   {
     "id": "lofar",
@@ -1432,7 +1463,8 @@
       "VEGAS spectrometer"
     ],
     "url": "https://greenbankobservatory.org",
-    "flag": "🇺🇸"
+    "flag": "🇺🇸",
+    "apertureM": 100
   },
   {
     "id": "dkist",
@@ -1465,7 +1497,8 @@
       "Cryo-NIRSP"
     ],
     "url": "https://nso.edu/telescopes/dki-solar-telescope/",
-    "flag": "🇺🇸"
+    "flag": "🇺🇸",
+    "apertureM": 4
   },
   {
     "id": "km3net",

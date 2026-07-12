@@ -97,6 +97,11 @@ export function compareBodies(a: Body, b: Body): MetricRow[] {
       b: formatNumber(b.hillSphereKm, 'km'),
       ratio: ratioOf(a.hillSphereKm, b.hillSphereKm),
     },
+    {
+      label: 'Composition',
+      a: a.composition,
+      b: b.composition,
+    },
   ]
 }
 

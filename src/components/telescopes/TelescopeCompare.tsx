@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { Telescope } from '../../types'
 import { telescopes } from '../../data'
 import { STATUS_LABELS } from '../../lib/spectrum'
+import { formatNumber, formatRatio } from '../../lib/format'
 
 const byId = new Map(telescopes.map((t) => [t.id, t]))
 
@@ -17,27 +18,83 @@ function wavelengthLabel(t: Telescope): string {
   return `${fmt(t.wavelengthMinM!)} – ${fmt(t.wavelengthMaxM!)}`
 }
 
-const ROWS: { label: string; value: (t: Telescope) => string }[] = [
-  { label: 'Country', value: (t) => t.flag ?? '—' },
-  { label: 'Status', value: (t) => STATUS_LABELS[t.status] },
-  { label: 'Space / ground', value: (t) => (t.domain === 'space' ? 'Space' : 'Ground') },
-  { label: 'Agency', value: (t) => t.agency },
-  { label: 'Spectral bands', value: (t) => t.bands.join(', ') },
-  { label: 'Wavelength / signal', value: wavelengthLabel },
-  { label: 'Aperture', value: (t) => t.aperture },
-  { label: 'Field of view', value: (t) => t.fieldOfView ?? '—' },
-  { label: 'Limiting magnitude', value: (t) => t.limitingMagnitude ?? '—' },
-  { label: 'Location', value: (t) => t.location },
-  {
-    label: 'Active',
-    value: (t) => {
-      const start = t.launched ? String(t.launched) : (t.plannedDate ?? '—')
-      return t.retired ? `${start} – ${t.retired}` : start
+/** Wavelength coverage breadth in decades (orders of magnitude). */
+function coverageDecades(t: Telescope): number | null {
+  if (t.kind !== 'em' || !t.wavelengthMinM || !t.wavelengthMaxM) return null
+  return Math.log10(t.wavelengthMaxM / t.wavelengthMinM)
+}
+
+function collectingAreaM2(t: Telescope): number | null {
+  if (t.apertureM === undefined) return null
+  return Math.PI * (t.apertureM / 2) ** 2
+}
+
+interface CompareRow {
+  label: string
+  a: string
+  b: string
+  ratio?: string
+}
+
+function buildRows(a: Telescope, b: Telescope): CompareRow[] {
+  const ratioOf = (x: number | null, y: number | null) =>
+    x !== null && y !== null && y !== 0 ? formatRatio(x / y) : undefined
+
+  const areaA = collectingAreaM2(a)
+  const areaB = collectingAreaM2(b)
+  const decA = coverageDecades(a)
+  const decB = coverageDecades(b)
+
+  return [
+    { label: 'Country', a: a.flag ?? '—', b: b.flag ?? '—' },
+    { label: 'Status', a: STATUS_LABELS[a.status], b: STATUS_LABELS[b.status] },
+    {
+      label: 'Space / ground',
+      a: a.domain === 'space' ? 'Space' : 'Ground',
+      b: b.domain === 'space' ? 'Space' : 'Ground',
     },
-  },
-  { label: 'Main objective', value: (t) => t.objectives[0] ?? '—' },
-  { label: 'Instruments', value: (t) => t.instruments.join(', ') },
-]
+    { label: 'Agency', a: a.agency, b: b.agency },
+    { label: 'Spectral bands', a: a.bands.join(', '), b: b.bands.join(', ') },
+    { label: 'Wavelength / signal', a: wavelengthLabel(a), b: wavelengthLabel(b) },
+    {
+      label: 'Aperture',
+      a: a.aperture,
+      b: b.aperture,
+      ratio: ratioOf(a.apertureM ?? null, b.apertureM ?? null),
+    },
+    {
+      label: 'Collecting area',
+      a: areaA !== null ? `≈ ${formatNumber(areaA, 'm²')}` : '—',
+      b: areaB !== null ? `≈ ${formatNumber(areaB, 'm²')}` : '—',
+      ratio: ratioOf(areaA, areaB),
+    },
+    {
+      label: 'Spectral coverage',
+      a: decA !== null ? `${decA.toFixed(1)} decades` : '—',
+      b: decB !== null ? `${decB.toFixed(1)} decades` : '—',
+      ratio: ratioOf(decA, decB),
+    },
+    { label: 'Field of view', a: a.fieldOfView ?? '—', b: b.fieldOfView ?? '—' },
+    {
+      label: 'Limiting magnitude',
+      a: a.limitingMagnitude ?? '—',
+      b: b.limitingMagnitude ?? '—',
+    },
+    { label: 'Location', a: a.location, b: b.location },
+    {
+      label: 'Active',
+      a: activeLabel(a),
+      b: activeLabel(b),
+    },
+    { label: 'Main objective', a: a.objectives[0] ?? '—', b: b.objectives[0] ?? '—' },
+    { label: 'Instruments', a: a.instruments.join(', '), b: b.instruments.join(', ') },
+  ]
+}
+
+function activeLabel(t: Telescope): string {
+  const start = t.launched ? String(t.launched) : (t.plannedDate ?? '—')
+  return t.retired ? `${start} – ${t.retired}` : start
+}
 
 export function TelescopeCompare() {
   const [aId, setAId] = useState('jwst')
@@ -79,14 +136,18 @@ export function TelescopeCompare() {
                 <th>
                   {b.flag} {b.name}
                 </th>
+                <th>
+                  {a.name} / {b.name}
+                </th>
               </tr>
             </thead>
             <tbody>
-              {ROWS.map((row) => (
+              {buildRows(a, b).map((row) => (
                 <tr key={row.label}>
                   <td>{row.label}</td>
-                  <td>{row.value(a)}</td>
-                  <td>{row.value(b)}</td>
+                  <td>{row.a}</td>
+                  <td>{row.b}</td>
+                  <td className="num ratio">{row.ratio ?? '—'}</td>
                 </tr>
               ))}
             </tbody>
