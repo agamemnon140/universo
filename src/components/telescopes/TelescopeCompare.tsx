@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import type { Telescope } from '../../types'
 import { telescopes } from '../../data'
 import { STATUS_LABELS } from '../../lib/spectrum'
@@ -74,11 +73,17 @@ function buildRows(a: Telescope, b: Telescope): CompareRow[] {
       b: decB !== null ? `${decB.toFixed(1)} decades` : '—',
       ratio: ratioOf(decA, decB),
     },
-    { label: 'Field of view', a: a.fieldOfView ?? '—', b: b.fieldOfView ?? '—' },
+    {
+      label: 'Field of view',
+      a: a.fieldOfView ?? '—',
+      b: b.fieldOfView ?? '—',
+      ratio: ratioOf(a.fovDeg2 ?? null, b.fovDeg2 ?? null),
+    },
     {
       label: 'Limiting magnitude',
       a: a.limitingMagnitude ?? '—',
       b: b.limitingMagnitude ?? '—',
+      ratio: magnitudeComparison(a, b),
     },
     { label: 'Location', a: a.location, b: b.location },
     {
@@ -96,13 +101,37 @@ function activeLabel(t: Telescope): string {
   return t.retired ? `${start} – ${t.retired}` : start
 }
 
-export function TelescopeCompare() {
-  const [aId, setAId] = useState('jwst')
-  const [bId, setBId] = useState('vera-rubin')
+/**
+ * Magnitudes are logarithmic: each 5 mag = 100× in brightness, so the
+ * honest "ratio" is how much fainter one telescope can see.
+ */
+function magnitudeComparison(a: Telescope, b: Telescope): string | undefined {
+  if (a.limitingMag === undefined || b.limitingMag === undefined) return undefined
+  const delta = a.limitingMag - b.limitingMag
+  if (Math.abs(delta) < 0.05) return 'same depth'
+  const factor = 10 ** (0.4 * Math.abs(delta))
+  const dir = delta > 0 ? 'fainter' : 'brighter limit'
+  return `Δ${Math.abs(delta).toFixed(1)} mag ≈ sees ${formatRatio(factor)} ${dir}`
+}
+
+export function TelescopeCompare({
+  aId,
+  bId,
+  onAChange,
+  onBChange,
+}: {
+  aId: string
+  bId: string
+  onAChange: (id: string) => void
+  onBChange: (id: string) => void
+}) {
   const a = byId.get(aId)
   const b = byId.get(bId)
 
   const sorted = telescopes.slice().sort((x, y) => x.name.localeCompare(y.name))
+
+  const setAId = onAChange
+  const setBId = onBChange
 
   const picker = (value: string, onChange: (id: string) => void) => (
     <select className="telescope-select" value={value} onChange={(e) => onChange(e.target.value)}>

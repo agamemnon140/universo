@@ -47,8 +47,7 @@ export function BodyCard({
       <span
         role="button"
         tabIndex={0}
-        className="body-type"
-        style={{ color: 'var(--accent-cyan)' }}
+        className="body-details-btn"
         onClick={(e) => {
           e.stopPropagation()
           onDetail()
@@ -60,7 +59,7 @@ export function BodyCard({
           }
         }}
       >
-        ⓘ details
+        Details
       </span>
     </button>
   )

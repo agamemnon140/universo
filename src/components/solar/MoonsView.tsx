@@ -59,8 +59,8 @@ export function MoonsView({
         {moons.length < planet.moonCount
           ? ` — the ${moons.length} at least ~100 km across are shown (larger than almost every asteroid); the rest are small captured rocks`
           : ''}
-        . Orbits on a log scale. Tap a moon to select it for comparison; tap ⓘ on a card for
-        details.
+        . Orbits on a log scale. Tap a moon to select it for comparison, or use a card's
+        Details button.
       </p>
 
       <div className="panel" style={{ padding: 8, marginBottom: 14 }}>

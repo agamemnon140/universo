@@ -61,8 +61,8 @@ export function SolarTab({ news }: { news: NewsState }) {
       {view === 'grid' && (
         <>
           <p className="hint">
-            Tap two bodies to compare them — sizes in the grid are to relative scale. Tap ⓘ for
-            details.
+            Tap two bodies to compare them — sizes in the grid are to relative scale. The
+            Details button opens the full profile of any body, no comparison needed.
           </p>
           <BodyGrid
             bodies={bodies}
@@ -86,7 +86,7 @@ export function SolarTab({ news }: { news: NewsState }) {
         </>
       )}
 
-      {view !== 'orbits' && a && b && <ComparePanel a={a} b={b} />}
+      {view !== 'orbits' && a && b && <ComparePanel a={a} b={b} onDetail={setDetailId} />}
       {view !== 'orbits' && selected.length < 2 && (
         <p className="empty-note">
           {selected.length === 0

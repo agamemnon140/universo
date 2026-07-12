@@ -33,7 +33,9 @@
     ],
     "url": "https://webb.nasa.gov",
     "flag": "🇺🇸🇪🇺🇨🇦",
-    "apertureM": 6.5
+    "apertureM": 6.5,
+    "fovDeg2": 0.0027,
+    "limitingMag": 29
   },
   {
     "id": "hubble",
@@ -69,7 +71,9 @@
     ],
     "url": "https://hubblesite.org",
     "flag": "🇺🇸🇪🇺",
-    "apertureM": 2.4
+    "apertureM": 2.4,
+    "fovDeg2": 0.002,
+    "limitingMag": 31
   },
   {
     "id": "gaia",
@@ -103,7 +107,9 @@
     ],
     "url": "https://www.esa.int/Science_Exploration/Space_Science/Gaia",
     "flag": "🇪🇺",
-    "apertureM": 1.45
+    "apertureM": 1.45,
+    "fovDeg2": 0.98,
+    "limitingMag": 21
   },
   {
     "id": "euclid",
@@ -135,7 +141,9 @@
     ],
     "url": "https://www.esa.int/Science_Exploration/Space_Science/Euclid",
     "flag": "🇪🇺🇺🇸",
-    "apertureM": 1.2
+    "apertureM": 1.2,
+    "fovDeg2": 0.57,
+    "limitingMag": 24.5
   },
   {
     "id": "nancy-grace-roman",
@@ -167,7 +175,9 @@
     ],
     "url": "https://roman.gsfc.nasa.gov",
     "flag": "🇺🇸",
-    "apertureM": 2.4
+    "apertureM": 2.4,
+    "fovDeg2": 0.281,
+    "limitingMag": 28
   },
   {
     "id": "chandra",
@@ -199,7 +209,8 @@
     ],
     "url": "https://chandra.harvard.edu",
     "flag": "🇺🇸",
-    "apertureM": 1.2
+    "apertureM": 1.2,
+    "fovDeg2": 0.08
   },
   {
     "id": "xrism",
@@ -229,7 +240,8 @@
     ],
     "url": "https://xrism.isas.jaxa.jp/en/",
     "flag": "🇯🇵🇺🇸",
-    "apertureM": 0.45
+    "apertureM": 0.45,
+    "fovDeg2": 0.4
   },
   {
     "id": "fermi",
@@ -258,7 +270,8 @@
       "Gamma-ray Burst Monitor (GBM)"
     ],
     "url": "https://fermi.gsfc.nasa.gov",
-    "flag": "🇺🇸"
+    "flag": "🇺🇸",
+    "fovDeg2": 7880
   },
   {
     "id": "tess",
@@ -289,7 +302,9 @@
     ],
     "url": "https://tess.mit.edu",
     "flag": "🇺🇸",
-    "apertureM": 0.1
+    "apertureM": 0.1,
+    "fovDeg2": 2304,
+    "limitingMag": 15
   },
   {
     "id": "kepler",
@@ -320,7 +335,9 @@
     ],
     "url": "https://www.nasa.gov/mission_pages/kepler/main/index.html",
     "flag": "🇺🇸",
-    "apertureM": 0.95
+    "apertureM": 0.95,
+    "fovDeg2": 115,
+    "limitingMag": 17
   },
   {
     "id": "spitzer",
@@ -446,7 +463,8 @@
     ],
     "url": "https://platomission.com",
     "flag": "🇪🇺",
-    "apertureM": 0.12
+    "apertureM": 0.12,
+    "fovDeg2": 2132
   },
   {
     "id": "ariel",
@@ -570,7 +588,9 @@
     ],
     "url": "https://rubinobservatory.org",
     "flag": "🇺🇸🇨🇱",
-    "apertureM": 8.4
+    "apertureM": 8.4,
+    "fovDeg2": 9.6,
+    "limitingMag": 27.5
   },
   {
     "id": "elt",
@@ -832,7 +852,8 @@
       "Small-Sized Telescopes (SST)"
     ],
     "url": "https://www.ctao.org",
-    "flag": "🇪🇸🇨🇱"
+    "flag": "🇪🇸🇨🇱",
+    "fovDeg2": 33
   },
   {
     "id": "gemini",
@@ -900,7 +921,9 @@
     ],
     "url": "https://subarutelescope.org",
     "flag": "🇯🇵",
-    "apertureM": 8.2
+    "apertureM": 8.2,
+    "fovDeg2": 1.75,
+    "limitingMag": 26
   },
   {
     "id": "jcmt",
@@ -1135,7 +1158,9 @@
     ],
     "url": "http://www.bao.ac.cn",
     "flag": "🇨🇳",
-    "apertureM": 2
+    "apertureM": 2,
+    "fovDeg2": 1.1,
+    "limitingMag": 25.5
   },
   {
     "id": "lamost",
@@ -1167,7 +1192,9 @@
     ],
     "url": "http://www.lamost.org",
     "flag": "🇨🇳",
-    "apertureM": 4
+    "apertureM": 4,
+    "fovDeg2": 20,
+    "limitingMag": 19
   },
   {
     "id": "hxmt",
@@ -1225,7 +1252,8 @@
       "Follow-up X-ray Telescope (FXT)"
     ],
     "url": "https://ep.bao.ac.cn",
-    "flag": "🇨🇳"
+    "flag": "🇨🇳",
+    "fovDeg2": 3600
   },
   {
     "id": "nustar",
@@ -1253,7 +1281,8 @@
       "Two CdZnTe focal plane modules (FPMA/FPMB)"
     ],
     "url": "https://www.nustar.caltech.edu",
-    "flag": "🇺🇸"
+    "flag": "🇺🇸",
+    "fovDeg2": 0.047
   },
   {
     "id": "swift",
@@ -1287,7 +1316,8 @@
     ],
     "url": "https://swift.gsfc.nasa.gov",
     "flag": "🇺🇸🇬🇧🇮🇹",
-    "apertureM": 0.3
+    "apertureM": 0.3,
+    "fovDeg2": 4600
   },
   {
     "id": "ixpe",
@@ -1316,7 +1346,8 @@
     ],
     "url": "https://ixpe.msfc.nasa.gov",
     "flag": "🇺🇸🇮🇹",
-    "apertureM": 0.3
+    "apertureM": 0.3,
+    "fovDeg2": 0.036
   },
   {
     "id": "spherex",
@@ -1346,7 +1377,8 @@
     ],
     "url": "https://spherex.caltech.edu",
     "flag": "🇺🇸🇰🇷",
-    "apertureM": 0.2
+    "apertureM": 0.2,
+    "fovDeg2": 39.6
   },
   {
     "id": "lofar",
@@ -1405,7 +1437,8 @@
       "Pulsar timing backend"
     ],
     "url": "https://chime-experiment.ca",
-    "flag": "🇨🇦"
+    "flag": "🇨🇦",
+    "fovDeg2": 200
   },
   {
     "id": "event-horizon-telescope",
@@ -1498,7 +1531,8 @@
     ],
     "url": "https://nso.edu/telescopes/dki-solar-telescope/",
     "flag": "🇺🇸",
-    "apertureM": 4
+    "apertureM": 4,
+    "fovDeg2": 0.0017
   },
   {
     "id": "km3net",
