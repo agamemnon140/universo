@@ -96,6 +96,7 @@ export function SpectrumChart({
                 fill="var(--text-dim)"
                 fontSize="11.5"
               >
+                {t.flag ? `${t.flag} ` : ''}
                 {t.name}
               </text>
               <rect
@@ -149,6 +150,7 @@ export function SpectrumChart({
                         fill="var(--text-dim)"
                         fontSize="11.5"
                       >
+                        {t.flag ? `${t.flag} ` : ''}
                         {t.name}
                       </text>
                       <rect

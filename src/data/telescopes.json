@@ -8,8 +8,12 @@
     "status": "operating",
     "agency": "NASA/ESA/CSA",
     "wavelengthMinM": 6e-7,
-    "wavelengthMaxM": 2.83e-5,
-    "bands": ["visible (red)", "near-IR", "mid-IR"],
+    "wavelengthMaxM": 0.0000283,
+    "bands": [
+      "visible (red)",
+      "near-IR",
+      "mid-IR"
+    ],
     "aperture": "6.5 m segmented (18 hexagonal mirrors)",
     "fieldOfView": "~9.7 arcmin² (NIRCam)",
     "limitingMagnitude": "~29 (near-IR, deep field)",
@@ -21,8 +25,14 @@
       "Star and planet formation in dusty regions",
       "Solar System ices and small bodies"
     ],
-    "instruments": ["NIRCam", "NIRSpec", "MIRI", "FGS/NIRISS"],
-    "url": "https://webb.nasa.gov"
+    "instruments": [
+      "NIRCam",
+      "NIRSpec",
+      "MIRI",
+      "FGS/NIRISS"
+    ],
+    "url": "https://webb.nasa.gov",
+    "flag": "🇺🇸🇪🇺🇨🇦"
   },
   {
     "id": "hubble",
@@ -33,8 +43,12 @@
     "status": "operating",
     "agency": "NASA/ESA",
     "wavelengthMinM": 1e-7,
-    "wavelengthMaxM": 2.5e-6,
-    "bands": ["UV", "visible", "near-IR"],
+    "wavelengthMaxM": 0.0000025,
+    "bands": [
+      "UV",
+      "visible",
+      "near-IR"
+    ],
     "aperture": "2.4 m",
     "fieldOfView": "~2.7' × 2.7' (WFC3/UVIS)",
     "limitingMagnitude": "~31 (deep field, coadded)",
@@ -45,8 +59,15 @@
       "Deep-field surveys of galaxy evolution",
       "UV spectroscopy of stars, AGN and the IGM"
     ],
-    "instruments": ["WFC3", "ACS", "STIS", "COS", "FGS"],
-    "url": "https://hubblesite.org"
+    "instruments": [
+      "WFC3",
+      "ACS",
+      "STIS",
+      "COS",
+      "FGS"
+    ],
+    "url": "https://hubblesite.org",
+    "flag": "🇺🇸🇪🇺"
   },
   {
     "id": "gaia",
@@ -57,8 +78,11 @@
     "status": "retired",
     "agency": "ESA",
     "wavelengthMinM": 3.3e-7,
-    "wavelengthMaxM": 1.05e-6,
-    "bands": ["visible", "near-IR"],
+    "wavelengthMaxM": 0.00000105,
+    "bands": [
+      "visible",
+      "near-IR"
+    ],
     "aperture": "2 × 1.45 × 0.5 m rectangular mirrors",
     "fieldOfView": "Full-sky scanning (two 0.7° × 0.7° fields)",
     "limitingMagnitude": "G ~21",
@@ -70,8 +94,13 @@
       "3D map of the Milky Way's structure and dynamics",
       "Discovery of exoplanets, asteroids and binaries"
     ],
-    "instruments": ["Astrometric field (ASTRO)", "BP/RP photometers", "RVS radial-velocity spectrometer"],
-    "url": "https://www.esa.int/Science_Exploration/Space_Science/Gaia"
+    "instruments": [
+      "Astrometric field (ASTRO)",
+      "BP/RP photometers",
+      "RVS radial-velocity spectrometer"
+    ],
+    "url": "https://www.esa.int/Science_Exploration/Space_Science/Gaia",
+    "flag": "🇪🇺"
   },
   {
     "id": "euclid",
@@ -82,8 +111,11 @@
     "status": "operating",
     "agency": "ESA/NASA",
     "wavelengthMinM": 5.5e-7,
-    "wavelengthMaxM": 2e-6,
-    "bands": ["visible", "near-IR"],
+    "wavelengthMaxM": 0.000002,
+    "bands": [
+      "visible",
+      "near-IR"
+    ],
     "aperture": "1.2 m Korsch",
     "fieldOfView": "0.57 deg²",
     "limitingMagnitude": "VIS ~24.5 (wide survey)",
@@ -94,8 +126,12 @@
       "Constrain dark energy with galaxy clustering",
       "14,000 deg² survey of billions of galaxies"
     ],
-    "instruments": ["VIS imager", "NISP near-IR imager/spectrometer"],
-    "url": "https://www.esa.int/Science_Exploration/Space_Science/Euclid"
+    "instruments": [
+      "VIS imager",
+      "NISP near-IR imager/spectrometer"
+    ],
+    "url": "https://www.esa.int/Science_Exploration/Space_Science/Euclid",
+    "flag": "🇪🇺🇺🇸"
   },
   {
     "id": "nancy-grace-roman",
@@ -106,8 +142,11 @@
     "status": "construction",
     "agency": "NASA",
     "wavelengthMinM": 4.8e-7,
-    "wavelengthMaxM": 2.3e-6,
-    "bands": ["visible", "near-IR"],
+    "wavelengthMaxM": 0.0000023,
+    "bands": [
+      "visible",
+      "near-IR"
+    ],
     "aperture": "2.4 m",
     "fieldOfView": "0.281 deg² (100× Hubble's)",
     "limitingMagnitude": "~28 (J band, deep survey)",
@@ -118,8 +157,12 @@
       "Microlensing census of cold exoplanets",
       "Technology demo of high-contrast coronagraphy"
     ],
-    "instruments": ["Wide Field Instrument (WFI)", "Coronagraph Instrument (CGI)"],
-    "url": "https://roman.gsfc.nasa.gov"
+    "instruments": [
+      "Wide Field Instrument (WFI)",
+      "Coronagraph Instrument (CGI)"
+    ],
+    "url": "https://roman.gsfc.nasa.gov",
+    "flag": "🇺🇸"
   },
   {
     "id": "chandra",
@@ -131,7 +174,9 @@
     "agency": "NASA",
     "wavelengthMinM": 1.2e-11,
     "wavelengthMaxM": 1.2e-8,
-    "bands": ["X-ray (0.1–10 keV)"],
+    "bands": [
+      "X-ray (0.1–10 keV)"
+    ],
     "aperture": "1.2 m grazing-incidence (4 nested Wolter-1 shells)",
     "fieldOfView": "~17' × 17' (ACIS-I)",
     "location": "High elliptical Earth orbit (~139,000 km apogee)",
@@ -141,8 +186,14 @@
       "Black hole accretion and AGN feedback",
       "Supernova remnants and galaxy clusters"
     ],
-    "instruments": ["ACIS", "HRC", "HETG", "LETG"],
-    "url": "https://chandra.harvard.edu"
+    "instruments": [
+      "ACIS",
+      "HRC",
+      "HETG",
+      "LETG"
+    ],
+    "url": "https://chandra.harvard.edu",
+    "flag": "🇺🇸"
   },
   {
     "id": "xrism",
@@ -154,7 +205,9 @@
     "agency": "JAXA/NASA/ESA",
     "wavelengthMinM": 1e-10,
     "wavelengthMaxM": 4.1e-9,
-    "bands": ["X-ray (0.3–12 keV)"],
+    "bands": [
+      "X-ray (0.3–12 keV)"
+    ],
     "aperture": "2 × 45 cm X-ray mirror assemblies (5.6 m focal length)",
     "fieldOfView": "~3' × 3' (Resolve); 38' × 38' (Xtend)",
     "location": "Low Earth orbit (~550 km)",
@@ -164,8 +217,12 @@
       "Gas flows in galaxy clusters",
       "Chemical evolution of the hot Universe"
     ],
-    "instruments": ["Resolve (X-ray microcalorimeter)", "Xtend (wide-field CCD imager)"],
-    "url": "https://xrism.isas.jaxa.jp/en/"
+    "instruments": [
+      "Resolve (X-ray microcalorimeter)",
+      "Xtend (wide-field CCD imager)"
+    ],
+    "url": "https://xrism.isas.jaxa.jp/en/",
+    "flag": "🇯🇵🇺🇸"
   },
   {
     "id": "fermi",
@@ -177,7 +234,9 @@
     "agency": "NASA/DOE",
     "wavelengthMinM": 1e-17,
     "wavelengthMaxM": 1.55e-10,
-    "bands": ["gamma-ray (8 keV – >300 GeV)"],
+    "bands": [
+      "gamma-ray (8 keV – >300 GeV)"
+    ],
     "aperture": "LAT: ~0.9 m² effective area pair-conversion tracker",
     "fieldOfView": "2.4 sr (LAT, ~20% of sky)",
     "location": "Low Earth orbit (~535 km)",
@@ -187,8 +246,12 @@
       "Blazars, pulsars and gamma-ray bursts",
       "Search for dark matter annihilation signals"
     ],
-    "instruments": ["Large Area Telescope (LAT)", "Gamma-ray Burst Monitor (GBM)"],
-    "url": "https://fermi.gsfc.nasa.gov"
+    "instruments": [
+      "Large Area Telescope (LAT)",
+      "Gamma-ray Burst Monitor (GBM)"
+    ],
+    "url": "https://fermi.gsfc.nasa.gov",
+    "flag": "🇺🇸"
   },
   {
     "id": "tess",
@@ -199,8 +262,11 @@
     "status": "operating",
     "agency": "NASA",
     "wavelengthMinM": 6e-7,
-    "wavelengthMaxM": 1e-6,
-    "bands": ["visible (red)", "near-IR"],
+    "wavelengthMaxM": 0.000001,
+    "bands": [
+      "visible (red)",
+      "near-IR"
+    ],
     "aperture": "4 × 10.5 cm wide-field cameras",
     "fieldOfView": "24° × 96° sector strip",
     "limitingMagnitude": "I ~15 (transit photometry)",
@@ -211,8 +277,11 @@
       "Find small planets suited to JWST follow-up",
       "Asteroseismology and stellar variability"
     ],
-    "instruments": ["Four 24° × 24° CCD cameras"],
-    "url": "https://tess.mit.edu"
+    "instruments": [
+      "Four 24° × 24° CCD cameras"
+    ],
+    "url": "https://tess.mit.edu",
+    "flag": "🇺🇸"
   },
   {
     "id": "kepler",
@@ -224,7 +293,9 @@
     "agency": "NASA",
     "wavelengthMinM": 4.3e-7,
     "wavelengthMaxM": 8.9e-7,
-    "bands": ["visible"],
+    "bands": [
+      "visible"
+    ],
     "aperture": "0.95 m Schmidt",
     "fieldOfView": "115 deg²",
     "limitingMagnitude": "Kp ~17",
@@ -236,8 +307,11 @@
       "Continuous transit photometry of 150,000+ stars",
       "K2 mission: ecliptic-plane exoplanet surveys"
     ],
-    "instruments": ["42-CCD photometer (95 megapixels)"],
-    "url": "https://www.nasa.gov/mission_pages/kepler/main/index.html"
+    "instruments": [
+      "42-CCD photometer (95 megapixels)"
+    ],
+    "url": "https://www.nasa.gov/mission_pages/kepler/main/index.html",
+    "flag": "🇺🇸"
   },
   {
     "id": "spitzer",
@@ -247,9 +321,12 @@
     "domain": "space",
     "status": "retired",
     "agency": "NASA",
-    "wavelengthMinM": 3.6e-6,
-    "wavelengthMaxM": 1.6e-4,
-    "bands": ["mid-IR", "far-IR"],
+    "wavelengthMinM": 0.0000036,
+    "wavelengthMaxM": 0.00016,
+    "bands": [
+      "mid-IR",
+      "far-IR"
+    ],
     "aperture": "0.85 m",
     "location": "Earth-trailing heliocentric orbit",
     "launched": 2003,
@@ -259,8 +336,13 @@
       "High-redshift galaxies and brown dwarfs",
       "Thermal characterization of exoplanets (TRAPPIST-1)"
     ],
-    "instruments": ["IRAC", "IRS", "MIPS"],
-    "url": "https://www.spitzer.caltech.edu"
+    "instruments": [
+      "IRAC",
+      "IRS",
+      "MIPS"
+    ],
+    "url": "https://www.spitzer.caltech.edu",
+    "flag": "🇺🇸"
   },
   {
     "id": "herschel",
@@ -270,9 +352,12 @@
     "domain": "space",
     "status": "retired",
     "agency": "ESA",
-    "wavelengthMinM": 5.5e-5,
-    "wavelengthMaxM": 6.7e-4,
-    "bands": ["far-IR", "submillimeter"],
+    "wavelengthMinM": 0.000055,
+    "wavelengthMaxM": 0.00067,
+    "bands": [
+      "far-IR",
+      "submillimeter"
+    ],
     "aperture": "3.5 m",
     "location": "Sun–Earth L2",
     "launched": 2009,
@@ -282,8 +367,13 @@
       "Water chemistry in protoplanetary disks and comets",
       "Dusty galaxy evolution across cosmic time"
     ],
-    "instruments": ["PACS", "SPIRE", "HIFI"],
-    "url": "https://www.esa.int/Science_Exploration/Space_Science/Herschel"
+    "instruments": [
+      "PACS",
+      "SPIRE",
+      "HIFI"
+    ],
+    "url": "https://www.esa.int/Science_Exploration/Space_Science/Herschel",
+    "flag": "🇪🇺"
   },
   {
     "id": "planck",
@@ -293,9 +383,12 @@
     "domain": "space",
     "status": "retired",
     "agency": "ESA",
-    "wavelengthMinM": 3.5e-4,
-    "wavelengthMaxM": 1e-2,
-    "bands": ["submillimeter", "microwave"],
+    "wavelengthMinM": 0.00035,
+    "wavelengthMaxM": 0.01,
+    "bands": [
+      "submillimeter",
+      "microwave"
+    ],
     "aperture": "1.9 × 1.5 m off-axis",
     "fieldOfView": "Full-sky scanning survey",
     "location": "Sun–Earth L2",
@@ -306,8 +399,12 @@
       "Precision cosmological parameters (H0, Ωm, ns)",
       "Catalogs of galaxy clusters via SZ effect"
     ],
-    "instruments": ["LFI (30–70 GHz)", "HFI (100–857 GHz)"],
-    "url": "https://www.esa.int/Science_Exploration/Space_Science/Planck"
+    "instruments": [
+      "LFI (30–70 GHz)",
+      "HFI (100–857 GHz)"
+    ],
+    "url": "https://www.esa.int/Science_Exploration/Space_Science/Planck",
+    "flag": "🇪🇺"
   },
   {
     "id": "plato",
@@ -318,8 +415,10 @@
     "status": "construction",
     "agency": "ESA",
     "wavelengthMinM": 5e-7,
-    "wavelengthMaxM": 1e-6,
-    "bands": ["visible"],
+    "wavelengthMaxM": 0.000001,
+    "bands": [
+      "visible"
+    ],
     "aperture": "26 × 12 cm cameras (24 normal + 2 fast)",
     "fieldOfView": "~2,132 deg² combined",
     "location": "Sun–Earth L2 (planned)",
@@ -329,8 +428,12 @@
       "Precise stellar ages via asteroseismology",
       "Bright-star targets for radial-velocity follow-up"
     ],
-    "instruments": ["24 normal cameras (25 s cadence)", "2 fast cameras (2.5 s cadence)"],
-    "url": "https://platomission.com"
+    "instruments": [
+      "24 normal cameras (25 s cadence)",
+      "2 fast cameras (2.5 s cadence)"
+    ],
+    "url": "https://platomission.com",
+    "flag": "🇪🇺"
   },
   {
     "id": "ariel",
@@ -341,8 +444,12 @@
     "status": "planned",
     "agency": "ESA",
     "wavelengthMinM": 5e-7,
-    "wavelengthMaxM": 7.8e-6,
-    "bands": ["visible", "near-IR", "mid-IR"],
+    "wavelengthMaxM": 0.0000078,
+    "bands": [
+      "visible",
+      "near-IR",
+      "mid-IR"
+    ],
     "aperture": "1.1 × 0.7 m elliptical",
     "location": "Sun–Earth L2 (planned)",
     "plannedDate": "~2029",
@@ -351,8 +458,12 @@
       "Chemical census of warm and hot planets",
       "Link planet composition to formation history"
     ],
-    "instruments": ["AIRS infrared spectrometer", "FGS photometers/spectrometer"],
-    "url": "https://arielmission.space"
+    "instruments": [
+      "AIRS infrared spectrometer",
+      "FGS photometers/spectrometer"
+    ],
+    "url": "https://arielmission.space",
+    "flag": "🇪🇺"
   },
   {
     "id": "lisa",
@@ -362,7 +473,9 @@
     "domain": "space",
     "status": "planned",
     "agency": "ESA/NASA",
-    "bands": ["gravitational waves"],
+    "bands": [
+      "gravitational waves"
+    ],
     "signalLabel": "GW 0.1 mHz – 1 Hz",
     "aperture": "3 spacecraft, 2.5 million km laser arms",
     "location": "Heliocentric orbit, trailing Earth (planned)",
@@ -372,8 +485,13 @@
       "Extreme mass-ratio inspirals as gravity probes",
       "Galactic compact binaries and mHz GW background"
     ],
-    "instruments": ["Drag-free test masses", "Laser interferometry payload", "Gravitational reference sensors"],
-    "url": "https://www.lisamission.org"
+    "instruments": [
+      "Drag-free test masses",
+      "Laser interferometry payload",
+      "Gravitational reference sensors"
+    ],
+    "url": "https://www.lisamission.org",
+    "flag": "🇪🇺🇺🇸"
   },
   {
     "id": "habitable-worlds-observatory",
@@ -384,8 +502,12 @@
     "status": "planned",
     "agency": "NASA",
     "wavelengthMinM": 1e-7,
-    "wavelengthMaxM": 2.5e-6,
-    "bands": ["UV", "visible", "near-IR"],
+    "wavelengthMaxM": 0.0000025,
+    "bands": [
+      "UV",
+      "visible",
+      "near-IR"
+    ],
     "aperture": "~6 m class segmented (concept)",
     "location": "Sun–Earth L2 (concept)",
     "plannedDate": "2040s",
@@ -394,8 +516,12 @@
       "Search for atmospheric biosignatures",
       "UV–optical–IR general astrophysics flagship"
     ],
-    "instruments": ["High-contrast coronagraph (concept)", "UV/optical imagers and spectrographs (concept)"],
-    "url": "https://habitableworldsobservatory.org"
+    "instruments": [
+      "High-contrast coronagraph (concept)",
+      "UV/optical imagers and spectrographs (concept)"
+    ],
+    "url": "https://habitableworldsobservatory.org",
+    "flag": "🇺🇸"
   },
   {
     "id": "vera-rubin",
@@ -406,8 +532,12 @@
     "status": "operating",
     "agency": "NSF/DOE",
     "wavelengthMinM": 3.2e-7,
-    "wavelengthMaxM": 1.06e-6,
-    "bands": ["near-UV", "visible", "near-IR"],
+    "wavelengthMaxM": 0.00000106,
+    "bands": [
+      "near-UV",
+      "visible",
+      "near-IR"
+    ],
     "aperture": "8.4 m (6.7 m effective)",
     "fieldOfView": "9.6 deg² (3.5° diameter)",
     "limitingMagnitude": "r ~24.5 single visit / ~27.5 coadded",
@@ -419,8 +549,12 @@
       "Alert stream for transients and asteroids",
       "Milky Way structure and solar system census"
     ],
-    "instruments": ["LSSTCam (3.2 gigapixels)", "ugrizy filter set"],
-    "url": "https://rubinobservatory.org"
+    "instruments": [
+      "LSSTCam (3.2 gigapixels)",
+      "ugrizy filter set"
+    ],
+    "url": "https://rubinobservatory.org",
+    "flag": "🇺🇸🇨🇱"
   },
   {
     "id": "elt",
@@ -431,8 +565,12 @@
     "status": "construction",
     "agency": "ESO",
     "wavelengthMinM": 3.7e-7,
-    "wavelengthMaxM": 1.4e-5,
-    "bands": ["visible", "near-IR", "mid-IR"],
+    "wavelengthMaxM": 0.000014,
+    "bands": [
+      "visible",
+      "near-IR",
+      "mid-IR"
+    ],
     "aperture": "39.3 m segmented (798 mirror segments)",
     "location": "Cerro Armazones, Chile",
     "plannedDate": "~2029",
@@ -441,8 +579,14 @@
       "Resolve first galaxies and stellar populations",
       "Direct measurement of cosmic expansion drift"
     ],
-    "instruments": ["MICADO", "HARMONI", "METIS", "MORFEO (adaptive optics)"],
-    "url": "https://elt.eso.org"
+    "instruments": [
+      "MICADO",
+      "HARMONI",
+      "METIS",
+      "MORFEO (adaptive optics)"
+    ],
+    "url": "https://elt.eso.org",
+    "flag": "🇪🇺🇨🇱"
   },
   {
     "id": "giant-magellan",
@@ -453,8 +597,12 @@
     "status": "construction",
     "agency": "GMTO Corporation (international consortium)",
     "wavelengthMinM": 3.2e-7,
-    "wavelengthMaxM": 2.5e-5,
-    "bands": ["visible", "near-IR", "mid-IR"],
+    "wavelengthMaxM": 0.000025,
+    "bands": [
+      "visible",
+      "near-IR",
+      "mid-IR"
+    ],
     "aperture": "7 × 8.4 m segments (25.4 m effective)",
     "location": "Las Campanas, Chile",
     "plannedDate": "early 2030s",
@@ -463,8 +611,14 @@
       "Chemistry of the first stars and galaxies",
       "High-resolution spectroscopy of faint targets"
     ],
-    "instruments": ["GMACS", "G-CLEF", "GMTIFS", "GMagAO-X"],
-    "url": "https://giantmagellan.org"
+    "instruments": [
+      "GMACS",
+      "G-CLEF",
+      "GMTIFS",
+      "GMagAO-X"
+    ],
+    "url": "https://giantmagellan.org",
+    "flag": "🇺🇸🇨🇱"
   },
   {
     "id": "tmt",
@@ -475,8 +629,13 @@
     "status": "planned",
     "agency": "TMT International Observatory",
     "wavelengthMinM": 3.1e-7,
-    "wavelengthMaxM": 2.8e-5,
-    "bands": ["near-UV", "visible", "near-IR", "mid-IR"],
+    "wavelengthMaxM": 0.000028,
+    "bands": [
+      "near-UV",
+      "visible",
+      "near-IR",
+      "mid-IR"
+    ],
     "aperture": "30 m segmented (492 segments)",
     "location": "Mauna Kea, Hawaii (proposed; alternate La Palma, Spain)",
     "plannedDate": "mid-2030s",
@@ -485,8 +644,13 @@
       "Galaxy assembly and supermassive black holes",
       "Exoplanet atmospheres and disks"
     ],
-    "instruments": ["IRIS", "WFOS", "MODHIS"],
-    "url": "https://www.tmt.org"
+    "instruments": [
+      "IRIS",
+      "WFOS",
+      "MODHIS"
+    ],
+    "url": "https://www.tmt.org",
+    "flag": "🇺🇸🇯🇵🇮🇳"
   },
   {
     "id": "vlt",
@@ -497,8 +661,13 @@
     "status": "operating",
     "agency": "ESO",
     "wavelengthMinM": 3e-7,
-    "wavelengthMaxM": 2e-5,
-    "bands": ["near-UV", "visible", "near-IR", "mid-IR"],
+    "wavelengthMaxM": 0.00002,
+    "bands": [
+      "near-UV",
+      "visible",
+      "near-IR",
+      "mid-IR"
+    ],
     "aperture": "4 × 8.2 m unit telescopes (+ 4 × 1.8 m ATs, VLTI)",
     "location": "Cerro Paranal, Chile",
     "launched": 1998,
@@ -507,8 +676,16 @@
       "Direct imaging of exoplanets (SPHERE)",
       "3D spectroscopy of galaxies (MUSE)"
     ],
-    "instruments": ["MUSE", "SPHERE", "ESPRESSO", "UVES", "FORS2", "GRAVITY (VLTI)"],
-    "url": "https://www.eso.org/public/teles-instr/paranal-observatory/vlt/"
+    "instruments": [
+      "MUSE",
+      "SPHERE",
+      "ESPRESSO",
+      "UVES",
+      "FORS2",
+      "GRAVITY (VLTI)"
+    ],
+    "url": "https://www.eso.org/public/teles-instr/paranal-observatory/vlt/",
+    "flag": "🇪🇺🇨🇱"
   },
   {
     "id": "keck",
@@ -519,8 +696,13 @@
     "status": "operating",
     "agency": "Caltech/University of California/NASA",
     "wavelengthMinM": 3e-7,
-    "wavelengthMaxM": 2.5e-5,
-    "bands": ["near-UV", "visible", "near-IR", "mid-IR"],
+    "wavelengthMaxM": 0.000025,
+    "bands": [
+      "near-UV",
+      "visible",
+      "near-IR",
+      "mid-IR"
+    ],
     "aperture": "2 × 10 m segmented (36 segments each)",
     "location": "Mauna Kea, Hawaii",
     "launched": 1993,
@@ -529,8 +711,16 @@
       "Galactic Center stellar orbits with adaptive optics",
       "Spectroscopy of high-redshift galaxies"
     ],
-    "instruments": ["HIRES", "KCWI", "NIRC2", "OSIRIS", "DEIMOS", "KPF"],
-    "url": "https://www.keckobservatory.org"
+    "instruments": [
+      "HIRES",
+      "KCWI",
+      "NIRC2",
+      "OSIRIS",
+      "DEIMOS",
+      "KPF"
+    ],
+    "url": "https://www.keckobservatory.org",
+    "flag": "🇺🇸"
   },
   {
     "id": "alma",
@@ -540,9 +730,12 @@
     "domain": "ground",
     "status": "operating",
     "agency": "ESO/NRAO/NAOJ",
-    "wavelengthMinM": 3.2e-4,
-    "wavelengthMaxM": 8.6e-3,
-    "bands": ["submillimeter", "millimeter"],
+    "wavelengthMinM": 0.00032,
+    "wavelengthMaxM": 0.0086,
+    "bands": [
+      "submillimeter",
+      "millimeter"
+    ],
     "aperture": "66 antennas (54 × 12 m + 12 × 7 m), baselines to 16 km",
     "location": "Chajnantor Plateau, Chile (5,000 m)",
     "launched": 2011,
@@ -552,8 +745,12 @@
       "Astrochemistry of star-forming clouds",
       "Key station of the Event Horizon Telescope"
     ],
-    "instruments": ["Receiver Bands 1–10 (35–950 GHz)", "64-antenna correlator"],
-    "url": "https://www.almaobservatory.org"
+    "instruments": [
+      "Receiver Bands 1–10 (35–950 GHz)",
+      "64-antenna correlator"
+    ],
+    "url": "https://www.almaobservatory.org",
+    "flag": "🇪🇺🇺🇸🇯🇵"
   },
   {
     "id": "ska",
@@ -563,9 +760,11 @@
     "domain": "ground",
     "status": "construction",
     "agency": "SKAO (intergovernmental)",
-    "wavelengthMinM": 1.9e-2,
+    "wavelengthMinM": 0.019,
     "wavelengthMaxM": 6,
-    "bands": ["radio (50 MHz – 15.4 GHz)"],
+    "bands": [
+      "radio (50 MHz – 15.4 GHz)"
+    ],
     "aperture": "SKA-Low: 131,072 dipole antennas; SKA-Mid: 197 dishes",
     "location": "Murchison, Australia (Low) & Karoo, South Africa (Mid)",
     "plannedDate": "~2028 (early science)",
@@ -575,8 +774,13 @@
       "Hydrogen surveys of a billion galaxies",
       "Cradle-of-life and SETI studies"
     ],
-    "instruments": ["SKA-Low aperture arrays", "SKA-Mid 15 m dish array", "Central signal processors"],
-    "url": "https://www.skao.int"
+    "instruments": [
+      "SKA-Low aperture arrays",
+      "SKA-Mid 15 m dish array",
+      "Central signal processors"
+    ],
+    "url": "https://www.skao.int",
+    "flag": "🇦🇺🇿🇦"
   },
   {
     "id": "ctao",
@@ -588,7 +792,9 @@
     "agency": "CTAO gGmbH (international)",
     "wavelengthMinM": 1e-17,
     "wavelengthMaxM": 6.2e-17,
-    "bands": ["gamma-ray (20 GeV – 300 TeV)"],
+    "bands": [
+      "gamma-ray (20 GeV – 300 TeV)"
+    ],
     "aperture": "~60 telescopes: 23 m LSTs, 12 m MSTs, 4 m SSTs",
     "fieldOfView": "4.5°–8.5° per telescope class",
     "location": "La Palma, Spain (North) & Paranal, Chile (South)",
@@ -598,8 +804,13 @@
       "AGN jets and gamma-ray transients",
       "Dark matter annihilation searches at TeV energies"
     ],
-    "instruments": ["Large-Sized Telescopes (LST)", "Medium-Sized Telescopes (MST)", "Small-Sized Telescopes (SST)"],
-    "url": "https://www.ctao.org"
+    "instruments": [
+      "Large-Sized Telescopes (LST)",
+      "Medium-Sized Telescopes (MST)",
+      "Small-Sized Telescopes (SST)"
+    ],
+    "url": "https://www.ctao.org",
+    "flag": "🇪🇸🇨🇱"
   },
   {
     "id": "gemini",
@@ -610,8 +821,12 @@
     "status": "operating",
     "agency": "NSF NOIRLab (international partnership)",
     "wavelengthMinM": 3.6e-7,
-    "wavelengthMaxM": 2.5e-5,
-    "bands": ["visible", "near-IR", "mid-IR"],
+    "wavelengthMaxM": 0.000025,
+    "bands": [
+      "visible",
+      "near-IR",
+      "mid-IR"
+    ],
     "aperture": "2 × 8.1 m",
     "location": "Mauna Kea, Hawaii & Cerro Pachón, Chile",
     "launched": 1999,
@@ -620,8 +835,15 @@
       "Rapid follow-up of transients and GW counterparts",
       "Adaptive-optics imaging of exoplanets and disks"
     ],
-    "instruments": ["GMOS-N/S", "GNIRS", "GHOST", "GPI 2", "NIRI"],
-    "url": "https://www.gemini.edu"
+    "instruments": [
+      "GMOS-N/S",
+      "GNIRS",
+      "GHOST",
+      "GPI 2",
+      "NIRI"
+    ],
+    "url": "https://www.gemini.edu",
+    "flag": "🇺🇸🇨🇱"
   },
   {
     "id": "subaru",
@@ -632,8 +854,11 @@
     "status": "operating",
     "agency": "NAOJ (Japan)",
     "wavelengthMinM": 3e-7,
-    "wavelengthMaxM": 5e-6,
-    "bands": ["visible", "near-IR"],
+    "wavelengthMaxM": 0.000005,
+    "bands": [
+      "visible",
+      "near-IR"
+    ],
     "aperture": "8.2 m monolithic",
     "fieldOfView": "1.75 deg² (Hyper Suprime-Cam)",
     "limitingMagnitude": "r ~26 (HSC wide survey)",
@@ -644,8 +869,14 @@
       "Massive spectroscopic surveys with PFS",
       "Direct imaging of young giant exoplanets"
     ],
-    "instruments": ["Hyper Suprime-Cam (HSC)", "Prime Focus Spectrograph (PFS)", "IRD", "SCExAO/CHARIS"],
-    "url": "https://subarutelescope.org"
+    "instruments": [
+      "Hyper Suprime-Cam (HSC)",
+      "Prime Focus Spectrograph (PFS)",
+      "IRD",
+      "SCExAO/CHARIS"
+    ],
+    "url": "https://subarutelescope.org",
+    "flag": "🇯🇵"
   },
   {
     "id": "jcmt",
@@ -655,9 +886,11 @@
     "domain": "ground",
     "status": "operating",
     "agency": "East Asian Observatory",
-    "wavelengthMinM": 4.3e-4,
-    "wavelengthMaxM": 8.7e-4,
-    "bands": ["submillimeter"],
+    "wavelengthMinM": 0.00043,
+    "wavelengthMaxM": 0.00087,
+    "bands": [
+      "submillimeter"
+    ],
     "aperture": "15 m dish",
     "location": "Mauna Kea, Hawaii",
     "launched": 1987,
@@ -666,8 +899,14 @@
       "Magnetic fields via submm polarimetry",
       "Event Horizon Telescope station"
     ],
-    "instruments": ["SCUBA-2", "HARP", "POL-2", "Nāmakanui"],
-    "url": "https://www.eaobservatory.org/jcmt/"
+    "instruments": [
+      "SCUBA-2",
+      "HARP",
+      "POL-2",
+      "Nāmakanui"
+    ],
+    "url": "https://www.eaobservatory.org/jcmt/",
+    "flag": "🇨🇳🇯🇵🇰🇷"
   },
   {
     "id": "icecube",
@@ -677,7 +916,9 @@
     "domain": "ground",
     "status": "operating",
     "agency": "NSF (international collaboration)",
-    "bands": ["neutrinos"],
+    "bands": [
+      "neutrinos"
+    ],
     "signalLabel": "ν TeV – PeV",
     "aperture": "1 km³ instrumented Antarctic ice",
     "location": "South Pole, Antarctica",
@@ -687,8 +928,13 @@
       "Multimessenger alerts (blazars, tidal disruptions)",
       "Neutrino oscillations and BSM physics"
     ],
-    "instruments": ["5,160 digital optical modules on 86 strings", "DeepCore", "IceTop surface array"],
-    "url": "https://icecube.wisc.edu"
+    "instruments": [
+      "5,160 digital optical modules on 86 strings",
+      "DeepCore",
+      "IceTop surface array"
+    ],
+    "url": "https://icecube.wisc.edu",
+    "flag": "🇺🇸🇦🇶"
   },
   {
     "id": "ligo",
@@ -698,7 +944,9 @@
     "domain": "ground",
     "status": "operating",
     "agency": "NSF/Caltech/MIT",
-    "bands": ["gravitational waves"],
+    "bands": [
+      "gravitational waves"
+    ],
     "signalLabel": "GW 10 Hz – 10 kHz",
     "aperture": "2 × 4 km laser arms",
     "location": "Hanford, Washington & Livingston, Louisiana, USA",
@@ -708,8 +956,13 @@
       "Multimessenger astronomy with EM counterparts",
       "Tests of general relativity in strong gravity"
     ],
-    "instruments": ["Dual-recycled Michelson interferometers", "40 kg fused-silica test masses", "Squeezed-light injection"],
-    "url": "https://www.ligo.caltech.edu"
+    "instruments": [
+      "Dual-recycled Michelson interferometers",
+      "40 kg fused-silica test masses",
+      "Squeezed-light injection"
+    ],
+    "url": "https://www.ligo.caltech.edu",
+    "flag": "🇺🇸"
   },
   {
     "id": "virgo",
@@ -719,7 +972,9 @@
     "domain": "ground",
     "status": "operating",
     "agency": "EGO (CNRS/INFN/Nikhef)",
-    "bands": ["gravitational waves"],
+    "bands": [
+      "gravitational waves"
+    ],
     "signalLabel": "GW 10 Hz – 10 kHz",
     "aperture": "3 km laser arms",
     "location": "Cascina, near Pisa, Italy",
@@ -729,8 +984,13 @@
       "Compact binary merger populations",
       "Continuous-wave searches from pulsars"
     ],
-    "instruments": ["3 km power-recycled interferometer", "Superattenuator seismic isolation", "Squeezed-light source"],
-    "url": "https://www.virgo-gw.eu"
+    "instruments": [
+      "3 km power-recycled interferometer",
+      "Superattenuator seismic isolation",
+      "Squeezed-light source"
+    ],
+    "url": "https://www.virgo-gw.eu",
+    "flag": "🇮🇹"
   },
   {
     "id": "kagra",
@@ -740,7 +1000,9 @@
     "domain": "ground",
     "status": "operating",
     "agency": "ICRR, University of Tokyo (Japan)",
-    "bands": ["gravitational waves"],
+    "bands": [
+      "gravitational waves"
+    ],
     "signalLabel": "GW 10 Hz – 10 kHz",
     "aperture": "3 km laser arms (underground)",
     "location": "Kamioka mine, Gifu, Japan",
@@ -750,8 +1012,12 @@
       "Pioneer cryogenic mirror technology",
       "Improve source sky localization"
     ],
-    "instruments": ["Underground 3 km interferometer", "Cryogenic sapphire test masses (20 K)"],
-    "url": "https://gwcenter.icrr.u-tokyo.ac.jp/en/"
+    "instruments": [
+      "Underground 3 km interferometer",
+      "Cryogenic sapphire test masses (20 K)"
+    ],
+    "url": "https://gwcenter.icrr.u-tokyo.ac.jp/en/",
+    "flag": "🇯🇵"
   },
   {
     "id": "einstein-telescope",
@@ -761,7 +1027,9 @@
     "domain": "ground",
     "status": "planned",
     "agency": "European consortium (ET Collaboration)",
-    "bands": ["gravitational waves"],
+    "bands": [
+      "gravitational waves"
+    ],
     "signalLabel": "GW 3 Hz – 10 kHz",
     "aperture": "10 km laser arms (triangular, underground)",
     "location": "Europe (candidate sites: Sardinia, Italy & Euregio Meuse–Rhine)",
@@ -771,8 +1039,12 @@
       "Black hole mergers out to z ~ 100",
       "Neutron star physics and cosmology with GWs"
     ],
-    "instruments": ["Three nested xylophone interferometers", "Cryogenic low-frequency detectors"],
-    "url": "https://www.et-gw.eu"
+    "instruments": [
+      "Three nested xylophone interferometers",
+      "Cryogenic low-frequency detectors"
+    ],
+    "url": "https://www.et-gw.eu",
+    "flag": "🇪🇺"
   },
   {
     "id": "fast",
@@ -784,7 +1056,9 @@
     "agency": "CAS (China)",
     "wavelengthMinM": 0.1,
     "wavelengthMaxM": 4.3,
-    "bands": ["radio (70 MHz – 3 GHz)"],
+    "bands": [
+      "radio (70 MHz – 3 GHz)"
+    ],
     "aperture": "500 m fixed dish (300 m illuminated)",
     "location": "Guizhou, China",
     "launched": 2016,
@@ -793,8 +1067,13 @@
       "Neutral hydrogen surveys of the Milky Way and beyond",
       "Fast radio bursts and SETI"
     ],
-    "instruments": ["19-beam L-band receiver", "Ultra-wideband receiver", "Active reflector surface"],
-    "url": "https://fast.bao.ac.cn"
+    "instruments": [
+      "19-beam L-band receiver",
+      "Ultra-wideband receiver",
+      "Active reflector surface"
+    ],
+    "url": "https://fast.bao.ac.cn",
+    "flag": "🇨🇳"
   },
   {
     "id": "xuntian",
@@ -805,8 +1084,12 @@
     "status": "construction",
     "agency": "CAS/CMSA (China)",
     "wavelengthMinM": 2.55e-7,
-    "wavelengthMaxM": 1e-6,
-    "bands": ["near-UV", "visible", "near-IR"],
+    "wavelengthMaxM": 0.000001,
+    "bands": [
+      "near-UV",
+      "visible",
+      "near-IR"
+    ],
     "aperture": "2 m",
     "fieldOfView": "~1.1 deg²",
     "limitingMagnitude": "~25–26 (survey, AB)",
@@ -817,8 +1100,15 @@
       "Weak lensing constraints on dark matter and dark energy",
       "Serviceable by docking with the space station"
     ],
-    "instruments": ["Survey Camera (2.5 gigapixels)", "Multi-Channel Imager", "Integral Field Spectrograph", "Coronagraph", "Terahertz module"],
-    "url": "http://www.bao.ac.cn"
+    "instruments": [
+      "Survey Camera (2.5 gigapixels)",
+      "Multi-Channel Imager",
+      "Integral Field Spectrograph",
+      "Coronagraph",
+      "Terahertz module"
+    ],
+    "url": "http://www.bao.ac.cn",
+    "flag": "🇨🇳"
   },
   {
     "id": "lamost",
@@ -830,7 +1120,9 @@
     "agency": "CAS (China)",
     "wavelengthMinM": 3.7e-7,
     "wavelengthMaxM": 9e-7,
-    "bands": ["visible"],
+    "bands": [
+      "visible"
+    ],
     "aperture": "~4 m reflecting Schmidt (effective 3.6–4.9 m)",
     "fieldOfView": "5° diameter (~20 deg²)",
     "limitingMagnitude": "r ~19 (spectroscopy)",
@@ -841,8 +1133,13 @@
       "Milky Way structure, kinematics and chemistry",
       "Quasar and galaxy spectroscopic surveys"
     ],
-    "instruments": ["4,000 robotic optical fibers", "16 low-resolution spectrographs", "Medium-resolution mode"],
-    "url": "http://www.lamost.org"
+    "instruments": [
+      "4,000 robotic optical fibers",
+      "16 low-resolution spectrographs",
+      "Medium-resolution mode"
+    ],
+    "url": "http://www.lamost.org",
+    "flag": "🇨🇳"
   },
   {
     "id": "hxmt",
@@ -854,7 +1151,9 @@
     "agency": "CAS/CNSA (China)",
     "wavelengthMinM": 5e-12,
     "wavelengthMaxM": 1.24e-9,
-    "bands": ["X-ray (1–250 keV)"],
+    "bands": [
+      "X-ray (1–250 keV)"
+    ],
     "aperture": "Collimated detectors (HE: 5,100 cm² NaI/CsI)",
     "location": "Low Earth orbit (~550 km)",
     "launched": 2017,
@@ -863,8 +1162,13 @@
       "Galactic plane hard X-ray survey",
       "Gamma-ray burst and magnetar monitoring"
     ],
-    "instruments": ["High Energy X-ray telescope (HE)", "Medium Energy telescope (ME)", "Low Energy telescope (LE)"],
-    "url": "http://hxmten.ihep.ac.cn"
+    "instruments": [
+      "High Energy X-ray telescope (HE)",
+      "Medium Energy telescope (ME)",
+      "Low Energy telescope (LE)"
+    ],
+    "url": "http://hxmten.ihep.ac.cn",
+    "flag": "🇨🇳"
   },
   {
     "id": "einstein-probe",
@@ -876,7 +1180,9 @@
     "agency": "CAS (China)/ESA/MPE",
     "wavelengthMinM": 1.24e-10,
     "wavelengthMaxM": 4.1e-9,
-    "bands": ["X-ray (0.3–10 keV)"],
+    "bands": [
+      "X-ray (0.3–10 keV)"
+    ],
     "aperture": "Lobster-eye microchannel optics + 2 Wolter-1 telescopes",
     "fieldOfView": "3,600 deg² (WXT)",
     "location": "Low Earth orbit (~600 km)",
@@ -886,8 +1192,12 @@
       "Tidal disruption events and GW counterparts",
       "High-redshift gamma-ray burst afterglows"
     ],
-    "instruments": ["Wide-field X-ray Telescope (WXT, lobster-eye)", "Follow-up X-ray Telescope (FXT)"],
-    "url": "https://ep.bao.ac.cn"
+    "instruments": [
+      "Wide-field X-ray Telescope (WXT, lobster-eye)",
+      "Follow-up X-ray Telescope (FXT)"
+    ],
+    "url": "https://ep.bao.ac.cn",
+    "flag": "🇨🇳"
   },
   {
     "id": "nustar",
@@ -899,7 +1209,9 @@
     "agency": "NASA",
     "wavelengthMinM": 1.6e-11,
     "wavelengthMaxM": 4.1e-10,
-    "bands": ["hard X-ray (3–79 keV)"],
+    "bands": [
+      "hard X-ray (3–79 keV)"
+    ],
     "aperture": "2 focusing Wolter-1 optics on 10.15 m mast",
     "fieldOfView": "~13' × 13'",
     "location": "Low Earth orbit (near-equatorial)",
@@ -909,8 +1221,11 @@
       "Obscured black holes and AGN census",
       "Titanium-44 maps of supernova remnants"
     ],
-    "instruments": ["Two CdZnTe focal plane modules (FPMA/FPMB)"],
-    "url": "https://www.nustar.caltech.edu"
+    "instruments": [
+      "Two CdZnTe focal plane modules (FPMA/FPMB)"
+    ],
+    "url": "https://www.nustar.caltech.edu",
+    "flag": "🇺🇸"
   },
   {
     "id": "swift",
@@ -922,7 +1237,12 @@
     "agency": "NASA (with UK/Italy)",
     "wavelengthMinM": 8.3e-12,
     "wavelengthMaxM": 6e-7,
-    "bands": ["gamma-ray", "X-ray", "UV", "visible"],
+    "bands": [
+      "gamma-ray",
+      "X-ray",
+      "UV",
+      "visible"
+    ],
     "aperture": "BAT coded mask 5,200 cm²; XRT 0.3 m; UVOT 0.3 m",
     "fieldOfView": "1.4 sr (BAT)",
     "location": "Low Earth orbit (~585 km)",
@@ -932,8 +1252,13 @@
       "Autonomous slewing to transients within ~1 minute",
       "Multiwavelength monitoring of AGN and novae"
     ],
-    "instruments": ["Burst Alert Telescope (BAT)", "X-Ray Telescope (XRT)", "UV/Optical Telescope (UVOT)"],
-    "url": "https://swift.gsfc.nasa.gov"
+    "instruments": [
+      "Burst Alert Telescope (BAT)",
+      "X-Ray Telescope (XRT)",
+      "UV/Optical Telescope (UVOT)"
+    ],
+    "url": "https://swift.gsfc.nasa.gov",
+    "flag": "🇺🇸🇬🇧🇮🇹"
   },
   {
     "id": "ixpe",
@@ -945,7 +1270,9 @@
     "agency": "NASA/ASI",
     "wavelengthMinM": 1.55e-10,
     "wavelengthMaxM": 6.2e-10,
-    "bands": ["X-ray (2–8 keV)"],
+    "bands": [
+      "X-ray (2–8 keV)"
+    ],
     "aperture": "3 × 30 cm Wolter-1 mirror modules",
     "fieldOfView": "~12.9' diameter",
     "location": "Low Earth orbit (equatorial, ~600 km)",
@@ -955,8 +1282,11 @@
       "Magnetic field geometry of pulsars and magnetars",
       "Accretion geometry around black holes"
     ],
-    "instruments": ["Three gas pixel detector (GPD) polarimeters"],
-    "url": "https://ixpe.msfc.nasa.gov"
+    "instruments": [
+      "Three gas pixel detector (GPD) polarimeters"
+    ],
+    "url": "https://ixpe.msfc.nasa.gov",
+    "flag": "🇺🇸🇮🇹"
   },
   {
     "id": "spherex",
@@ -967,8 +1297,10 @@
     "status": "operating",
     "agency": "NASA",
     "wavelengthMinM": 7.5e-7,
-    "wavelengthMaxM": 5e-6,
-    "bands": ["near-IR"],
+    "wavelengthMaxM": 0.000005,
+    "bands": [
+      "near-IR"
+    ],
     "aperture": "20 cm",
     "fieldOfView": "3.5° × 11.3° (three arrays)",
     "location": "Sun-synchronous low Earth orbit",
@@ -978,8 +1310,12 @@
       "Inflation signatures in large-scale structure",
       "Water and organic ices in molecular clouds"
     ],
-    "instruments": ["Linear variable filter spectrophotometer", "Six H2RG detector arrays"],
-    "url": "https://spherex.caltech.edu"
+    "instruments": [
+      "Linear variable filter spectrophotometer",
+      "Six H2RG detector arrays"
+    ],
+    "url": "https://spherex.caltech.edu",
+    "flag": "🇺🇸🇰🇷"
   },
   {
     "id": "lofar",
@@ -991,7 +1327,9 @@
     "agency": "ASTRON (International LOFAR Telescope)",
     "wavelengthMinM": 1.3,
     "wavelengthMaxM": 30,
-    "bands": ["radio (10–240 MHz)"],
+    "bands": [
+      "radio (10–240 MHz)"
+    ],
     "aperture": "~52 phased-array stations across Europe",
     "location": "Netherlands (core) with stations across Europe",
     "launched": 2010,
@@ -1000,8 +1338,13 @@
       "Epoch of Reionization 21-cm searches",
       "Cosmic rays, pulsars and solar/space weather"
     ],
-    "instruments": ["Low Band Antennas (LBA)", "High Band Antennas (HBA)", "COBALT correlator"],
-    "url": "https://www.astron.nl/telescopes/lofar/"
+    "instruments": [
+      "Low Band Antennas (LBA)",
+      "High Band Antennas (HBA)",
+      "COBALT correlator"
+    ],
+    "url": "https://www.astron.nl/telescopes/lofar/",
+    "flag": "🇳🇱"
   },
   {
     "id": "chime",
@@ -1013,7 +1356,9 @@
     "agency": "Canada (UBC/McGill/U Toronto/NRC)",
     "wavelengthMinM": 0.37,
     "wavelengthMaxM": 0.75,
-    "bands": ["radio (400–800 MHz)"],
+    "bands": [
+      "radio (400–800 MHz)"
+    ],
     "aperture": "4 × 20 m × 100 m cylindrical reflectors",
     "fieldOfView": "~200 deg² instantaneous (transit)",
     "location": "DRAO, Penticton, British Columbia, Canada",
@@ -1023,8 +1368,13 @@
       "21-cm intensity mapping of dark energy",
       "Daily monitoring of pulsars"
     ],
-    "instruments": ["1,024 dual-polarization feeds", "FRB search backend", "Pulsar timing backend"],
-    "url": "https://chime-experiment.ca"
+    "instruments": [
+      "1,024 dual-polarization feeds",
+      "FRB search backend",
+      "Pulsar timing backend"
+    ],
+    "url": "https://chime-experiment.ca",
+    "flag": "🇨🇦"
   },
   {
     "id": "event-horizon-telescope",
@@ -1034,9 +1384,11 @@
     "domain": "ground",
     "status": "operating",
     "agency": "EHT Collaboration (international)",
-    "wavelengthMinM": 8.7e-4,
-    "wavelengthMaxM": 1.3e-3,
-    "bands": ["millimeter (VLBI)"],
+    "wavelengthMinM": 0.00087,
+    "wavelengthMaxM": 0.0013,
+    "bands": [
+      "millimeter (VLBI)"
+    ],
     "aperture": "Earth-sized VLBI network (~11 stations)",
     "location": "Global network (ALMA, SMA, IRAM, SPT, JCMT, ...)",
     "launched": 2017,
@@ -1045,8 +1397,13 @@
       "Test general relativity at the event horizon",
       "Resolve jet launching in AGN"
     ],
-    "instruments": ["230/345 GHz VLBI receivers", "Hydrogen maser clocks", "Wideband digital backends"],
-    "url": "https://eventhorizontelescope.org"
+    "instruments": [
+      "230/345 GHz VLBI receivers",
+      "Hydrogen maser clocks",
+      "Wideband digital backends"
+    ],
+    "url": "https://eventhorizontelescope.org",
+    "flag": "🌐"
   },
   {
     "id": "green-bank",
@@ -1056,9 +1413,11 @@
     "domain": "ground",
     "status": "operating",
     "agency": "NSF/Green Bank Observatory",
-    "wavelengthMinM": 2.6e-3,
+    "wavelengthMinM": 0.0026,
     "wavelengthMaxM": 3,
-    "bands": ["radio (0.1–116 GHz)"],
+    "bands": [
+      "radio (0.1–116 GHz)"
+    ],
     "aperture": "100 × 110 m off-axis dish (largest fully steerable)",
     "location": "Green Bank, West Virginia, USA (radio quiet zone)",
     "launched": 2000,
@@ -1067,8 +1426,13 @@
       "Molecular clouds and astrochemistry",
       "Breakthrough Listen SETI observations"
     ],
-    "instruments": ["PF/L/S/C/X/Ku/K/Ka/Q/W-band receivers", "MUSTANG-2 bolometer camera", "VEGAS spectrometer"],
-    "url": "https://greenbankobservatory.org"
+    "instruments": [
+      "PF/L/S/C/X/Ku/K/Ka/Q/W-band receivers",
+      "MUSTANG-2 bolometer camera",
+      "VEGAS spectrometer"
+    ],
+    "url": "https://greenbankobservatory.org",
+    "flag": "🇺🇸"
   },
   {
     "id": "dkist",
@@ -1079,8 +1443,11 @@
     "status": "operating",
     "agency": "NSF/National Solar Observatory",
     "wavelengthMinM": 3.8e-7,
-    "wavelengthMaxM": 5e-6,
-    "bands": ["visible", "near-IR"],
+    "wavelengthMaxM": 0.000005,
+    "bands": [
+      "visible",
+      "near-IR"
+    ],
     "aperture": "4 m off-axis",
     "fieldOfView": "~5' (solar disk regions)",
     "location": "Haleakalā, Maui, Hawaii",
@@ -1090,8 +1457,15 @@
       "Coronal magnetometry and heating mechanisms",
       "Origins of flares and space weather"
     ],
-    "instruments": ["VBI", "ViSP", "VTF", "DL-NIRSP", "Cryo-NIRSP"],
-    "url": "https://nso.edu/telescopes/dki-solar-telescope/"
+    "instruments": [
+      "VBI",
+      "ViSP",
+      "VTF",
+      "DL-NIRSP",
+      "Cryo-NIRSP"
+    ],
+    "url": "https://nso.edu/telescopes/dki-solar-telescope/",
+    "flag": "🇺🇸"
   },
   {
     "id": "km3net",
@@ -1101,7 +1475,9 @@
     "domain": "ground",
     "status": "construction",
     "agency": "KM3NeT Collaboration (Europe)",
-    "bands": ["neutrinos"],
+    "bands": [
+      "neutrinos"
+    ],
     "signalLabel": "ν GeV – PeV",
     "aperture": "Up to ~1 km³ instrumented seawater (ARCA)",
     "location": "Mediterranean Sea (off Sicily, Italy & Toulon, France)",
@@ -1112,7 +1488,12 @@
       "Neutrino mass ordering with atmospheric neutrinos (ORCA)",
       "Complement IceCube with northern-sky coverage"
     ],
-    "instruments": ["ARCA deep-sea array", "ORCA dense array", "Multi-PMT digital optical modules"],
-    "url": "https://www.km3net.org"
+    "instruments": [
+      "ARCA deep-sea array",
+      "ORCA dense array",
+      "Multi-PMT digital optical modules"
+    ],
+    "url": "https://www.km3net.org",
+    "flag": "🇫🇷🇮🇹🇳🇱"
   }
 ]
