@@ -311,6 +311,24 @@
   gap: 10px;
 }
 
+.grid-group-title {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 22px 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.grid-group-title .grid-group-count {
+  margin-left: auto;
+  color: var(--text-faint);
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
 .body-card {
   display: flex;
   flex-direction: column;
@@ -428,6 +446,78 @@
 }
 
 /* ---------- Neighborhood tab ---------- */
+.search-box {
+  position: relative;
+  margin-bottom: 12px;
+  max-width: 480px;
+}
+
+.search-box input {
+  width: 100%;
+  font: inherit;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 9px 18px;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: var(--accent-cyan);
+}
+
+.search-box input::placeholder {
+  color: var(--text-faint);
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 30;
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+  background: var(--bg-raised);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.search-results button {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+}
+
+.search-results button:hover {
+  background: var(--panel-hover);
+}
+
+.search-results .search-name {
+  font-weight: 600;
+}
+
+.search-results .search-label {
+  color: var(--accent-cyan);
+  font-weight: 400;
+  font-size: 0.82rem;
+}
+
+.search-results .search-meta {
+  margin-left: auto;
+  color: var(--text-faint);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
 .zoom-control {
   display: inline-flex;
   gap: 2px;

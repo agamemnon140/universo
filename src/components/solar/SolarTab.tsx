@@ -4,10 +4,11 @@ import { bodies, bodyById } from '../../data'
 import { BodyGrid } from './BodyGrid'
 import { ComparePanel } from './ComparePanel'
 import { OrbitView } from './OrbitView'
+import { MoonsView } from './MoonsView'
 import { BodyDetail } from './BodyDetail'
 import { NewsSection } from '../news/NewsSection'
 
-type View = 'grid' | 'orbits'
+type View = 'grid' | 'moons' | 'orbits'
 
 /** Initial selection from ?compare=jupiter,earth so comparisons are shareable. */
 function selectionFromUrl(): string[] {
@@ -20,8 +21,13 @@ function selectionFromUrl(): string[] {
     .slice(0, 2)
 }
 
+function viewFromUrl(): View {
+  const v = new URLSearchParams(window.location.search).get('view')
+  return v === 'moons' || v === 'orbits' ? v : 'grid'
+}
+
 export function SolarTab({ news }: { news: NewsState }) {
-  const [view, setView] = useState<View>('grid')
+  const [view, setView] = useState<View>(viewFromUrl)
   const [selected, setSelected] = useState<string[]>(selectionFromUrl)
   const [detailId, setDetailId] = useState<string | null>(null)
 
@@ -44,6 +50,9 @@ export function SolarTab({ news }: { news: NewsState }) {
         <button className={view === 'grid' ? 'active' : ''} onClick={() => setView('grid')}>
           Compare
         </button>
+        <button className={view === 'moons' ? 'active' : ''} onClick={() => setView('moons')}>
+          Moons
+        </button>
         <button className={view === 'orbits' ? 'active' : ''} onClick={() => setView('orbits')}>
           Orbits
         </button>
@@ -61,15 +70,11 @@ export function SolarTab({ news }: { news: NewsState }) {
             onToggle={toggleSelect}
             onDetail={setDetailId}
           />
-          {a && b && <ComparePanel a={a} b={b} />}
-          {selected.length < 2 && (
-            <p className="empty-note">
-              {selected.length === 0
-                ? 'Select two bodies to see how they compare.'
-                : 'Select one more body to compare.'}
-            </p>
-          )}
         </>
+      )}
+
+      {view === 'moons' && (
+        <MoonsView selected={selected} onToggle={toggleSelect} onDetail={setDetailId} />
       )}
 
       {view === 'orbits' && (
@@ -81,7 +86,18 @@ export function SolarTab({ news }: { news: NewsState }) {
         </>
       )}
 
-      {detail && <BodyDetail body={detail} onClose={() => setDetailId(null)} />}
+      {view !== 'orbits' && a && b && <ComparePanel a={a} b={b} />}
+      {view !== 'orbits' && selected.length < 2 && (
+        <p className="empty-note">
+          {selected.length === 0
+            ? 'Select two bodies to see how they compare.'
+            : 'Select one more body to compare.'}
+        </p>
+      )}
+
+      {detail && (
+        <BodyDetail body={detail} onClose={() => setDetailId(null)} onSelectBody={setDetailId} />
+      )}
 
       <NewsSection news={news} theme="solar-system" />
     </>
