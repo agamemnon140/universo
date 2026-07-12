@@ -1,0 +1,75 @@
+:root {
+  --bg: #050a18;
+  --bg-raised: #0b1226;
+  --panel: #0e1730;
+  --panel-hover: #131f42;
+  --text: #dbe4ff;
+  --text-dim: #8794bd;
+  --text-faint: #5a6690;
+  --accent-amber: #ffb84d;
+  --accent-cyan: #4dd8ff;
+  --line: rgba(120, 150, 255, 0.15);
+  --line-strong: rgba(120, 150, 255, 0.3);
+
+  --status-operating: #4ade80;
+  --status-construction: #ffb84d;
+  --status-planned: #4dd8ff;
+  --status-retired: #6b7494;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+
+  color-scheme: dark;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(ellipse 120% 60% at 50% -10%, #0d1a3a 0%, var(--bg) 60%),
+    var(--bg);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+::selection {
+  background: rgba(77, 216, 255, 0.3);
+}
