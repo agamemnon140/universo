@@ -1,7 +1,39 @@
 {
-  "generatedAt": "2026-07-12T17:31:00.058Z",
+  "generatedAt": "2026-07-13T12:17:17.403Z",
   "source": "universetoday.com",
   "items": [
+    {
+      "id": "62f9da4d5c75",
+      "title": "Watching Dawn and Dusk on a Distant Hot Jupiter",
+      "link": "https://www.universetoday.com/articles/watching-dawn-and-dusk-on-a-distant-hot-jupiter",
+      "date": "2026-07-13T05:51:06.000Z",
+      "summary": "Astronomers using the James Webb Space Telescope have caught an extreme, tidally locked exoplanet in the act of showing two very different faces at once, a fierce, wind battered hemisphere and a…",
+      "themes": [
+        "solar-system",
+        "telescopes",
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "f1f787f77b48",
+      "title": "Listening for the Universe's Faintest Whispers, a Billion Supernovae at Once",
+      "link": "https://www.universetoday.com/articles/listening-for-the-universes-faintest-whispers-a-billion-supernovae-at-once",
+      "date": "2026-07-13T05:37:42.000Z",
+      "summary": "Buried a kilometre underground in Japan, one of the world's most sensitive detectors may have caught its first faint trace of a sound scientists have been straining to hear for decades, the combined…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "ae4dfccb9689",
+      "title": "Most Of Moon’s Water Likely Remains Chemically Bound In Its Deep Interior",
+      "link": "https://www.universetoday.com/articles/most-of-moons-water-likely-remains-chemically-bound-in-its-deep-interior",
+      "date": "2026-07-13T00:05:27.000Z",
+      "summary": "Aside from an unknown quantity of water in the Moon’s permanently shaded polar craters, the lion’s share of what water the Moon may have is likely chemically bound in its deep interior.",
+      "themes": [
+        "solar-system"
+      ]
+    },
     {
       "id": "2dc493b42aee",
       "title": "A Rapidly-Growing Black Hole in a Nearby Galaxy Could Provide a Window Into the Early Universe.",
@@ -129,47 +161,6 @@
       "link": "https://www.universetoday.com/articles/the-milky-ways-arms-reach-out-further-than-we-thought",
       "date": "2026-07-08T21:14:54.000Z",
       "summary": "A new result using NASA’s Chandra X-ray Observatory shows that the outer spiral arms in the Milky Way galaxy may reach wider than previously thought. This finding may lead astronomers to adjust their…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "98afba88245c",
-      "title": "The JWST and the Mystery of Massive Quenched Galaxies in the Early Universe",
-      "link": "https://www.universetoday.com/articles/the-jwst-and-the-mystery-of-massive-quenched-galaxies-in-the-early-universe",
-      "date": "2026-07-08T18:58:53.000Z",
-      "summary": "With its ability to observe the red-shifted light from early galaxies, the JWST has revealed some surprises. Many massive galaxies in the early Universe had ceased star formation and were already…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "b6d0af9644e9",
-      "title": "Another Success for Hayabusa 2 as it Completes a Flyby of Asteroid Torifune",
-      "link": "https://www.universetoday.com/articles/another-success-for-hayabusa-2-as-it-completes-a-flyby-of-asteroid-torifune",
-      "date": "2026-07-07T20:21:53.000Z",
-      "summary": "JAXA's Hayabusa 2 has completed its flyby of asteroid Torifune. The spacecraft came within about 800 meters of the asteroid's surface. Though the spacecraft is travelling very rapidly, making…",
-      "themes": [
-        "solar-system",
-        "telescopes"
-      ]
-    },
-    {
-      "id": "f0d1e2cc4225",
-      "title": "The Euclid Space Telescope Has Found 31 New Ancient Quasars, Including the Most Ancient One Ever Found",
-      "link": "https://www.universetoday.com/articles/the-euclid-space-telescope-has-found-31-new-ancient-quasars-including-the-most-ancient-one-ever-foun",
-      "date": "2026-07-07T19:17:37.000Z",
-      "summary": "Euclid is only 1.5 years into its Euclid Wide Survey and has found 31 new quasars from the Universe's first 800 million years. Though the Survey isn't specifically aimed at finding ancient quasars,…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "fb70196cfae3",
-      "title": "Galaxy Mergers Aren't Always Obvious",
-      "link": "https://www.universetoday.com/articles/galaxy-mergers-arent-always-obvious",
-      "date": "2026-07-07T16:24:16.000Z",
-      "summary": "Mergers are a part of a galaxy's life in this Universe. Though clear signs of these mergers fade over hundreds of millions of years, evidence is still present, yet obscured, in the galaxies that…",
       "themes": [
         "telescopes"
       ]
