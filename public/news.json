@@ -1,168 +1,108 @@
 {
-  "generatedAt": "2026-07-13T12:17:17.403Z",
+  "generatedAt": "2026-07-20T11:59:00.526Z",
   "source": "universetoday.com",
   "items": [
     {
-      "id": "62f9da4d5c75",
-      "title": "Watching Dawn and Dusk on a Distant Hot Jupiter",
-      "link": "https://www.universetoday.com/articles/watching-dawn-and-dusk-on-a-distant-hot-jupiter",
-      "date": "2026-07-13T05:51:06.000Z",
-      "summary": "Astronomers using the James Webb Space Telescope have caught an extreme, tidally locked exoplanet in the act of showing two very different faces at once, a fierce, wind battered hemisphere and a…",
+      "id": "9ed8d32e7b70",
+      "title": "The Case of the Sun's Missing Silver",
+      "link": "https://www.universetoday.com/articles/the-case-of-the-suns-missing-silver",
+      "date": "2026-07-20T05:15:18.000Z",
+      "summary": "Astronomers have solved a decades old puzzle about the Sun's missing silver, not by finding something new, but by modelling something old far more accurately. A revised, more realistic model of the…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "3fda0c6932ad",
+      "title": "The First Breath of Another World",
+      "link": "https://www.universetoday.com/articles/the-first-breath-of-another-world",
+      "date": "2026-07-20T04:58:02.000Z",
+      "summary": "Astronomers have detected an atmosphere around a rocky planet in another star's habitable zone for the very first time. It’s a milestone that brings us a step closer to answering whether life could…",
       "themes": [
         "solar-system",
-        "telescopes",
         "exoplanets"
       ]
     },
     {
-      "id": "f1f787f77b48",
-      "title": "Listening for the Universe's Faintest Whispers, a Billion Supernovae at Once",
-      "link": "https://www.universetoday.com/articles/listening-for-the-universes-faintest-whispers-a-billion-supernovae-at-once",
-      "date": "2026-07-13T05:37:42.000Z",
-      "summary": "Buried a kilometre underground in Japan, one of the world's most sensitive detectors may have caught its first faint trace of a sound scientists have been straining to hear for decades, the combined…",
+      "id": "bd3634a47f2b",
+      "title": "NASA's Perseverance Rover Uncovers Evidence of 4 Billion Year Old Impacts",
+      "link": "https://www.universetoday.com/articles/nasas-perseverance-rover-uncovers-evidence-of-4-billion-year-old-impacts",
+      "date": "2026-07-19T20:00:11.000Z",
+      "summary": "Old rocks exposed on the rim of Jezero Crater preserve a roughly 4-billion-year-old cosmic “weather report” from the solar system’s most dynamic era.",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "a077eac64095",
+      "title": "NASA’s Artemis III Lander Test Will be a \"Dress Rehearsal\" for Returning to the Moon!",
+      "link": "https://www.universetoday.com/articles/nasas-artemis-iii-lander-test-will-be-a-dress-rehearsal-for-returning-to-the-moon",
+      "date": "2026-07-19T02:41:29.000Z",
+      "summary": "Before Artemis astronauts land on the Moon’s surface in 2028, NASA will conduct the Artemis III demonstration mission in 2027, allowing teams on Earth and in orbit to practice rendezvous and docking…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "9386855f3ecc",
+      "title": "Submillimeter Array Catches a Gamma-Ray Burst Thanks to new Fast-Response System",
+      "link": "https://www.universetoday.com/articles/submillimeter-array-catches-a-gamma-ray-burst-thanks-to-new-fast-response-system",
+      "date": "2026-07-18T20:41:09.000Z",
+      "summary": "The Submillimeter Array's (SMA) new semi-automated alert system demonstrates how the radio interferometer quickly responds to discoveries from space-based telescopes.",
+      "themes": [
+        "solar-system",
+        "telescopes"
+      ]
+    },
+    {
+      "id": "bba96064f642",
+      "title": "The Roman Space Telescope Will Find Ancient Black Holes By Watching How They Eat Stars",
+      "link": "https://www.universetoday.com/articles/the-roman-space-telescope-will-find-ancient-black-holes-by-watching-how-they-eat-stars",
+      "date": "2026-07-17T17:19:51.000Z",
+      "summary": "When supermassive black holes (SMBH) in a certain mass range eat a star, they first tear it apart in a Tidal Disruption Event (TDE). By detecting TDE across cosmic time, astronomers can chart the…",
       "themes": [
         "telescopes"
       ]
     },
     {
-      "id": "ae4dfccb9689",
-      "title": "Most Of Moon’s Water Likely Remains Chemically Bound In Its Deep Interior",
-      "link": "https://www.universetoday.com/articles/most-of-moons-water-likely-remains-chemically-bound-in-its-deep-interior",
-      "date": "2026-07-13T00:05:27.000Z",
-      "summary": "Aside from an unknown quantity of water in the Moon’s permanently shaded polar craters, the lion’s share of what water the Moon may have is likely chemically bound in its deep interior.",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "2dc493b42aee",
-      "title": "A Rapidly-Growing Black Hole in a Nearby Galaxy Could Provide a Window Into the Early Universe.",
-      "link": "https://www.universetoday.com/articles/a-rapidly-growing-black-hole-in-a-nearby-galaxy-could-provide-a-window-into-the-early-universe",
-      "date": "2026-07-11T00:51:38.000Z",
-      "summary": "The black hole at the centre of a nearby galaxy is growing exceptionally fast, and is producing a burst of radio emission that has never been observed before. With characteristics that are expected…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "4ff0ae3582ec",
-      "title": "Astronomers Use a Neutron Star Merger to Measure Cosmic Expansion",
-      "link": "https://www.universetoday.com/articles/astronomers-use-a-neutron-star-merger-to-measure-cosmic-expansion",
-      "date": "2026-07-10T17:05:00.000Z",
-      "summary": "Swinburne University of Technology and CSIRO have combined telescope and gravitational wave data in an attempt to unlock the true value of the Universe's expansion. Existing measurements of the…",
+      "id": "2c159605e887",
+      "title": "Satellite Images of Pengiun Poo Reveal Climate Change's Impact on the Species",
+      "link": "https://www.universetoday.com/articles/satellite-images-of-pengiun-poo-reveal-climate-changes-impact-on-the-species",
+      "date": "2026-07-16T23:25:00.000Z",
+      "summary": "Researchers utilized 30 years of Landsat satellite imagery to analyze the color and spectral signatures of Adélie penguin guano across Antarctica, marking the first time space-based observations have…",
       "themes": [
         "telescopes"
       ]
     },
     {
-      "id": "1a6cf515cd24",
-      "title": "Only Binary Stars Can Create Interacting Supernovae",
-      "link": "https://www.universetoday.com/articles/only-binary-stars-can-create-interacting-supernovae",
-      "date": "2026-07-10T15:40:00.000Z",
-      "summary": "When a massive star reaches the end of its life, it explodes as a supernova that can light up the sky for months. But some supernovae stay luminous for much longer, and astrophysicists have wondered…",
-      "themes": [
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "06cc920868b8",
-      "title": "How 'Star City' Reimagined the Space Race With Soviets as the Stars",
-      "link": "https://www.universetoday.com/articles/how-star-city-reimagined-the-space-race-with-soviets-as-the-stars",
-      "date": "2026-07-10T01:41:00.000Z",
-      "summary": "How do you capture the mood of the 1960s space race in a fictional universe where the Soviets beat the Americans to the moon? The production team for Apple TV's \"Star City\" series rose to the…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "2c33ade76d34",
-      "title": "To Ancient Astronomers, Theta Eridani Was Brighter For A Thousand Years. Now We Know Why",
-      "link": "https://www.universetoday.com/articles/to-ancient-astronomers-theta-eridani-was-brighter-for-a-thousand-years-now-we-know-why",
-      "date": "2026-07-09T19:52:34.000Z",
-      "summary": "Ptolemy and al-Sufi were keen ancient astronomers, one in Greece and one in Persia, whose observations were separated by almost a thousand years. They both noted that the star Theta Eridani was far…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "129fefd2f8fb",
-      "title": "Could Permanent Magnets Protect Astronauts from Solar Storms?",
-      "link": "https://www.universetoday.com/articles/could-permanent-magnets-protect-astronauts-from-solar-storms",
-      "date": "2026-07-09T15:28:35.000Z",
-      "summary": "Shielding astronauts from the killer radiation they face is a central challenge facing any designer of a deep-space crewed mission. Even relatively low levels of exposure for long periods of time can…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "e286817852ea",
-      "title": "NASA Is Calling on Industry to Build Its Lunar Infrastructure",
-      "link": "https://www.universetoday.com/articles/nasa-is-calling-on-industry-to-build-its-lunar-infrastructure",
-      "date": "2026-07-09T14:31:45.000Z",
-      "summary": "NASA is serious about going back to the Moon. Ongoing missions like the recently completed Artemis II trip around the Moon are just one such sign. But perhaps more importantly, NASA is recognizing…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "d11e53872b02",
-      "title": "A \"Smart Ruler\" Could Help Swarms of Space Telescopes Image Exoplanets",
-      "link": "https://www.universetoday.com/articles/a-smart-ruler-could-help-swarms-of-space-telescopes-image-exoplanets",
-      "date": "2026-07-09T14:25:16.000Z",
-      "summary": "We’ve talked plenty of times here about the infeasibility of launching a mirror big enough to directly image exoplanets using current rocket fairings - at least as long as we’re not sending them 500+…",
+      "id": "4a88c4f09ae7",
+      "title": "This Exoplanet Hid for 10 Years Before Astronomers Finally Found It",
+      "link": "https://www.universetoday.com/articles/this-exoplanet-hid-for-10-years-before-astronomers-finally-found-it",
+      "date": "2026-07-16T19:56:53.000Z",
+      "summary": "A team of astronomers have discovered a third planet orbiting the star Beta Pictoris. The new planet, Beta Pictoris d, is 100 times fainter than Beta Pictoris b — the first planet discovered in the…",
       "themes": [
         "telescopes",
         "exoplanets"
       ]
     },
     {
-      "id": "c77132825630",
-      "title": "Does Space Speed Up Ageing? A New Study Says Yes!",
-      "link": "https://www.universetoday.com/articles/does-space-speed-up-ageing-a-new-study-says-yes",
-      "date": "2026-07-09T05:44:59.000Z",
-      "summary": "Scientists at UCF have found that the harsh conditions of spaceflight, radiation and weightlessness combined, can trigger changes in the liver that closely resemble accelerated ageing, and…",
+      "id": "4bd30589c28d",
+      "title": "After a Billion Kilometres, China's Asteroid Hunter Finally Arrives",
+      "link": "https://www.universetoday.com/articles/after-a-billion-kilometres-chinas-asteroid-hunter-finally-arrives",
+      "date": "2026-07-15T04:55:09.000Z",
+      "summary": "After chasing a small asteroid across a billion kilometres of space, China's Tianwen-2 probe has finally caught up, closing to within twenty kilometres of its target and beginning detailed scientific…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "17d737f73aec",
-      "title": "Scientists Heard the Fireball No Camera Could See",
-      "link": "https://www.universetoday.com/articles/scientists-heard-the-fireball-no-camera-could-see",
-      "date": "2026-07-09T05:19:25.000Z",
-      "summary": "When a fireball streaked across the Alaska sky in broad daylight, the cameras meant to capture it saw nothing useful. Undeterred, scientists turned to sound waves too low for human ears and faint…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "edbdd7302d6e",
-      "title": "Could Astronauts Grow Rice on the Moon?",
-      "link": "https://www.universetoday.com/articles/could-astronauts-grow-rice-on-the-moon",
-      "date": "2026-07-08T23:52:59.000Z",
-      "summary": "Scientists in Japan have built a low power device that pulls nitrogen straight from the air and turns it into fertiliser, then used it to successfully grow rice in simulated lunar soil. Along the…",
+      "id": "2f0bb67130e9",
+      "title": "A Relativistic Jet Could be an Indication of the 'Missing-Link' for Black Holes",
+      "link": "https://www.universetoday.com/articles/a-relativistic-jet-could-be-an-indication-of-the-missing-link-for-black-holes",
+      "date": "2026-07-14T23:39:41.000Z",
+      "summary": "Astronomers using the U.S. National Science Foundation Very Large Array (NSF VLA) have detected an extraordinary burst of radio light from a rare cosmic event in which an intermediate-mass black hole…",
       "themes": [
         "solar-system"
-      ]
-    },
-    {
-      "id": "a11c4f29bfb8",
-      "title": "7,000 Galaxy Clusters, Hiding in Plain Sight",
-      "link": "https://www.universetoday.com/articles/7000-galaxy-clusters-hiding-in-plain-sight",
-      "date": "2026-07-08T23:43:04.000Z",
-      "summary": "A five year survey by the South Pole Telescope has produced a catalogue of more than seven thousand galaxy clusters, some dating back nearly eight billion years, giving astronomers their most…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "f5d0ab01e9b9",
-      "title": "The Milky Way's Arms Reach Out Further Than we Thought",
-      "link": "https://www.universetoday.com/articles/the-milky-ways-arms-reach-out-further-than-we-thought",
-      "date": "2026-07-08T21:14:54.000Z",
-      "summary": "A new result using NASA’s Chandra X-ray Observatory shows that the outer spiral arms in the Milky Way galaxy may reach wider than previously thought. This finding may lead astronomers to adjust their…",
-      "themes": [
-        "telescopes"
       ]
     }
   ]
