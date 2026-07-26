@@ -7,17 +7,18 @@ neighborhood — built as a static PWA and published on GitHub Pages.
 
 ## Tabs
 
-- **Solar System** — 20 bodies (Sun, planets, Pluto, 10 major moons) with sizes drawn to
-  relative scale. Select any two to compare them: true-scale circles plus a full ratio table
-  (mass, volume, radius, gravity, density, temperature, escape velocity, orbital and rotation
-  periods, eccentricity, inclination, Roche limit, Hill sphere). Comparisons are shareable via
-  `?compare=jupiter,earth`. A secondary log-scale orbit view links to detail sheets with
-  atmosphere, missions, and notable facts.
+- **Solar System** — 45 bodies (Sun, planets, dwarf planets, every moon ≥100 km) with sizes
+  drawn to relative scale, sortable by size, mass, or orbit distance from the Sun / parent
+  planet. Select any two to compare them: true-scale circles plus a full ratio table (mass,
+  volume, radius, surface area, gravity, density, temperature, escape velocity, orbital period,
+  sidereal rotation and solar day, eccentricity, inclination, Roche limit, Hill sphere, surface
+  and core composition). Comparisons are shareable via `?compare=jupiter,earth`. A secondary
+  log-scale orbit view links to detail sheets with atmosphere, missions, and notable facts.
 - **Telescopes** — 49 observatories placed on the electromagnetic spectrum (gamma → radio,
   log wavelength scale), color-coded by status (operating / construction / planned / retired),
   with separate lanes for gravitational-wave and neutrino detectors. Filter by status and
-  space/ground; tap a bar for aperture, field of view, limiting magnitude, instruments, and
-  objectives.
+  space/ground, order the rows by wavelength or by first light; tap a bar for aperture, field
+  of view, limiting magnitude, instruments, and objectives.
 - **Neighborhood** — top-down map of the galactic plane with 70 star systems: the real census
   within 20 light-years plus famous distant systems (TRAPPIST-1, K2-18, Kepler-452…). Zoom
   levels of 20 / 100 / 1500 ly on a log radial scale. Stars are colored by spectral class;
@@ -33,6 +34,9 @@ Every tab ends with the latest matching headlines from
 - Datasets are hand-curated JSON in [src/data/](src/data/), cross-checked against NASA
   factsheets and the NASA Exoplanet Archive. Solar-system relative values (mass, volume,
   radius, orbit, Roche limit, Hill sphere) follow the project owner's reference spreadsheet.
+  Surface area and the solar day are derived in [src/lib/derive.ts](src/lib/derive.ts) rather
+  than stored: the stored rotation period is sidereal (one turn against the stars), and the
+  solar day adds the extra turn a body needs to face the Sun again after moving along its orbit.
 - News: [.github/workflows/news.yml](.github/workflows/news.yml) runs weekly (Mondays 09:17
   UTC), fetches the Universe Today RSS feed via [scripts/fetch-news.mjs](scripts/fetch-news.mjs),
   classifies items per tab, and commits `public/news.json` only when content changed — then

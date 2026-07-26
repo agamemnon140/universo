@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { bodies, bodyById } from '../../data'
 import { BodyCard } from './BodyCard'
+import { SortControl } from './SortControl'
 import { formatNumber } from '../../lib/format'
+import { sortBodies, sortCaption, type BodySort } from '../../lib/sortBodies'
 
 const SIZE = 700
 const CENTER_X = SIZE / 2
@@ -12,10 +14,14 @@ const PLANET_ORDER = ['earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune',
 
 export function MoonsView({
   selected,
+  sort,
+  onSort,
   onToggle,
   onDetail,
 }: {
   selected: string[]
+  sort: BodySort
+  onSort: (s: BodySort) => void
   onToggle: (id: string) => void
   onDetail: (id: string) => void
 }) {
@@ -134,20 +140,20 @@ export function MoonsView({
         </svg>
       </div>
 
+      <SortControl sort={sort} onSort={onSort} />
+
       <div className="body-grid">
-        {moons
-          .slice()
-          .sort((a, b) => b.radiusEarth - a.radiusEarth)
-          .map((moon) => (
-            <BodyCard
-              key={moon.id}
-              body={moon}
-              maxRadius={Math.max(...moons.map((m) => m.radiusEarth))}
-              selected={selected.includes(moon.id)}
-              onToggle={() => onToggle(moon.id)}
-              onDetail={() => onDetail(moon.id)}
-            />
-          ))}
+        {sortBodies(moons, sort).map((moon) => (
+          <BodyCard
+            key={moon.id}
+            body={moon}
+            maxRadius={Math.max(...moons.map((m) => m.radiusEarth))}
+            caption={sortCaption(moon, sort)}
+            selected={selected.includes(moon.id)}
+            onToggle={() => onToggle(moon.id)}
+            onDetail={() => onDetail(moon.id)}
+          />
+        ))}
       </div>
     </>
   )

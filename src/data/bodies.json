@@ -42,7 +42,10 @@
       "Light from its surface takes 8 minutes 20 seconds to reach Earth.",
       "Parker Solar Probe flew through its corona in 2021 — the first spacecraft to 'touch' the Sun."
     ],
-    "composition": "Plasma — hydrogen 73%, helium 25%, heavier elements 2%"
+    "composition": {
+      "surface": "Photosphere plasma at ~5,500 °C — hydrogen 73%, helium 25%; granulation and sunspots",
+      "core": "Fusion core at ~15 million °C and ~150 g/cm³, burning hydrogen into helium"
+    }
   },
   {
     "id": "jupiter",
@@ -91,7 +94,10 @@
       "Its fastest rotation of any planet flattens it visibly at the poles.",
       "Its magnetic field is the strongest of any planet — 20,000× Earth's."
     ],
-    "composition": "Gas giant — H/He envelope over metallic hydrogen; dense core of ~10–20 M⊕"
+    "composition": {
+      "surface": "No solid surface — ammonia and ammonium-hydrosulfide cloud decks over hydrogen/helium",
+      "core": "Metallic hydrogen mantle around a diffuse \"fuzzy\" core of ~10–20 M⊕ of rock and ice"
+    }
   },
   {
     "id": "saturn",
@@ -137,7 +143,10 @@
       "Holds the record for known moons: 274 confirmed as of 2025.",
       "Cassini ended its mission by diving into Saturn's atmosphere in 2017."
     ],
-    "composition": "Gas giant — H/He with helium rain; diffuse rock/ice core"
+    "composition": {
+      "surface": "No solid surface — ammonia-ice haze over hydrogen/helium; helium rain deeper down",
+      "core": "Diffuse rock/ice core of ~15–20 M⊕ smeared through the inner envelope (ring seismology)"
+    }
   },
   {
     "id": "uranus",
@@ -181,7 +190,10 @@
       "A season lasts 21 Earth years on each hemisphere.",
       "Its 28 moons are named after Shakespeare and Pope characters."
     ],
-    "composition": "Ice giant — water/ammonia/methane ice mantle, H/He atmosphere, rocky core"
+    "composition": {
+      "surface": "No solid surface — hydrogen/helium with the methane that gives it the cyan colour",
+      "core": "Hot, dense water/ammonia/methane ice mantle around a small rocky core"
+    }
   },
   {
     "id": "neptune",
@@ -225,7 +237,10 @@
       "Has completed only one orbit since its 1846 discovery (in 2011).",
       "Radiates 2.6× more heat than it receives from the Sun."
     ],
-    "composition": "Ice giant — water/ammonia/methane ice mantle, H/He atmosphere, rocky core"
+    "composition": {
+      "surface": "No solid surface — methane-rich hydrogen/helium clouds and the fastest winds known",
+      "core": "Water/ammonia/methane ice mantle around a rocky core of roughly one Earth mass"
+    }
   },
   {
     "id": "earth",
@@ -269,7 +284,10 @@
       "Its large Moon stabilizes the axial tilt, keeping climate steady.",
       "Plate tectonics constantly recycle the surface — unique among known planets."
     ],
-    "composition": "Rocky — iron/nickel core (~32% of mass), silicate mantle, thin crust, surface water"
+    "composition": {
+      "surface": "Silicate crust — 71% liquid-water ocean, basaltic seafloor, granitic continents, recycled by plate tectonics",
+      "core": "Molten iron/nickel outer core and solid inner core (~32% of the mass) under a silicate mantle"
+    }
   },
   {
     "id": "venus",
@@ -316,7 +334,10 @@
       "Spins backwards: the Sun rises in the west.",
       "Surface pressure equals a 900 m dive in Earth's oceans."
     ],
-    "composition": "Rocky — large iron core, silicate mantle and basaltic crust"
+    "composition": {
+      "surface": "Basaltic volcanic plains and highlands at ~465 °C, crushed under 92 bar of CO2",
+      "core": "Large iron core and silicate mantle — no dynamo, so no global magnetic field"
+    }
   },
   {
     "id": "mars",
@@ -365,7 +386,10 @@
       "Ancient riverbeds and lake deposits show it was once warm and wet.",
       "Its moon Phobos orbits so low it will crash or shred into a ring in ~50 million years."
     ],
-    "composition": "Rocky — iron/sulfur core, basaltic mantle, iron-oxide dust surface"
+    "composition": {
+      "surface": "Basalt covered in iron-oxide dust — the rust that makes it red; water and CO2 ice at the poles",
+      "core": "Liquid iron/sulfur core ~1,830 km across (measured by InSight), basaltic mantle, thick crust"
+    }
   },
   {
     "id": "mercury",
@@ -411,7 +435,10 @@
       "Its huge iron core spans about 85% of the planet's radius.",
       "Despite the heat, water ice hides in permanently shadowed polar craters."
     ],
-    "composition": "Rocky — enormous iron core (~85% of radius), thin silicate mantle"
+    "composition": {
+      "surface": "Heavily cratered silicate crust, darkened by carbon; water ice in permanently shadowed polar craters",
+      "core": "Enormous iron core filling ~85% of the radius, under a thin silicate mantle"
+    }
   },
   {
     "id": "ganymede",
@@ -454,7 +481,10 @@
       "Hides a saltwater ocean with more water than all of Earth's oceans.",
       "ESA's JUICE will become the first spacecraft to orbit another planet's moon."
     ],
-    "composition": "~60% rock/iron, ~40% water ice; internal ocean sandwiched between ice layers"
+    "composition": {
+      "surface": "Water-ice crust — dark cratered terrain cut by bright grooved tectonic bands",
+      "core": "Iron core (the only moon with its own magnetic field) and rock mantle; ~60% rock, ~40% ice overall"
+    }
   },
   {
     "id": "titan",
@@ -496,7 +526,10 @@
       "Rain, rivers and seas exist, but of methane and ethane at −179 °C.",
       "NASA's Dragonfly rotorcraft will fly across its dunes in the 2030s."
     ],
-    "composition": "About half water ice, half rock; internal water ocean; methane lakes above"
+    "composition": {
+      "surface": "Water-ice bedrock under organic sand dunes, with methane/ethane lakes and rivers",
+      "core": "Rocky core of roughly half the mass, topped by a subsurface water–ammonia ocean"
+    }
   },
   {
     "id": "callisto",
@@ -538,7 +571,10 @@
       "Orbits outside Jupiter's worst radiation — a candidate site for future human bases.",
       "Likely hides a subsurface ocean beneath 100 km of ice."
     ],
-    "composition": "Nearly even ice/rock mix, only partly differentiated; possible deep ocean"
+    "composition": {
+      "surface": "The most cratered surface known — dirty water ice under a dark dust lag",
+      "core": "Only partly differentiated ice/rock mix; a possible ocean ~150 km down"
+    }
   },
   {
     "id": "io",
@@ -580,7 +616,10 @@
       "Volcanic plumes shoot sulfur 500 km into space.",
       "Its surface repaints itself in yellows and reds faster than craters can form."
     ],
-    "composition": "Rocky — iron/iron-sulfide core, silicate mantle, sulfur-coated surface"
+    "composition": {
+      "surface": "Sulfur and SO2 frosts over silicate lava — 400+ active volcanoes and not a single impact crater",
+      "core": "Iron/iron-sulfide core under a partially molten silicate mantle, kept hot by tidal flexing"
+    }
   },
   {
     "id": "moon",
@@ -622,7 +661,10 @@
       "Drifts away from Earth by 3.8 cm every year.",
       "Chang'e 6 returned the first samples from the lunar far side in 2024."
     ],
-    "composition": "Rocky — small iron core, silicate mantle, anorthosite/basalt crust"
+    "composition": {
+      "surface": "Anorthosite highlands and basaltic maria buried under deep dust regolith",
+      "core": "Small iron core (~350 km) with a partly molten boundary layer, under a silicate mantle"
+    }
   },
   {
     "id": "europa",
@@ -664,7 +706,10 @@
       "The smoothest solid surface in the solar system, constantly resurfaced by ice.",
       "NASA's Europa Clipper launched in 2024 to scan it with 49 flybys."
     ],
-    "composition": "Rocky interior, saltwater ocean beneath a 15–25 km water-ice shell"
+    "composition": {
+      "surface": "Young water-ice shell 15–25 km thick, cracked by lineae and stained with salts",
+      "core": "Iron core and rocky interior beneath a global salty ocean ~100 km deep"
+    }
   },
   {
     "id": "triton",
@@ -704,7 +749,10 @@
       "Geysers of nitrogen erupt through its pink nitrogen-ice cap.",
       "Neptune's tides are slowly pulling it inward toward eventual destruction."
     ],
-    "composition": "Rock core (~2/3 of mass) with water-ice mantle; nitrogen-ice surface"
+    "composition": {
+      "surface": "Nitrogen ice with methane and CO2 — cantaloupe terrain and active nitrogen geysers",
+      "core": "Rock/metal core holding about 2/3 of the mass, water-ice mantle, likely a subsurface ocean"
+    }
   },
   {
     "id": "pluto",
@@ -744,7 +792,10 @@
       "Its moon Charon is so large they orbit a point outside Pluto itself.",
       "A year here lasts 248 Earth years — it hasn't completed one since discovery."
     ],
-    "composition": "~2/3 rock, ~1/3 ices (N2, CH4, CO, H2O); nitrogen-ice glaciers"
+    "composition": {
+      "surface": "Nitrogen-ice glaciers of Sputnik Planitia, methane snows, and mountains of water ice",
+      "core": "About 2/3 rock by mass, probably with a residual liquid-water ocean under the ice shell"
+    }
   },
   {
     "id": "titania",
@@ -784,7 +835,10 @@
       "Seen up close only once, by Voyager 2 in 1986.",
       "May hide a thin liquid ocean at its ice–rock boundary."
     ],
-    "composition": "Roughly half water ice, half rock"
+    "composition": {
+      "surface": "Water ice with CO2 frost, scarred by huge canyons and scarps",
+      "core": "Roughly half rock by mass; a thin ocean layer at depth is possible"
+    }
   },
   {
     "id": "rhea",
@@ -825,7 +879,10 @@
       "Cassini data once hinted at faint rings — which would be unique for a moon.",
       "Its wispy trailing hemisphere is streaked by bright ice cliffs."
     ],
-    "composition": "Mostly water ice (~75%) with a small rocky interior"
+    "composition": {
+      "surface": "Bright, heavily cratered water ice streaked with wispy fractures",
+      "core": "Only ~25% rock and likely undifferentiated — nearly a uniform iceball"
+    }
   },
   {
     "id": "iapetus",
@@ -866,7 +923,10 @@
       "Cassini could only see its bright side from Earth, and correctly guessed why.",
       "Its distant, tilted orbit gives it the best views of Saturn's rings of any major moon."
     ],
-    "composition": "Mostly water ice (~80%) with a little rock; dark organic coating on one side"
+    "composition": {
+      "surface": "Water ice — one hemisphere coated in dark reddish organics, the other blindingly bright",
+      "core": "Mostly ice (~80%) with little rock; frozen rigid early, so it keeps a fossil bulge"
+    }
   },
   {
     "id": "phobos",
@@ -907,7 +967,10 @@
       "One of the darkest objects in the solar system.",
       "Its huge Stickney crater is nearly half the moon's width."
     ],
-    "composition": "Carbon-rich rubble similar to C-type asteroids; likely porous"
+    "composition": {
+      "surface": "Carbon-rich regolith, grooved, dominated by the 9-km Stickney crater",
+      "core": "Porous rubble (~30% void) like a C-type asteroid — no differentiation"
+    }
   },
   {
     "id": "deimos",
@@ -947,7 +1010,10 @@
       "From Mars it looks like a bright star, not a disk.",
       "Likely a captured asteroid or debris from a giant impact, like Phobos."
     ],
-    "composition": "Carbon-rich rubble similar to C-type asteroids"
+    "composition": {
+      "surface": "Smooth carbon-rich regolith that has filled in its own craters",
+      "core": "Porous rubble like a C-type asteroid — no differentiation"
+    }
   },
   {
     "id": "amalthea",
@@ -988,7 +1054,10 @@
       "Radiates slightly more heat than it receives — warmed by Jupiter's tides.",
       "Feeds one of Jupiter's faint gossamer rings with its dust."
     ],
-    "composition": "Porous water ice and rubble, coated in sulfur from Io"
+    "composition": {
+      "surface": "Red sulfur coating blown off Io, over porous water ice",
+      "core": "Loosely bound rubble — less dense than water, so mostly empty space"
+    }
   },
   {
     "id": "himalia",
@@ -1028,7 +1097,10 @@
       "Gives its name to a whole family of moons with similar orbits.",
       "Orbits 15× farther from Jupiter than Callisto."
     ],
-    "composition": "Rock similar to C-type asteroids (captured)"
+    "composition": {
+      "surface": "Dark, spectrally featureless C-type surface",
+      "core": "Rock like a C-type asteroid — a captured body whose interior has never been probed"
+    }
   },
   {
     "id": "mimas",
@@ -1069,7 +1141,10 @@
       "In 2024, its wobble revealed a surprisingly young hidden ocean.",
       "The impact that made Herschel nearly shattered it."
     ],
-    "composition": "Almost pure water ice with a small amount of rock; young internal ocean"
+    "composition": {
+      "surface": "Water ice dominated by the 130-km Herschel crater — the \"Death Star\" moon",
+      "core": "Almost pure ice with a small rocky core; its libration hints at a young internal ocean"
+    }
   },
   {
     "id": "enceladus",
@@ -1110,7 +1185,10 @@
       "The most reflective body in the solar system: nearly pure fresh snow.",
       "Its plume material forms Saturn's entire E ring."
     ],
-    "composition": "Rocky core beneath a global saltwater ocean and water-ice shell"
+    "composition": {
+      "surface": "Fresh water ice — the tiger-stripe fractures vent plumes into space at the south pole",
+      "core": "Porous, hydrothermally active rocky core beneath a global salty ocean"
+    }
   },
   {
     "id": "tethys",
@@ -1151,7 +1229,10 @@
       "Shares its orbit with two small trojan moons, Telesto and Calypso.",
       "Crater Odysseus is 450 km wide — 2/5 of the moon's diameter."
     ],
-    "composition": "Nearly pure water ice — one of the least dense large moons"
+    "composition": {
+      "surface": "Nearly pure water ice, split by the Ithaca Chasma canyon",
+      "core": "Almost no rock at all — one of the least dense large moons in the solar system"
+    }
   },
   {
     "id": "dione",
@@ -1192,7 +1273,10 @@
       "Shares its orbit with trojan moons Helene and Polydeuces.",
       "Keeps the same face toward Saturn, like most large moons."
     ],
-    "composition": "Water ice with a substantial rocky core"
+    "composition": {
+      "surface": "Water ice with bright ice cliffs — the wispy terrain seen by Cassini",
+      "core": "Substantial rocky core holding about half the mass; a subsurface ocean is likely"
+    }
   },
   {
     "id": "hyperion",
@@ -1233,7 +1317,10 @@
       "More than 40% empty space inside — a loose rubble pile of ice.",
       "The largest known non-round moon in the solar system."
     ],
-    "composition": "Porous water ice — over 40% empty space"
+    "composition": {
+      "surface": "Sponge-like water ice with dark hydrocarbon dust pooled in the crater floors",
+      "core": "Over 40% empty space — a porous rubble pile that tumbles chaotically"
+    }
   },
   {
     "id": "phoebe",
@@ -1273,7 +1360,10 @@
       "Its dark dust paints one face of Iapetus black.",
       "First moon discovered by photography."
     ],
-    "composition": "Ice/rock mix of a captured outer-solar-system body"
+    "composition": {
+      "surface": "Dark cratered ice and dust with a reddish, outer-solar-system spectrum",
+      "core": "Ice/rock mix of a captured body, probably differentiated while it was still warm"
+    }
   },
   {
     "id": "miranda",
@@ -1313,7 +1403,10 @@
       "You'd fall from its great cliff for about 12 minutes.",
       "Named after Prospero's daughter in Shakespeare's The Tempest."
     ],
-    "composition": "Water ice and silicate rock in similar parts"
+    "composition": {
+      "surface": "Water ice with giant coronae and Verona Rupes, a 20-km-high cliff",
+      "core": "Ice and silicate rock in similar parts; the interior is poorly constrained"
+    }
   },
   {
     "id": "ariel",
@@ -1353,7 +1446,10 @@
       "Criss-crossed by huge canyons where fresh ice welled up.",
       "Named after a sprite in The Tempest."
     ],
-    "composition": "Roughly half water ice, half rock; CO2 ice detected"
+    "composition": {
+      "surface": "The brightest, youngest Uranian surface — water ice with CO2 frost and long rift valleys",
+      "core": "Roughly half rock by mass"
+    }
   },
   {
     "id": "umbriel",
@@ -1393,7 +1489,10 @@
       "Its ancient surface has changed little in billions of years.",
       "Named after a melancholy sprite in Pope's The Rape of the Lock."
     ],
-    "composition": "Water ice and rock with a dark surface layer"
+    "composition": {
+      "surface": "The darkest Uranian moon — ancient water ice with the bright Wunda crater ring",
+      "core": "Roughly half rock by mass, and probably undifferentiated"
+    }
   },
   {
     "id": "oberon",
@@ -1433,7 +1532,10 @@
       "A mountain ~11 km tall pokes over its limb in Voyager images.",
       "Named after the king of the fairies in A Midsummer Night's Dream."
     ],
-    "composition": "Roughly half ice, half rock; dark material in crater floors"
+    "composition": {
+      "surface": "Cratered water ice with dark material pooled in the crater floors",
+      "core": "Roughly half rock by mass"
+    }
   },
   {
     "id": "proteus",
@@ -1473,7 +1575,10 @@
       "About as large as a body can get while staying non-spherical.",
       "Missed by telescopes for so long because it hides in Neptune's glare."
     ],
-    "composition": "Dirty water ice, undifferentiated"
+    "composition": {
+      "surface": "Dark, cratered water ice — barely large enough to be round",
+      "core": "Undifferentiated dirty ice, right at the limit of hydrostatic shape"
+    }
   },
   {
     "id": "nereid",
@@ -1513,7 +1618,10 @@
       "A year on Nereid lasts almost exactly one Earth year.",
       "Discovered from a photographic plate in 1949 — Neptune's last pre-space-age moon."
     ],
-    "composition": "Water ice and rock (poorly constrained)"
+    "composition": {
+      "surface": "Water ice, only loosely constrained by ground-based photometry",
+      "core": "Ice and rock — either a scattered original moon or a capture"
+    }
   },
   {
     "id": "charon",
@@ -1553,7 +1661,10 @@
       "Its north pole is stained red by gases escaped from Pluto ('Mordor Macula').",
       "A canyon system four times longer than the Grand Canyon splits its surface."
     ],
-    "composition": "Rock and water ice in similar parts; ammonia hydrates on the surface"
+    "composition": {
+      "surface": "Water ice with ammonia hydrates and a reddish tholin polar cap fed by Pluto",
+      "core": "Rock and water ice in similar parts; any ocean froze long ago"
+    }
   },
   {
     "id": "janus",
@@ -1594,7 +1705,10 @@
       "A porous rubble pile, less dense than water ice.",
       "Named after the two-faced Roman god of doorways."
     ],
-    "composition": "Porous water-ice rubble pile"
+    "composition": {
+      "surface": "Porous cratered water ice — it shares an orbit with Epimetheus",
+      "core": "A rubble pile of ice fragments"
+    }
   },
   {
     "id": "epimetheus",
@@ -1635,7 +1749,10 @@
       "Its low density suggests a loosely packed pile of icy rubble.",
       "Named after the Titan of afterthought, brother of Prometheus."
     ],
-    "composition": "Porous water-ice rubble pile"
+    "composition": {
+      "surface": "Grooved, porous water ice; it swaps orbits with Janus every four years",
+      "core": "A rubble pile of ice fragments"
+    }
   },
   {
     "id": "puck",
@@ -1675,7 +1792,10 @@
       "Roughly spherical despite its small size, with large craters.",
       "Named after the mischievous sprite in A Midsummer Night's Dream."
     ],
-    "composition": "Water ice with dark carbonaceous material"
+    "composition": {
+      "surface": "Dark water ice mixed with carbonaceous material",
+      "core": "Ice/rock mix — never resolved beyond a few Voyager 2 pixels"
+    }
   },
   {
     "id": "sycorax",
@@ -1715,7 +1835,10 @@
       "Probably a captured object from the Kuiper Belt region.",
       "Slightly red in color, like many distant captured bodies."
     ],
-    "composition": "Ice/rock mix of a captured body, reddish surface"
+    "composition": {
+      "surface": "Reddish surface typical of a captured outer body",
+      "core": "Ice/rock mix; the interior is unknown"
+    }
   },
   {
     "id": "portia",
@@ -1755,7 +1878,10 @@
       "May one day collide with a neighboring moon and form a ring.",
       "Named after the heroine of The Merchant of Venice."
     ],
-    "composition": "Dark water ice (poorly constrained)"
+    "composition": {
+      "surface": "Dark water ice, known only from Voyager 2 photometry",
+      "core": "Ice/rock mix; the interior is unknown"
+    }
   },
   {
     "id": "larissa",
@@ -1795,7 +1921,10 @@
       "Orbits below the synchronous altitude and is slowly falling toward Neptune.",
       "Named after a lover of Poseidon in Greek mythology."
     ],
-    "composition": "Dark, dirty water ice"
+    "composition": {
+      "surface": "Dark, dirty water ice on an irregular, cratered body",
+      "core": "Ice/rock rubble; the interior is unknown"
+    }
   },
   {
     "id": "galatea",
@@ -1835,7 +1964,10 @@
       "Orbits Neptune in just over 10 hours.",
       "Destined to eventually spiral into Neptune or break into a ring."
     ],
-    "composition": "Porous water ice, low density"
+    "composition": {
+      "surface": "Very dark, porous water ice — it shepherds the arcs of Neptune’s Adams ring",
+      "core": "Low-density rubble; the interior is unknown"
+    }
   },
   {
     "id": "despina",
@@ -1875,6 +2007,9 @@
       "Doomed by tidal forces to eventually crash into Neptune.",
       "Named after a daughter of Poseidon and Demeter."
     ],
-    "composition": "Dirty water ice"
+    "composition": {
+      "surface": "Dark, dirty water ice, orbiting inside Neptune’s ring system",
+      "core": "Ice rubble; the interior is unknown"
+    }
   }
 ]

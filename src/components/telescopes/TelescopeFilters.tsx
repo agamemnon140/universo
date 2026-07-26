@@ -2,6 +2,7 @@ import type { TelescopeStatus } from '../../types'
 import { STATUS_LABELS } from '../../lib/spectrum'
 
 export type DomainFilter = 'all' | 'space' | 'ground'
+export type TelescopeSort = 'wavelength' | 'date'
 
 const STATUSES: (TelescopeStatus | 'all')[] = [
   'all',
@@ -21,13 +22,17 @@ const STATUS_CHIP_COLORS: Record<string, string> = {
 export function TelescopeFilters({
   status,
   domain,
+  sort,
   onStatus,
   onDomain,
+  onSort,
 }: {
   status: TelescopeStatus | 'all'
   domain: DomainFilter
+  sort: TelescopeSort
   onStatus: (s: TelescopeStatus | 'all') => void
   onDomain: (d: DomainFilter) => void
+  onSort: (s: TelescopeSort) => void
 }) {
   return (
     <>
@@ -56,6 +61,19 @@ export function TelescopeFilters({
             onClick={() => onDomain(d)}
           >
             {d === 'all' ? 'Space + ground' : d === 'space' ? 'In space' : 'On the ground'}
+          </button>
+        ))}
+      </div>
+      <div className="filter-row" style={{ alignItems: 'center' }}>
+        <span className="sort-label">Sort by</span>
+        {(['wavelength', 'date'] as const).map((s) => (
+          <button
+            key={s}
+            className={`chip${sort === s ? ' on' : ''}`}
+            style={sort === s ? { background: 'var(--accent-amber)' } : undefined}
+            onClick={() => onSort(s)}
+          >
+            {s === 'wavelength' ? 'Wavelength' : 'First light (oldest first)'}
           </button>
         ))}
       </div>

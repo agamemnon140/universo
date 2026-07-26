@@ -5,12 +5,15 @@ const CIRCLE_AREA = 64 // px box for the body circle
 export function BodyCard({
   body,
   maxRadius,
+  caption,
   selected,
   onToggle,
   onDetail,
 }: {
   body: Body
   maxRadius: number
+  /** Value the surrounding list is sorted by, e.g. '5.2 AU'. */
+  caption?: string
   selected: boolean
   onToggle: () => void
   onDetail: () => void
@@ -44,6 +47,7 @@ export function BodyCard({
       </span>
       <span className="body-name">{body.name}</span>
       <span className="body-type">{body.type.replace('-', ' ')}</span>
+      {caption && <span className="body-caption">{caption}</span>}
       <span
         role="button"
         tabIndex={0}

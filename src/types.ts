@@ -25,14 +25,17 @@ export interface Body {
   orbitDistanceKm: number | null // semi-major axis; moons: around parent; sun: null
   orbitDistanceAU: number | null
   orbitalPeriodDays: number | null
-  rotationPeriodHours: number | null // negative = retrograde
+  rotationPeriodHours: number | null // sidereal (one turn against the stars); negative = retrograde
   eccentricity: number | null
   inclinationDeg: number | null
   rocheLimitKm: number | null
   hillSphereKm: number | null
 
   // Curiosities
-  composition: string // estimated bulk make-up
+  composition: {
+    surface: string // what you would stand on / see from above
+    core: string // interior structure, core outwards
+  }
   atmosphere: string
   moonCount: number
   rings: boolean

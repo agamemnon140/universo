@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import type { NewsState } from '../../hooks/useNews'
 import { bodies, bodyById } from '../../data'
+import type { BodySort } from '../../lib/sortBodies'
 import { BodyGrid } from './BodyGrid'
+import { SortControl } from './SortControl'
 import { ComparePanel } from './ComparePanel'
 import { OrbitView } from './OrbitView'
 import { MoonsView } from './MoonsView'
@@ -29,6 +31,7 @@ function viewFromUrl(): View {
 export function SolarTab({ news }: { news: NewsState }) {
   const [view, setView] = useState<View>(viewFromUrl)
   const [selected, setSelected] = useState<string[]>(selectionFromUrl)
+  const [sort, setSort] = useState<BodySort>('size')
   const [detailId, setDetailId] = useState<string | null>(null)
 
   const toggleSelect = (id: string) => {
@@ -64,9 +67,11 @@ export function SolarTab({ news }: { news: NewsState }) {
             Tap two bodies to compare them — sizes in the grid are to relative scale. The
             Details button opens the full profile of any body, no comparison needed.
           </p>
+          <SortControl sort={sort} onSort={setSort} />
           <BodyGrid
             bodies={bodies}
             selected={selected}
+            sort={sort}
             onToggle={toggleSelect}
             onDetail={setDetailId}
           />
@@ -74,7 +79,13 @@ export function SolarTab({ news }: { news: NewsState }) {
       )}
 
       {view === 'moons' && (
-        <MoonsView selected={selected} onToggle={toggleSelect} onDetail={setDetailId} />
+        <MoonsView
+          selected={selected}
+          sort={sort}
+          onSort={setSort}
+          onToggle={toggleSelect}
+          onDetail={setDetailId}
+        />
       )}
 
       {view === 'orbits' && (
