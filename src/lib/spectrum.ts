@@ -1,3 +1,5 @@
+import type { Telescope } from '../types'
+
 /** EM spectrum axis: log10(wavelength in meters), gamma → radio. */
 
 export const AXIS_MIN_LOG = -13 // 1e-13 m (hard gamma; shorter is clamped)
@@ -26,6 +28,35 @@ export function wavelengthToX(wavelengthM: number): number {
   const logValue = Math.log10(wavelengthM)
   const clamped = Math.min(AXIS_MAX_LOG, Math.max(AXIS_MIN_LOG, logValue))
   return (clamped - AXIS_MIN_LOG) / AXIS_DECADES
+}
+
+/** Words used in plannedDate to place a target inside its decade. */
+const DECADE_OFFSET: Record<string, number> = { early: 2, mid: 5, late: 8 }
+
+/**
+ * Year an instrument started (or is expected to start) observing: `launched`
+ * when it is known, otherwise a sortable estimate parsed from `plannedDate`
+ * ('~2027' → 2027, 'mid-2030s' → 2035). Null when even that is unknown.
+ */
+export function startYear(telescope: Telescope): number | null {
+  if (telescope.launched) return telescope.launched
+  const planned = telescope.plannedDate
+  if (!planned) return null
+  const year = planned.match(/\d{4}/)
+  if (!year) return null
+  const base = Number(year[0])
+  if (!/\d{4}s/.test(planned)) return base
+  const modifier = planned.match(/early|mid|late/i)
+  return base + (modifier ? DECADE_OFFSET[modifier[0].toLowerCase()] : 5)
+}
+
+/** Chronological order; instruments with no known date go last. */
+export function byStartYear(a: Telescope, b: Telescope): number {
+  const yearA = startYear(a)
+  const yearB = startYear(b)
+  if (yearA === null) return yearB === null ? 0 : 1
+  if (yearB === null) return -1
+  return yearA - yearB
 }
 
 export const STATUS_COLORS: Record<string, string> = {

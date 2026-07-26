@@ -3,7 +3,7 @@ import type { Telescope, TelescopeStatus } from '../../types'
 import type { NewsState } from '../../hooks/useNews'
 import { telescopes } from '../../data'
 import { SpectrumChart } from './SpectrumChart'
-import { TelescopeFilters, type DomainFilter } from './TelescopeFilters'
+import { TelescopeFilters, type DomainFilter, type TelescopeSort } from './TelescopeFilters'
 import { TelescopeDetail } from './TelescopeDetail'
 import { TelescopeSearch } from './TelescopeSearch'
 import { TelescopeCompare } from './TelescopeCompare'
@@ -12,6 +12,7 @@ import { NewsSection } from '../news/NewsSection'
 export function TelescopesTab({ news }: { news: NewsState }) {
   const [statusFilter, setStatusFilter] = useState<TelescopeStatus | 'all'>('all')
   const [domainFilter, setDomainFilter] = useState<DomainFilter>('all')
+  const [sort, setSort] = useState<TelescopeSort>('wavelength')
   const [detail, setDetail] = useState<Telescope | null>(null)
   const [compareA, setCompareA] = useState('jwst')
   const [compareB, setCompareB] = useState('vera-rubin')
@@ -36,14 +37,23 @@ export function TelescopesTab({ news }: { news: NewsState }) {
       <TelescopeFilters
         status={statusFilter}
         domain={domainFilter}
+        sort={sort}
         onStatus={setStatusFilter}
         onDomain={setDomainFilter}
+        onSort={setSort}
       />
       <SpectrumChart
         telescopes={filtered}
+        sort={sort}
         onSelect={setDetail}
         highlightIds={[compareA, compareB]}
       />
+      {sort === 'date' && (
+        <p className="hint">
+          Ordered by first light — a year followed by <b>?</b> is a target date for an
+          instrument still being built or planned.
+        </p>
+      )}
       <TelescopeCompare
         aId={compareA}
         bId={compareB}

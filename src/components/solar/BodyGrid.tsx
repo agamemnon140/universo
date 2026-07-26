@@ -1,5 +1,6 @@
 import type { Body } from '../../types'
 import { bodyById } from '../../data'
+import { sortBodies, sortCaption, type BodySort } from '../../lib/sortBodies'
 import { BodyCard } from './BodyCard'
 
 const MOON_GROUP_ORDER = ['earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto']
@@ -7,21 +8,27 @@ const MOON_GROUP_ORDER = ['earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptu
 export function BodyGrid({
   bodies,
   selected,
+  sort,
   onToggle,
   onDetail,
 }: {
   bodies: Body[]
   selected: string[]
+  sort: BodySort
   onToggle: (id: string) => void
   onDetail: (id: string) => void
 }) {
   const maxRadius = Math.max(...bodies.map((b) => b.radiusEarth))
-  const suns = bodies.filter((b) => b.type !== 'moon')
+  const suns = sortBodies(
+    bodies.filter((b) => b.type !== 'moon'),
+    sort,
+  )
   const groups = MOON_GROUP_ORDER.map((parentId) => ({
     parent: bodyById.get(parentId)!,
-    moons: bodies
-      .filter((b) => b.parent === parentId && b.type === 'moon')
-      .sort((a, b) => b.radiusEarth - a.radiusEarth),
+    moons: sortBodies(
+      bodies.filter((b) => b.parent === parentId && b.type === 'moon'),
+      sort,
+    ),
   })).filter((g) => g.moons.length > 0)
 
   const renderCards = (list: Body[]) => (
@@ -31,6 +38,7 @@ export function BodyGrid({
           key={body.id}
           body={body}
           maxRadius={maxRadius}
+          caption={sortCaption(body, sort)}
           selected={selected.includes(body.id)}
           onToggle={() => onToggle(body.id)}
           onDetail={() => onDetail(body.id)}
@@ -41,7 +49,10 @@ export function BodyGrid({
 
   return (
     <>
-      <h2 className="grid-group-title">Sun, planets &amp; dwarf planets</h2>
+      <h2 className="grid-group-title">
+        Sun, planets &amp; dwarf planets
+        {sort === 'distance' && <span className="grid-group-count">outward from the Sun</span>}
+      </h2>
       {renderCards(suns)}
       {groups.map(({ parent, moons }) => (
         <div key={parent.id}>
@@ -59,7 +70,9 @@ export function BodyGrid({
             />
             Moons of {parent.name}
             <span className="grid-group-count">
-              {moons.length} of {parent.moonCount} known
+              {sort === 'distance'
+                ? `outward from ${parent.name} · ${moons.length} of ${parent.moonCount} known`
+                : `${moons.length} of ${parent.moonCount} known`}
             </span>
           </h2>
           {renderCards(moons)}

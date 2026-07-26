@@ -361,6 +361,20 @@
   text-transform: capitalize;
 }
 
+.body-card .body-caption {
+  font-size: 0.68rem;
+  color: var(--accent-cyan);
+  text-align: center;
+}
+
+.sort-label {
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-right: 2px;
+}
+
 .body-details-btn {
   margin-top: 2px;
   font-size: 0.72rem;

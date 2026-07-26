@@ -5,34 +5,48 @@ import {
   AXIS_DECADES,
   STATUS_COLORS,
   STATUS_LABELS,
+  byStartYear,
+  startYear,
   wavelengthToX,
 } from '../../lib/spectrum'
+import type { TelescopeSort } from './TelescopeFilters'
 
 const WIDTH = 940
-const LABEL_W = 150 // left gutter for telescope names
-const PLOT_W = WIDTH - LABEL_W - 20
 const ROW_H = 21
 const BAND_H = 26
 const HEADER_H = BAND_H + 26
 
-function bandX(logValue: number): number {
-  return LABEL_W + ((logValue - AXIS_MIN_LOG) / AXIS_DECADES) * PLOT_W
-}
-
 export function SpectrumChart({
   telescopes,
+  sort,
   onSelect,
   highlightIds = [],
 }: {
   telescopes: Telescope[]
+  sort: TelescopeSort
   onSelect: (t: Telescope) => void
   highlightIds?: string[]
 }) {
+  const byDate = sort === 'date'
+  // chronological rows carry a year in front of the name, so the gutter widens
+  const LABEL_W = byDate ? 190 : 150
+  const PLOT_W = WIDTH - LABEL_W - 20
+  const bandX = (logValue: number) =>
+    LABEL_W + ((logValue - AXIS_MIN_LOG) / AXIS_DECADES) * PLOT_W
+  const rowLabel = (t: Telescope) => {
+    const name = `${t.flag ? `${t.flag} ` : ''}${t.name}`
+    if (!byDate) return name
+    const year = startYear(t)
+    return `${year === null ? '——' : `${year}${t.launched ? '' : '?'}`}  ${name}`
+  }
+
   const em = telescopes
     .filter((t) => t.kind === 'em' && t.wavelengthMinM && t.wavelengthMaxM)
-    .sort((a, b) => a.wavelengthMinM! - b.wavelengthMinM!)
-  const gw = telescopes.filter((t) => t.kind === 'gravitational-wave')
-  const nu = telescopes.filter((t) => t.kind === 'neutrino')
+    .sort(byDate ? byStartYear : (a, b) => a.wavelengthMinM! - b.wavelengthMinM!)
+  const gw = telescopes
+    .filter((t) => t.kind === 'gravitational-wave')
+    .sort(byDate ? byStartYear : () => 0)
+  const nu = telescopes.filter((t) => t.kind === 'neutrino').sort(byDate ? byStartYear : () => 0)
 
   const lanes: { title: string; items: Telescope[] }[] = []
   if (gw.length > 0) lanes.push({ title: 'Gravitational waves', items: gw })
@@ -106,8 +120,7 @@ export function SpectrumChart({
                 fontWeight={highlighted ? '700' : '400'}
                 fontSize="11.5"
               >
-                {t.flag ? `${t.flag} ` : ''}
-                {t.name}
+                {rowLabel(t)}
               </text>
               <rect
                 x={x0}
@@ -170,8 +183,7 @@ export function SpectrumChart({
                         fontWeight={highlighted ? '700' : '400'}
                         fontSize="11.5"
                       >
-                        {t.flag ? `${t.flag} ` : ''}
-                        {t.name}
+                        {rowLabel(t)}
                       </text>
                       <rect
                         x={LABEL_W}

@@ -6,6 +6,7 @@ import {
   formatPeriodDays,
   formatRotationHours,
 } from '../../lib/format'
+import { EARTH_SURFACE_AREA_KM2, solarDayHours, surfaceAreaKm2 } from '../../lib/derive'
 
 export function BodyDetail({
   body,
@@ -20,6 +21,8 @@ export function BodyDetail({
   const moons = bodies
     .filter((b) => b.parent === body.id && b.type === 'moon')
     .sort((a, b) => b.radiusEarth - a.radiusEarth)
+  const area = surfaceAreaKm2(body)
+  const solarDay = solarDayHours(body)
 
   return (
     <DetailSheet
@@ -33,6 +36,10 @@ export function BodyDetail({
         <dt>Radius</dt>
         <dd>
           {formatNumber(body.radiusKm, 'km')} ({formatNumber(body.radiusEarth)} × Earth)
+        </dd>
+        <dt>Surface area</dt>
+        <dd>
+          {formatNumber(area, 'km²')} ({formatNumber(area / EARTH_SURFACE_AREA_KM2)} × Earth)
         </dd>
         <dt>Surface gravity</dt>
         <dd>{formatNumber(body.surfaceGravityG)} g</dd>
@@ -50,8 +57,10 @@ export function BodyDetail({
         </dd>
         <dt>Orbital period</dt>
         <dd>{formatPeriodDays(body.orbitalPeriodDays)}</dd>
-        <dt>Rotation period</dt>
+        <dt>Rotation (sidereal)</dt>
         <dd>{formatRotationHours(body.rotationPeriodHours)}</dd>
+        <dt>Solar day (noon to noon)</dt>
+        <dd>{formatRotationHours(solarDay)}</dd>
         <dt>Eccentricity</dt>
         <dd>{formatNumber(body.eccentricity)}</dd>
         <dt>Inclination</dt>
@@ -60,8 +69,10 @@ export function BodyDetail({
         <dd>{formatNumber(body.rocheLimitKm, 'km')}</dd>
         <dt>Hill sphere</dt>
         <dd>{formatNumber(body.hillSphereKm, 'km')}</dd>
-        <dt>Composition</dt>
-        <dd>{body.composition}</dd>
+        <dt>Surface composition</dt>
+        <dd>{body.composition.surface}</dd>
+        <dt>Core &amp; interior</dt>
+        <dd>{body.composition.core}</dd>
         <dt>Atmosphere</dt>
         <dd>{body.atmosphere}</dd>
         <dt>Moons</dt>
@@ -74,6 +85,17 @@ export function BodyDetail({
           {body.discovery.by}
         </dd>
       </dl>
+
+      {solarDay !== null && (
+        <p className="hint">
+          The sidereal rotation is one full turn measured against the stars. A solar day —
+          noon to noon — is different because {body.name} also travels along its orbit while
+          it spins.{' '}
+          {(body.rotationPeriodHours ?? 0) < 0
+            ? `${body.name} spins backwards, so that orbital motion brings the Sun back around sooner and the solar day is shorter than one rotation.`
+            : 'It has to turn a little further to point back at the Sun, so the solar day is longer — Earth spins in 23.9 h, yet noon returns every 24.0 h.'}
+        </p>
+      )}
 
       {moons.length > 0 && (
         <>

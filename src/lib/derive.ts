@@ -1,5 +1,33 @@
 import type { Body } from '../types'
+import { bodyById } from '../data'
 import { formatNumber, formatPeriodDays, formatRotationHours, formatRatio } from './format'
+
+export const EARTH_SURFACE_AREA_KM2 = 4 * Math.PI * 6371 ** 2
+
+/** Surface area of a sphere of the body's mean radius, in km². */
+export function surfaceAreaKm2(body: Body): number {
+  return 4 * Math.PI * body.radiusKm ** 2
+}
+
+/**
+ * Solar day (noon to noon) in hours, derived from the sidereal rotation.
+ *
+ * A body also travels along its orbit while it spins, so it must turn a little
+ * further than one full sidereal rotation to point back at the Sun — which is
+ * why Earth's 23.93 h sidereal day makes a 24.0 h solar day. Retrograde
+ * rotation (negative sidereal period) makes the solar day *shorter*, as on Venus.
+ * For a moon the relevant orbit is its planet's orbit around the Sun.
+ */
+export function solarDayHours(body: Body): number | null {
+  const sidereal = body.rotationPeriodHours
+  if (sidereal === null || sidereal === 0) return null
+  const orbitHost = body.parent === 'sun' || !body.parent ? body : bodyById.get(body.parent)
+  const yearDays = orbitHost?.orbitalPeriodDays
+  if (!yearDays) return null
+  const rate = 1 / sidereal - 1 / (yearDays * 24) // turns per hour, relative to the Sun
+  if (rate === 0 || !isFinite(rate)) return null
+  return Math.abs(1 / rate)
+}
 
 export interface MetricRow {
   label: string
@@ -36,6 +64,12 @@ export function compareBodies(a: Body, b: Body): MetricRow[] {
       ratio: ratioOf(a.radiusKm, b.radiusKm),
     },
     {
+      label: 'Surface area',
+      a: `${formatNumber(surfaceAreaKm2(a), 'km²')} (${formatNumber(surfaceAreaKm2(a) / EARTH_SURFACE_AREA_KM2)} × Earth)`,
+      b: `${formatNumber(surfaceAreaKm2(b), 'km²')} (${formatNumber(surfaceAreaKm2(b) / EARTH_SURFACE_AREA_KM2)} × Earth)`,
+      ratio: ratioOf(surfaceAreaKm2(a), surfaceAreaKm2(b)),
+    },
+    {
       label: 'Surface gravity',
       a: `${formatNumber(a.surfaceGravityG)} g`,
       b: `${formatNumber(b.surfaceGravityG)} g`,
@@ -65,9 +99,15 @@ export function compareBodies(a: Body, b: Body): MetricRow[] {
       ratio: ratioOf(a.orbitalPeriodDays, b.orbitalPeriodDays),
     },
     {
-      label: 'Rotation period',
+      label: 'Rotation (sidereal)',
       a: formatRotationHours(a.rotationPeriodHours),
       b: formatRotationHours(b.rotationPeriodHours),
+    },
+    {
+      label: 'Solar day (noon to noon)',
+      a: formatRotationHours(solarDayHours(a)),
+      b: formatRotationHours(solarDayHours(b)),
+      ratio: ratioOf(solarDayHours(a), solarDayHours(b)),
     },
     {
       label: 'Orbit distance',
@@ -98,9 +138,14 @@ export function compareBodies(a: Body, b: Body): MetricRow[] {
       ratio: ratioOf(a.hillSphereKm, b.hillSphereKm),
     },
     {
-      label: 'Composition',
-      a: a.composition,
-      b: b.composition,
+      label: 'Surface composition',
+      a: a.composition.surface,
+      b: b.composition.surface,
+    },
+    {
+      label: 'Core & interior',
+      a: a.composition.core,
+      b: b.composition.core,
     },
   ]
 }
