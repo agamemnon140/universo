@@ -1,6 +1,6 @@
 import type { Body } from '../types'
 import { bodyById } from '../data'
-import { formatNumber } from './format'
+import { AU_KM, formatLunarDistance, formatNumber } from './format'
 
 export type BodySort = 'size' | 'distance' | 'mass'
 
@@ -28,12 +28,22 @@ export function sortBodies(list: Body[], sort: BodySort): Body[] {
   }
 }
 
-/** The value a list is sorted by, for the caption under each card. */
+/**
+ * The value a list is sorted by, for the caption under each card.
+ *
+ * Orbit distances pick their unit by what a body orbits, so every card in a
+ * group shares one scale: bodies going around the Sun read in AU, moons in
+ * lunar distances (0.02 LD for Phobos up to 33.7 LD for Phoebe — a range AU
+ * would squash and km would spread over four orders of magnitude). Our own
+ * Moon is the exception, keeping the AU figure it is usually quoted with
+ * rather than measuring itself against itself.
+ */
 export function sortCaption(body: Body, sort: BodySort): string | undefined {
   if (sort === 'size') return undefined
   if (sort === 'mass') return `${formatNumber(body.massEarth)} M⊕`
   if (body.orbitDistanceKm === null) return 'centre of the system'
-  if (body.orbitDistanceAU !== null) return `${formatNumber(body.orbitDistanceAU)} AU`
   const parent = body.parent ? bodyById.get(body.parent) : undefined
-  return `${formatNumber(body.orbitDistanceKm, 'km')}${parent ? ` from ${parent.name}` : ''}`
+  if (body.type !== 'moon') return `${formatNumber(body.orbitDistanceAU)} AU`
+  if (body.id === 'moon') return `${(body.orbitDistanceKm / AU_KM).toFixed(4)} AU from Earth`
+  return `${formatLunarDistance(body.orbitDistanceKm)}${parent ? ` from ${parent.name}` : ''}`
 }
