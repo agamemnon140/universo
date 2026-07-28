@@ -27,6 +27,21 @@ export function formatNumber(value: number | null | undefined, unit = ''): strin
   return unit ? `${text} ${unit}` : text
 }
 
+/** Earth–Sun distance, the astronomical unit, in km. */
+export const AU_KM = 149_597_870.7
+/** Earth–Moon distance ("lunar distance"), in km — the yardstick for moon orbits. */
+export const LUNAR_DISTANCE_KM = 384_400
+
+/**
+ * Kilometres → lunar distances: "0.02 LD" for the innermost moons, "33.7 LD"
+ * for the outermost. Two decimals below 1 LD keeps Phobos legible; one above,
+ * since the extra digit says nothing at that range.
+ */
+export function formatLunarDistance(km: number): string {
+  const ld = km / LUNAR_DISTANCE_KM
+  return `${ld < 1 ? ld.toFixed(2) : ld.toFixed(1)} LD`
+}
+
 /** Days → human span: "365.3 days" / "11.9 years". */
 export function formatPeriodDays(days: number | null): string {
   if (days === null || !isFinite(days)) return '—'
