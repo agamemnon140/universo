@@ -1,174 +1,189 @@
 {
-  "generatedAt": "2026-07-27T12:37:24.295Z",
+  "generatedAt": "2026-08-03T12:36:36.785Z",
   "source": "universetoday.com",
   "items": [
     {
-      "id": "a47c671a31e2",
-      "title": "Black Hole Collisions Tell a Tale of Repeating Mergers",
-      "link": "https://www.universetoday.com/articles/black-hole-collisions-tell-a-tale-of-repeating-mergers",
-      "date": "2026-07-27T01:57:57.000Z",
-      "summary": "A black hole merger is one of the Universe's most energetic and massive events. During such a collision, two black holes orbit closer and closer until they collide and become a much more massive…",
+      "id": "a39cdf8b0df4",
+      "title": "The Asteroid That May Be Three Worlds",
+      "link": "https://www.universetoday.com/articles/the-asteroid-that-may-be-three-worlds",
+      "date": "2026-08-01T07:01:48.000Z",
+      "summary": "We have been watching asteroid (44) Nysa for well over a century without ever really knowing what it looks like. Now the sharpest images ever taken of it, from two of the largest telescopes on Earth,…",
+      "themes": [
+        "solar-system",
+        "telescopes"
+      ]
+    },
+    {
+      "id": "576b01350408",
+      "title": "Smashed Ice Worlds Formed Neptune's Inner Moons and Rings",
+      "link": "https://www.universetoday.com/articles/smashed-ice-worlds-formed-neptunes-inner-moons-and-rings",
+      "date": "2026-08-01T05:19:34.000Z",
+      "summary": "The planet Neptune has 16 known moons, with its largest Moon, Triton, comprising more than 99.5 percent of the mass of all of them. Triton’s incredible size has led scientists to hypothesize it was a…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "ed2a3762ed4f",
+      "title": "Charon’s Mountains Reveal Moon Once Spun 10x Faster",
+      "link": "https://www.universetoday.com/articles/charons-mountains-reveal-moon-once-spun-10x-faster",
+      "date": "2026-08-01T00:57:43.000Z",
+      "summary": "Pluto’s moon, Charon, is one of the most unexplored (and arguably underappreciated) planetary objects in the entire solar system. This is primarily because it’s only been visited once by NASA’s New…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "40e89dbff8b1",
+      "title": "The Star That Exploded Without Hydrogen",
+      "link": "https://www.universetoday.com/articles/the-star-that-exploded-without-hydrogen",
+      "date": "2026-07-31T16:47:42.000Z",
+      "summary": "Twenty five years ago a star in the constellation Puppis blew itself apart and then vanished behind a curtain of its own soot. Astronomers knew only that the explosion contained no hydrogen at all,…",
+      "themes": [
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "3b6c0b005d16",
+      "title": "Astrobiologist Uses Apollo Lunar Samples As Mirror Onto Early Earth",
+      "link": "https://www.universetoday.com/articles/astrobiologist-uses-apollo-lunar-samples-as-mirror-onto-early-earth",
+      "date": "2026-07-31T16:03:58.000Z",
+      "summary": "A Tokyo-based astrobiologist is using an ingenious new way to garner insight into Earth’s 3.5-billion-year-old biosphere.",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "6211e412baa6",
+      "title": "NASA Wants to Toss 10,000 Tiny Probes Directly Into Saturn's Rings",
+      "link": "https://www.universetoday.com/articles/nasa-wants-to-toss-10000-tiny-probes-directly-into-saturns-rings",
+      "date": "2026-07-31T15:32:10.000Z",
+      "summary": "Cassini, NASA’s last major mission to Saturn, famously plunged to its fiery death in the gas giant’s atmosphere at the end of its mission. It had captured more accurate in-situ data of the Saturnian…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "9afaf3a87333",
+      "title": "What happens to a moon when its planet is stolen?",
+      "link": "https://www.universetoday.com/articles/what-happens-to-a-moon-when-its-planet-is-stolen",
+      "date": "2026-07-31T15:16:36.000Z",
+      "summary": "The galaxy is littered with rogue planets, worlds flung out of the systems that built them, drifting between the stars with no sun to call their own. But when a planet is torn away, does anything go…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "97815fb2f9f9",
+      "title": "It Took a Century, but Astronomers Imaged Betelgeuse's Companion",
+      "link": "https://www.universetoday.com/articles/it-took-a-century-but-astronomers-imaged-betelgeuses-companion",
+      "date": "2026-07-31T08:19:00.000Z",
+      "summary": "Most of us are familiar with Betelgeuse (also known as alpha Orionis), the bright shoulder star in the constellation Orion. It's a red supergiant star that lies somewhere between 400 and 550…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "2c238c22187a",
+      "title": "Mercury's Weak Magnetic Field Periodically Traps Solar Wind",
+      "link": "https://www.universetoday.com/articles/mercurys-weak-magnetic-field-periodically-traps-solar-wind",
+      "date": "2026-07-31T03:32:07.000Z",
+      "summary": "The planet Mercury is the first planet from the Sun but also one shrouded in mystery. This is primarily due to the limited number of spacecrafts that have visited it, but this limited data has…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "f92bd0d66c62",
+      "title": "What Killed Galaxies in the Early Universe?",
+      "link": "https://www.universetoday.com/articles/what-killed-galaxies-in-the-early-universe",
+      "date": "2026-07-30T22:00:00.000Z",
+      "summary": "Galaxies in the infancy of the Universe are the building blocks of more modern galaxies. They began as small \"shreds\" of material that coalesced over time to form larger ones. That's why astronomers…",
       "themes": [
         "telescopes"
       ]
     },
     {
-      "id": "f27fb75ec010",
-      "title": "New Research Shows How Clouds Shape the Interiors of sub-Neptunes",
-      "link": "https://www.universetoday.com/articles/new-research-shows-how-clouds-shape-the-interiors-of-sub-neptunes",
-      "date": "2026-07-26T23:12:32.000Z",
-      "summary": "Scientists at ASU's School of Earth and Space Exploration have demonstrated how clouds in a sub-Neptune's atmosphere shape the interior structure of the planet.",
+      "id": "7d4812bf1244",
+      "title": "Primordial Black Holes Can Trigger Type Ia Supernovae, and Astronomers Should be Able to Find Them",
+      "link": "https://www.universetoday.com/articles/primordial-black-holes-can-trigger-type-ia-supernovae-and-astronomers-should-be-able-to-find-them",
+      "date": "2026-07-30T19:22:27.000Z",
+      "summary": "Primordial black holes (PBH) remain hypothetical, but that isn't stopping astrophysicists from figuring out how they could interact with other stellar objects. New research shows how PBHs, formed in…",
       "themes": [
-        "solar-system",
         "exoplanets"
       ]
     },
     {
-      "id": "b3b3df73cffe",
-      "title": "UCF Researchers Are Developing Tools to Help Find Habitable Planets",
-      "link": "https://www.universetoday.com/articles/ucf-researchers-are-developing-tools-to-help-find-habitable-planets",
-      "date": "2026-07-26T16:59:33.000Z",
-      "summary": "Through the Photonics-Enabled Exoplanet Spectroscopic System (PEEPSS) program, researchers are developing a technology that will assist NASA's planned Habitable World's Observatory (HWO).",
+      "id": "76128280e5f0",
+      "title": "Radio Array Detects Polarized Light From a GRB",
+      "link": "https://www.universetoday.com/articles/radio-array-detects-polarized-light-from-a-grb",
+      "date": "2026-07-30T18:57:50.000Z",
+      "summary": "On March 10, 2026, the Fermi telescope gamma-ray burst team reported the detection of a long-duration gamma ray burst that occurred when a star exploded inside a dense, highly magnetized cloud of…",
+      "themes": [
+        "solar-system",
+        "telescopes"
+      ]
+    },
+    {
+      "id": "81612a4cdda3",
+      "title": "The ELT's Spectrograph Could Sniff Out Biosignatures on Other Worlds",
+      "link": "https://www.universetoday.com/articles/the-elts-spectrograph-could-sniff-out-biosignatures-on-other-worlds",
+      "date": "2026-07-30T15:40:33.000Z",
+      "summary": "Before any major telescope commissioning, there are dozens of papers that attempt to define what we can expect from it. We’re starting to see some come through for the Extremely Large Telescope…",
       "themes": [
         "telescopes",
         "exoplanets"
       ]
     },
     {
-      "id": "9d054f02274a",
-      "title": "JWST May Be Missing Water Hidden Deep Within Mini-Neptune Worlds",
-      "link": "https://www.universetoday.com/articles/jwst-may-be-missing-water-hidden-deep-within-mini-neptune-worlds",
-      "date": "2026-07-25T21:40:13.000Z",
-      "summary": "Sub-Neptune exoplanets, exoplanets that are slightly smaller than Neptune, have been designated as the most common type of planet in the Milky Way Galaxy based on their vast discovery numbers,…",
+      "id": "09b73171a09e",
+      "title": "The Exciting Plan to Photograph an Alien Continent",
+      "link": "https://www.universetoday.com/articles/the-exciting-plan-to-photograph-an-alien-continent",
+      "date": "2026-07-30T11:18:00.000Z",
+      "summary": "NASA has selected a concept study, led by physicist Paul Stankus, exploring whether a pair of spacecraft flying in tight formation could one day produce an actual image of an Earth like exoplanet's…",
       "themes": [
-        "solar-system",
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "b25420082a2e",
+      "title": "A Thermal Camera Trick Could Let LIGO See Twice as Far",
+      "link": "https://www.universetoday.com/articles/a-thermal-camera-trick-could-let-ligo-see-twice-as-far",
+      "date": "2026-07-30T11:10:39.000Z",
+      "summary": "A team of researchers have found a surprisingly simple way to boost the sensitivity of gravitational wave detectors like LIGO. It’s surprisingly simple to, just point an ordinary thermal imaging…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "482db67af159",
+      "title": "Mars' Double Storm Problem",
+      "link": "https://www.universetoday.com/articles/mars-double-storm-problem",
+      "date": "2026-07-30T11:03:00.000Z",
+      "summary": "A new study presented at the Royal Astronomical Society's National Astronomy Meeting suggests that solar storms may warm the Martian lower atmosphere, but only when they strike during a major Martian…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "ffb2743e23dc",
+      "title": "Alien Signals May Hide in Unexplored High Radio Frequencies",
+      "link": "https://www.universetoday.com/articles/alien-signals-may-hide-in-unexplored-high-radio-frequencies",
+      "date": "2026-07-30T05:12:38.000Z",
+      "summary": "Confirming the existence of extraterrestrial intelligence via radio signals, also called technosignatures, is the cornerstone of radio astronomy. While humanity has been asking since time immemorial…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "9c255d4ff98e",
+      "title": "Quantum Physics Could Help Us Find Earth 2.0",
+      "link": "https://www.universetoday.com/articles/quantum-physics-could-help-us-find-earth-20",
+      "date": "2026-07-30T02:56:05.000Z",
+      "summary": "When astronomers talk about directly imaging an exoplanet that is orbiting a far away star, the analogy they most commonly go with is trying to spot a fireflight next to a massive search light. An…",
+      "themes": [
         "telescopes",
         "exoplanets"
-      ]
-    },
-    {
-      "id": "e1e0c4cffd9a",
-      "title": "New Images Reveal the Stunning Properties of the Black Hole at the Center of M87",
-      "link": "https://www.universetoday.com/articles/new-images-reveal-the-stunning-properties-of-the-black-hole-at-the-center-of-m87",
-      "date": "2026-07-24T22:55:57.000Z",
-      "summary": "Researchers from the Shanghai Astronomical Observatory of the Chinese Academy of Sciences, together with international collaborators, carried out the first spatially resolved dual-frequency spectral…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "0a298f1f5fb5",
-      "title": "How the American Public Really Feels About the Booming Space Economy in 2026",
-      "link": "https://www.universetoday.com/articles/how-the-american-public-really-feels-about-the-booming-space-economy-in-2026",
-      "date": "2026-07-24T19:41:16.000Z",
-      "summary": "In democracies, opinion polls are one of the most common ways to measure public and therefore political support for an issue. Because space exploration is still closely tied to the government policy…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "7c554a4a4f98",
-      "title": "Juno Measures the Heat Below Io's Restless Surface",
-      "link": "https://www.universetoday.com/articles/juno-measures-the-heat-below-ios-restless-surface",
-      "date": "2026-07-24T17:56:05.000Z",
-      "summary": "Juno's Microwave Radiometer (MWR) was built peer deep down into Jupiter's massive atmosphere. But during the spacecraft's extended mission, it's been studying the Galilean moons. During two flybys of…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "71d2c1e484e0",
-      "title": "Mars Express Captures 'Metallic' Waves Rolling Across an Ancient Martian Crater",
-      "link": "https://www.universetoday.com/articles/mars-express-captures-metallic-waves-rolling-across-an-ancient-martian-crater",
-      "date": "2026-07-24T15:13:50.000Z",
-      "summary": "When we think of Mars as the “Red Planet”, the image that comes to mind is just that - a lot of red. That comes from the oxidization of the dust and rocks that cover the planet's surface, but there…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "20fc50855f1f",
-      "title": "Spin-Reversing Comet May Face Self-Destruction",
-      "link": "https://www.universetoday.com/articles/spin-reversing-comet-may-face-self-destruction",
-      "date": "2026-07-24T02:52:49.000Z",
-      "summary": "Comets are known for providing breathtaking observations of their long and shiny tails when they travel too close to the Sun. This happens because comets are made of ice and primarily orbit far from…",
-      "themes": [
-        "solar-system",
-        "telescopes"
-      ]
-    },
-    {
-      "id": "3e3cc688c200",
-      "title": "Should Scientists Have Research \"Reserves\" on the Moon?",
-      "link": "https://www.universetoday.com/articles/should-scientists-have-research-reserves-on-the-moon",
-      "date": "2026-07-24T02:14:17.000Z",
-      "summary": "The worlds of the Solar System offer up exciting and (so far) mostly pristine places for planetary scientists to study. As space missions continue to travel to Mars, Europa, asteroids, and other…",
-      "themes": [
-        "solar-system",
-        "telescopes"
-      ]
-    },
-    {
-      "id": "7ddc6534dea7",
-      "title": "Hubble Discovers the First \"Missing\" Black Hole in this Famous Star Cluster",
-      "link": "https://www.universetoday.com/articles/hubble-discovers-the-first-missing-black-hole-in-this-famous-star-cluster",
-      "date": "2026-07-24T00:34:38.000Z",
-      "summary": "Combining over 20 years of archival data from Hubble with new data from the James Webb Space Telescope, a team of astronomers has found the first of the \"missing\" black holes.",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "92e4bb9558d7",
-      "title": "The First Confirmed Exo-satellite Challenges Our Definitions of Planets and Moons",
-      "link": "https://www.universetoday.com/articles/the-first-confirmed-exo-satellite-challenges-our-definitions-of-planets-and-moons",
-      "date": "2026-07-23T16:20:58.000Z",
-      "summary": "What do you call a Jupiter-like object that orbits the brown dwarf companion of a star? Is it a planet, a moon, or something new?",
-      "themes": [
-        "solar-system",
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "c7ee430bbe3e",
-      "title": "Chandrasekhar and the Limits of Physics, Part 4: Vindication",
-      "link": "https://www.universetoday.com/articles/chandrasekhar-and-the-limits-of-physics-part-4-vindication",
-      "date": "2026-07-23T15:41:00.000Z",
-      "summary": "The collapsing stars Eddington swore couldn't exist turned out to be everywhere, and half a century later the world handed Chandrasekhar his Nobel. How the 1.4 solar mass limit became one of the most…",
-      "themes": [
-        "solar-system",
-        "telescopes"
-      ]
-    },
-    {
-      "id": "a01e0277a43a",
-      "title": "The Red Potato Galaxy and its Stifling Neighbour",
-      "link": "https://www.universetoday.com/articles/the-red-potato-galaxy-and-its-stifling-neighbour",
-      "date": "2026-07-23T15:14:21.000Z",
-      "summary": "Galaxies attract cold gas from the intergalactic medium and turn it into stars. But the JWST has found galaxies that aren't forming stars in the early Universe, long before they should've become…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "46976c58e9aa",
-      "title": "Probing the Universe's Missing Matter With Mysterious Fast Radio Bursts",
-      "link": "https://www.universetoday.com/articles/probing-the-universes-missing-matter-with-mysterious-fast-radio-bursts",
-      "date": "2026-07-23T15:12:54.000Z",
-      "summary": "Astronomers aren't certain where Fast Radio Bursts come from. But they still have utility. They can use them to find the Universe's \"missing matter.\"",
-      "themes": [
-        "solar-system",
-        "telescopes"
-      ]
-    },
-    {
-      "id": "7e8e730786fa",
-      "title": "The Milky Way Flipped its Disk Billions of Years Ago",
-      "link": "https://www.universetoday.com/articles/the-milky-way-flipped-its-disk-billions-of-years-ago",
-      "date": "2026-07-22T17:33:53.000Z",
-      "summary": "The Milky Way has two disks, the thin disk where most of the stars dwell, and the thick disk, populated by much older stars. The ESA's Gaia mission showed us that the thick disk rotates more slowly…",
-      "themes": [
-        "telescopes"
       ]
     }
   ]
