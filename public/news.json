@@ -1,175 +1,167 @@
 {
-  "generatedAt": "2026-08-10T10:36:46.073Z",
+  "generatedAt": "2026-08-17T09:57:58.973Z",
   "source": "universetoday.com",
   "items": [
     {
-      "id": "4e855ccd27b4",
-      "title": "NASA's MAVEN Illuminates New Understanding of Auroras at Mars",
-      "link": "https://www.universetoday.com/articles/nasas-maven-illuminates-new-understanding-of-auroras-at-mars",
-      "date": "2026-08-09T18:04:05.000Z",
-      "summary": "NASA MAVEN (Mars Atmosphere and Volatile Evolution) mission scientists have uncovered a key puzzle piece in understanding certain types of auroras on Mars, finding that they form in a similar way to…",
+      "id": "c0dae76111b0",
+      "title": "The Planet That Lied About Its Own Spin",
+      "link": "https://www.universetoday.com/articles/the-planet-that-lied-about-its-own-spin",
+      "date": "2026-08-15T21:40:51.000Z",
+      "summary": "A new study warns that astronomers measuring the rotation of distant exoplanets may often be measuring atmospheric winds instead, since the clouds of Venus circle the planet roughly 60 times faster…",
+      "themes": [
+        "solar-system",
+        "telescopes",
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "a971a108bf4f",
+      "title": "The Sun Doesn't Care About Your Flight Schedule",
+      "link": "https://www.universetoday.com/articles/the-sun-doesnt-care-about-your-flight-schedule",
+      "date": "2026-08-15T21:27:17.000Z",
+      "summary": "New research shows that extreme space weather can significantly raise radiation exposure on commercial flights and increase electronic faults in aircraft systems. A severe 1956 scale solar storm…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "d12f2edb154d",
-      "title": "SpaceX Junk Hits the Moon. Not a Good Sign",
-      "link": "https://www.universetoday.com/articles/spacex-junk-hits-the-moon-not-a-good-sign",
-      "date": "2026-08-07T21:43:40.000Z",
-      "summary": "The spent upper stage from a SpaceX Falcon 9 rocket has struck the Moon, illustrating the hazard posed by debris in cislunar space. This problem will increase as launches to orbit and to the Moon…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "415ab5a148d7",
-      "title": "Astronomers Find a New Object from the Early Universe Using Webb Data",
-      "link": "https://www.universetoday.com/articles/astronomers-find-a-new-object-from-the-early-universe-using-webb-data",
-      "date": "2026-08-07T18:10:00.000Z",
-      "summary": "Homer Dávila Gutierrez, director of SKYCR.ORG, has identified a gravitational arc candidate in the galaxy cluster MACS J0308.9+2645 from public data from the James Webb Space Telescope. The object…",
+      "id": "6fa3f02e3351",
+      "title": "Hubble Reveals that Star Formation is Slowing Down in the Andromeda Galaxy",
+      "link": "https://www.universetoday.com/articles/hubble-reveals-that-star-formation-is-slowing-down-in-the-andromeda-galaxy",
+      "date": "2026-08-14T23:58:06.000Z",
+      "summary": "A team of scientists led by the University of Washington has studied how star formation is declining in the Andromeda galaxy using highly detailed Hubble surveys.",
       "themes": [
         "telescopes"
       ]
     },
     {
-      "id": "05a2f2489d81",
-      "title": "Preview to Totality: A Resource Guide to August 12th Total Solar Eclipse",
-      "link": "https://www.universetoday.com/articles/preview-to-totality-a-resource-guide-to-august-12th-total-solar-eclipse",
-      "date": "2026-08-07T12:39:00.000Z",
-      "summary": "It’s almost show time. We’re just a few days away now, from the only total solar eclipse of 2026. While eclipses are a surety as the celestial gears of the Universe grind on, there are always a few…",
+      "id": "70ef2f6e9b74",
+      "title": "The Tarantula That Lost Its Fire",
+      "link": "https://www.universetoday.com/articles/the-tarantula-that-lost-its-fire",
+      "date": "2026-08-14T23:41:08.000Z",
+      "summary": "A new composite image combining data from Chandra, Hubble, Webb and the retired Spitzer telescope has helped astronomers solve a long standing puzzle in the Tarantula Nebula, a star forming region…",
       "themes": [
-        "solar-system"
+        "telescopes"
       ]
     },
     {
-      "id": "87f6131e9721",
-      "title": "Scientists Watch as a Distant World's Atmosphere Shrinks and Thins",
-      "link": "https://www.universetoday.com/articles/scientists-watch-as-a-distant-worlds-atmosphere-shrinks-and-thins",
-      "date": "2026-08-07T02:06:00.000Z",
-      "summary": "As dwarf planet Pluto moves along in its distant, high-obliquity 248-year orbit, its atmosphere is changing. That's because it's beginning to travel through colder, darker parts of the outer Solar…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "2013e7a08f6f",
-      "title": "Venus Isn't Dead After All",
-      "link": "https://www.universetoday.com/articles/venus-isnt-dead-after-all",
-      "date": "2026-08-06T17:57:44.000Z",
-      "summary": "Simulations conducted by researchers at ETH Zurich suggest a strong likelihood that Venus’s rift valleys are still geologically active rather than being mere relics of a bygone era, as had been…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "0bdcb9f85dec",
-      "title": "Scientist Constructs \"Big Picture\" of Mars Water from Rover Data",
-      "link": "https://www.universetoday.com/articles/scientist-constructs-big-picture-of-mars-water-from-rover-data",
-      "date": "2026-08-05T03:03:47.000Z",
-      "summary": "Rover data from more than 20 years ago has revealed clues to the existence of liquid water on ancient Mars. The NASA Spirit Rover carried a specialized instrument called a Mössbauer Spectrometer that…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "d894a4651ab7",
-      "title": "See the Perseid Meteors on a New Moon Year",
-      "link": "https://www.universetoday.com/articles/see-the-perseid-meteors-on-a-new-moon-year",
-      "date": "2026-08-04T16:38:00.000Z",
-      "summary": "You couldn’t ask for a better year for one of the top annual meteor showers. If skies are clear be sure to watch for one of the top skywatching draws of 2026: the August Perseid meteor shower. While…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "3ca8b78f888c",
-      "title": "Interstellar Travel II: the Birth of Fusion Drives",
-      "link": "https://www.universetoday.com/articles/interstellar-travel-the-birth-of-fusion-drives",
-      "date": "2026-08-03T23:42:00.000Z",
-      "summary": "During the Space Age and Cold War, fusion-powered spacecraft systems were investigated as a possible means of reaching another star system within a human lifetime. Many of the proposed ideas are…",
-      "themes": [
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "c4e207943d49",
-      "title": "Zodiacal Dust in Exoplanetary Systems Could Hinder Our Search For Life On Other Worlds",
-      "link": "https://www.universetoday.com/articles/zodiacal-dust-in-exoplanetary-systems-could-hinder-our-search-for-life-on-other-worlds",
-      "date": "2026-08-03T15:55:47.000Z",
-      "summary": "Most exoplanetary systems have a plane of dust similar to the zodiacal dust of our solar system. This dust absorbs some of the very light we use to find biosignatures in exoplanet atmospheres, and…",
-      "themes": [
-        "solar-system",
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "a39cdf8b0df4",
-      "title": "The Asteroid That May Be Three Worlds",
-      "link": "https://www.universetoday.com/articles/the-asteroid-that-may-be-three-worlds",
-      "date": "2026-08-01T07:01:48.000Z",
-      "summary": "We have been watching asteroid (44) Nysa for well over a century without ever really knowing what it looks like. Now the sharpest images ever taken of it, from two of the largest telescopes on Earth,…",
+      "id": "8e3da6a3c31f",
+      "title": "Upgraded Sardinia Radio Telescope To Continue Probing Mysterious Fast Radio Bursts",
+      "link": "https://www.universetoday.com/articles/upgraded-sardinia-radio-telescope-to-continue-probing-mysterious-fast-radio-bursts",
+      "date": "2026-08-14T23:32:00.000Z",
+      "summary": "Largest Italian radio telescope located on an out of the way mountain plateau in southern Sardinia sheds light on the cosmos’ still misunderstood Fast Radio Bursts (FRBs).",
       "themes": [
         "solar-system",
         "telescopes"
       ]
     },
     {
-      "id": "576b01350408",
-      "title": "Smashed Ice Worlds Formed Neptune's Inner Moons and Rings",
-      "link": "https://www.universetoday.com/articles/smashed-ice-worlds-formed-neptunes-inner-moons-and-rings",
-      "date": "2026-08-01T05:19:34.000Z",
-      "summary": "The planet Neptune has 16 known moons, with its largest Moon, Triton, comprising more than 99.5 percent of the mass of all of them. Triton’s incredible size has led scientists to hypothesize it was a…",
+      "id": "f1a86fe79f9e",
+      "title": "Another First for the JWST: It Detects Three Supermassive Black Holes in the Same Galaxy",
+      "link": "https://www.universetoday.com/articles/another-first-for-the-jwst-it-detects-three-supermassive-black-holes-in-the-same-galaxy",
+      "date": "2026-08-14T17:52:47.000Z",
+      "summary": "Astronomers working with the JWST have found a galaxy only 1.3 billion years after the Big Bang that contains three black holes. Two are close to the galaxy's center and will merge soon. The third is…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "e0eb42d7466c",
+      "title": "Earth's Magnetosphere Might Not Protect Us From Superstorms After All",
+      "link": "https://www.universetoday.com/articles/earths-magnetosphere-might-not-protect-us-from-superstorms-after-all",
+      "date": "2026-08-14T15:28:44.000Z",
+      "summary": "Science seems like a straightforward endeavour. You come up with a hypothesis, collect data to prove or disprove it, and analyze that data to see if the hypothesis is right. But anyone who actually…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "ed2a3762ed4f",
-      "title": "Charon’s Mountains Reveal Moon Once Spun 10x Faster",
-      "link": "https://www.universetoday.com/articles/charons-mountains-reveal-moon-once-spun-10x-faster",
-      "date": "2026-08-01T00:57:43.000Z",
-      "summary": "Pluto’s moon, Charon, is one of the most unexplored (and arguably underappreciated) planetary objects in the entire solar system. This is primarily because it’s only been visited once by NASA’s New…",
+      "id": "da9d4d8e9731",
+      "title": "The Rooms We Build To Survive In, And The Ones We Build To Live In",
+      "link": "https://www.universetoday.com/articles/the-rooms-we-build-to-survive-in-and-the-ones-we-build-to-live-in",
+      "date": "2026-08-13T22:09:03.000Z",
+      "summary": "What does a home actually need to do for us, beyond keeping the weather out? Engineers at MIT have started mapping the answer for astronauts heading to the Moon and Mars, tracing exactly how the…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "40e89dbff8b1",
-      "title": "The Star That Exploded Without Hydrogen",
-      "link": "https://www.universetoday.com/articles/the-star-that-exploded-without-hydrogen",
-      "date": "2026-07-31T16:47:42.000Z",
-      "summary": "Twenty five years ago a star in the constellation Puppis blew itself apart and then vanished behind a curtain of its own soot. Astronomers knew only that the explosion contained no hydrogen at all,…",
+      "id": "ef9a906d050f",
+      "title": "A Massive Stream of Gas Tilted This Planet-Forming Disk",
+      "link": "https://www.universetoday.com/articles/a-massive-stream-of-gas-tilted-this-planet-forming-disk",
+      "date": "2026-08-13T18:51:25.000Z",
+      "summary": "Astronomers found evidence that a giant stream of gas flowing into the GW Orionis young triple-star system may have tilted its planet-forming disk, offering a new explanation for why some planetary…",
       "themes": [
         "exoplanets"
       ]
     },
     {
-      "id": "3b6c0b005d16",
-      "title": "Astrobiologist Uses Apollo Lunar Samples As Mirror Onto Early Earth",
-      "link": "https://www.universetoday.com/articles/astrobiologist-uses-apollo-lunar-samples-as-mirror-onto-early-earth",
-      "date": "2026-07-31T16:03:58.000Z",
-      "summary": "A Tokyo-based astrobiologist is using an ingenious new way to garner insight into Earth’s 3.5-billion-year-old biosphere.",
+      "id": "01e87812c6ae",
+      "title": "Amazing Views of Wednesday's Total Solar Eclipse",
+      "link": "https://www.universetoday.com/articles/amazing-views-of-wednesdays-total-solar-eclipse",
+      "date": "2026-08-13T14:45:00.000Z",
+      "summary": "It was an eclipse for the ages. This past week, many an eclipse chaser and the ‘eclipse curious’ made the journey to stand in the shadow of the Moon, for the only total solar eclipse of 2026. Viewers…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "6211e412baa6",
-      "title": "NASA Wants to Toss 10,000 Tiny Probes Directly Into Saturn's Rings",
-      "link": "https://www.universetoday.com/articles/nasa-wants-to-toss-10000-tiny-probes-directly-into-saturns-rings",
-      "date": "2026-07-31T15:32:10.000Z",
-      "summary": "Cassini, NASA’s last major mission to Saturn, famously plunged to its fiery death in the gas giant’s atmosphere at the end of its mission. It had captured more accurate in-situ data of the Saturnian…",
+      "id": "da11473b801a",
+      "title": "Two Million X-Ray Sources, and One Cluster That Doesn't Fit",
+      "link": "https://www.universetoday.com/articles/two-million-x-ray-sources-and-one-cluster-that-doesnt-fit",
+      "date": "2026-08-12T22:52:42.000Z",
+      "summary": "The eROSITA telescope has released its second great catalogue of the X-ray sky with close to two million sources across half the sky, roughly double what it published before. Buried in it is a result…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "b999b64782bf",
+      "title": "Twenty Years of Watching One Galaxy, and It Made Less Sense",
+      "link": "https://www.universetoday.com/articles/twenty-years-of-watching-one-galaxy-and-it-made-less-sense",
+      "date": "2026-08-12T22:20:39.000Z",
+      "summary": "Blazars are galaxies with a jet aimed almost directly at us, and they flicker across every part of the spectrum at once. Almost everything we think we know about them comes from short observing…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "62ea05bbc297",
+      "title": "Nine Hundred Telescopes and One Chance a Year",
+      "link": "https://www.universetoday.com/articles/nine-hundred-telescopes-and-one-chance-a-year",
+      "date": "2026-08-12T22:03:44.000Z",
+      "summary": "Reading the atmosphere of another world means catching starlight as it filters through that planet's air during a transit. The signal is about one part in a million and a true Earth twin transits…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "1b0b51a2f03d",
+      "title": "Solar Magnetic Field Braids May Have a Previously Hidden Cause",
+      "link": "https://www.universetoday.com/articles/solar-magnetic-field-braids-may-have-a-previously-hidden-cause",
+      "date": "2026-08-12T13:35:00.000Z",
+      "summary": "Scientists using the Daniel K. Inouye Solar Telescope (DKIST) in Hawai'i have found a mechanism occurring on the Sun's surface that they think is heating our star's outer atmosphere. The process,…",
+      "themes": [
+        "solar-system",
+        "telescopes"
+      ]
+    },
+    {
+      "id": "8312d6da9874",
+      "title": "How to Find Lunar Ice? Moonquakes to the Rescue!",
+      "link": "https://www.universetoday.com/articles/how-to-find-lunar-ice-moonquakes-to-the-rescue",
+      "date": "2026-08-11T22:55:27.000Z",
+      "summary": "The surface of the Moon is a bleak and forbidding place that might be hiding a lot of water ice on and under the dusty landscape. However, most possible ice deposits don't just stand out in an image.…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "9afaf3a87333",
-      "title": "What happens to a moon when its planet is stolen?",
-      "link": "https://www.universetoday.com/articles/what-happens-to-a-moon-when-its-planet-is-stolen",
-      "date": "2026-07-31T15:16:36.000Z",
-      "summary": "The galaxy is littered with rogue planets, worlds flung out of the systems that built them, drifting between the stars with no sun to call their own. But when a planet is torn away, does anything go…",
+      "id": "0f0ac83f214d",
+      "title": "Europa's Interior Ocean Could be Harder to Reach Than We Thought",
+      "link": "https://www.universetoday.com/articles/europas-interior-ocean-may-harbor-life-but-could-be-hard-to-reach-says-new-research",
+      "date": "2026-08-11T22:29:00.000Z",
+      "summary": "Lujendra Ojha, a planetary scientist, led a study suggesting that Europa’s icy shell may be a stronger barrier between the moon’s hidden ocean and its surface than previously thought.",
       "themes": [
         "solar-system"
       ]
