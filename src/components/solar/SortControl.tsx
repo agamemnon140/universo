@@ -1,6 +1,6 @@
 import { BODY_SORT_LABELS, type BodySort } from '../../lib/sortBodies'
 
-const SORTS: BodySort[] = ['size', 'distance', 'mass']
+const SORTS: BodySort[] = ['size', 'distance', 'mass', 'grip']
 
 export function SortControl({
   sort,
