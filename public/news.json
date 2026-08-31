@@ -1,180 +1,158 @@
 {
-  "generatedAt": "2026-08-24T10:04:38.507Z",
+  "generatedAt": "2026-08-31T17:04:26.919Z",
   "source": "universetoday.com",
   "items": [
     {
-      "id": "602d94e9f16a",
-      "title": "NASA Starshade Would Enable Astronomers To Directly Image Rocky Exoworlds",
-      "link": "https://www.universetoday.com/articles/nasa-starshade-would-enable-astronomers-to-directly-image-rocky-exoworlds",
-      "date": "2026-08-24T07:16:54.000Z",
-      "summary": "Innovative NASA-funded orbital starshade could help capture first direct images from extrasolar earths.",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "50e66a81106e",
-      "title": "Astronomers Use Rare Ultra-Magnetic Star to Crack a Quantum Mystery",
-      "link": "https://www.universetoday.com/articles/astronomers-use-rare-ultra-magnetic-star-to-crack-a-quantum-mystery",
-      "date": "2026-08-23T22:19:31.000Z",
-      "summary": "An international team observed a magnetar known as 1E 1547.0–5408 using NASA’s Imaging X-ray Polarimetry Explorer (IXPE), leading to what could be the first detection of vacuum birefringence taking…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "9b995d4132fd",
-      "title": "NASA Highlights Next-Gen Cargo Landers Paving the Way for a Moon Base",
-      "link": "https://www.universetoday.com/articles/nasa-highlights-next-gen-cargo-landers-paving-the-way-for-a-moon-base",
-      "date": "2026-08-23T13:01:35.000Z",
-      "summary": "NASA and its commercial partners are making progress on their way to a permanent human presence on the Moon. As part of that, a recent press release and accompanying YouTube video hints they may be…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "eb915cf66363",
-      "title": "White Dwarf-Red Dwarf Binaries Power Cosmic Lasers",
-      "link": "https://www.universetoday.com/articles/synchronized-stars-power-cosmic-radio-laser",
-      "date": "2026-08-22T23:02:54.000Z",
-      "summary": "Researchers have helped unravel the mystery of why certain pairs of stars pulse with regular, long-period bursts of radio waves. The particular class of objects they observed come in pairs that…",
-      "themes": [
-        "solar-system",
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "4ebb4a51684f",
-      "title": "Dry Martian Meteorite Reveals Early Water in Mars's Crust",
-      "link": "https://www.universetoday.com/articles/dry-martian-meteorite-reveals-early-water-in-marss-crust",
-      "date": "2026-08-22T04:37:04.000Z",
-      "summary": "Billions of years ago, Mars was hypothesized to have been a habitable world with flowing liquid water and the potential for life. But directly studying its ancient past is currently limited to…",
-      "themes": [
-        "solar-system",
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "2c581a70781b",
-      "title": "The CosmoCube Satellite Will Listen to the Early Universe From the Far Side of the Moon",
-      "link": "https://www.universetoday.com/articles/the-cosmoquest-satellite-will-listen-to-the-early-universe-from-the-far-side-of-the-moon",
-      "date": "2026-08-21T23:33:00.000Z",
-      "summary": "A tiny UK-developed satellite, roughly the size of a small carry-on suitcase, could help answer one of the biggest questions in cosmology: what happened in the roughly 150 million years of cosmic…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "1570bda5606d",
-      "title": "Strange Signals Called Long-period Radio Transits Come From Cataclysmic Variables",
-      "link": "https://www.universetoday.com/articles/strange-signals-called-long-period-radio-transits-come-from-cataclysmic-variables",
-      "date": "2026-08-21T19:59:01.000Z",
-      "summary": "Long-period Radio Transients are sources that emit repeating radio and x-ray signals. The signals are polarized and coherent, and are similar to pulsars in some respects. But the type of…",
-      "themes": [
-        "solar-system",
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "77daac2397b6",
-      "title": "New Solar System Models Show Earth Is No Fluke",
-      "link": "https://www.universetoday.com/articles/new-solar-system-models-show-earth-is-no-fluke",
-      "date": "2026-08-21T07:12:12.000Z",
-      "summary": "Astrobiologists use new starting points to produce ‘organic’ models of our solar system’s formation.",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "674065085129",
-      "title": "NASA's Lunar Reconnaissance Orbiter Images Falcon 9 Crater on Moon, With Some Help From a Korean Spacecraft",
-      "link": "https://www.universetoday.com/articles/nasas-lunar-reconnaissance-orbiter-images-falcon-9-crater-on-moon-with-some-help-from-a-korean-space",
-      "date": "2026-08-20T21:16:02.000Z",
-      "summary": "A SpaceX Falcon upper stage crashed into the Moon on August 5th. NASA's Lunar Reconnaissance Orbiter captured images of the crash site from different viewing angles and with different sunlight…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "a43512eade82",
-      "title": "Mars's Funky Moon Deimos was Shaped by an Impact",
-      "link": "https://www.universetoday.com/articles/marss-funky-moon-deimos-was-shaped-by-an-impact",
-      "date": "2026-08-20T19:21:06.000Z",
-      "summary": "Mars' moon Deimos has a large crater on its southern pole. It's also covered by a layer of regolith so deep it buries many other, smaller craters. New research shows that an impact is responsible for…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "e5c07ea23cc7",
-      "title": "Catching An 'Almost Total' Lunar Eclipse on August 28th",
-      "link": "https://www.universetoday.com/articles/catching-an-almost-total-lunar-eclipse-on-august-28th",
-      "date": "2026-08-20T15:21:00.000Z",
-      "summary": "So, did you miss the August 12th total solar eclipse? Like lots of humanity, we sat out the celestial drama of this month's solar eclipse, both total and partial. But the good news is, a large swath…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "b6589201d458",
-      "title": "What Can We Actually Find on an Exoplanet? Part 4: Looking For Us",
-      "link": "https://www.universetoday.com/articles/what-can-we-actually-find-on-an-exoplanet-part-4-looking-for-us",
-      "date": "2026-08-20T10:19:00.000Z",
-      "summary": "Some signs of an alien civilization are easier to spot than signs of life itself. On technosignatures, from CFCs and industrial gases to the pandemic dip in pollution, and why Earth's most detectable…",
+      "id": "d7d8468c87f4",
+      "title": "Looking for Earth 2.0 in Binary Systems",
+      "link": "https://www.universetoday.com/articles/looking-for-earth-20-in-binary-systems",
+      "date": "2026-08-31T13:52:30.000Z",
+      "summary": "While astronomers have found thousands of exoplanets over the last few decades, the true prize continues to elude them - they have yet to find an Earth-mass, rocky planet orbiting in the habitable…",
       "themes": [
         "exoplanets"
       ]
     },
     {
-      "id": "a99539e610ee",
-      "title": "Webb Captures the Treasure Chest at the Heart of the Carina Nebula",
-      "link": "https://www.universetoday.com/articles/webb-captures-the-treasure-chest-at-the-heart-of-the-carina-nebula",
-      "date": "2026-08-19T21:37:46.000Z",
-      "summary": "This NASA/ESA/CSA James Webb Space Telescope Picture of the Month takes us to a fantastical realm within our home galaxy, where piercing starlight and billowing winds sculpt dust clouds into…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "b257597806d9",
-      "title": "Pluto Planetary Science is the Gift that Keeps on Giving",
-      "link": "https://www.universetoday.com/articles/pluto-planetary-science-is-the-gift-that-keeps-on-giving",
-      "date": "2026-08-19T20:12:54.000Z",
-      "summary": "Something's wetting the surface of dwarf planet Pluto along the northern edge of Sputnik Planitia, and planetary scientists have found a good explanation for it. A recent study of new Horizons images…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "ff130e0c4eed",
-      "title": "Interstellar Travel IV: Solar, Magnetic, & Directed-Energy Sails",
-      "link": "https://www.universetoday.com/articles/interstellar-travel-iv-solar-magnetic-directed-energy-sails",
-      "date": "2026-08-19T16:51:00.000Z",
-      "summary": "In our fourth installment in the Interstellar Travel series, we'll examine solar sails, magnetosails, and directed-energy propulsion (DEP), which are currently the most plausible methods for reaching…",
-      "themes": [
-        "solar-system",
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "c330423c47d0",
-      "title": "Racing to Build a Radio Telescope on the Moon",
-      "link": "https://www.universetoday.com/articles/racing-to-build-a-radio-telescope-on-the-moon",
-      "date": "2026-08-19T15:20:05.000Z",
-      "summary": "Remember the “Wow!” signal? That high energy radio signature happened in 1977, when the Earth was much “quieter” in the radio band. If it were to happen today, it probably wouldn’t even move the…",
+      "id": "0d5f08c84112",
+      "title": "High-Orbit Laser Satellites Could Guide Future Lunar Travelers",
+      "link": "https://www.universetoday.com/articles/high-orbit-laser-satellites-could-guide-future-lunar-travelers",
+      "date": "2026-08-31T11:58:53.000Z",
+      "summary": "Cislunar space is already getting crowded. And with that crowding comes infrastructure complications. One is navigation - there is no Global Positioning System available when you're not on the globe.…",
       "themes": [
         "solar-system",
         "telescopes"
       ]
     },
     {
-      "id": "1a6a38220034",
-      "title": "Whoa! The JWST's Ancient Galaxies Are Much More Massive Than Thought",
-      "link": "https://www.universetoday.com/articles/whoa-the-jwsts-ancient-galaxies-are-much-more-massive-than-thought",
-      "date": "2026-08-19T15:11:41.000Z",
-      "summary": "When the JWST peered into the ancient Universe, it found surprisingly massive galaxies. These galaxies were so massive they challenged our understanding of how quickly galaxies can assemble. But new…",
+      "id": "532a726cbfdf",
+      "title": "ESA JUICE probe targets dark Jovian moon Kallichore in 2031",
+      "link": "https://www.universetoday.com/articles/esa-juice-probe-targets-dark-jovian-moon-kallichore-in-2031",
+      "date": "2026-08-31T04:34:18.000Z",
+      "summary": "The planet Jupiter hosts more than 100 moons with the majority of attention going to the four Galilean moons, Io, Europa, Ganymede, and Callisto. This is primarily due to their active geology,…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "1b7d7574db80",
+      "title": "7-stage journey reveals how falling space rocks survive air",
+      "link": "https://www.universetoday.com/articles/7-stage-journey-reveals-how-falling-space-rocks-survive-air",
+      "date": "2026-08-31T00:25:23.000Z",
+      "summary": "At least once in our lives, we’ve all seen a bright streak of light briefly blaze across the sky and have quickly referred to it as an asteroid, meteor, shooting star, comet, or some other whimsical…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "a734860e18c1",
+      "title": "Gardening the Moon's Cosmic Archives",
+      "link": "https://www.universetoday.com/articles/gardening-the-moons-cosmic-archives",
+      "date": "2026-08-30T23:34:00.000Z",
+      "summary": "When a meteoroid hits the Moon's surface, it does more than just dig up a little dirt. It actually excavates a little bit of cosmic history that recorded a long-ago supernova explosion. Scientists at…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "5518e6acdca6",
+      "title": "Roman Rises! Five Things to Know About NASA's New Space Telescope",
+      "link": "https://www.universetoday.com/articles/roman-rises-five-things-to-know-about-nasas-new-space-telescope",
+      "date": "2026-08-30T18:57:00.000Z",
+      "summary": "NASA's newest eye on the sky, the Nancy Grace Roman Space Telescope, has begun its journey to unravel the secrets of dark matter, dark energy and Earthlike planets — months ahead of schedule.",
       "themes": [
         "telescopes"
+      ]
+    },
+    {
+      "id": "2fe63a875a6e",
+      "title": "Ancient Dust Grains Hold Magnetic Clues to the Sun's Birth",
+      "link": "https://www.universetoday.com/articles/ancient-dust-grains-hold-magnetic-clues-to-the-suns-birth",
+      "date": "2026-08-30T11:44:00.000Z",
+      "summary": "Those little dust grains that fall to Earth during meteor showers or end up as part of larger meteorites found on Earth may hold surprising clues to the formation of the Sun. That's because they…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "bd021c1fc8b6",
+      "title": "NASA Announces Next Steps for Swift Rescue Mission",
+      "link": "https://www.universetoday.com/articles/nasa-announces-next-steps-for-swift-rescue-mission",
+      "date": "2026-08-29T22:23:01.000Z",
+      "summary": "Due to an ongoing commercial spacecraft attitude control issue, NASA and Katalyst Space announced Wednesday the LINK spacecraft will attempt to conduct rendezvous and proximity operations with NASA’s…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "328f72bd4e14",
+      "title": "Spaceflight Leaves Heart Muscle Cell Strength Intact",
+      "link": "https://www.universetoday.com/articles/spaceflight-leaves-heart-muscle-cell-strength-intact",
+      "date": "2026-08-29T02:22:29.000Z",
+      "summary": "Since the dawn of human space exploration, astronauts, scientists, and engineers have examined the short- and long-term effects of microgravity (often mistakenly called zero-gravity) on the human…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "1cb645c787c7",
+      "title": "Astronaut Microbes Might Survive at Moon's Pole, NASA Warns",
+      "link": "https://www.universetoday.com/articles/astronaut-microbes-might-survive-at-moons-pole-nasa-warns",
+      "date": "2026-08-28T01:51:41.000Z",
+      "summary": "One of the primary objectives of space exploration that often gets overlooked is the intense effort that goes into ensuring Earth microbes don’t contaminate planetary objects, also called forward…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "15e63d421201",
+      "title": "Some Comets are Naked, and One Just Got Caught Photo-Bombing",
+      "link": "https://www.universetoday.com/articles/some-comets-are-naked-and-one-just-got-caught-photo-bombing",
+      "date": "2026-08-27T22:31:53.000Z",
+      "summary": "Japanese researchers got lucky when a comet they wanted to study was found photo-bombing archival images from Japan's Subaru Telescope. The Subaru, with its 8.2 meter mirror, happened to image comet…",
+      "themes": [
+        "solar-system",
+        "telescopes"
+      ]
+    },
+    {
+      "id": "66c2f6bbc2ba",
+      "title": "Theory-Defying Exoplanet Atmospheres Force a Rethink of Theories",
+      "link": "https://www.universetoday.com/articles/theory-defying-exoplanet-atmospheres-force-a-rethink-of-theories",
+      "date": "2026-08-27T19:40:25.000Z",
+      "summary": "The discovery of lava worlds with atmospheres is challenging our theories of how atmospheres escape, and calling into question the idea of the cosmic shoreline. Stanford researchers have developed a…",
+      "themes": [
+        "solar-system",
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "bea85c962c71",
+      "title": "Hubble Solves a Mystery About the Milky Way's Early Years",
+      "link": "https://www.universetoday.com/articles/hubble-solves-a-mystery-about-the-milky-ways-early-years",
+      "date": "2026-08-27T16:48:59.000Z",
+      "summary": "New data from NASA’s Hubble Space Telescope shows definitive evidence of a dwarf galaxy merging with the young Milky Way galaxy in the earliest phases of its evolution. This finding extends our…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "257a4c472665",
+      "title": "NASA’s Webb Telescope Rules Out Two New Dyson Sphere Candidates",
+      "link": "https://www.universetoday.com/articles/nasas-webb-telescope-rules-out-two-new-dyson-sphere-candidates",
+      "date": "2026-08-27T03:32:00.000Z",
+      "summary": "Recent searches for the technosignatures of hypothetical Dyson Spheres again turn up empty.",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "68efc06cf3f4",
+      "title": "AI Spots Hidden Solar Storm Signs 9 Hours Early",
+      "link": "https://www.universetoday.com/articles/ai-spots-hidden-solar-storm-signs-9-hours-early",
+      "date": "2026-08-27T01:16:25.000Z",
+      "summary": "When we think of weather forecasts, we instinctively think of weather on Earth like rain or shine. However, we rarely consider weather forecasts from outside of the Earth, also called space weather.…",
+      "themes": [
+        "solar-system"
       ]
     }
   ]
