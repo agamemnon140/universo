@@ -1,146 +1,187 @@
 {
-  "generatedAt": "2026-09-07T15:03:46.090Z",
+  "generatedAt": "2026-09-14T15:54:02.088Z",
   "source": "universetoday.com",
   "items": [
     {
-      "id": "8e7e572a122c",
-      "title": "Astronomers Hear the Faint Whispers of Cosmic Hydrogen from the Distant Past.",
-      "link": "https://www.universetoday.com/articles/astronomers-hear-the-faint-whispers-of-cosmic-hydrogen-from-the-distant-past",
-      "date": "2026-09-06T21:03:35.000Z",
-      "summary": "Astronomers have directly detected an extremely faint radio signal from hydrogen gas billions of light years away, demonstrating a powerful new way to map the Universe.",
+      "id": "0ab4484d09ae",
+      "title": "Could the Clues to Ancient Alien Civilizations Be Hiding in a Bucket of Moon Dust?",
+      "link": "https://www.universetoday.com/articles/could-the-clues-to-ancient-alien-civilizations-be-hiding-in-a-bucket-of-moon-dust",
+      "date": "2026-09-13T13:09:47.000Z",
+      "summary": "Most of our experience with the Search for Extraterrestrial Intelligence (SETI) has been focused on capturing radio signals that alien species have sent out, whether intentionally or unintentionally.…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "481a98ef4af3",
-      "title": "A Pair of White Dwarfs Locked in a Six-Minute Orbit Might One Day Be Observed By Gravitational Waves",
-      "link": "https://www.universetoday.com/articles/a-pair-of-white-dwarfs-locked-in-a-six-minute-orbit-might-one-day-be-observed-by-gravitational-waves",
-      "date": "2026-09-06T15:30:42.000Z",
-      "summary": "Future gravitational wave observatories will be able to see the gravitational waves of close-orbiting binary stars. A newly studied white dwarf system could be one of the first systems we observe.",
+      "id": "5fad47bc9c17",
+      "title": "A New Catalog of Close to 3,000 Supernova Challenges Theories on Dark Energy",
+      "link": "https://www.universetoday.com/articles/a-new-catalog-of-close-to-3000-supernova-challenges-theories-on-dark-energy",
+      "date": "2026-09-13T01:53:42.000Z",
+      "summary": "The most comprehensive catalogue of exploding white dwarf stars ever assembled has revealed new clues about dark energy, the mysterious force driving the universe’s accelerating expansion.",
+      "themes": [
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "3b1a167a85aa",
+      "title": "Earth From Orbit Is Unpredictable and Messy. Could 'Liquid' AI Clear the View?",
+      "link": "https://www.universetoday.com/articles/earth-from-orbit-is-unpredictable-and-messy-could-liquid-ai-clear-the-view",
+      "date": "2026-09-12T12:27:43.000Z",
+      "summary": "Monitoring Earth from above is a messy, inconsistent business. Clouds can block a satellite view, the angle of the Sun can create huge shadows, and orbital paths might not take a system across the…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "108a5e80214e",
+      "title": "A New Design For A Plasma Engine Fuels On Only Thin Air",
+      "link": "https://www.universetoday.com/articles/a-new-design-for-a-plasma-engine-fuels-on-only-thin-air",
+      "date": "2026-09-12T12:10:46.000Z",
+      "summary": "Choosing what orbit to put a satellite in always comes with trade-offs. When it comes to Very Low Earth Orbit (VLEO), between 100-450 km, there are distinct advantages. Remote sensing cameras can…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "b2bb7b45d4f3",
+      "title": "Venus Moon Would Have Been Doomed From The Start, Says New Paper",
+      "link": "https://www.universetoday.com/articles/venus-moon-would-have-been-doomed-from-the-start-says-new-paper",
+      "date": "2026-09-12T01:45:00.000Z",
+      "summary": "Venus likely never had a moon and even if it did, it would have soon been torn asunder by the planet’s own gravity, says prominent planetary astrophysicist.",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "48d7d94583c7",
+      "title": "Dense Galaxies Are Carving Out A Bubble in the Early Universe",
+      "link": "https://www.universetoday.com/articles/dense-galaxies-are-carving-out-a-bubble-in-the-early-universe",
+      "date": "2026-09-11T22:51:28.000Z",
+      "summary": "Light could only travel freely in the Universe after cosmic reionization. Before that, neutral hydrogen stopped photons from travelling. The JWST has found evidence of an overdensity of galaxies…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "2e4f6ee57e9b",
+      "title": "How Big Can The Universe's First Starbursts Get?",
+      "link": "https://www.universetoday.com/articles/how-big-can-the-universes-first-starbursts-get",
+      "date": "2026-09-11T14:19:27.000Z",
+      "summary": "As our telescopes have improved and we’ve been able to peer farther back in time, we’ve begun finding more fascinating features of the universe. But one thing we definitely haven’t found yet is…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "6d4d9ff4d8b6",
+      "title": "What's Carving Active Gullies on Mars? It's Not Water",
+      "link": "https://www.universetoday.com/articles/whats-carving-active-gullies-on-mars-its-not-water",
+      "date": "2026-09-11T13:12:56.000Z",
+      "summary": "Scientists were shocked when they received the first images of Martian gullies. They were even more shocked as those gullies appeared to change over time. Their similarities to gullies seen on Earth…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "2f82b8d8ace5",
+      "title": "NASA's Next Great Observatory Could Spot Oceans on Distant Worlds",
+      "link": "https://www.universetoday.com/articles/nasas-next-great-observatory-could-spot-oceans-on-distant-worlds",
+      "date": "2026-09-11T10:49:44.000Z",
+      "summary": "We’ve found over 5,500 exoplanets so far. Dozens of them have been in the habitable zone of their parent stars, where, at least in theory, they could host an ocean. But we’ve never definitively found…",
       "themes": [
         "telescopes",
         "exoplanets"
       ]
     },
     {
-      "id": "c3547b13980a",
-      "title": "Snapping the Sun's Grand Magnetic Border at 0.3 AU",
-      "link": "https://www.universetoday.com/articles/snapping-the-suns-grand-magnetic-border-at-03-au",
-      "date": "2026-09-06T13:26:42.000Z",
-      "summary": "Out in the solar system, there is a giant rippling curtain of charged particles that is actually the largest structure in our solar system. Known as the Heliospheric Current Sheet (HCS), it marks the…",
+      "id": "e582158c5a25",
+      "title": "eROSITA's Second Data Release Catalog Delivering the Most Comprehensive High-Energy Census of the Cosmos to Date",
+      "link": "https://www.universetoday.com/articles/erositas-second-data-release-catalog-delivering-the-most-comprehensive-high-energy-census-of-the-cos",
+      "date": "2026-09-10T23:38:21.000Z",
+      "summary": "The eROSITA Consortium has issued the survey's second data release (DR2), nearly doubling the previously known eROSITA X-ray sources to two million.",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "3940aecf1783",
+      "title": "Unexplained Gamma-Rays from the Galactic Center Could be from Self-Annihilating Dark Matter",
+      "link": "https://www.universetoday.com/articles/unexplained-gamma-rays-from-the-galactic-center-could-be-from-self-annihilating-dark-matter",
+      "date": "2026-09-10T19:56:32.000Z",
+      "summary": "Over a decade ago, the Fermi satellite detected an excess of gamma-ray emissions in the galactic center. Potential explanations included Sgr. A*, the Milky Way's SMBH, pulsars, and even…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "70ecdc0b7c75",
+      "title": "A New Surface Atlas of Phobos Will Help JAXA's MMX Mission Collect its Samples",
+      "link": "https://www.universetoday.com/articles/a-new-surface-atlas-of-phobos-will-help-jaxas-mmx-mission-collect-its-samples",
+      "date": "2026-09-10T17:27:17.000Z",
+      "summary": "JAXA's Martian Moon eXploration (MMX) will be on its way to Mars and Phobos next month. It will collect samples from Phobos and return them to Earth. A new morphodynamic atlas of the small moon will…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "c521ee6c5286",
-      "title": "Could life exist on Venus? Peptides survive harsh acid.",
-      "link": "https://www.universetoday.com/articles/could-life-exist-on-venus-peptides-survive-harsh-acid",
-      "date": "2026-09-05T08:40:20.000Z",
-      "summary": "The planet Venus is arguably the most mischievous planetary body in the solar system. This is because like Saturn’s largest moon, Titan, Venus is shrouded in a thick atmosphere that can’t be viewed…",
+      "id": "0d75a044fc38",
+      "title": "JWST Ruled Out Finding Tiny Moons Around An Exoplanet - That's Great News",
+      "link": "https://www.universetoday.com/articles/jwst-ruled-out-finding-tiny-moons-around-an-exoplanet-thats-great-news",
+      "date": "2026-09-10T14:42:29.000Z",
+      "summary": "The James Webb Space Telescope (JWST) has opened up many wonders of the cosmos to scientists since it began its science operations a few years ago. But one thing that it hasn’t done is find an…",
+      "themes": [
+        "telescopes",
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "e53d4120533f",
+      "title": "Ancient Swedish Goths Had Surprisingly Accurate Calendars",
+      "link": "https://www.universetoday.com/articles/ancient-swedish-goths-had-surprisingly-accurate-calendars",
+      "date": "2026-09-10T08:37:05.000Z",
+      "summary": "Ancient Swedish pagans had surprisingly accurate calendars and the ability to measure phases of the Moon to an incredible precision.",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "83f6c87063a1",
+      "title": "New Revelations About the Origin of Interstellar Comet 3I/ATLAS",
+      "link": "https://www.universetoday.com/articles/new-revelations-about-the-origin-of-interstellar-comet-3iatlas",
+      "date": "2026-09-10T02:24:37.000Z",
+      "summary": "UK astronomers have uncovered new clues about the origin of 3I/Atlas – only the third known object from beyond our Solar System ever spotted in our cosmic neighbourhood.",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "9dfc27213ae5",
+      "title": "New Research Says that Early Galaxies Could be Sending us Neutrinos",
+      "link": "https://www.universetoday.com/articles/new-research-says-that-early-galaxies-could-be-sending-us-neutrinos",
+      "date": "2026-09-10T00:22:28.000Z",
+      "summary": "Those \"Little Red Dots\" discovered by the James Webb Space Telescope, galaxies that existed during the very early Universe, could be sending neutrino particles that are reaching us today.",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "a2692112e06d",
+      "title": "Astronomers Unmask a Supernova Impostor",
+      "link": "https://www.universetoday.com/articles/astronomers-unmask-a-supernova-impostor",
+      "date": "2026-09-09T19:39:48.000Z",
+      "summary": "Astronomers observe faint light signals from stellar objects, study it intently, and try to understand what's behind these signals. In one case, the signals they detected masqueraded as an imminent…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "76d76f79cea0",
+      "title": "Tiny Salt Crevices Could Act As Miniature \"Greenhouses\" For Martian Microbes",
+      "link": "https://www.universetoday.com/articles/tiny-salt-crevices-could-act-as-miniature-greenhouses-for-martian-microbes",
+      "date": "2026-09-09T13:26:03.000Z",
+      "summary": "We’ve been searching for life on Mars for a long time now, but so far we’ve come up empty. The fundamental problem is a Catch-22 of two of the key ingredients for life. Life as we know it needs…",
       "themes": [
         "solar-system",
-        "telescopes"
-      ]
-    },
-    {
-      "id": "6151698ff1a2",
-      "title": "The DESI Legacy Imaging Survey Releases the Largest 2-D Map of the Universe",
-      "link": "https://www.universetoday.com/articles/the-desi-legacy-imaging-survey-releases-the-largest-2-d-map-of-the-universe",
-      "date": "2026-09-04T21:30:12.000Z",
-      "summary": "The newest DESI Legacy Imaging Surveys map covers three-quarters of the sky and catalogs nearly four billion objects. This publicly-available database contains stars, galaxies, supernovae,…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "6723db604524",
-      "title": "The 20th Data Release (DR 20) of the Sloan Digital Sky Survey (SDSS) is Here!",
-      "link": "https://www.universetoday.com/articles/the-20th-data-release-dr-20-of-the-sloan-digital-sky-survey-sdss-is-here",
-      "date": "2026-09-04T18:40:15.000Z",
-      "summary": "The Sloan Digital Sky Survey (SDSS) has officially launched its twentieth data release (DR20), featuring updated data from multiple observations projects.",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "15f77cf976a0",
-      "title": "Pulsar Timing Arrays Could Look for Evidence of Dark Matter Stars",
-      "link": "https://www.universetoday.com/articles/pulsar-timing-arrays-could-look-for-evidence-of-dark-matter-stars",
-      "date": "2026-09-04T15:14:21.000Z",
-      "summary": "Pulsar Timing Arrays have been used to observe the background of gravitational waves in our galaxy. We aren't certain of their origin, but a new study shows a strong source could be early…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "439fdbe7c7fd",
-      "title": "Penultimate Lunar Occultations Inbound for Jupiter, Venus and More in September",
-      "link": "https://www.universetoday.com/articles/penultimate-lunar-occultations-inbound-for-jupiter-venus-and-more-in-september",
-      "date": "2026-09-03T19:34:00.000Z",
-      "summary": "The Moon is busy in September. Coming off of eclipse season in August, the Moon visits no less than two planets, two bright stars and one open cluster in September, as it heads towards the Full…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "d5c32e9a48a6",
-      "title": "Astronomers See How a Centaur Can Become a Comet",
-      "link": "https://www.universetoday.com/articles/astronomers-see-how-a-centaur-can-become-a-comet",
-      "date": "2026-09-03T16:01:47.000Z",
-      "summary": "In 1992, Centaur 450P/LONEOS had a close encounter with Saturn, shifting its orbit closer to the Sun. Now astronomers can observe how a small icy body transforms into a comet over time.",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "a553d0365665",
-      "title": "New Research Shows How Mercury's Crust Formed by Extreme Volcanism",
-      "link": "https://www.universetoday.com/articles/new-research-shows-how-mercurys-crust-formed-by-extreme-volcanism",
-      "date": "2026-09-02T18:28:09.000Z",
-      "summary": "Researchers have figured out how to use lunar samples to determine the nature of volcanic activity on ancient Mercury. It's all based on SiO2, or silicon dioxide. Its abundance in a planet's crust…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "2b58c8619cb1",
-      "title": "SuperCDMS SNOLAB Starts Its Dark Matter Hunt",
-      "link": "https://www.universetoday.com/articles/supercdms-snolab-starts-its-dark-matter-hunt",
-      "date": "2026-09-02T13:30:07.000Z",
-      "summary": "The search for dark matter has reached another milestone - in this case the start of science for one of the world’s newest detectors. The Super Cryogenic Dark Matter Search (SuperCDMS) SNOLAB just…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "253a35159705",
-      "title": "Astronomers Might Use Manganese to Clock the Age of Galaxies",
-      "link": "https://www.universetoday.com/articles/astronomers-might-use-manganese-to-clock-the-age-of-galaxies",
-      "date": "2026-09-02T12:47:28.000Z",
-      "summary": "Keeping track of time in the universe is a difficult task. It’s constantly evolving and changing, and studying events that happened billions of years ago, while possible, isn’t exactly easy. A recent…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "6521deb78d8e",
-      "title": "Is a Sea Change Coming for New Horizons Heliospheric Science?",
-      "link": "https://www.universetoday.com/articles/is-a-sea-change-coming-for-new-horizons-heliospheric-science",
-      "date": "2026-09-02T01:03:23.000Z",
-      "summary": "If you visit the New Horizons mission website frequently, you'll notice that the spacecraft continues to generate excellent science as it plows its way through the Kuiper Belt. It recently woke up…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "8f1e26e3ef3c",
-      "title": "Astronomers Find Little Red Dots About to Merge",
-      "link": "https://www.universetoday.com/articles/astronomers-find-little-red-dots-about-to-merge",
-      "date": "2026-09-01T21:57:48.000Z",
-      "summary": "Prior to its launch, astronomers were uncertain what the powerful JWST would find in the ancient, early Universe. One of its surprising findings was Little Red Dots, unexplained ancient objects.…",
-      "themes": [
         "telescopes"
       ]
     }
