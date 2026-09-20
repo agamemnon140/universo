@@ -125,6 +125,20 @@ function spherical(v: EclipticVector): { lonDeg: number; latDeg: number; rAU: nu
   }
 }
 
+export interface OrbitShape {
+  aAU: number
+  e: number
+  periAU: number // closest approach to the Sun
+  apoAU: number // farthest point
+  periLonDeg: number
+}
+
+/** Size and shape of a planet's orbit on a date. */
+export function planetOrbitShape(id: string, jd: number): OrbitShape {
+  const el = elementsAt(id, jd)
+  return { aAU: el.a, e: el.e, periAU: el.a * (1 - el.e), apoAU: el.a * (1 + el.e), periLonDeg: wrap360(el.longPeri) }
+}
+
 /** Ecliptic longitude of a planet's perihelion (equinox of date). */
 export function planetPerihelionLongitude(id: string, jd: number): number {
   return wrap360(elementsAt(id, jd).longPeri)

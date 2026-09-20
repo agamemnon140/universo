@@ -6,11 +6,13 @@ import {
   planetGeocentric,
   planetHeliocentric,
   planetOrbitPath,
+  planetOrbitShape,
   visibilityHint,
   wrap360,
   type EclipticVector,
 } from '../../lib/ephemeris'
 import { formatNumber } from '../../lib/format'
+import { SIGNS, signOf, signPosition } from '../../lib/zodiac'
 
 const SIZE = 700
 const CENTER = SIZE / 2
@@ -85,6 +87,7 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
         body: bodyById.get(id)!,
         helio: planetHeliocentric(id, jd),
         geo: planetGeocentric(id, jd),
+        shape: planetOrbitShape(id, jd),
       })),
     [jd],
   )
@@ -130,7 +133,7 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
       <div className="sky-map panel" style={{ padding: 8 }}>
         <svg viewBox={`0 0 ${SIZE} ${SIZE + 22}`}>
           {/* reference directions */}
-          {[0, 90, 180, 270].map((deg) => {
+          {centre === 'sun' && [0, 90, 180, 270].map((deg) => {
             const p = toScreen(deg, MAX_R + 8)
             const q = toScreen(deg, MAX_R + 30)
             return (
@@ -143,6 +146,26 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
             )
           })}
           <circle cx={CENTER} cy={CENTER} r={MAX_R + 8} fill="none" stroke="var(--line)" />
+          {centre === 'earth' && (
+            <g>
+              {/* the tropical zodiac: twelve 30° slices from the March equinox */}
+              <circle cx={CENTER} cy={CENTER} r={MAX_R + 36} fill="none" stroke="var(--line)" />
+              {SIGNS.map((s) => {
+                const a = toScreen(s.startDeg, MAX_R + 8)
+                const b = toScreen(s.startDeg, MAX_R + 36)
+                const mid = toScreen(s.startDeg + 15, MAX_R + 22)
+                return (
+                  <g key={s.name}>
+                    <line x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke="var(--line)" />
+                    <text x={mid.x} y={mid.y + 5} textAnchor="middle" fill="var(--text-dim)" fontSize="14">
+                      <title>{s.name}</title>
+                      {s.symbol}
+                    </text>
+                  </g>
+                )
+              })}
+            </g>
+          )}
 
           {centre === 'earth' && (
             <>
@@ -178,7 +201,17 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
             if (!labelled.has(id) && scale !== 'log') return null
             const pts = path.map((v) => vectorToScreen(v, radius))
             const d = pts.map((p, k) => `${k === 0 ? 'M' : 'L'} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' ') + ' Z'
-            return <path key={id} d={d} fill="none" stroke="var(--line-strong)" strokeWidth="1" />
+            const shape = rows.find((r) => r.id === id)!.shape
+            const peri = toScreen(shape.periLonDeg, radius(shape.periAU))
+            const apo = toScreen(shape.periLonDeg + 180, radius(shape.apoAU))
+            return (
+              <g key={id}>
+                <path d={d} fill="none" stroke="var(--line-strong)" strokeWidth="1" />
+                {/* nearest and farthest points of the orbit */}
+                <circle cx={peri.x} cy={peri.y} r={2.2} fill="var(--accent-amber)" opacity="0.8" />
+                <circle cx={apo.x} cy={apo.y} r={2.2} fill="var(--accent-cyan)" opacity="0.8" />
+              </g>
+            )
           })}
 
           {/* central body */}
@@ -257,8 +290,8 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
 
           <text x={CENTER} y={SIZE + 14} textAnchor="middle" fill="var(--text-faint)" fontSize="11">
             {centre === 'sun'
-              ? `heliocentric ecliptic longitude · ${scale === 'log' ? 'log distance scale' : 'true distance scale'} · view from ecliptic north`
-              : `geocentric view · labels give elongation from the Sun (E = evening sky, W = morning sky) · ${scale === 'log' ? 'log' : 'true'} distance scale`}
+              ? `heliocentric longitude · ${scale === 'log' ? 'log distance scale' : 'true distance scale'} · amber dot = perihelion, cyan dot = aphelion of each orbit`
+              : `geocentric view · elongation from the Sun (E = evening sky, W = morning sky) · outer band: tropical zodiac signs`}
           </text>
         </svg>
       </div>
@@ -272,11 +305,13 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
             <th>From Sun</th>
             <th>From Earth</th>
             <th>Elongation</th>
+            {centre === 'earth' && <th>Sign</th>}
+            <th>Orbit shape</th>
             <th>In our sky</th>
           </tr>
         </thead>
         <tbody>
-          {rows.map(({ id, body, helio, geo }) => (
+          {rows.map(({ id, body, helio, geo, shape }) => (
             <tr key={id} style={{ cursor: 'pointer' }} onClick={() => onSelect(id)}>
               <td>
                 <span className="dot" style={{ background: body.color, display: 'inline-block', width: 9, height: 9, borderRadius: '50%', marginRight: 6 }} />
@@ -288,15 +323,35 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
               <td>
                 {id === 'earth' ? '—' : `${geo.elongationDeg.toFixed(1)}° ${geo.side === 'east' ? 'E' : 'W'}`}
               </td>
+              {centre === 'earth' && (
+                <td style={{ whiteSpace: 'nowrap' }}>
+                  {id === 'earth' ? '—' : `${signOf(geo.lonDeg).symbol} ${signPosition(geo.lonDeg)}`}
+                </td>
+              )}
+              <td style={{ whiteSpace: 'nowrap' }}>
+                <span className="ecc-bar" title={`eccentricity ${shape.e.toFixed(3)}`}>
+                  <span style={{ width: `${Math.min(100, shape.e * 400)}%` }} />
+                </span>
+                e = {shape.e.toFixed(3)} · {formatNumber(shape.periAU)}–{formatNumber(shape.apoAU)} AU
+              </td>
               <td style={{ color: 'var(--text-dim)' }}>{id === 'earth' ? 'home' : visibilityHint(id, geo)}</td>
             </tr>
           ))}
         </tbody>
       </table>
       </div>
+      {centre === 'earth' && (
+        <p className="hint">
+          Tropical signs: the Sun is in {signOf(sunGeo.lonDeg).symbol} {signPosition(sunGeo.lonDeg)} and the Moon in{' '}
+          {signOf(moon.lonDeg).symbol} {signPosition(moon.lonDeg)}. These are the astrological signs, twelve equal 30° slices
+          counted from the March equinox; the constellations of the same names have slipped about one sign east since
+          the scheme was fixed 2,000 years ago (precession), so a planet &ldquo;in Aries&rdquo; is actually seen against Pisces.
+        </p>
+      )}
       <p className="not-to-scale">
         Planet positions from JPL Keplerian elements (about 1° accuracy, 1800–2050); the Moon&apos;s
-        ring is illustrative, its direction is real.
+        ring is illustrative, its direction is real. Orbit shape: e is the eccentricity (0 = circle), then the
+        closest and farthest distance from the Sun; in the Inner and Outer scales the orbits are drawn true to shape.
       </p>
     </>
   )
