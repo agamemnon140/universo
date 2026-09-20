@@ -3,6 +3,7 @@ import { useNews } from './hooks/useNews'
 import { TabBar } from './components/shell/TabBar'
 import { Starfield } from './components/shell/Starfield'
 import { SolarTab } from './components/solar/SolarTab'
+import { PositionsTab } from './components/positions/PositionsTab'
 import { TelescopesTab } from './components/telescopes/TelescopesTab'
 import { NeighborhoodTab } from './components/neighborhood/NeighborhoodTab'
 
@@ -16,10 +17,11 @@ export default function App() {
       <header className="app-header">
         <img src={`${import.meta.env.BASE_URL}icon.svg`} alt="" />
         <h1>Universo</h1>
-        <span className="subtitle">solar system · telescopes · neighborhood</span>
+        <span className="subtitle">solar system · positions · telescopes · neighborhood</span>
       </header>
       <main className="tab-content">
         {tab === 'solar' && <SolarTab news={news} />}
+        {tab === 'positions' && <PositionsTab news={news} />}
         {tab === 'telescopes' && <TelescopesTab news={news} />}
         {tab === 'neighborhood' && <NeighborhoodTab news={news} />}
       </main>

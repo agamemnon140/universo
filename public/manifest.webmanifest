@@ -1,7 +1,7 @@
 {
   "name": "Universo",
   "short_name": "Universo",
-  "description": "Interactive guide to the solar system, telescopes, and our stellar neighborhood.",
+  "description": "Interactive guide to the solar system, where the planets and the Moon are today, telescopes, and our stellar neighborhood.",
   "start_url": "/universo/",
   "scope": "/universo/",
   "display": "standalone",
