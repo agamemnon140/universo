@@ -20,8 +20,11 @@ on GitHub Pages.
   four views. *Planets* draws the eight planets on their true orbits, centred on the Sun
   (heliocentric longitude) or on Earth (elongation from the Sun, evening vs morning sky,
   night-side shading), on a log scale or in true-scale inner/outer views, with a table of
-  distances and visibility. *Earth* shows the 23.4° axis around the orbit and the resulting
-  season, then the orbit's true and exaggerated ellipse: distance and speed today, next
+  distances and visibility, each orbit's eccentricity and perihelion/aphelion marks, and — with
+  Earth at the centre — the tropical zodiac band and each body's sign. *Earth* shows the 23.4°
+  axis around the orbit with globes lit by real 3D geometry, a panel explaining the day–night
+  line (side views at the equinoxes and solstices, today's globe, daylight hours and noon Sun
+  height by latitude), then the orbit's true and exaggerated ellipse: distance and speed today, next
   perihelion and aphelion, Kepler's equal-area sectors, and the slow precession of perihelion.
   *Moon* shows the phase from above and as seen from Earth with the next principal phases; a
   stylised near side with today's terminator, libration and local time at the Apollo 11 site;
@@ -31,8 +34,9 @@ on GitHub Pages.
   poles; and the 18.6-year nodal cycle (major and minor standstills). *Eclipses* is
   interactive: the Sun and the line of nodes on a ring with the eclipse-season windows, the
   shadow geometry (umbra, penumbra, γ) of the coming new and full Moon with its verdict, a
-  list of every eclipse in the next ten years with type and class, and previous/next-eclipse
-  buttons on the time control. Snapshots are shareable via
+  20-year timeline showing the 6-month beat of eclipse seasons and the saros repeat, a list of
+  every eclipse in the next ten years with type and class, and previous/next-eclipse buttons
+  on the time control. Snapshots are shareable via
   `?date=2026-08-12&view=eclipses` (plus `centre=earth` / `scale=inner|outer` for the map).
 - **Telescopes** — 49 observatories placed on the electromagnetic spectrum (gamma → radio,
   log wavelength scale), color-coded by status (operating / construction / planned / retired),
