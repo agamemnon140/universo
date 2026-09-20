@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import { bodyById } from '../../data'
 import { dateFromJulianDay, moonPhase, moonPosition, nextPhases } from '../../lib/ephemeris'
 import { formatNumber } from '../../lib/format'
+import { litPath } from './moonSvg'
 
 const W = 700
 const H = 340
@@ -27,25 +28,12 @@ function LitMoon({ x, y, r, color, current }: { x: number; y: number; r: number;
   )
 }
 
-/**
- * The phase disc as seen from Earth (northern hemisphere, north up): lit limb on the right
- * while waxing, on the left while waning; the terminator is a half-ellipse.
- */
+/** The phase disc as seen from Earth (northern hemisphere, north up). */
 function PhaseDisc({ elongationDeg, color }: { elongationDeg: number; color: string }) {
-  const waxing = elongationDeg < 180
-  const gibbous = elongationDeg > 90 && elongationDeg < 270
-  const rx = Math.max(0.01, DISC_R * Math.abs(Math.cos(elongationDeg * DEG)))
-  const top = `${DX} ${DY - DISC_R}`
-  const bottom = `${DX} ${DY + DISC_R}`
-  // outer limb: waxing → down the right side (sweep 1); waning → down the left (sweep 0)
-  const limb = `A ${DISC_R} ${DISC_R} 0 0 ${waxing ? 1 : 0} ${bottom}`
-  // terminator back to the top: bulges toward the dark side when gibbous
-  const sweep = waxing ? (gibbous ? 1 : 0) : gibbous ? 0 : 1
-  const terminator = `A ${rx} ${DISC_R} 0 0 ${sweep} ${top}`
   return (
     <g>
       <circle cx={DX} cy={DY} r={DISC_R} fill="rgba(2, 5, 14, 0.9)" stroke="var(--line-strong)" />
-      <path d={`M ${top} ${limb} ${terminator} z`} fill={color} />
+      <path d={litPath(DX, DY, DISC_R, elongationDeg)} fill={color} />
     </g>
   )
 }

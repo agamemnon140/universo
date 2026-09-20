@@ -1,15 +1,25 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import type { NewsState } from '../../hooks/useNews'
 import { bodyById } from '../../data'
 import { julianDay } from '../../lib/ephemeris'
-import { todayNoon } from '../../lib/dates'
+import { dayOfJd, todayNoon } from '../../lib/dates'
+import { nextEclipse } from '../../lib/eclipses'
 import { TimeControl } from './TimeControl'
 import { PlanetMap } from './PlanetMap'
-import { EarthMoonView } from './EarthMoonView'
+import { EarthView } from './EarthView'
+import { MoonView } from './MoonView'
+import { EclipsesView } from './EclipsesView'
 import { BodyDetail } from '../solar/BodyDetail'
 import { NewsSection } from '../news/NewsSection'
 
-type View = 'planets' | 'earthmoon'
+type View = 'planets' | 'earth' | 'moon' | 'eclipses'
+
+const VIEWS: { id: View; label: string }[] = [
+  { id: 'planets', label: 'Planets' },
+  { id: 'earth', label: 'Earth' },
+  { id: 'moon', label: 'Moon' },
+  { id: 'eclipses', label: 'Eclipses' },
+]
 
 /** ?date=YYYY-MM-DD makes a snapshot shareable; the day is evaluated at 12:00 UTC. */
 function dateFromUrl(): Date {
@@ -22,9 +32,20 @@ function dateFromUrl(): Date {
 }
 
 function viewFromUrl(): View {
-  return new URLSearchParams(window.location.search).get('view') === 'earthmoon'
-    ? 'earthmoon'
-    : 'planets'
+  const v = new URLSearchParams(window.location.search).get('view')
+  if (v === 'earthmoon') return 'earth' // old links
+  return VIEWS.some((x) => x.id === v) ? (v as View) : 'planets'
+}
+
+const HINTS: Record<View, string> = {
+  planets:
+    "Where the eight planets really are on this date. Centre the map on the Sun to read each planet's heliocentric longitude, or on Earth to see which side of the Sun it sits from our point of view — and whether it is an evening or a morning object. Tap a planet for its profile.",
+  earth:
+    "Earth on this date: how its 23.4° tilt sets the season, and how its almost-circular orbit still speeds it up and slows it down.",
+  moon:
+    "The Moon on this date: its phase and the face it shows us, its elliptical and tilted orbit, the months it keeps, and why it has no seasons but a slow 18.6-year swing across our sky.",
+  eclipses:
+    'When shadows line up: the eclipse seasons, the geometry of the coming new and full Moon, and every eclipse of the next ten years. Press play, or jump straight to the next one.',
 }
 
 export function PositionsTab({ news }: { news: NewsState }) {
@@ -33,54 +54,56 @@ export function PositionsTab({ news }: { news: NewsState }) {
   const [detailId, setDetailId] = useState<string | null>(null)
   const jd = useMemo(() => julianDay(date), [date])
 
-  // keep ?date= in sync so the current snapshot can be copied from the address bar
+  // keep ?date= and ?view= in sync so the current snapshot can be copied from the address bar
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
     params.set('date', date.toISOString().slice(0, 10))
+    params.set('view', view)
     const url = `${window.location.pathname}?${params.toString()}${window.location.hash}`
     window.history.replaceState(null, '', url)
-  }, [date])
+  }, [date, view])
+
+  const jumpTo = useCallback((targetJd: number) => setDate(dayOfJd(targetJd)), [])
+  const jumpEclipse = useCallback(
+    (direction: 1 | -1) => {
+      // step half a day past the current date so a same-day eclipse is not found again
+      const e = nextEclipse(jd + direction * 0.5, direction)
+      jumpTo(e.jd)
+    },
+    [jd, jumpTo],
+  )
 
   const detail = detailId ? bodyById.get(detailId) : undefined
 
   return (
     <>
       <div className="view-toggle">
-        <button className={view === 'planets' ? 'active' : ''} onClick={() => setView('planets')}>
-          Planets
-        </button>
-        <button
-          className={view === 'earthmoon' ? 'active' : ''}
-          onClick={() => setView('earthmoon')}
-        >
-          Earth &amp; Moon
-        </button>
+        {VIEWS.map((v) => (
+          <button key={v.id} className={view === v.id ? 'active' : ''} onClick={() => setView(v.id)}>
+            {v.label}
+          </button>
+        ))}
       </div>
 
-      <TimeControl date={date} setDate={setDate} />
+      <TimeControl date={date} setDate={setDate}>
+        {view === 'eclipses' && (
+          <>
+            <button className="chip" onClick={() => jumpEclipse(-1)}>
+              ◀ Previous eclipse
+            </button>
+            <button className="chip" onClick={() => jumpEclipse(1)}>
+              Next eclipse ▶
+            </button>
+          </>
+        )}
+      </TimeControl>
 
-      {view === 'planets' && (
-        <>
-          <p className="hint">
-            Where the eight planets really are on this date. Centre the map on the Sun to read
-            each planet&apos;s heliocentric longitude, or on Earth to see which side of the Sun
-            it sits from our point of view — and whether it is an evening or a morning object.
-            Tap a planet for its profile.
-          </p>
-          <PlanetMap jd={jd} onSelect={setDetailId} />
-        </>
-      )}
+      <p className="hint">{HINTS[view]}</p>
 
-      {view === 'earthmoon' && (
-        <>
-          <p className="hint">
-            Three tilts that shape our sky: Earth&apos;s axis (the seasons), the Moon&apos;s
-            orbit (why eclipses are rare), and the Moon&apos;s own spin axis — plus where the
-            Moon stands between Earth and Sun on this date, which is its phase.
-          </p>
-          <EarthMoonView jd={jd} />
-        </>
-      )}
+      {view === 'planets' && <PlanetMap jd={jd} onSelect={setDetailId} />}
+      {view === 'earth' && <EarthView jd={jd} />}
+      {view === 'moon' && <MoonView jd={jd} />}
+      {view === 'eclipses' && <EclipsesView jd={jd} onJump={jumpTo} />}
 
       {detail && (
         <BodyDetail body={detail} onClose={() => setDetailId(null)} onSelectBody={setDetailId} />

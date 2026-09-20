@@ -808,3 +808,23 @@
   color: var(--accent-amber);
   font-weight: 600;
 }
+
+.eclipse-list {
+  max-height: 460px;
+}
+
+.eclipse-tag {
+  display: inline-block;
+  width: 18px;
+  text-align: center;
+  color: var(--accent-amber);
+}
+
+.eclipse-tag.lunar {
+  color: var(--accent-cyan);
+}
+
+.diagram .kv {
+  margin: 10px 8px 4px;
+  font-size: 0.85rem;
+}

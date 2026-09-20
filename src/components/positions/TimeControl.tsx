@@ -1,4 +1,4 @@
-import { useEffect, useState, type Dispatch, type SetStateAction } from 'react'
+import { useEffect, useState, type Dispatch, type ReactNode, type SetStateAction } from 'react'
 import { addDays, clampDate, MAX_DATE, MIN_DATE, todayNoon } from '../../lib/dates'
 
 const TICKS_PER_SECOND = 8
@@ -21,9 +21,12 @@ const STEPS: { label: string; days: number }[] = [
 export function TimeControl({
   date,
   setDate,
+  children,
 }: {
   date: Date
   setDate: Dispatch<SetStateAction<Date>>
+  /** extra controls shown on their own row, e.g. jump-to-eclipse buttons */
+  children?: ReactNode
 }) {
   const [playing, setPlaying] = useState(false)
   const [speed, setSpeed] = useState(1)
@@ -94,6 +97,7 @@ export function TimeControl({
           </button>
         ))}
       </div>
+      {children && <div className="time-row">{children}</div>}
     </div>
   )
 }
