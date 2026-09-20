@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
 
-export type TabId = 'solar' | 'telescopes' | 'neighborhood'
+export type TabId = 'solar' | 'positions' | 'telescopes' | 'neighborhood'
 
-const TABS: TabId[] = ['solar', 'telescopes', 'neighborhood']
+const TABS: TabId[] = ['solar', 'positions', 'telescopes', 'neighborhood']
 
 function tabFromHash(): TabId {
   const raw = window.location.hash.replace(/^#\/?/, '')

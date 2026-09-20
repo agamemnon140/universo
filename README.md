@@ -1,7 +1,8 @@
 # Universo
 
-Interactive guide to the solar system, the world's great telescopes, and our stellar
-neighborhood — built as a static PWA and published on GitHub Pages.
+Interactive guide to the solar system, where the planets and the Moon are right now, the
+world's great telescopes, and our stellar neighborhood — built as a static PWA and published
+on GitHub Pages.
 
 **Live site:** https://agamemnon140.github.io/universo/
 
@@ -14,6 +15,17 @@ neighborhood — built as a static PWA and published on GitHub Pages.
   sidereal rotation and solar day, eccentricity, inclination, Roche limit, Hill sphere, surface
   and core composition). Comparisons are shareable via `?compare=jupiter,earth`. A secondary
   log-scale orbit view links to detail sheets with atmosphere, missions, and notable facts.
+- **Positions** — where the planets really are on any date from 1800 to 2050 (defaults to
+  today, with a date picker, ±day/month/year steps and a play button). *Planets* draws the
+  eight planets on their true orbits, centred on the Sun (heliocentric longitude) or on Earth
+  (elongation from the Sun, evening vs morning sky, night-side shading), on a log scale or in
+  true-scale inner/outer views, with a table of distances and visibility. *Earth & Moon* shows
+  three tilts as pictures for the chosen date: Earth's 23.4° axis around its orbit and the
+  resulting season, the Moon's phase from above and as seen from Earth with the next principal
+  phases, and the Moon's 5.1° orbital tilt with the Moon's current height above or below the
+  ecliptic, the nodes, whether the Sun is near an eclipse season, and the Moon's 1.5° axial
+  tilt compared with Earth's. Snapshots are shareable via `?date=2026-08-12&view=earthmoon`
+  (plus `centre=earth` / `scale=inner|outer` for the map).
 - **Telescopes** — 49 observatories placed on the electromagnetic spectrum (gamma → radio,
   log wavelength scale), color-coded by status (operating / construction / planned / retired),
   with separate lanes for gravitational-wave and neutrino detectors. Filter by status and
@@ -37,6 +49,13 @@ Every tab ends with the latest matching headlines from
   Surface area and the solar day are derived in [src/lib/derive.ts](src/lib/derive.ts) rather
   than stored: the stored rotation period is sidereal (one turn against the stars), and the
   solar day adds the extra turn a body needs to face the Sun again after moving along its orbit.
+- Positions are computed in the browser by [src/lib/ephemeris.ts](src/lib/ephemeris.ts):
+  planets from the JPL "Approximate Positions of the Planets" Keplerian elements
+  ([src/data/orbits.ts](src/data/orbits.ts), fitted for 1800–2050, ~1° accuracy, precessed to
+  the equinox of date), Sun and Moon from Paul Schlyter's low-precision formulae (mean elements
+  plus the main lunar perturbations, ~0.05° for the Moon). Every calendar day is evaluated at
+  12:00 UTC. Checked against the 12 Aug 2026 total solar eclipse, the 2026–27 oppositions of
+  Jupiter, Saturn and Mars, and the September 2026 equinox (within a minute).
 - News: [.github/workflows/news.yml](.github/workflows/news.yml) runs weekly (Mondays 09:17
   UTC), fetches the Universe Today RSS feed via [scripts/fetch-news.mjs](scripts/fetch-news.mjs),
   classifies items per tab, and commits `public/news.json` only when content changed — then
