@@ -125,6 +125,11 @@ function spherical(v: EclipticVector): { lonDeg: number; latDeg: number; rAU: nu
   }
 }
 
+/** Ecliptic longitude of a planet's perihelion (equinox of date). */
+export function planetPerihelionLongitude(id: string, jd: number): number {
+  return wrap360(elementsAt(id, jd).longPeri)
+}
+
 export function planetHeliocentric(id: string, jd: number): HeliocentricPosition {
   const v = positionFromElements(elementsAt(id, jd))
   return { ...v, ...spherical(v) }
@@ -217,6 +222,9 @@ export interface MoonPosition {
   nodeLonDeg: number // longitude of the ascending node ☊
   /** Angle travelled from the ascending node (0 = crossing upward, 180 = crossing downward). */
   argLatDeg: number
+  meanArgLatDeg: number // mean argument of latitude F, used by the libration formulae
+  meanAnomalyDeg: number // mean anomaly M
+  perigeeLonDeg: number // longitude of perigee (N + w): where the orbit's near point currently is
   ascending: boolean // latitude currently increasing
 }
 
@@ -283,6 +291,9 @@ export function moonPosition(jd: number): MoonPosition {
     distKm: dist * EARTH_RADIUS_KM,
     nodeLonDeg: N,
     argLatDeg,
+    meanArgLatDeg: wrap360(F),
+    meanAnomalyDeg: M,
+    perigeeLonDeg: wrap360(N + w),
     ascending: Math.cos(argLatDeg * DEG) > 0,
   }
 }
