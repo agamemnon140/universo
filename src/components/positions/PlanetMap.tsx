@@ -78,6 +78,7 @@ function fromUrl<T extends string>(key: string, allowed: readonly T[], fallback:
 export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string) => void }) {
   const [centre, setCentre] = useState<Centre>(() => fromUrl<Centre>('centre', ['sun', 'earth'], 'sun'))
   const [scale, setScale] = useState<Scale>(() => fromUrl<Scale>('scale', ['log', 'inner', 'outer'], 'log'))
+  const [showApsides, setShowApsides] = useState(false)
   const radius = useMemo(() => makeScale(scale, centre), [scale, centre])
 
   const rows = useMemo(
@@ -128,6 +129,15 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
             Outer
           </button>
         </div>
+        {centre === 'sun' && (
+          <button
+            className={`chip${showApsides ? ' on' : ''}`}
+            style={{ marginBottom: 12, ...(showApsides ? { background: 'var(--accent-amber)' } : {}) }}
+            onClick={() => setShowApsides((v) => !v)}
+          >
+            {showApsides ? 'hide' : 'show'} perihelion / aphelion
+          </button>
+        )}
       </div>
 
       <div className="sky-map panel" style={{ padding: 8 }}>
@@ -208,8 +218,12 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
               <g key={id}>
                 <path d={d} fill="none" stroke="var(--line-strong)" strokeWidth="1" />
                 {/* nearest and farthest points of the orbit */}
-                <circle cx={peri.x} cy={peri.y} r={2.2} fill="var(--accent-amber)" opacity="0.8" />
-                <circle cx={apo.x} cy={apo.y} r={2.2} fill="var(--accent-cyan)" opacity="0.8" />
+                {showApsides && (
+                  <>
+                    <circle cx={peri.x} cy={peri.y} r={2.5} fill="var(--accent-amber)" />
+                    <circle cx={apo.x} cy={apo.y} r={2.5} fill="var(--accent-cyan)" />
+                  </>
+                )}
               </g>
             )
           })}
@@ -290,7 +304,7 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
 
           <text x={CENTER} y={SIZE + 14} textAnchor="middle" fill="var(--text-faint)" fontSize="11">
             {centre === 'sun'
-              ? `heliocentric longitude · ${scale === 'log' ? 'log distance scale' : 'true distance scale'} · amber dot = perihelion, cyan dot = aphelion of each orbit`
+              ? `heliocentric longitude · ${scale === 'log' ? 'log distance scale' : 'true distance scale'} · view from ecliptic north${showApsides ? ' · amber dot = perihelion, cyan dot = aphelion' : ''}`
               : `geocentric view · elongation from the Sun (E = evening sky, W = morning sky) · outer band: tropical zodiac signs`}
           </text>
         </svg>

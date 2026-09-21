@@ -9,6 +9,10 @@ import { OrbitShapeFigure } from './OrbitShapeFigure'
 /** Extreme perigee / apogee distances over the long run, km. */
 const CLOSEST_KM = 356_400
 const FARTHEST_KM = 406_700
+/** Width of something at arm's length (70 cm) that would look as big as an angle of `arcmin`. */
+function cmAtArmsLength(arcmin: number): number {
+  return 2 * 70 * Math.tan((arcmin / 60 / 2) * (Math.PI / 180))
+}
 /** Perigee circles the orbit once every 8.85 years. */
 const PERIGEE_LAP_YEARS = 8.85
 
@@ -34,18 +38,21 @@ export function MoonOrbitPanel({ jd }: { jd: number }) {
   const px = (arcmin: number) => (arcmin / diamMax) * 18
   const discs = (
     <g>
-      <text x={DX - 130} y={DY + 4} textAnchor="end" fill="var(--text-dim)" fontSize="11">
-        apparent size →
+      <text x={DX} y={DY - 32} textAnchor="middle" fill="var(--text-dim)" fontSize="11">
+        apparent size in the sky
       </text>
       {[
-        { label: `${diamMax.toFixed(1)}′ closest`, d: diamMax, x: DX - 60, faded: true },
-        { label: `${diamNow.toFixed(1)}′ today`, d: diamNow, x: DX, faded: false },
-        { label: `${diamMin.toFixed(1)}′ farthest`, d: diamMin, x: DX + 60, faded: true },
+        { label: `${diamMax.toFixed(1)} arcmin`, sub: 'closest', d: diamMax, x: DX - 95, faded: true },
+        { label: `${diamNow.toFixed(1)} arcmin`, sub: 'today', d: diamNow, x: DX, faded: false },
+        { label: `${diamMin.toFixed(1)} arcmin`, sub: 'farthest', d: diamMin, x: DX + 95, faded: true },
       ].map((s) => (
         <g key={s.label} opacity={s.faded ? 0.45 : 1}>
           <circle cx={s.x} cy={DY} r={px(s.d)} fill={moonBody.color} />
           <text x={s.x} y={DY + 30} textAnchor="middle" fill="var(--text-faint)" fontSize="10">
             {s.label}
+          </text>
+          <text x={s.x} y={DY + 42} textAnchor="middle" fill="var(--text-faint)" fontSize="10">
+            {s.sub}
           </text>
         </g>
       ))}
@@ -73,7 +80,7 @@ export function MoonOrbitPanel({ jd }: { jd: number }) {
         <dt>Distance today</dt>
         <dd>
           {formatNumber(Math.round(state.distanceKm))} km · {Math.round(state.fraction * 100)}% of the way
-          from perigee to apogee · looks {diamNow.toFixed(1)}′ across
+          from perigee to apogee · looks {diamNow.toFixed(1)} arcmin across, like a {cmAtArmsLength(diamNow).toFixed(1)} cm coin at arm&apos;s length
           {supermoon && (
             <>
               {' '}
@@ -110,7 +117,9 @@ export function MoonOrbitPanel({ jd }: { jd: number }) {
       </dl>
       <p className="caption">
         The Moon&apos;s orbit is more clearly an ellipse than Earth&apos;s (eccentricity around
-        0.055), so its distance swings by some 50,000 km each month and its apparent size by 14%.
+        0.055), so its distance swings by some 50,000 km each month and its apparent size by 14% —
+        between {diamMin.toFixed(1)} and {diamMax.toFixed(1)} arcminutes (1 arcminute is 1/60 of a degree), or about{' '}
+        {cmAtArmsLength(diamMin).toFixed(1)} to {cmAtArmsLength(diamMax).toFixed(1)} cm seen at arm&apos;s length.
         The Sun&apos;s pull keeps reshaping the ellipse: its eccentricity breathes between 0.026 and
         0.077 (right now the local fit is {state.eccentricity.toFixed(3)}), and the perigee point
         marches around the orbit in {PERIGEE_LAP_YEARS} years. A full Moon that lands near perigee is
