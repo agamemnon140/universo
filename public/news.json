@@ -1,125 +1,140 @@
 {
-  "generatedAt": "2026-10-05T18:29:16.469Z",
+  "generatedAt": "2026-10-12T19:04:13.747Z",
   "source": "universetoday.com",
   "items": [
+    {
+      "id": "d40dce143a16",
+      "title": "Hubble Spots a Suspected Second-Generation Planet",
+      "link": "https://www.universetoday.com/articles/hubble-spots-a-suspected-second-generation-planet",
+      "date": "2026-10-12T18:11:45.000Z",
+      "summary": "Diligent sleuthing by astronomers has broken open a cold case in the data archive of NASA’s Hubble Space Telescope. In a study published Monday in Nature Astronomy, researchers report uncovering a…",
+      "themes": [
+        "telescopes",
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "2034ae4642e6",
+      "title": "Primordial Helium Further Confirms Our Understanding Of The Big Bang",
+      "link": "https://www.universetoday.com/articles/primordial-helium-further-confirms-our-understanding-of-the-big-bang",
+      "date": "2026-10-12T15:18:18.000Z",
+      "summary": "Most helium in the Universe is primordial helium, formed during the Big Bang. But a fraction of helium was formed by long-dead stars. Distinguishing between the two allows astronomers to further…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "8cda1f09f9b3",
+      "title": "How Will Water Flow on the Moon?",
+      "link": "https://www.universetoday.com/articles/how-will-water-flow-on-the-moon",
+      "date": "2026-10-12T11:50:10.000Z",
+      "summary": "Growing fresh food on the Moon is going to be crucial if astronauts there are ever going to eat anything other than freeze-dried rations. Since husbanding animals on the lunar surface is…difficult…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "3e70c1a4fc6d",
+      "title": "The Preliminary Lunar Science Report for Artemis II is Out!",
+      "link": "https://www.universetoday.com/articles/the-preliminary-lunar-science-report-for-artemis-ii-is-out",
+      "date": "2026-10-11T03:37:58.000Z",
+      "summary": "Through photographs, spoken observations, drawings, and annotations, the Artemis II crew created a unique scientific record—one that is now available to the science community and the public for…",
+      "themes": [
+        "solar-system",
+        "telescopes"
+      ]
+    },
+    {
+      "id": "83eaf21e64b4",
+      "title": "Astronomers Detect Potential ‘Second Generation’ Planet Around Dying Stellar White Dwarf",
+      "link": "https://www.universetoday.com/articles/astronomers-detect-potential-second-generation-planet-around-dying-stellar-white-dwarf",
+      "date": "2026-10-11T02:49:08.000Z",
+      "summary": "Potential ‘Second generation’ planet detection around a dying stellar white dwarf opens a whole new chapter of exoplanetary science.",
+      "themes": [
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "fccc06a530d7",
+      "title": "Stratospheric Balloon Telescope Peeks Above The Clouds At The Sun",
+      "link": "https://www.universetoday.com/articles/stratospheric-balloon-telescope-peeks-above-the-clouds-at-the-sun",
+      "date": "2026-10-10T11:30:55.000Z",
+      "summary": "There’s lots of things you can do with balloons. Children’s birthday parties come to mind, as do retirement parties. But you can also observe the Sun in unprecedented detail with one - or at least…",
+      "themes": [
+        "solar-system",
+        "telescopes"
+      ]
+    },
+    {
+      "id": "62b4a7b6a4e6",
+      "title": "The Most Distant FRB Tells The Story Of Its Origin",
+      "link": "https://www.universetoday.com/articles/the-most-distant-frb-tells-the-story-of-its-origin",
+      "date": "2026-10-09T17:06:51.000Z",
+      "summary": "Astronomers use the Webb to study a distant fast radio burst and reveal clues as to the origin of these mysterious events.",
+      "themes": [
+        "solar-system",
+        "telescopes"
+      ]
+    },
+    {
+      "id": "a93fd57741d9",
+      "title": "Webb Observes \"Extreme Debris Disks,\" Providing a Window into the Early Solar System",
+      "link": "https://www.universetoday.com/articles/webb-observes-extreme-debris-disks-providing-a-window-into-the-early-solar-system",
+      "date": "2026-10-09T02:25:49.000Z",
+      "summary": "In the early history of our solar system, scientists theorize that a Mars-sized object called Theia smashed into the infant Earth, creating the Earth-Moon system. Using Webb, astronomers are studying…",
+      "themes": [
+        "solar-system",
+        "telescopes",
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "f552a5685855",
+      "title": "NASA Selects GIMLI to Search the Marius Lunar Pit for a Potential Lunar Base Site",
+      "link": "https://www.universetoday.com/articles/nasa-selects-gimli-to-search-the-marius-lunar-pit-for-a-potential-lunar-base-site",
+      "date": "2026-10-08T00:30:16.000Z",
+      "summary": "NASA has selected a Planetary Science Institute-led proposal to investigate whether a potentially large underground cave extends beyond the opening of a lunar pit.",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "055487def23c",
+      "title": "New Study Shows That Earth and Mars Had Different Origins",
+      "link": "https://www.universetoday.com/articles/new-study-shows-that-earth-and-mars-had-different-origins",
+      "date": "2026-10-07T21:58:00.000Z",
+      "summary": "A surprising discovery suggests that Mars and Earth formed through different processes, which could help scientists confirm whether exoplanets are habitable.",
+      "themes": [
+        "solar-system",
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "3a6cee9b4ba9",
+      "title": "To Keep GPS Constellations From Drifting, Look To The Moon",
+      "link": "https://www.universetoday.com/articles/to-keep-gps-constellations-from-drifting-look-to-the-moon",
+      "date": "2026-10-06T11:09:32.000Z",
+      "summary": "Global Positioning Systems are a key feature in everyday life for much of the world’s population. Whether it’s ensuring a ship delivers its goods safely, or you’re able to avoid a road closure on…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "db584acc48e7",
+      "title": "A Buried Volcano on the Moon Hints At An Ancient Lunar Dynamo",
+      "link": "https://www.universetoday.com/articles/a-buried-volcano-on-the-moon-hints-at-an-ancient-lunar-dynamo",
+      "date": "2026-10-06T10:12:28.000Z",
+      "summary": "Scientists know for certain the moon doesn’t currently have a magnetosphere. But they’ve been debating for decades about whether it ever did. Data from both Apollo samples and orbital scientific…",
+      "themes": [
+        "solar-system"
+      ]
+    },
     {
       "id": "1c7f245f5021",
       "title": "Chandra X-ray Observatory Drops New View of our Galaxy’s Unruly Centre",
       "link": "https://www.universetoday.com/articles/chandra-x-ray-observatory-drops-new-view-of-our-galaxys-unruly-centre",
       "date": "2026-10-05T15:52:00.000Z",
       "summary": "The core of the Milky Way is a dense, active, messy region, dominated by a supermassive black hole called Sagittarius A* (Sgr A*) hiding at the heart of the galaxy. But Sgr A* is only a supporting…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "b83c5fe37140",
-      "title": "XRISM Makes First-Ever Detection of a Pulsar Feeding from a Companion's Stellar \"Wind\"",
-      "link": "https://www.universetoday.com/articles/xrism-makes-first-ever-detection-of-a-pulsar-feeding-from-a-companions-stellar-wind",
-      "date": "2026-10-04T21:54:36.000Z",
-      "summary": "Using data from the Japan-led XRISM observatory, astronomers have directly observed a giant star’s stellar wind captured by its compact companion (triggering X-ray flares) for the first time.",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "0808801b4763",
-      "title": "Asteroid Bennu Has an Identity Crisis, and Jupiter Might Be to Blame",
-      "link": "https://www.universetoday.com/articles/asteroid-bennu-has-an-identity-crisis-and-jupiter-might-be-to-blame",
-      "date": "2026-10-02T10:00:00.000Z",
-      "summary": "Asteroid sample return missions have brought well preserved samples of the early solar system (that hadn’t been roasted in a fireball) back to Earth for the first time. But those samples, like the…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "61718e0445d3",
-      "title": "NASA's First Selection for a New Class of Mission: The PRIMA Far-Infrared Telescope",
-      "link": "https://www.universetoday.com/articles/nasas-first-selection-for-a-new-class-of-mission-the-prima-far-infrared-telescope",
-      "date": "2026-10-01T22:09:16.000Z",
-      "summary": "NASA announced Wednesday a mission to explore the history and evolution of the universe, PRIMA (PRobe far-Infrared Mission for Astrophysics), is advancing to the next phase of development. This space…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "654c4aa14db3",
-      "title": "NASA's Hubble Marks its 200,000th Orbit by Watching Lensed Supernova",
-      "link": "https://www.universetoday.com/articles/nasas-hubble-marks-its-200000th-orbit-by-watching-lensed-supernova",
-      "date": "2026-10-01T20:29:07.000Z",
-      "summary": "NASA’s Hubble Space Telescope completed its 200,000th orbit around Earth on Sept. 19th and marked this milestone with observations that could help refine astronomers' measurements of cosmic expansion…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "10696ea8c5c4",
-      "title": "Exercise Keeps Astronaut Hearts in Fighting Shape for the Journey to Mars",
-      "link": "https://www.universetoday.com/articles/exercise-keeps-astronaut-hearts-in-fighting-shape-for-the-journey-to-mars",
-      "date": "2026-10-01T10:09:07.000Z",
-      "summary": "Getting a human body to Mars will take a toll on it. NASA and other space agencies have been concerned for years that the 6-9 month travel time to get to the Red Planet could have such a deleterious…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "f2c2b43db060",
-      "title": "Mars' North Pole Ice Is Far Cleaner Than Expected",
-      "link": "https://www.universetoday.com/articles/mars-north-pole-ice-is-far-cleaner-than-expected",
-      "date": "2026-10-01T05:45:19.000Z",
-      "summary": "The planet Mars is known for its massive dust storms, dust devils, and two large polar ice caps, with its north polar cap being one of the Red Planet’s most striking features. Comprised of water ice,…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "c9c6a6c8c95f",
-      "title": "Coldest Lava Exoplanet Found to Hold an Atmosphere",
-      "link": "https://www.universetoday.com/articles/coldest-lava-exoplanet-found-to-hold-an-atmosphere",
-      "date": "2026-10-01T02:50:13.000Z",
-      "summary": "Exoplanets continue to challenge our understanding of planetary formation, evolution, and whether they might be able to support life as we know it. Scientists often use planets in our solar system as…",
-      "themes": [
-        "solar-system",
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "7326569800f3",
-      "title": "Catch a Rare Lunar Occultation of Jupiter Plus Saturn at Opposition in Early October",
-      "link": "https://www.universetoday.com/articles/catch-a-rare-lunar-occultation-jupiter-plus-saturn-at-opposition-in-early-october",
-      "date": "2026-09-30T13:12:00.000Z",
-      "summary": "It’s a busy skywatching month ahead. The first full week of October sees two top-notch skywatching events, with Saturn reaching opposition, and the Moon occulting Jupiter for North America on October…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "23596e0c99ff",
-      "title": "Finding Life on Enceladus Could be Easier than We Thought, Says New Research",
-      "link": "https://www.universetoday.com/articles/finding-life-on-enceladus-could-be-easier-than-we-thought-says-new-research",
-      "date": "2026-09-30T02:24:07.000Z",
-      "summary": "Planetary scientists from Freie Universität Berlin have published two new studies that indicate that a spacecraft could identify evidence of life much more easily than previously thought.",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "d469fda453cc",
-      "title": "Strange giant planet TOI-1355 b set to vanish from view in 2033",
-      "link": "https://www.universetoday.com/articles/strange-giant-planet-toi-1355-b-set-to-vanish-from-view-in-2033",
-      "date": "2026-09-30T02:11:36.000Z",
-      "summary": "Since their first discovery in 1995, hot Jupiter exoplanets (hot Jupiters, for short) quickly challenged our understanding of exoplanet formation and evolution, including exoplanetary system…",
-      "themes": [
-        "solar-system",
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "316d656c4d48",
-      "title": "Older Alien Worlds Might Still Be Stuck in the Slime Age",
-      "link": "https://www.universetoday.com/articles/older-alien-worlds-might-still-be-stuck-in-the-slime-age",
-      "date": "2026-09-29T13:43:58.000Z",
-      "summary": "There’s an active debate in the astrobiology community of where to use our best telescopes to look for our best chance of seeing alien life. That debate has been going on for decades, and will…",
       "themes": [
         "telescopes"
       ]
