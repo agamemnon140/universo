@@ -1,87 +1,23 @@
 {
-  "generatedAt": "2026-10-12T19:04:13.747Z",
+  "generatedAt": "2026-10-19T16:28:43.776Z",
   "source": "universetoday.com",
   "items": [
     {
-      "id": "d40dce143a16",
-      "title": "Hubble Spots a Suspected Second-Generation Planet",
-      "link": "https://www.universetoday.com/articles/hubble-spots-a-suspected-second-generation-planet",
-      "date": "2026-10-12T18:11:45.000Z",
-      "summary": "Diligent sleuthing by astronomers has broken open a cold case in the data archive of NASA’s Hubble Space Telescope. In a study published Monday in Nature Astronomy, researchers report uncovering a…",
-      "themes": [
-        "telescopes",
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "2034ae4642e6",
-      "title": "Primordial Helium Further Confirms Our Understanding Of The Big Bang",
-      "link": "https://www.universetoday.com/articles/primordial-helium-further-confirms-our-understanding-of-the-big-bang",
-      "date": "2026-10-12T15:18:18.000Z",
-      "summary": "Most helium in the Universe is primordial helium, formed during the Big Bang. But a fraction of helium was formed by long-dead stars. Distinguishing between the two allows astronomers to further…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "8cda1f09f9b3",
-      "title": "How Will Water Flow on the Moon?",
-      "link": "https://www.universetoday.com/articles/how-will-water-flow-on-the-moon",
-      "date": "2026-10-12T11:50:10.000Z",
-      "summary": "Growing fresh food on the Moon is going to be crucial if astronauts there are ever going to eat anything other than freeze-dried rations. Since husbanding animals on the lunar surface is…difficult…",
+      "id": "79762ad9de83",
+      "title": "Enigmatic Mercury Will Remain A Puzzle Until Someone Sends A Lander",
+      "link": "https://www.universetoday.com/articles/enigmatic-mercury-will-remain-a-puzzle-until-someone-sends-a-lander",
+      "date": "2026-10-17T07:47:00.000Z",
+      "summary": "Despite the upcoming Bepi Colombo visit to Mercury, we need a lander mission to fully understand our solar system’s innermost planet.",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "3e70c1a4fc6d",
-      "title": "The Preliminary Lunar Science Report for Artemis II is Out!",
-      "link": "https://www.universetoday.com/articles/the-preliminary-lunar-science-report-for-artemis-ii-is-out",
-      "date": "2026-10-11T03:37:58.000Z",
-      "summary": "Through photographs, spoken observations, drawings, and annotations, the Artemis II crew created a unique scientific record—one that is now available to the science community and the public for…",
-      "themes": [
-        "solar-system",
-        "telescopes"
-      ]
-    },
-    {
-      "id": "83eaf21e64b4",
-      "title": "Astronomers Detect Potential ‘Second Generation’ Planet Around Dying Stellar White Dwarf",
-      "link": "https://www.universetoday.com/articles/astronomers-detect-potential-second-generation-planet-around-dying-stellar-white-dwarf",
-      "date": "2026-10-11T02:49:08.000Z",
-      "summary": "Potential ‘Second generation’ planet detection around a dying stellar white dwarf opens a whole new chapter of exoplanetary science.",
-      "themes": [
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "fccc06a530d7",
-      "title": "Stratospheric Balloon Telescope Peeks Above The Clouds At The Sun",
-      "link": "https://www.universetoday.com/articles/stratospheric-balloon-telescope-peeks-above-the-clouds-at-the-sun",
-      "date": "2026-10-10T11:30:55.000Z",
-      "summary": "There’s lots of things you can do with balloons. Children’s birthday parties come to mind, as do retirement parties. But you can also observe the Sun in unprecedented detail with one - or at least…",
-      "themes": [
-        "solar-system",
-        "telescopes"
-      ]
-    },
-    {
-      "id": "62b4a7b6a4e6",
-      "title": "The Most Distant FRB Tells The Story Of Its Origin",
-      "link": "https://www.universetoday.com/articles/the-most-distant-frb-tells-the-story-of-its-origin",
-      "date": "2026-10-09T17:06:51.000Z",
-      "summary": "Astronomers use the Webb to study a distant fast radio burst and reveal clues as to the origin of these mysterious events.",
-      "themes": [
-        "solar-system",
-        "telescopes"
-      ]
-    },
-    {
-      "id": "a93fd57741d9",
-      "title": "Webb Observes \"Extreme Debris Disks,\" Providing a Window into the Early Solar System",
-      "link": "https://www.universetoday.com/articles/webb-observes-extreme-debris-disks-providing-a-window-into-the-early-solar-system",
-      "date": "2026-10-09T02:25:49.000Z",
-      "summary": "In the early history of our solar system, scientists theorize that a Mars-sized object called Theia smashed into the infant Earth, creating the Earth-Moon system. Using Webb, astronomers are studying…",
+      "id": "119f02bf87bc",
+      "title": "In the Search for Exoplanets, Some Failures Are A Success",
+      "link": "https://www.universetoday.com/articles/in-the-search-for-exoplanets-some-failures-are-a-success",
+      "date": "2026-10-16T19:30:07.000Z",
+      "summary": "Astronomers used decades of archival data and new radial velocity measurements to search for exoplanets around a neaby binary star, 70 Oph AB. They didn't find any, which can seem like a failure. But…",
       "themes": [
         "solar-system",
         "telescopes",
@@ -89,54 +25,148 @@
       ]
     },
     {
-      "id": "f552a5685855",
-      "title": "NASA Selects GIMLI to Search the Marius Lunar Pit for a Potential Lunar Base Site",
-      "link": "https://www.universetoday.com/articles/nasa-selects-gimli-to-search-the-marius-lunar-pit-for-a-potential-lunar-base-site",
-      "date": "2026-10-08T00:30:16.000Z",
-      "summary": "NASA has selected a Planetary Science Institute-led proposal to investigate whether a potentially large underground cave extends beyond the opening of a lunar pit.",
+      "id": "2a21bf57a9bb",
+      "title": "A Radio Phoenix Beyond the Zone of Avoidance",
+      "link": "https://www.universetoday.com/articles/a-radio-phoenix-beyond-the-zone-of-avoidance",
+      "date": "2026-10-16T15:14:53.000Z",
+      "summary": "Years ago, astronomers spotted a strange radio formation beyond the Zone of Avoidance. The formation resembles a treble clef, a symbol in musical notation, and the nickname has stuck. Determining…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "055487def23c",
-      "title": "New Study Shows That Earth and Mars Had Different Origins",
-      "link": "https://www.universetoday.com/articles/new-study-shows-that-earth-and-mars-had-different-origins",
-      "date": "2026-10-07T21:58:00.000Z",
-      "summary": "A surprising discovery suggests that Mars and Earth formed through different processes, which could help scientists confirm whether exoplanets are habitable.",
+      "id": "3c819f64accd",
+      "title": "Scientists Detect Rare Type of Wood Alcohol in Space",
+      "link": "https://www.universetoday.com/articles/scientists-detect-rare-type-of-wood-alcohol-in-space",
+      "date": "2026-10-15T22:44:35.000Z",
+      "summary": "As part of the ALMA COMPASS Large program, an international research team has detected a rare form of methanol in space for the first time.",
       "themes": [
-        "solar-system",
+        "telescopes"
+      ]
+    },
+    {
+      "id": "64069c1ed158",
+      "title": "Host Stars Shape Their Planetary Systems Into Two Families",
+      "link": "https://www.universetoday.com/articles/host-stars-shape-their-planetary-systems-into-two-families",
+      "date": "2026-10-15T17:07:40.000Z",
+      "summary": "New research draws a link between a host star and the characteristics of its planetary system. Higher mass stars create one family of systems, while lower mass stars create another. These results…",
+      "themes": [
         "exoplanets"
       ]
     },
     {
-      "id": "3a6cee9b4ba9",
-      "title": "To Keep GPS Constellations From Drifting, Look To The Moon",
-      "link": "https://www.universetoday.com/articles/to-keep-gps-constellations-from-drifting-look-to-the-moon",
-      "date": "2026-10-06T11:09:32.000Z",
-      "summary": "Global Positioning Systems are a key feature in everyday life for much of the world’s population. Whether it’s ensuring a ship delivers its goods safely, or you’re able to avoid a road closure on…",
+      "id": "28030a7f1b88",
+      "title": "Orionid, Taurid Meteors Haunt October Skies",
+      "link": "https://www.universetoday.com/articles/orionid-taurid-meteors-haunt-october-skies",
+      "date": "2026-10-15T14:33:00.000Z",
+      "summary": "Fall meteor season has begun. Late October not only sees dusk falling ever earlier as ghouls and goblins walk the Earth on Halloween, but it also sees the peak of two fine annual meteor showers…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "db584acc48e7",
-      "title": "A Buried Volcano on the Moon Hints At An Ancient Lunar Dynamo",
-      "link": "https://www.universetoday.com/articles/a-buried-volcano-on-the-moon-hints-at-an-ancient-lunar-dynamo",
-      "date": "2026-10-06T10:12:28.000Z",
-      "summary": "Scientists know for certain the moon doesn’t currently have a magnetosphere. But they’ve been debating for decades about whether it ever did. Data from both Apollo samples and orbital scientific…",
+      "id": "f99fc27b2fb0",
+      "title": "SPHEREx Just Took the Fingerprints of Failed Stars Across Our Cosmic Neighborhood",
+      "link": "https://www.universetoday.com/articles/spherex-just-took-the-fingerprints-of-failed-stars-across-our-cosmic-neighborhood",
+      "date": "2026-10-15T13:08:24.000Z",
+      "summary": "Brown dwarfs are the black (or brown?) sheep of astronomy. They’re too big to be considered a traditional gas planet, but they are too small to have started nuclear fusion and made the full…",
+      "themes": [
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "4f6f862d0af1",
+      "title": "The Perseverance Rover Reaches Another Milestone",
+      "link": "https://www.universetoday.com/articles/the-perseverance-rover-reaches-another-milestone",
+      "date": "2026-10-14T19:14:26.000Z",
+      "summary": "NASA's Perseverance Rover has reached another milestone. It now holds the record for the longest distance travelled on another world, meaning Mars and Earth's Moon. It's all thanks the ingenuity…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "1c7f245f5021",
-      "title": "Chandra X-ray Observatory Drops New View of our Galaxy’s Unruly Centre",
-      "link": "https://www.universetoday.com/articles/chandra-x-ray-observatory-drops-new-view-of-our-galaxys-unruly-centre",
-      "date": "2026-10-05T15:52:00.000Z",
-      "summary": "The core of the Milky Way is a dense, active, messy region, dominated by a supermassive black hole called Sagittarius A* (Sgr A*) hiding at the heart of the galaxy. But Sgr A* is only a supporting…",
+      "id": "7a19eafdf06c",
+      "title": "Astronomers Observe The Limb Darkening Effect On Nearby Stars",
+      "link": "https://www.universetoday.com/articles/astronomers-observe-the-limb-darkening-effect-on-nearby-stars",
+      "date": "2026-10-14T16:04:42.000Z",
+      "summary": "The edge of the Sun appears darker than its central region. This effect is known as limb darkening and tells us about the solar atmosphere. This same limb darkening effect has now been observed on…",
+      "themes": [
+        "solar-system",
+        "telescopes",
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "25d11a0618a3",
+      "title": "Astronomers Uncover More Intriguing Detail in an Ancient Supernova Remnant",
+      "link": "https://www.universetoday.com/articles/astronomers-uncover-more-intriguing-detail-in-an-ancient-supernova-remnant",
+      "date": "2026-10-14T15:44:31.000Z",
+      "summary": "When a supernova exploded in 1181, Chinese and Japanese sky-watchers recorded it. They couldn't have known what the object was, and why it appeared for six months then disappeared. But in our modern…",
       "themes": [
         "telescopes"
+      ]
+    },
+    {
+      "id": "fedec2d39f94",
+      "title": "Chandrasekhar Placed A Limit On White Dwarfs, But A New Study Finds This Limit Is Not Absolute",
+      "link": "https://www.universetoday.com/articles/chandrasekhar-placed-a-limit-on-white-dwarfs-but-a-new-study-finds-this-limit-is-not-absolute",
+      "date": "2026-10-14T14:57:08.000Z",
+      "summary": "The Chandrasekhar limit states that a white dwarf can be no larger than 1.4 solar masses. A new study demonstrates how highly magnetized white dwarfs could overcome that limit, and how such…",
+      "themes": [
+        "solar-system",
+        "telescopes",
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "a84c1dbf1936",
+      "title": "Curiosity Greets a Spectacular Dawn Sky on Mars",
+      "link": "https://www.universetoday.com/articles/curiosity-greets-a-spectacular-dawn-sky-on-mars",
+      "date": "2026-10-14T13:51:00.000Z",
+      "summary": "Mars is a planetary geologist’s paradise. NASA’s Curiosity rover drove that home recently, with a captivating panorama seen from the slopes of Mount Sharp. The image shows a stunning vista, and was…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "6cf28c810d15",
+      "title": "A Trip to Mars Could Break Your Heart - Literally",
+      "link": "https://www.universetoday.com/articles/a-trip-to-mars-could-break-your-heart-literally",
+      "date": "2026-10-14T11:57:41.000Z",
+      "summary": "When astronauts first travel to Mars, or anywhere else in deep space, they will have to contend with two problems that our planet itself protects us from on its surface - radiation and…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "8d5746a0b128",
+      "title": "New Data from the Juno Spacecraft Reveals that Jupiter's Has a Rippling, Wavy Magnetodisk",
+      "link": "https://www.universetoday.com/articles/new-data-from-the-juno-spacecraft-reveals-that-jupiters-has-a-rippling-wavy-magnetodisk",
+      "date": "2026-10-13T23:13:34.000Z",
+      "summary": "Using observations from NASA's Juno spacecraft, an international team led by Shandong University shows that Jupiter's magnetodisk is a rippling structure that rotates with the planet, contrary to…",
+      "themes": [
+        "solar-system",
+        "telescopes"
+      ]
+    },
+    {
+      "id": "eee6f68f98f0",
+      "title": "A Red Dwarf is Taking its Time Eating a Brown Dwarf",
+      "link": "https://www.universetoday.com/articles/a-red-dwarf-is-taking-its-time-eating-a-brown-dwarf",
+      "date": "2026-10-13T17:07:30.000Z",
+      "summary": "Astronomers detected an unusual triangular light curve about 300 light years away. They were searching for Black Widow Binaries, where a dense neutron star eats its companion. But they found…",
+      "themes": [
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "6b9a7e98b4c8",
+      "title": "ESA's Hera Mission Targets Binary Asteroid Pair in November",
+      "link": "https://www.universetoday.com/articles/esas-hera-mission-targets-binary-asteroid-pair-in-november",
+      "date": "2026-10-13T15:23:00.000Z",
+      "summary": "In just one more month, the European Space Agency’s Hera mission will make history. Moving at 12 kilometers per second versus Earth, the mission is about to rendezvous with the binary…",
+      "themes": [
+        "solar-system"
       ]
     }
   ]
