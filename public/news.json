@@ -1,172 +1,129 @@
 {
-  "generatedAt": "2026-10-19T16:28:43.776Z",
+  "generatedAt": "2026-10-26T16:08:14.170Z",
   "source": "universetoday.com",
   "items": [
     {
-      "id": "79762ad9de83",
-      "title": "Enigmatic Mercury Will Remain A Puzzle Until Someone Sends A Lander",
-      "link": "https://www.universetoday.com/articles/enigmatic-mercury-will-remain-a-puzzle-until-someone-sends-a-lander",
-      "date": "2026-10-17T07:47:00.000Z",
-      "summary": "Despite the upcoming Bepi Colombo visit to Mercury, we need a lander mission to fully understand our solar system’s innermost planet.",
+      "id": "d61ecf69533d",
+      "title": "Rare Lunar Meteorites Could Fill Gaps In Moon’s Evolution",
+      "link": "https://www.universetoday.com/articles/rare-lunar-meteorites-could-fill-gaps-in-moons-evolution",
+      "date": "2026-10-25T08:18:40.000Z",
+      "summary": "Almost all meteorites come from asteroids, not the Moon or Mars. But after decades of analysis of the Apollo samples, researchers still rely on lunar meteorites to better understand our anomalously…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "119f02bf87bc",
-      "title": "In the Search for Exoplanets, Some Failures Are A Success",
-      "link": "https://www.universetoday.com/articles/in-the-search-for-exoplanets-some-failures-are-a-success",
-      "date": "2026-10-16T19:30:07.000Z",
-      "summary": "Astronomers used decades of archival data and new radial velocity measurements to search for exoplanets around a neaby binary star, 70 Oph AB. They didn't find any, which can seem like a failure. But…",
+      "id": "8173e7cfc03b",
+      "title": "White Dwarfs Are Actually…Yellow, Green, Pink, and Purple?",
+      "link": "https://www.universetoday.com/articles/white-dwarfs-are-actuallyyellow-green-pink-and-purple",
+      "date": "2026-10-24T01:32:55.000Z",
+      "summary": "The universe hosts a myriad of star types, including supergiants, giants, main sequence, red dwarfs, brown dwarfs, white dwarfs, and neutron stars. What makes these stars stand out are just their…",
       "themes": [
-        "solar-system",
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "f27415063246",
+      "title": "27 Exoplanet Targets for the World's First Private Space Telescope",
+      "link": "https://www.universetoday.com/articles/27-exoplanet-targets-for-the-worlds-first-private-space-telescope",
+      "date": "2026-10-23T22:33:37.000Z",
+      "summary": "Get ready for the age of private space telescopes. The Lazuli Space Telescope will launch in a few years and part of its mission is to observe exoplanets. New research presents a list of 27 exoplanet…",
+      "themes": [
         "telescopes",
         "exoplanets"
       ]
     },
     {
-      "id": "2a21bf57a9bb",
-      "title": "A Radio Phoenix Beyond the Zone of Avoidance",
-      "link": "https://www.universetoday.com/articles/a-radio-phoenix-beyond-the-zone-of-avoidance",
-      "date": "2026-10-16T15:14:53.000Z",
-      "summary": "Years ago, astronomers spotted a strange radio formation beyond the Zone of Avoidance. The formation resembles a treble clef, a symbol in musical notation, and the nickname has stuck. Determining…",
+      "id": "048dfb93659a",
+      "title": "The Largest Canyon in the Solar System is Still Tectonically Active",
+      "link": "https://www.universetoday.com/articles/the-largest-canyon-in-the-solar-system-is-still-tectonically-active",
+      "date": "2026-10-23T21:09:09.000Z",
+      "summary": "Scientists at Imperial College London and Columbia University have found that the largest canyon system in the solar system is still active and shaping Mars today, billions of years after it first…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "3c819f64accd",
-      "title": "Scientists Detect Rare Type of Wood Alcohol in Space",
-      "link": "https://www.universetoday.com/articles/scientists-detect-rare-type-of-wood-alcohol-in-space",
-      "date": "2026-10-15T22:44:35.000Z",
-      "summary": "As part of the ALMA COMPASS Large program, an international research team has detected a rare form of methanol in space for the first time.",
+      "id": "5834fde21531",
+      "title": "JWST Reveals a Lopsided Alien World with Blistering Evening Winds",
+      "link": "https://www.universetoday.com/articles/jwst-reveals-a-lopsided-alien-world-with-blistering-evening-winds",
+      "date": "2026-10-23T10:54:33.000Z",
+      "summary": "Typically, when we think of exoplanets, we think of neat spheres floating directly in front of their star, which acts as a giant spotlight. From our vantage point, they would look more like two…",
+      "themes": [
+        "telescopes",
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "6373d42ef7db",
+      "title": "Even the Rubin's Test Camera Produces Stunning Images",
+      "link": "https://www.universetoday.com/articles/even-the-rubins-test-camera-produces-stunning-images",
+      "date": "2026-10-22T21:04:01.000Z",
+      "summary": "The Vera Rubin Observatory's Commissioning Camera operated for about 7 weeks in 2024, before the observatory released its well-known first look images. It's an engineering camera, and its job was to…",
       "themes": [
         "telescopes"
       ]
     },
     {
-      "id": "64069c1ed158",
-      "title": "Host Stars Shape Their Planetary Systems Into Two Families",
-      "link": "https://www.universetoday.com/articles/host-stars-shape-their-planetary-systems-into-two-families",
-      "date": "2026-10-15T17:07:40.000Z",
-      "summary": "New research draws a link between a host star and the characteristics of its planetary system. Higher mass stars create one family of systems, while lower mass stars create another. These results…",
-      "themes": [
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "28030a7f1b88",
-      "title": "Orionid, Taurid Meteors Haunt October Skies",
-      "link": "https://www.universetoday.com/articles/orionid-taurid-meteors-haunt-october-skies",
-      "date": "2026-10-15T14:33:00.000Z",
-      "summary": "Fall meteor season has begun. Late October not only sees dusk falling ever earlier as ghouls and goblins walk the Earth on Halloween, but it also sees the peak of two fine annual meteor showers…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "f99fc27b2fb0",
-      "title": "SPHEREx Just Took the Fingerprints of Failed Stars Across Our Cosmic Neighborhood",
-      "link": "https://www.universetoday.com/articles/spherex-just-took-the-fingerprints-of-failed-stars-across-our-cosmic-neighborhood",
-      "date": "2026-10-15T13:08:24.000Z",
-      "summary": "Brown dwarfs are the black (or brown?) sheep of astronomy. They’re too big to be considered a traditional gas planet, but they are too small to have started nuclear fusion and made the full…",
-      "themes": [
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "4f6f862d0af1",
-      "title": "The Perseverance Rover Reaches Another Milestone",
-      "link": "https://www.universetoday.com/articles/the-perseverance-rover-reaches-another-milestone",
-      "date": "2026-10-14T19:14:26.000Z",
-      "summary": "NASA's Perseverance Rover has reached another milestone. It now holds the record for the longest distance travelled on another world, meaning Mars and Earth's Moon. It's all thanks the ingenuity…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "7a19eafdf06c",
-      "title": "Astronomers Observe The Limb Darkening Effect On Nearby Stars",
-      "link": "https://www.universetoday.com/articles/astronomers-observe-the-limb-darkening-effect-on-nearby-stars",
-      "date": "2026-10-14T16:04:42.000Z",
-      "summary": "The edge of the Sun appears darker than its central region. This effect is known as limb darkening and tells us about the solar atmosphere. This same limb darkening effect has now been observed on…",
-      "themes": [
-        "solar-system",
-        "telescopes",
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "25d11a0618a3",
-      "title": "Astronomers Uncover More Intriguing Detail in an Ancient Supernova Remnant",
-      "link": "https://www.universetoday.com/articles/astronomers-uncover-more-intriguing-detail-in-an-ancient-supernova-remnant",
-      "date": "2026-10-14T15:44:31.000Z",
-      "summary": "When a supernova exploded in 1181, Chinese and Japanese sky-watchers recorded it. They couldn't have known what the object was, and why it appeared for six months then disappeared. But in our modern…",
+      "id": "c1c1aff057d5",
+      "title": "New Evidence for an Old Prediction: Recoiling Supermassive Black Holes",
+      "link": "https://www.universetoday.com/articles/new-evidence-for-an-old-prediction-recoiling-supermassive-black-holes",
+      "date": "2026-10-22T17:52:01.000Z",
+      "summary": "Theory says that during some SMBH mergers, the merger remnant receives a recoil kick from gravitational waves. Instead of sitting placidly in the galactic center, these recoiled SMBH are sent on a…",
       "themes": [
         "telescopes"
       ]
     },
     {
-      "id": "fedec2d39f94",
-      "title": "Chandrasekhar Placed A Limit On White Dwarfs, But A New Study Finds This Limit Is Not Absolute",
-      "link": "https://www.universetoday.com/articles/chandrasekhar-placed-a-limit-on-white-dwarfs-but-a-new-study-finds-this-limit-is-not-absolute",
-      "date": "2026-10-14T14:57:08.000Z",
-      "summary": "The Chandrasekhar limit states that a white dwarf can be no larger than 1.4 solar masses. A new study demonstrates how highly magnetized white dwarfs could overcome that limit, and how such…",
-      "themes": [
-        "solar-system",
-        "telescopes",
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "a84c1dbf1936",
-      "title": "Curiosity Greets a Spectacular Dawn Sky on Mars",
-      "link": "https://www.universetoday.com/articles/curiosity-greets-a-spectacular-dawn-sky-on-mars",
-      "date": "2026-10-14T13:51:00.000Z",
-      "summary": "Mars is a planetary geologist’s paradise. NASA’s Curiosity rover drove that home recently, with a captivating panorama seen from the slopes of Mount Sharp. The image shows a stunning vista, and was…",
+      "id": "dd3f7311baaa",
+      "title": "From Dusk, Towards Dawn: Venus Slides Past the Sun This Weekend",
+      "link": "https://www.universetoday.com/articles/from-dusk-towards-dawn-venus-slides-past-the-sun-this-weekend",
+      "date": "2026-10-22T15:30:00.000Z",
+      "summary": "Where have all the planets gone? Late October 2026 sees a decided dearth of planets in the dusk sky, with only bashful Mercury receding from view, and Saturn fresh off of opposition. Venus, the…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "6cf28c810d15",
-      "title": "A Trip to Mars Could Break Your Heart - Literally",
-      "link": "https://www.universetoday.com/articles/a-trip-to-mars-could-break-your-heart-literally",
-      "date": "2026-10-14T11:57:41.000Z",
-      "summary": "When astronauts first travel to Mars, or anywhere else in deep space, they will have to contend with two problems that our planet itself protects us from on its surface - radiation and…",
+      "id": "24c85bc7f92d",
+      "title": "How Flare Ribbons Reveal Hidden Solar Explosions on the Sun",
+      "link": "https://www.universetoday.com/articles/how-flare-ribbons-reveal-hidden-solar-explosions-on-the-sun",
+      "date": "2026-10-21T23:18:19.000Z",
+      "summary": "Solar flaring is complex behaviour triggered by reconnection, when magnetic field lines break and then snap back to the Sun's surface. The flaring is complex behaviour, and its details are difficult…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "8d5746a0b128",
-      "title": "New Data from the Juno Spacecraft Reveals that Jupiter's Has a Rippling, Wavy Magnetodisk",
-      "link": "https://www.universetoday.com/articles/new-data-from-the-juno-spacecraft-reveals-that-jupiters-has-a-rippling-wavy-magnetodisk",
-      "date": "2026-10-13T23:13:34.000Z",
-      "summary": "Using observations from NASA's Juno spacecraft, an international team led by Shandong University shows that Jupiter's magnetodisk is a rippling structure that rotates with the planet, contrary to…",
+      "id": "e837438cba2f",
+      "title": "Webb Captures Stars in the Early Stages of Life in a Nearby Stellar Nursery",
+      "link": "https://www.universetoday.com/articles/webb-captures-stars-in-the-early-stages-of-life-in-a-nearby-stellar-nursery",
+      "date": "2026-10-21T20:36:44.000Z",
+      "summary": "This Webb infrared image, released on October 6th, 2026, shows the star-forming region NGC 7129, about 3,300 light-years from Earth. The central star, LkHα 234, is a young star of 5–8 solar masses…",
       "themes": [
         "solar-system",
         "telescopes"
       ]
     },
     {
-      "id": "eee6f68f98f0",
-      "title": "A Red Dwarf is Taking its Time Eating a Brown Dwarf",
-      "link": "https://www.universetoday.com/articles/a-red-dwarf-is-taking-its-time-eating-a-brown-dwarf",
-      "date": "2026-10-13T17:07:30.000Z",
-      "summary": "Astronomers detected an unusual triangular light curve about 300 light years away. They were searching for Black Widow Binaries, where a dense neutron star eats its companion. But they found…",
+      "id": "caae3f2dc6af",
+      "title": "There Should Be Black Holes in our Neighbourhood. Can We Find Them?",
+      "link": "https://www.universetoday.com/articles/there-should-be-black-holes-in-our-neighbourhood-can-we-find-them",
+      "date": "2026-10-21T17:46:00.000Z",
+      "summary": "Stellar-mass black holes should be in our neighbourhood within about 50 light years of the Solar System. But they're likely isolated, without much to feed on, making them difficult to find. Gaia…",
       "themes": [
-        "exoplanets"
+        "solar-system",
+        "telescopes"
       ]
     },
     {
-      "id": "6b9a7e98b4c8",
-      "title": "ESA's Hera Mission Targets Binary Asteroid Pair in November",
-      "link": "https://www.universetoday.com/articles/esas-hera-mission-targets-binary-asteroid-pair-in-november",
-      "date": "2026-10-13T15:23:00.000Z",
-      "summary": "In just one more month, the European Space Agency’s Hera mission will make history. Moving at 12 kilometers per second versus Earth, the mission is about to rendezvous with the binary…",
+      "id": "0c21a4491378",
+      "title": "A Stubborn Question Answered: New Research Reveals How the Milky Way's Disk Formed",
+      "link": "https://www.universetoday.com/articles/a-stubborn-question-answered-new-research-reveals-how-the-milky-ways-disk-formed",
+      "date": "2026-10-21T17:23:09.000Z",
+      "summary": "Figuring out how the Milky Way's thin and thick disks formed is a tough question in astronomy. It relies on determining individual stellar ages accurately. Gaia was pretty good at that, and new…",
       "themes": [
-        "solar-system"
+        "telescopes"
       ]
     }
   ]
