@@ -1,129 +1,191 @@
 {
-  "generatedAt": "2026-10-26T16:08:14.170Z",
+  "generatedAt": "2026-11-02T19:29:50.381Z",
   "source": "universetoday.com",
   "items": [
     {
-      "id": "d61ecf69533d",
-      "title": "Rare Lunar Meteorites Could Fill Gaps In Moon’s Evolution",
-      "link": "https://www.universetoday.com/articles/rare-lunar-meteorites-could-fill-gaps-in-moons-evolution",
-      "date": "2026-10-25T08:18:40.000Z",
-      "summary": "Almost all meteorites come from asteroids, not the Moon or Mars. But after decades of analysis of the Apollo samples, researchers still rely on lunar meteorites to better understand our anomalously…",
+      "id": "1d110f2c308c",
+      "title": "Researchers May Have Solved a Puzzling Contradiction in the Ryugu Sample",
+      "link": "https://www.universetoday.com/articles/researchers-may-have-solved-a-puzzling-contradiction-in-the-ryugu-sample",
+      "date": "2026-11-02T18:08:23.000Z",
+      "summary": "Samples from the asteroid Ryugu, and from carbonaceous chondrites that have crashed on Earth, present an apparent contradiction. Their fine-grained matrices have widely varied compositions of their…",
       "themes": [
         "solar-system"
       ]
     },
     {
-      "id": "8173e7cfc03b",
-      "title": "White Dwarfs Are Actually…Yellow, Green, Pink, and Purple?",
-      "link": "https://www.universetoday.com/articles/white-dwarfs-are-actuallyyellow-green-pink-and-purple",
-      "date": "2026-10-24T01:32:55.000Z",
-      "summary": "The universe hosts a myriad of star types, including supergiants, giants, main sequence, red dwarfs, brown dwarfs, white dwarfs, and neutron stars. What makes these stars stand out are just their…",
-      "themes": [
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "f27415063246",
-      "title": "27 Exoplanet Targets for the World's First Private Space Telescope",
-      "link": "https://www.universetoday.com/articles/27-exoplanet-targets-for-the-worlds-first-private-space-telescope",
-      "date": "2026-10-23T22:33:37.000Z",
-      "summary": "Get ready for the age of private space telescopes. The Lazuli Space Telescope will launch in a few years and part of its mission is to observe exoplanets. New research presents a list of 27 exoplanet…",
-      "themes": [
-        "telescopes",
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "048dfb93659a",
-      "title": "The Largest Canyon in the Solar System is Still Tectonically Active",
-      "link": "https://www.universetoday.com/articles/the-largest-canyon-in-the-solar-system-is-still-tectonically-active",
-      "date": "2026-10-23T21:09:09.000Z",
-      "summary": "Scientists at Imperial College London and Columbia University have found that the largest canyon system in the solar system is still active and shaping Mars today, billions of years after it first…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "5834fde21531",
-      "title": "JWST Reveals a Lopsided Alien World with Blistering Evening Winds",
-      "link": "https://www.universetoday.com/articles/jwst-reveals-a-lopsided-alien-world-with-blistering-evening-winds",
-      "date": "2026-10-23T10:54:33.000Z",
-      "summary": "Typically, when we think of exoplanets, we think of neat spheres floating directly in front of their star, which acts as a giant spotlight. From our vantage point, they would look more like two…",
-      "themes": [
-        "telescopes",
-        "exoplanets"
-      ]
-    },
-    {
-      "id": "6373d42ef7db",
-      "title": "Even the Rubin's Test Camera Produces Stunning Images",
-      "link": "https://www.universetoday.com/articles/even-the-rubins-test-camera-produces-stunning-images",
-      "date": "2026-10-22T21:04:01.000Z",
-      "summary": "The Vera Rubin Observatory's Commissioning Camera operated for about 7 weeks in 2024, before the observatory released its well-known first look images. It's an engineering camera, and its job was to…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "c1c1aff057d5",
-      "title": "New Evidence for an Old Prediction: Recoiling Supermassive Black Holes",
-      "link": "https://www.universetoday.com/articles/new-evidence-for-an-old-prediction-recoiling-supermassive-black-holes",
-      "date": "2026-10-22T17:52:01.000Z",
-      "summary": "Theory says that during some SMBH mergers, the merger remnant receives a recoil kick from gravitational waves. Instead of sitting placidly in the galactic center, these recoiled SMBH are sent on a…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "dd3f7311baaa",
-      "title": "From Dusk, Towards Dawn: Venus Slides Past the Sun This Weekend",
-      "link": "https://www.universetoday.com/articles/from-dusk-towards-dawn-venus-slides-past-the-sun-this-weekend",
-      "date": "2026-10-22T15:30:00.000Z",
-      "summary": "Where have all the planets gone? Late October 2026 sees a decided dearth of planets in the dusk sky, with only bashful Mercury receding from view, and Saturn fresh off of opposition. Venus, the…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "24c85bc7f92d",
-      "title": "How Flare Ribbons Reveal Hidden Solar Explosions on the Sun",
-      "link": "https://www.universetoday.com/articles/how-flare-ribbons-reveal-hidden-solar-explosions-on-the-sun",
-      "date": "2026-10-21T23:18:19.000Z",
-      "summary": "Solar flaring is complex behaviour triggered by reconnection, when magnetic field lines break and then snap back to the Sun's surface. The flaring is complex behaviour, and its details are difficult…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "e837438cba2f",
-      "title": "Webb Captures Stars in the Early Stages of Life in a Nearby Stellar Nursery",
-      "link": "https://www.universetoday.com/articles/webb-captures-stars-in-the-early-stages-of-life-in-a-nearby-stellar-nursery",
-      "date": "2026-10-21T20:36:44.000Z",
-      "summary": "This Webb infrared image, released on October 6th, 2026, shows the star-forming region NGC 7129, about 3,300 light-years from Earth. The central star, LkHα 234, is a young star of 5–8 solar masses…",
+      "id": "c855c91596b9",
+      "title": "New Research Resolves the Mystery Behind Van Gogh's The Starry Night",
+      "link": "https://www.universetoday.com/articles/new-research-resolves-the-mystery-behind-van-goghs-the-starry-night",
+      "date": "2026-11-02T03:00:42.000Z",
+      "summary": "The sky in Vincent van Gogh’s The Starry Night (1889) matches, in both observation and shape, the pre-dawn sky over Saint-Rémy around 22 July 1889, when a waning crescent moon, Venus and the Hyades…",
       "themes": [
         "solar-system",
         "telescopes"
       ]
     },
     {
-      "id": "caae3f2dc6af",
-      "title": "There Should Be Black Holes in our Neighbourhood. Can We Find Them?",
-      "link": "https://www.universetoday.com/articles/there-should-be-black-holes-in-our-neighbourhood-can-we-find-them",
-      "date": "2026-10-21T17:46:00.000Z",
-      "summary": "Stellar-mass black holes should be in our neighbourhood within about 50 light years of the Solar System. But they're likely isolated, without much to feed on, making them difficult to find. Gaia…",
+      "id": "bd9568fcc470",
+      "title": "Martian Polar Crater Ice Shifts with Seasonal Frost",
+      "link": "https://www.universetoday.com/articles/martian-polar-crater-ice-shifts-with-seasonal-frost",
+      "date": "2026-11-01T03:06:40.000Z",
+      "summary": "The planet Mars shares many landforms and weather patterns with the Earth, including changing seasons, volcanoes, canyons, dust storms and dust devils, and water ice. But one feature that Earth and…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "b7db44895e9d",
+      "title": "Ceres' Water Ice Can Mask Massive Surface Salt Deposits",
+      "link": "https://www.universetoday.com/articles/ceres-water-ice-can-mask-massive-surface-salt-deposits",
+      "date": "2026-10-31T23:35:52.000Z",
+      "summary": "The dwarf planet Ceres is arguably one of the most overlooked and underappreciated planetary objects in the entire solar system. This could be because while Ceres has the same dwarf planet…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "d2a0021bac65",
+      "title": "Space Outposts Beyond the Moon May Rely on Planetary AI",
+      "link": "https://www.universetoday.com/articles/space-outposts-beyond-the-moon-may-rely-on-planetary-ai",
+      "date": "2026-10-31T19:24:37.000Z",
+      "summary": "NASA plans to return astronauts to the lunar surface in 2028 for the first time since Apollo 17 in 1972. But the famed agency has no intention of stopping there, as they plan to establish a permanent…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "c5f5ec5c365b",
+      "title": "Hera Probe Sees Asteroid Pair Separately for First Time",
+      "link": "https://www.universetoday.com/articles/hera-probe-sees-asteroid-pair-separately-for-first-time",
+      "date": "2026-10-31T01:52:53.000Z",
+      "summary": "Planetary defense is a growing concern among the scientific community, as efforts have been made to design and implement missions meant to deflect incoming threats to the Earth well in advance. In…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "6168811b0a11",
+      "title": "What Could Split a Black Hole in Two?",
+      "link": "https://www.universetoday.com/articles/what-could-split-a-black-hole-in-two",
+      "date": "2026-10-30T21:30:00.000Z",
+      "summary": "We all know that black holes can collide. It has happened since black holes began to form, early in cosmic time. The result is always a clash that gives off gravitational waves and a giant bang.…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "515b23cf8ae6",
+      "title": "Queen's University Belfast Students Find Neptune's Elusive Trojan Asteroids",
+      "link": "https://www.universetoday.com/articles/queens-university-belfast-students-find-neptunes-elusive-trojan-asteroids",
+      "date": "2026-10-30T20:59:00.000Z",
+      "summary": "Astronomers at Queen’s University Belfast have led an international team studying new solar system bodies near Neptune, helping to unravel the mysteries of our solar system’s evolution.",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "0d07aba6fb6d",
+      "title": "This Ancient Meteorite Hints at Mars' Warm, Wet Past",
+      "link": "https://www.universetoday.com/articles/this-ancient-meteorite-hints-at-mars-warm-wet-past",
+      "date": "2026-10-30T19:14:01.000Z",
+      "summary": "Ancient Martian meteorites are like time-capsules from the planet's past. They're delivered to us by impacts that launch them into space, where some of them find their way to Earth. One recently…",
+      "themes": [
+        "solar-system",
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "ceb0177f2cca",
+      "title": "This Gamma-Ray Burst Wasn't Dim, It Was Just Misunderstood",
+      "link": "https://www.universetoday.com/articles/this-gamma-ray-burst-wasnt-dim-it-was-just-misunderstood",
+      "date": "2026-10-30T16:20:24.000Z",
+      "summary": "In March 2026, NASA's Fermi Gamma-ray Space Telescope detected a GRB with an unusual light signature. Its initial gamma radiation was dim, and the afterglow exhibited unusual, delayed peaks. As it…",
       "themes": [
         "solar-system",
         "telescopes"
       ]
     },
     {
-      "id": "0c21a4491378",
-      "title": "A Stubborn Question Answered: New Research Reveals How the Milky Way's Disk Formed",
-      "link": "https://www.universetoday.com/articles/a-stubborn-question-answered-new-research-reveals-how-the-milky-ways-disk-formed",
-      "date": "2026-10-21T17:23:09.000Z",
-      "summary": "Figuring out how the Milky Way's thin and thick disks formed is a tough question in astronomy. It relies on determining individual stellar ages accurately. Gaia was pretty good at that, and new…",
+      "id": "19091aca122f",
+      "title": "Earth’s “Impenetrable” Space Radiation Shield Was Just Breached From Within",
+      "link": "https://www.universetoday.com/articles/earths-impenetrable-space-radiation-shield-was-just-breached-from-within",
+      "date": "2026-10-30T12:34:00.000Z",
+      "summary": "Remember the big solar storm back in May 2024? The one that caused auroras as far south as Florida and Mexico? Scientists are still parsing out the impacts that storm had on the local environment,…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "0f548a8e1b8f",
+      "title": "How You Squeeze Planetary Minerals Changes Everything",
+      "link": "https://www.universetoday.com/articles/how-you-squeeze-planetary-minerals-changes-everything",
+      "date": "2026-10-30T02:28:22.000Z",
+      "summary": "Studying the interiors of planets is essential for understanding planetary formation, evolution, and their ability to potentially host life as we know it. To accomplish this, researchers use a…",
+      "themes": [
+        "solar-system",
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "2922f9ce5d4f",
+      "title": "It's a Ghost! No, It's a Stellar Crèche!",
+      "link": "https://www.universetoday.com/articles/its-a-ghost-no-its-a-stellar-crche",
+      "date": "2026-10-29T23:25:37.000Z",
+      "summary": "Astronomers using the Chandra X-ray Observatory (CXO), the James Webb Space Telescope (JWST) zeroed in on a wispy-looking region of the Carina Nebula and found a ghostly looking cloud seemingly…",
       "themes": [
         "telescopes"
+      ]
+    },
+    {
+      "id": "04014dcfca54",
+      "title": "Examining the Cat's Head Nebula with the Hubble and JWST",
+      "link": "https://www.universetoday.com/articles/examining-the-cats-head-nebula-with-the-hubble-and-jwst",
+      "date": "2026-10-29T22:38:52.000Z",
+      "summary": "Star formation is a complicated process. It involves metallicity, gas temperature and density, dust grains, and stellar feedback from existing stars. Sometimes, studying all these factors and how…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "55631435d8b3",
+      "title": "No Comets Required? How the Growing Earth May Have Created Its Own Water",
+      "link": "https://www.universetoday.com/articles/no-comets-required-how-the-growing-earth-may-have-created-its-own-water",
+      "date": "2026-10-29T18:25:52.000Z",
+      "summary": "Earth may not have needed comets and asteroids to deliver its water after it formed and cooled. Instead, water creation could have been part of the planet's formation process. New research explains…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "60bd7ffca0aa",
+      "title": "Colliding Dwarf Planets Created a 'Cat's Tail' 1,000 Astronomical Units Long",
+      "link": "https://www.universetoday.com/articles/colliding-dwarf-planets-created-a-cats-tail-1000-astronomical-units-long",
+      "date": "2026-10-29T15:46:02.000Z",
+      "summary": "The Beta Pictoris system is only about 63 light years away. At only about 23 million years old, it's a sort of analogue for our Solar System when it was much younger. Observations show an elongated…",
+      "themes": [
+        "solar-system",
+        "telescopes"
+      ]
+    },
+    {
+      "id": "ee0fe1312fde",
+      "title": "Astronomers Solve the Mystery of the Sun’s Spinning Plasma Jets",
+      "link": "https://www.universetoday.com/articles/astronomers-solve-the-mystery-of-the-suns-spinning-plasma-jets",
+      "date": "2026-10-29T11:53:48.000Z",
+      "summary": "The torrent of corona related discoveries keeps coming. Lately we’ve covered a variety of potential solutions to the “coronal heating problem” - why the Sun’s corona is so much hotter than its…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "9749c8c8ba90",
+      "title": "Moon Habitats May Use Layered Mylar to Block Extreme Heat",
+      "link": "https://www.universetoday.com/articles/moon-habitats-may-use-layered-mylar-to-block-extreme-heat",
+      "date": "2026-10-29T02:24:08.000Z",
+      "summary": "Living on the Moon, with either trained astronauts or regular civilians, could become a regular occurrence in the near future. However, it’s easier said than done, as scientists and engineers…",
+      "themes": [
+        "solar-system",
+        "exoplanets"
       ]
     }
   ]
