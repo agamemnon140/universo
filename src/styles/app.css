@@ -845,3 +845,288 @@
   height: 100%;
   background: var(--accent-amber);
 }
+
+/* ---------- Missions tab ---------- */
+.mission-timeline {
+  --label-w: 128px;
+  --label-gap: 10px;
+  padding: 12px 14px 14px;
+}
+
+@media (min-width: 720px) {
+  .mission-timeline {
+    --label-w: 230px;
+  }
+}
+
+.mission-axis,
+.mission-row {
+  display: grid;
+  grid-template-columns: var(--label-w) minmax(0, 1fr);
+  column-gap: var(--label-gap);
+  align-items: center;
+}
+
+.mission-axis {
+  height: 18px;
+  font-size: 0.7rem;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.mission-axis-track {
+  position: relative;
+  height: 100%;
+}
+
+.mission-axis-track span {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.mission-axis-track span:first-child {
+  transform: none;
+}
+
+.mission-axis-track span:last-child {
+  transform: translateX(-100%);
+}
+
+.mission-lane h3 {
+  margin: 10px 0 2px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.mission-rows {
+  position: relative;
+}
+
+/* Year gridlines and the "today" line, drawn once per lane behind its rows. */
+.mission-grid {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(var(--label-w) + var(--label-gap));
+  right: 0;
+  pointer-events: none;
+}
+
+.mission-grid span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--line);
+}
+
+.mission-grid .mission-now {
+  background: var(--accent-amber);
+  opacity: 0.75;
+}
+
+.mission-row {
+  position: relative;
+  width: 100%;
+  height: 28px;
+  text-align: left;
+  font-size: 0.8rem;
+  border-radius: 6px;
+}
+
+.mission-row:hover,
+.mission-row:focus-visible {
+  background: var(--panel-hover);
+}
+
+.mission-label {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  min-width: 0;
+  padding-left: 4px;
+}
+
+.mission-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mission-year {
+  flex: none;
+  color: var(--text-faint);
+  font-size: 0.7rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Phones: the label column is too narrow for the year, and the axis for every decade. */
+@media (max-width: 719px) {
+  .mission-year,
+  .mission-axis-track .minor {
+    display: none;
+  }
+}
+
+.mission-track {
+  position: relative;
+  height: 28px;
+}
+
+.mission-seg {
+  position: absolute;
+  top: 10px;
+  height: 8px;
+  min-width: 3px;
+  border-radius: 4px;
+  background: currentColor;
+}
+
+.mission-seg.cruise {
+  opacity: 0.38;
+}
+
+.mission-seg.planned {
+  top: 13px;
+  height: 0;
+  min-width: 0;
+  border-radius: 0;
+  background: none;
+  border-top: 2px dashed currentColor;
+  opacity: 0.85;
+}
+
+.mission-marker {
+  position: absolute;
+  top: 9px;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  border: 2px solid currentColor;
+  background: var(--panel);
+}
+
+.mission-marker.launch {
+  border-radius: 50%;
+}
+
+.mission-marker.arrival {
+  transform: rotate(45deg);
+}
+
+/* A reached arrival: solid, with a panel-coloured ring to lift it off the bar. */
+.mission-marker.done {
+  background: currentColor;
+  border-color: var(--panel);
+}
+
+.mission-clip {
+  position: absolute;
+  top: 2px;
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.mission-clip.start {
+  left: -9px;
+}
+
+.mission-clip.end {
+  right: -3px;
+}
+
+.mission-nodate {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  font-size: 0.7rem;
+  font-style: italic;
+  white-space: nowrap;
+  color: var(--text-faint);
+}
+
+.mission-key {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  color: var(--text-dim);
+}
+
+.mission-key.cruise {
+  width: 16px;
+  height: 6px;
+  border-radius: 3px;
+  background: currentColor;
+  opacity: 0.38;
+}
+
+.mission-key.planned {
+  width: 16px;
+  border-top: 2px dashed currentColor;
+}
+
+.mission-key.arrival,
+.mission-key.launch {
+  width: 8px;
+  height: 8px;
+  border: 2px solid currentColor;
+}
+
+.mission-key.arrival {
+  transform: rotate(45deg);
+}
+
+.mission-key.launch {
+  border-radius: 50%;
+}
+
+.mission-key.now {
+  width: 2px;
+  height: 12px;
+  background: var(--accent-amber);
+}
+
+.budget-table td:not(:first-child),
+.budget-table th:not(:first-child) {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.budget-table .budget-total td {
+  font-weight: 600;
+  color: var(--accent-amber);
+}
+
+/* Five tabs: tighten the bar so the labels still fit a phone. */
+@media (max-width: 520px) {
+  .budget-table {
+    font-size: 0.8rem;
+  }
+
+  .budget-table th,
+  .budget-table td {
+    padding: 6px 5px;
+  }
+
+  .tab-bar {
+    gap: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .tab-bar button {
+    padding: 6px 2px;
+    font-size: 0.66rem;
+    white-space: nowrap;
+  }
+}

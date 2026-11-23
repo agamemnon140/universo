@@ -127,8 +127,63 @@ export interface BlackHole {
   note: string
 }
 
+// ---------- Missions ----------
+export type MissionStatus = 'operating' | 'development' | 'proposed' | 'ended'
+
+export type MissionLane =
+  | 'sun'
+  | 'inner'
+  | 'moon'
+  | 'mars'
+  | 'small-bodies'
+  | 'giants'
+  | 'outer'
+  | 'observatories'
+
+/** Agency that leads the mission — drives the agency filter. */
+export type MissionLead = 'NASA' | 'ESA' | 'CNSA' | 'JAXA'
+
+/**
+ * Where a mission stands in the US fiscal-2027 budget, in US$ million as
+ * published ('≥' = a floor set by the bill, '—' = no figure published).
+ */
+export interface MissionBudget {
+  fy26?: string // enacted for fiscal 2026
+  request: string // White House request
+  house: string // House Appropriations Committee bill
+  senate: string // Senate CJS subcommittee bill
+}
+
+export interface Mission {
+  id: string
+  name: string
+  fullName?: string
+  agency: string
+  lead: MissionLead
+  flag?: string
+  lane: MissionLane
+  target: string
+  kind: string
+  status: MissionStatus
+  statusNote?: string
+  /** 'YYYY-MM' or 'YYYY'; a target date unless status is operating/ended. null = no date set. */
+  launch: string | null
+  launchLabel: string
+  /** Shown in the timeline's year column when the date is too vague for a year. */
+  launchShort?: string
+  arrival?: string
+  arrivalLabel?: string
+  end?: string
+  endLabel?: string
+  summary: string
+  milestones: string[]
+  budget?: MissionBudget
+  budgetNote?: string
+  url?: string
+}
+
 // ---------- News ----------
-export type NewsTheme = 'solar-system' | 'telescopes' | 'exoplanets'
+export type NewsTheme = 'solar-system' | 'telescopes' | 'exoplanets' | 'missions'
 
 export interface NewsItem {
   id: string

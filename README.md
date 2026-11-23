@@ -1,14 +1,15 @@
 # Universo
 
-Interactive guide to the solar system, where the planets and the Moon are right now, the
-world's great telescopes, and our stellar neighborhood — built as a static PWA and published
+Interactive guide to the solar system, where the planets and the Moon are right now, the big
+space missions, the world's great telescopes, and our stellar neighborhood — built as a static PWA and published
 on GitHub Pages.
 
 **Live site:** https://agamemnon140.github.io/universo/
 
 ## Tabs
 
-- **Solar System** — 45 bodies (Sun, planets, dwarf planets, every moon ≥100 km) with sizes
+- **Solar System** — 53 bodies (Sun, planets, the five recognised dwarf planets — Ceres, Pluto,
+  Haumea, Makemake, Eris — and every moon ≥100 km) with sizes
   drawn to relative scale, sortable by size, mass, or orbit distance from the Sun / parent
   planet. Select any two to compare them: true-scale circles plus a full ratio table (mass,
   volume, radius, surface area, gravity, density, temperature, escape velocity, orbital period,
@@ -38,6 +39,12 @@ on GitHub Pages.
   every eclipse in the next ten years with type and class, and previous/next-eclipse buttons
   on the time control. Snapshots are shareable via
   `?date=2026-08-12&view=eclipses` (plus `centre=earth` / `scale=inner|outer` for the map).
+- **Missions** — 41 big missions (flying, in development, proposed, plus a few landmark ones
+  that ended) on one 2000–2040 timeline, grouped by destination and colour-coded by status:
+  solid bars for time in flight, fainter while en route, a diamond at arrival, dashed lines for
+  plans. Filter by status and lead agency; tap a row for the summary, milestones and — for
+  NASA missions — where it stands in the US budget. A budget-watch table lines up the
+  competing fiscal-2027 proposals (White House request, House bill, Senate bill).
 - **Telescopes** — 49 observatories placed on the electromagnetic spectrum (gamma → radio,
   log wavelength scale), color-coded by status (operating / construction / planned / retired),
   with separate lanes for gravitational-wave and neutrino detectors. Filter by status and
@@ -54,13 +61,21 @@ Every tab ends with the latest matching headlines from
 
 ## How it works
 
-- Vite + React + TypeScript, plain SVG for all visualizations, no chart libraries.
+- Vite + React + TypeScript, plain SVG for the visualizations (plain HTML/CSS for the mission
+  timeline, so its labels stay readable on a phone), no chart libraries.
 - Datasets are hand-curated JSON in [src/data/](src/data/), cross-checked against NASA
   factsheets and the NASA Exoplanet Archive. Solar-system relative values (mass, volume,
   radius, orbit, Roche limit, Hill sphere) follow the project owner's reference spreadsheet.
   Surface area and the solar day are derived in [src/lib/derive.ts](src/lib/derive.ts) rather
   than stored: the stored rotation period is sidereal (one turn against the stars), and the
   solar day adds the extra turn a body needs to face the Sun again after moving along its orbit.
+  The dwarf planets beyond Pluto and their moons use published measurements, several of them
+  uncertain (the facts on each card say which); their Hill sphere is a·(m/3M☉)^⅓ and their Roche
+  limit the fluid limit 2.44·R·(ρ/ρ_moon)^⅓ for the largest moon's density.
+- Missions live in [src/data/missions.json](src/data/missions.json): dates, statuses and the
+  budget figures are a hand-maintained snapshot (November 2026). When a mission launches,
+  arrives or ends, edit its entry; when a budget bill moves, update the `budget` fields and
+  `FY2027.asOf` in [src/lib/missions.ts](src/lib/missions.ts).
 - Positions are computed in the browser by [src/lib/ephemeris.ts](src/lib/ephemeris.ts) and
   friends ([apsides.ts](src/lib/apsides.ts) for perihelion/perigee and vis-viva speeds,
   [libration.ts](src/lib/libration.ts) for libration, the sub-solar point and the nodal cycle,
@@ -76,7 +91,9 @@ Every tab ends with the latest matching headlines from
 - News: [.github/workflows/news.yml](.github/workflows/news.yml) runs weekly (Mondays 09:17
   UTC), fetches the Universe Today RSS feed via [scripts/fetch-news.mjs](scripts/fetch-news.mjs),
   classifies items per tab, and commits `public/news.json` only when content changed — then
-  triggers the reusable deploy workflow.
+  triggers the reusable deploy workflow. The classifier
+  ([scripts/classify-news.mjs](scripts/classify-news.mjs)) matches whole words only, so "radio"
+  is not filed under Io; `npm test` covers it.
 - Deploy: [.github/workflows/deploy.yml](.github/workflows/deploy.yml) builds and publishes to
   GitHub Pages on every push to `main` (artifact flow, no gh-pages branch).
 - PWA: `manifest.webmanifest` + apple-touch-icon so the site installs to the iOS home screen
@@ -89,6 +106,7 @@ Every tab ends with the latest matching headlines from
 npm install
 npm run dev        # local dev server
 npm run build      # typecheck + production build
+npm test           # news-classifier tests
 node scripts/fetch-news.mjs      # refresh public/news.json
 node scripts/generate-icons.mjs  # re-render PNG icons after editing icon.svg
 ```

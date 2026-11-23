@@ -3,6 +3,7 @@ import type { TabId } from '../../hooks/useHashTab'
 const TABS: { id: TabId; label: string; icon: string }[] = [
   { id: 'solar', label: 'Solar System', icon: '🪐' },
   { id: 'positions', label: 'Positions', icon: '🧭' },
+  { id: 'missions', label: 'Missions', icon: '🚀' },
   { id: 'telescopes', label: 'Telescopes', icon: '🔭' },
   { id: 'neighborhood', label: 'Neighborhood', icon: '✨' },
 ]
