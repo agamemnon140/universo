@@ -1,116 +1,170 @@
 {
-  "generatedAt": "2026-11-16T19:37:31.639Z",
+  "generatedAt": "2026-11-23T21:26:47.283Z",
   "source": "universetoday.com",
   "items": [
     {
-      "id": "b1a7f66a0df8",
-      "title": "Navigating Lunar Orbit Using Nothing But Shadows And A Power Meter",
-      "link": "https://www.universetoday.com/articles/navigating-lunar-orbit-using-nothing-but-shadows-and-a-power-meter",
-      "date": "2026-11-15T13:22:00.000Z",
-      "summary": "Humanity is quickly starting to saturate our ability to track all of the satellites we have in deep space. NASA’s Deep Space Network (DSN) has been the workhorse for tracking such things for decades,…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "e310e737e8bc",
-      "title": "When Einstein's Gravitational Waves Meet Newton's Tides",
-      "link": "https://www.universetoday.com/articles/when-einsteins-gravitational-waves-meet-newtons-tides",
-      "date": "2026-11-14T00:35:51.000Z",
-      "summary": "A researcher at Freie Universität Berlin has developed a theoretical framework for searching high-precision measurements for possible relativistic traces in lunar tides.",
+      "id": "5de8eb0d8783",
+      "title": "New Research Reveals Europa's Sodium Cloud Originated from its Interior Ocean",
+      "link": "https://www.universetoday.com/articles/new-research-reveals-europas-sodium-cloud-originated-from-its-interior-ocean",
+      "date": "2026-11-23T19:45:30.000Z",
+      "summary": "Scientists using the W.M. Keck Observatory's HIRISE spectrometer have revealed new information about the origin of Europa's sodium cloud.",
       "themes": [
         "solar-system",
         "telescopes"
       ]
     },
     {
-      "id": "227597207835",
-      "title": "LOFAR Takes the Deepest Image of the Low-Frequency Radio Sky to Date",
-      "link": "https://www.universetoday.com/articles/lofar-takes-the-deepest-image-of-the-low-frequency-radio-sky-to-date",
-      "date": "2026-11-13T21:30:58.000Z",
-      "summary": "Using the Low Frequency Array (LOFAR), an international team led by Leiden University has produced the sharpest and most sensitive radio image of the sky ever made at low radio frequencies.",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "2c08176372c4",
-      "title": "Tears of the Lion: Catching the 2026 Leonid Meteors",
-      "link": "https://www.universetoday.com/articles/tears-of-the-lion-catching-the-2026-leonid-meteors",
-      "date": "2026-11-13T13:21:00.000Z",
-      "summary": "It’s always worth being vigilant when skywatching in mid- to late November. Every year, a few Leonid meteors punctuate the November morning sky around the 17th. These silent harbingers are only a…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "01481460077e",
-      "title": "Euclid's First Data Release: A Stepping Stone to its 3D Map of the Sky",
-      "link": "https://www.universetoday.com/articles/euclids-first-data-release-a-stepping-stone-to-its-3d-map-of-the-sky",
-      "date": "2026-11-12T23:04:05.000Z",
-      "summary": "The ESA's Euclid Space Telescope has released its first huge batch of data. It's all part of the telescope's mission to study dark energy and dark matter. The telescope is busy creating the largest…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "f876a56b424c",
-      "title": "Asteroid Bennu's Sample Delivers Another Surprise",
-      "link": "https://www.universetoday.com/articles/asteroid-bennus-sample-delivers-another-surprise",
-      "date": "2026-11-12T21:16:30.000Z",
-      "summary": "Researchers compared the samples from asteroid Bennu with the Murchison meteorite and measured the amino acid β-alanine in both. Using new techniques, they were able to measure not only their…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "56008bde168e",
-      "title": "Solving the Space Junk Crisis Isn't Just About Counting Trash—It’s About Control and Economics",
-      "link": "https://www.universetoday.com/articles/solving-the-space-junk-crisis-isnt-just-about-counting-trashits-about-control-and-economics",
-      "date": "2026-11-12T18:42:31.000Z",
-      "summary": "If people ever think about cleaning up space debris, they typically think of something equivalent to a giant garbage truck in the sky, collecting lost astronaut tools and dead satellites then hauling…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "4bad1ecb4f8c",
-      "title": "The Ice Giants' Magnetic Fields are Very Strange Compared to Earth's",
-      "link": "https://www.universetoday.com/articles/the-ice-giants-magnetic-fields-are-very-strange-compared-to-earths",
-      "date": "2026-11-11T22:09:35.000Z",
-      "summary": "Uranus and Neptune, the Solar System's ice giants, have interiors unlike the other planets. As a result, they also have magnetic fields unlike the others. They're messy and tilted, and Voyager 2, the…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "20a7e3339c41",
-      "title": "Asteroid Mining Will Crash the Platinum Market, But That’s Good News for Earth",
-      "link": "https://www.universetoday.com/articles/asteroid-mining-will-crash-the-platinum-market-but-thats-good-news-for-earth",
-      "date": "2026-11-11T17:06:51.000Z",
-      "summary": "Science fiction authors have been dreaming of robotic spacecraft harvesting fortunes from asteroids for decades. Humanity is slowly getting closer to that reality. But if you ask asteroid mining…",
-      "themes": [
-        "solar-system"
-      ]
-    },
-    {
-      "id": "7cc870f38a0a",
-      "title": "The Chandra X-Ray Observatory Unmasks a Supernova Impostor",
-      "link": "https://www.universetoday.com/articles/the-chandra-x-ray-observatory-unmasks-a-supernova-impostor",
-      "date": "2026-11-11T16:41:55.000Z",
-      "summary": "Some stars, called Luminous Blue Variables, can be confused with supernovae explosions. They exhibit similar outbursts, but unlike supernovae, which explode once and then are gone forever, these…",
-      "themes": [
-        "telescopes"
-      ]
-    },
-    {
-      "id": "2430184a9437",
-      "title": "Planets Don't Just Disappear, But They Can Wobble Out of Sight if Their Neighbour is Close Enough",
-      "link": "https://www.universetoday.com/articles/planets-dont-just-disappear-but-they-can-wobble-out-of-sight-if-their-neighbour-is-close-enough",
-      "date": "2026-11-11T13:02:29.000Z",
-      "summary": "TESS watched an exoplanet about 1,000 light years away as it repeatedly transited in front of its star for seven years. But astronomers were surprised to find that the hot Jupiter disappeared. Of…",
+      "id": "e2c5d985046e",
+      "title": "Ultra-Thin \"Rainbow\" Sails Could Power Spacecraft and Shade the Earth",
+      "link": "https://www.universetoday.com/articles/ultra-thin-rainbow-sails-could-power-spacecraft-and-shade-the-earth",
+      "date": "2026-11-23T18:59:42.000Z",
+      "summary": "For years, whimsically minded space enthusiasts have been dreaming of sailing across the vastness of the void on beams of sunlight. Photons, the massless particles that make up those beams of…",
       "themes": [
         "solar-system",
+        "missions"
+      ]
+    },
+    {
+      "id": "3c5d358cbe9f",
+      "title": "LISA's Gravitational Wave Detections Could Reveal Exoplanets",
+      "link": "https://www.universetoday.com/articles/lisas-gravitational-wave-detections-could-reveal-exoplanets",
+      "date": "2026-11-23T16:44:24.000Z",
+      "summary": "LISA, the ESA's Laser Interferometry Space Antenna, is being built to detect gravitational waves emitted when massive objects spiral together and merge. New research shows that exoplanets can exert a…",
+      "themes": [
+        "telescopes",
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "dc5537864b3e",
+      "title": "Bacteria and Nuclear Power Could Grow Ready-Made Homes on Mars Before Astronauts Arrive",
+      "link": "https://www.universetoday.com/articles/bacteria-and-nuclear-power-could-grow-ready-made-homes-on-mars-before-astronauts-arrive",
+      "date": "2026-11-23T15:14:35.000Z",
+      "summary": "As we gear up to eventually land a human on Mars, more and more ideas are coming out about how to prepare for that. A recent one from Pioneer Labs, a research institute founded by bioengineer Erika…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "24f4e6969b7b",
+      "title": "Space Entrepreneurs Should Look To 16th Century Spice Trade For Inspiration",
+      "link": "https://www.universetoday.com/articles/space-entrepreneurs-should-look-to-16th-century-spice-trade-for-inspiration",
+      "date": "2026-11-21T10:39:27.000Z",
+      "summary": "In the short term, human exploration of the Moon and Mars seems practical, but for the next 50 years at least, robotic exploration may be the most cost-effective and efficient. Human exploration…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "55bb2b6b99a7",
+      "title": "Complex Life on Earth May Not Have Appeared Without Tall Mountains",
+      "link": "https://www.universetoday.com/articles/complex-life-on-earth-may-not-have-appeared-without-tall-mountains",
+      "date": "2026-11-20T20:22:08.000Z",
+      "summary": "As Earth's surface area grew, weathering fed more nutrients into Earth's ancient oceans. This eventually resulted in more oxygen, making Earth more habitable. New research identifies two ancient…",
+      "themes": [
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "b8f87589f0c6",
+      "title": "A Triple Star System 'That Shouldn't Exist,' Only 28 Light-Years from Earth",
+      "link": "https://www.universetoday.com/articles/a-triple-star-system-that-shouldnt-exist-only-28-light-years-from-earth",
+      "date": "2026-11-20T16:52:03.000Z",
+      "summary": "Astronomers have found a triple star system in our neighborhood that has defied the odds. It shouldn't really exist, according to astronomers' understanding of stellar evolution and common envelopes.…",
+      "themes": [
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "c92c7d1fb77f",
+      "title": "Sound Waves From Sunspots Launch Fiery Plasma Jets Across the Sun",
+      "link": "https://www.universetoday.com/articles/sound-waves-from-sunspots-launch-fiery-plasma-jets-across-the-sun",
+      "date": "2026-11-20T14:58:26.000Z",
+      "summary": "It feels like every week for the past few months we’ve been reporting on more research regarding the temperature difference between the Sun’s surface and its corona. This week is no exception, with a…",
+      "themes": [
+        "solar-system",
+        "missions"
+      ]
+    },
+    {
+      "id": "ac0215ca184a",
+      "title": "This is the First Time Astronomers Have Seen One of These Stellar Mergers",
+      "link": "https://www.universetoday.com/articles/this-is-the-first-time-astronomers-have-seen-one-of-these-stellar-mergers",
+      "date": "2026-11-20T13:04:40.000Z",
+      "summary": "Some binary stars end up sharing a common envelope of gas, as the primary star draws material away from its companion. The envelope exerts drag on the stars and they can spiral toward each other. In…",
+      "themes": [
+        "exoplanets"
+      ]
+    },
+    {
+      "id": "208cdc9bd3cc",
+      "title": "Tiny Grains of Sand Act as Cosmic Speedometers for Alien Winds",
+      "link": "https://www.universetoday.com/articles/tiny-grains-of-sand-act-as-cosmic-speedometers-for-alien-winds",
+      "date": "2026-11-20T11:57:20.000Z",
+      "summary": "We’ve managed to take high-resolution orbital images of many worlds across our solar system, and many of them with an atmosphere have one feature in common - sand dunes. Scientists have been using…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "78e6a4126547",
+      "title": "ESA's Hera Probe Uses \"Superhuman\" Vision to Inspect NASA's Asteroid Crash Site",
+      "link": "https://www.universetoday.com/articles/esas-hera-probe-uses-superhuman-vision-to-inspect-nasas-asteroid-crash-site",
+      "date": "2026-11-19T14:50:33.000Z",
+      "summary": "Around four years ago, humanity intentionally hit an asteroid. The Double Asteroid Redirection Test (DART) was by pretty much all measures a resounding success when it struck the asteroid moonlet…",
+      "themes": [
+        "solar-system",
+        "missions"
+      ]
+    },
+    {
+      "id": "76db8fd09732",
+      "title": "Euclid's Hunt for Strong Gravitational Lenses is Off to a Strong Start",
+      "link": "https://www.universetoday.com/articles/euclids-hunt-for-strong-gravitational-lenses-is-off-to-a-strong-start",
+      "date": "2026-11-19T14:49:01.000Z",
+      "summary": "Euclid was launched to build a 3D map of the sky to probe cosmic structure and the Universe's expansion. Part of its job is to hunt for strong gravitational lenses, important probes of dark matter.…",
+      "themes": [
+        "telescopes",
+        "missions"
+      ]
+    },
+    {
+      "id": "c6dacc24752b",
+      "title": "Feast Your Eyes on Uranus at Opposition This Thanksgiving 2026",
+      "link": "https://www.universetoday.com/articles/feast-your-eyes-on-uranus-at-opposition-this-thanksgiving-2026",
+      "date": "2026-11-19T14:00:00.000Z",
+      "summary": "The outer planets are ever so slowly starting to sneak back into the evening sky this month. First, Saturn crossed this mark last month on October 4th, then Neptune followed suit on September 26th.…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "4dd048eddeb7",
+      "title": "The Simons Observatory is Online and Surveying the Cosmic Microwave Background",
+      "link": "https://www.universetoday.com/articles/the-simons-observatory-is-online-and-surveying-the-cosmic-microwave-background",
+      "date": "2026-11-18T20:05:05.000Z",
+      "summary": "The Simons Observatory is online and surveying the Cosmic Microwave Background (CMB) in greater detail than ever before. It's looking for tiny fluctuations in the CMB caused by primordial…",
+      "themes": [
+        "telescopes"
+      ]
+    },
+    {
+      "id": "2d8f21a9606b",
+      "title": "Are Uranus and Neptune Secretly \"Rock Giants\"? A Noble Gas Might Hold the Answer",
+      "link": "https://www.universetoday.com/articles/are-uranus-and-neptune-secretly-rock-giants-a-noble-gas-might-hold-the-answer",
+      "date": "2026-11-18T19:11:15.000Z",
+      "summary": "For decades, astronomers have divided the planets in the outer solar system into two distinct camps. Jupiter and Saturn were the “gas giants” made up primarily of hydrogen and helium. Uranus and…",
+      "themes": [
+        "solar-system"
+      ]
+    },
+    {
+      "id": "962b33f384d1",
+      "title": "Extremely Accurate Measurements of a Pair of Flaring Red Dwarfs",
+      "link": "https://www.universetoday.com/articles/extremely-accurate-measurements-of-a-pair-of-flaring-red-dwarfs",
+      "date": "2026-11-18T17:41:05.000Z",
+      "summary": "Astronomers used the Very Large Baseline Array of radio telescopes to measure a pair of active red dwarfs with extreme precision. One of the stars is an extreme type of red dwarf called a Complex…",
+      "themes": [
         "telescopes",
         "exoplanets"
       ]
