@@ -7,43 +7,11 @@
 import { readFileSync, writeFileSync } from 'node:fs'
 import { createHash } from 'node:crypto'
 import { XMLParser } from 'fast-xml-parser'
+import { classify } from './classify-news.mjs'
 
 const FEED_URL = 'https://www.universetoday.com/feed'
 const OUT_PATH = new URL('../public/news.json', import.meta.url)
 const MAX_ITEMS = 40
-
-const THEME_KEYWORDS = {
-  'solar-system': [
-    'solar system', 'the sun', 'solar ', 'mercury', 'venus', 'mars', 'martian',
-    'jupiter', 'saturn', 'uranus', 'neptune', 'pluto', 'the moon', 'lunar',
-    'europa', 'titan', 'enceladus', 'ganymede', 'callisto', 'io ', 'triton',
-    'asteroid', 'comet', 'kuiper', 'oort', 'ceres', 'phobos', 'artemis',
-    'meteor', 'dwarf planet', 'ring system', 'heliosphere',
-  ],
-  telescopes: [
-    'telescope', 'observatory', 'jwst', 'webb', 'hubble', 'chandra', 'alma',
-    'vera rubin', 'rubin observatory', 'euclid', 'gaia', 'roman', 'tess',
-    'kepler', 'fermi', 'ska ', 'square kilometre', 'ligo', 'virgo', 'lisa',
-    'gravitational wave', 'interferometer', 'fast radio', 'spectrograph',
-    'observation', 'survey', 'astronomers observe', 'imaging', 'detector',
-  ],
-  exoplanets: [
-    'exoplanet', 'exoplanets', 'planet orbiting', 'habitable', 'trappist',
-    'proxima', 'alpha centauri', 'red dwarf', 'super-earth', 'sub-neptune',
-    'hot jupiter', 'brown dwarf', 'planetary system', 'biosignature',
-    'star system', 'nearby star', 'k2-18', 'transit method', 'radial velocity',
-    'stellar neighborhood', 'white dwarf', 'binary star',
-  ],
-}
-
-function classify(text) {
-  const lower = ` ${text.toLowerCase()} `
-  const themes = []
-  for (const [theme, keywords] of Object.entries(THEME_KEYWORDS)) {
-    if (keywords.some((kw) => lower.includes(kw))) themes.push(theme)
-  }
-  return themes
-}
 
 function stripHtml(html) {
   return String(html)
