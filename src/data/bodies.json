@@ -2011,5 +2011,342 @@
       "surface": "Dark, dirty water ice, orbiting inside Neptune’s ring system",
       "core": "Ice rubble; the interior is unknown"
     }
+  },
+  {
+    "id": "ceres",
+    "name": "Ceres",
+    "type": "dwarf-planet",
+    "parent": "sun",
+    "color": "#8f8a84",
+    "massEarth": 0.000157,
+    "volumeEarth": 0.000401,
+    "radiusEarth": 0.0737,
+    "radiusKm": 469.7,
+    "surfaceGravityG": 0.029,
+    "densityGcm3": 2.162,
+    "meanTempC": -101,
+    "escapeVelocityKms": 0.52,
+    "orbitDistanceKm": 413900000,
+    "orbitDistanceAU": 2.767,
+    "orbitalPeriodDays": 1680,
+    "rotationPeriodHours": 9.07,
+    "eccentricity": 0.079,
+    "inclinationDeg": 10.59,
+    "rocheLimitKm": 1100,
+    "hillSphereKm": 220000,
+    "atmosphere": "Tenuous, transient water-vapour exosphere",
+    "moonCount": 0,
+    "rings": false,
+    "discovery": {
+      "year": 1801,
+      "by": "Giuseppe Piazzi (Palermo)"
+    },
+    "missions": [
+      "Dawn (2015–2018 orbiter; still in orbit, silent)"
+    ],
+    "facts": [
+      "The largest object in the asteroid belt, holding about a third of the belt's mass.",
+      "The bright spots in Occator crater are sodium-carbonate salts left by brine welling up from below.",
+      "Ahuna Mons is a lone ice volcano about 4 km high.",
+      "Listed as a planet for half a century after 1801, then as an asteroid, and as a dwarf planet since 2006.",
+      "The only dwarf planet inside Neptune's orbit — and the first one visited by a spacecraft."
+    ],
+    "composition": {
+      "surface": "Dark clays and carbonates mixed with water ice; bright salt deposits in Occator crater",
+      "core": "Partly differentiated: a hydrated rocky interior under a crust of ice, salts and clays, with pockets of deep brine"
+    }
+  },
+  {
+    "id": "eris",
+    "name": "Eris",
+    "type": "dwarf-planet",
+    "parent": "sun",
+    "color": "#e6e3dc",
+    "massEarth": 0.00276,
+    "volumeEarth": 0.00608,
+    "radiusEarth": 0.183,
+    "radiusKm": 1163,
+    "surfaceGravityG": 0.083,
+    "densityGcm3": 2.43,
+    "meanTempC": -231,
+    "escapeVelocityKms": 1.4,
+    "orbitDistanceKm": 10152300000,
+    "orbitDistanceAU": 67.864,
+    "orbitalPeriodDays": 204200,
+    "rotationPeriodHours": 378.9,
+    "eccentricity": 0.436,
+    "inclinationDeg": 44.04,
+    "rocheLimitKm": 4300,
+    "hillSphereKm": 14000000,
+    "atmosphere": "None detected — frozen onto the surface this far from the Sun; may return near perihelion",
+    "moonCount": 1,
+    "rings": false,
+    "discovery": {
+      "year": 2005,
+      "by": "Mike Brown, Chad Trujillo & David Rabinowitz (Palomar)"
+    },
+    "missions": [],
+    "facts": [
+      "The most massive dwarf planet: 27% heavier than Pluto, though slightly smaller across.",
+      "Its discovery forced the 2006 vote that defined 'planet' and reclassified Pluto — apt for the goddess of discord.",
+      "Almost 96 AU away at present, near the far end of its orbit: sunlight takes about 13 hours to arrive.",
+      "Reflects 96% of the light that reaches it — among the brightest surfaces in the solar system.",
+      "Tidally locked to its moon Dysnomia, so one Eris day lasts 15.8 Earth days."
+    ],
+    "composition": {
+      "surface": "Bright nitrogen-rich ice with methane frost — probably its atmosphere, frozen out",
+      "core": "Mostly rock under an ice shell — denser than Pluto"
+    }
+  },
+  {
+    "id": "haumea",
+    "name": "Haumea",
+    "type": "dwarf-planet",
+    "parent": "sun",
+    "color": "#dfe6ea",
+    "massEarth": 0.000662,
+    "volumeEarth": 0.00178,
+    "radiusEarth": 0.121,
+    "radiusKm": 772,
+    "surfaceGravityG": 0.045,
+    "densityGcm3": 2.05,
+    "meanTempC": -223,
+    "escapeVelocityKms": 0.83,
+    "orbitDistanceKm": 6450100000,
+    "orbitDistanceAU": 43.116,
+    "orbitalPeriodDays": 103410,
+    "rotationPeriodHours": 3.92,
+    "eccentricity": 0.196,
+    "inclinationDeg": 28.21,
+    "rocheLimitKm": 2800,
+    "hillSphereKm": 5600000,
+    "atmosphere": "None detected",
+    "moonCount": 2,
+    "rings": true,
+    "discovery": {
+      "year": 2004,
+      "by": "Mike Brown's Caltech team (2004 images); J. L. Ortiz's team announced it first, in 2005 — credit is disputed"
+    },
+    "missions": [],
+    "facts": [
+      "Spins once every 3.9 hours — the fastest of any large body — which stretches it into an egg about twice as long as it is thick (2,100 × 1,700 × 1,000 km).",
+      "The first dwarf planet found to have a ring (2017), 2,287 km from its centre.",
+      "Head of a collisional family: icy fragments from an ancient giant impact still share its orbit.",
+      "Named for the Hawaiian goddess of childbirth; its two moons are her daughters.",
+      "The radius, gravity and escape velocity here are averages — gravity at the poles is nearly four times that at the tips."
+    ],
+    "composition": {
+      "surface": "Almost pure crystalline water ice, bright as snow, with one darker reddish spot",
+      "core": "A large rocky core under a thin ice mantle some 70–170 km thick"
+    }
+  },
+  {
+    "id": "makemake",
+    "name": "Makemake",
+    "type": "dwarf-planet",
+    "parent": "sun",
+    "color": "#c98f6b",
+    "massEarth": 0.00045,
+    "volumeEarth": 0.00141,
+    "radiusEarth": 0.112,
+    "radiusKm": 715,
+    "surfaceGravityG": 0.036,
+    "densityGcm3": 1.76,
+    "meanTempC": -235,
+    "escapeVelocityKms": 0.71,
+    "orbitDistanceKm": 6796200000,
+    "orbitDistanceAU": 45.43,
+    "orbitalPeriodDays": 111845,
+    "rotationPeriodHours": 22.83,
+    "eccentricity": 0.161,
+    "inclinationDeg": 28.98,
+    "rocheLimitKm": 2100,
+    "hillSphereKm": 5200000,
+    "atmosphere": "No global atmosphere (2011 stellar occultation); JWST detected methane gas in 2025 — a very thin atmosphere or outgassing",
+    "moonCount": 1,
+    "rings": false,
+    "discovery": {
+      "year": 2005,
+      "by": "Mike Brown, Chad Trujillo & David Rabinowitz (Palomar)"
+    },
+    "missions": [],
+    "facts": [
+      "Named after the creator god of the Rapa Nui of Easter Island — it was found just after Easter 2005.",
+      "The brightest Kuiper belt object after Pluto.",
+      "Its surface methane lies in pellet-like grains about a centimetre across.",
+      "Its one known moon, MK2, stayed hidden in its glare until Hubble caught it in 2015.",
+      "Mass and density come from a preliminary orbit for MK2 and may be revised."
+    ],
+    "composition": {
+      "surface": "Frozen methane and ethane stained red-brown by tholins; little nitrogen ice",
+      "core": "Rock and ice in unknown proportions; methane isotopes measured by JWST hint at past internal heating"
+    }
+  },
+  {
+    "id": "dysnomia",
+    "name": "Dysnomia",
+    "type": "moon",
+    "parent": "eris",
+    "color": "#6f6a66",
+    "massEarth": 1.37e-5,
+    "volumeEarth": 0.000112,
+    "radiusEarth": 0.0483,
+    "radiusKm": 307.5,
+    "surfaceGravityG": 0.0059,
+    "densityGcm3": 0.7,
+    "meanTempC": -231,
+    "escapeVelocityKms": 0.19,
+    "orbitDistanceKm": 37273,
+    "orbitDistanceAU": null,
+    "orbitalPeriodDays": 15.786,
+    "rotationPeriodHours": 378.9,
+    "eccentricity": 0.0062,
+    "inclinationDeg": null,
+    "rocheLimitKm": null,
+    "hillSphereKm": null,
+    "atmosphere": "None",
+    "moonCount": 0,
+    "rings": false,
+    "discovery": {
+      "year": 2005,
+      "by": "Mike Brown and the Keck adaptive-optics team"
+    },
+    "missions": [],
+    "facts": [
+      "The second-largest moon of a dwarf planet, after Charon.",
+      "Dark as coal beside brilliant Eris — it reflects only about 5% of sunlight.",
+      "Timing its orbit let astronomers weigh Eris in 2007 and show it outweighs Pluto.",
+      "Named for the daughter of Eris, the spirit of lawlessness.",
+      "Its mass and density are poorly known (0.7 ± 0.5 g/cm³)."
+    ],
+    "composition": {
+      "surface": "Dark material, probably ice mixed with carbon-rich compounds",
+      "core": "Low density — porous ice, perhaps a rubble pile"
+    }
+  },
+  {
+    "id": "hiiaka",
+    "name": "Hiʻiaka",
+    "type": "moon",
+    "parent": "haumea",
+    "color": "#d9e4ea",
+    "massEarth": 2.68e-6,
+    "volumeEarth": 2.45e-5,
+    "radiusEarth": 0.029,
+    "radiusKm": 185,
+    "surfaceGravityG": 0.0032,
+    "densityGcm3": 0.64,
+    "meanTempC": -233,
+    "escapeVelocityKms": 0.11,
+    "orbitDistanceKm": 49371,
+    "orbitDistanceAU": null,
+    "orbitalPeriodDays": 49.46,
+    "rotationPeriodHours": 9.68,
+    "eccentricity": 0.0542,
+    "inclinationDeg": 1.0,
+    "rocheLimitKm": null,
+    "hillSphereKm": null,
+    "atmosphere": "None",
+    "moonCount": 0,
+    "rings": false,
+    "discovery": {
+      "year": 2005,
+      "by": "Mike Brown and the Keck adaptive-optics team"
+    },
+    "missions": [],
+    "facts": [
+      "Haumea's larger, outer moon — an elongated block of nearly pure water ice (about 480 × 360 × 290 km).",
+      "Thought to be a fragment thrown off by the giant impact that set Haumea spinning.",
+      "Turns every 9.7 hours, about 120 times per orbit — far from tidally locked.",
+      "Named for the Hawaiian goddess of hula, patron of the island where it was discovered."
+    ],
+    "composition": {
+      "surface": "Crystalline water ice, like Haumea itself",
+      "core": "Porous water ice throughout"
+    }
+  },
+  {
+    "id": "namaka",
+    "name": "Namaka",
+    "type": "moon",
+    "parent": "haumea",
+    "color": "#c5d0d6",
+    "massEarth": 1.98e-7,
+    "volumeEarth": 1.63e-6,
+    "radiusEarth": 0.0118,
+    "radiusKm": 75,
+    "surfaceGravityG": 0.0014,
+    "densityGcm3": 0.65,
+    "meanTempC": -233,
+    "escapeVelocityKms": 0.046,
+    "orbitDistanceKm": 25506,
+    "orbitDistanceAU": null,
+    "orbitalPeriodDays": 18.28,
+    "rotationPeriodHours": null,
+    "eccentricity": 0.218,
+    "inclinationDeg": 13,
+    "rocheLimitKm": null,
+    "hillSphereKm": null,
+    "atmosphere": "None",
+    "moonCount": 0,
+    "rings": false,
+    "discovery": {
+      "year": 2005,
+      "by": "Mike Brown and the Keck adaptive-optics team"
+    },
+    "missions": [],
+    "facts": [
+      "Haumea's small inner moon, about a tenth the mass of Hiʻiaka.",
+      "Its tilted, eccentric orbit keeps shifting, tugged by Haumea's elongated shape and by Hiʻiaka.",
+      "Its size is poorly known: about 150 km across, with a stellar occultation setting a floor of 83 km.",
+      "Probably tumbles chaotically instead of keeping one face to Haumea.",
+      "Named for a Hawaiian water spirit, a daughter of Haumea."
+    ],
+    "composition": {
+      "surface": "Water ice, like Haumea and Hiʻiaka",
+      "core": "Porous water ice"
+    }
+  },
+  {
+    "id": "mk2",
+    "name": "MK2",
+    "type": "moon",
+    "parent": "makemake",
+    "color": "#5a5552",
+    "massEarth": 4.69e-7,
+    "volumeEarth": 2.59e-6,
+    "radiusEarth": 0.0137,
+    "radiusKm": 87.5,
+    "surfaceGravityG": 0.0025,
+    "densityGcm3": 1.0,
+    "meanTempC": -235,
+    "escapeVelocityKms": 0.065,
+    "orbitDistanceKm": 22250,
+    "orbitDistanceAU": null,
+    "orbitalPeriodDays": 18.02,
+    "rotationPeriodHours": null,
+    "eccentricity": null,
+    "inclinationDeg": null,
+    "rocheLimitKm": null,
+    "hillSphereKm": null,
+    "atmosphere": "None",
+    "moonCount": 0,
+    "rings": false,
+    "discovery": {
+      "year": 2015,
+      "by": "Alex Parker, Marc Buie, Will Grundy & Keith Noll (Hubble)"
+    },
+    "missions": [],
+    "facts": [
+      "Formally S/2015 (136472) 1 — it still has no official name.",
+      "About 1,300 times fainter than Makemake, it hid in the glare until Hubble spotted it in 2015.",
+      "Appears dark as charcoal beside its bright, icy parent.",
+      "Its mass has never been measured: the mass, gravity and escape velocity here assume a density of 1 g/cm³.",
+      "The orbit (about 22,000 km, 18 days) is a preliminary solution from Hubble images."
+    ],
+    "composition": {
+      "surface": "Dark, charcoal-like material — unlike bright Makemake",
+      "core": "Unknown; assumed to be ice-rich"
+    }
   }
 ]

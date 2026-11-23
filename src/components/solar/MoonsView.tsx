@@ -10,9 +10,20 @@ const CENTER_X = SIZE / 2
 const CENTER_Y = 235
 const HEIGHT = 470
 
-const PLANET_ORDER = ['earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto']
+const PLANET_ORDER = [
+  'earth',
+  'mars',
+  'jupiter',
+  'saturn',
+  'uranus',
+  'neptune',
+  'pluto',
+  'haumea',
+  'makemake',
+  'eris',
+]
 
-/** 'all' pools every planet's moons into one grid; a planet id zooms into its system. */
+/** 'all' pools every moon into one grid; a planet or dwarf-planet id zooms into its system. */
 type MoonScope = 'all' | (typeof PLANET_ORDER)[number]
 
 export function MoonsView({
@@ -53,7 +64,7 @@ export function MoonsView({
           style={showAll ? { background: 'var(--accent-cyan)' } : undefined}
           onClick={() => setPlanetId('all')}
         >
-          All planets
+          All moons
         </button>
         {PLANET_ORDER.map((id) => {
           const p = bodyById.get(id)!
@@ -73,9 +84,9 @@ export function MoonsView({
       {showAll ? (
         <p className="hint">
           All {moons.length} major moons of the solar system in one grid — each card names the
-          planet it circles. Sorting by tidal grip ranks how hard a moon kneads its planet:
-          its mass relative to the planet's, weighted by closeness, with the Moon's grip on
-          Earth (our ocean tides) as 1. Pick a planet above for its orbit map.
+          planet or dwarf planet it circles. Sorting by tidal grip ranks how hard a moon kneads
+          its parent: its mass relative to the parent's, weighted by closeness, with the Moon's
+          grip on Earth (our ocean tides) as 1. Pick a world above for its orbit map.
         </p>
       ) : (
         <p className="hint">
