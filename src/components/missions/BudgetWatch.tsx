@@ -11,7 +11,6 @@ function Cells({ budget }: { budget: MissionBudget }) {
       <td>{budget.request}</td>
       <td>{budget.house}</td>
       <td>{budget.senate}</td>
-      <td className="expected">{budget.expected ?? '—'}</td>
     </>
   )
 }
@@ -39,7 +38,6 @@ function BudgetTable({
             <th>Request</th>
             <th>House</th>
             <th>Senate</th>
-            <th className="expected">Expected</th>
           </tr>
         </thead>
         <tbody>
@@ -65,7 +63,7 @@ function BudgetTable({
   )
 }
 
-/** The competing fiscal-2027 proposals, science and exploration apart, with an estimate of where each lands. */
+/** The competing fiscal-2027 proposals, science and exploration apart. */
 export function BudgetWatch({
   missions,
   onSelect,
@@ -87,13 +85,6 @@ export function BudgetWatch({
         written into the bill; “backed” means supported without a figure; “cut” means reported
         as a cancellation target; — means no figure was published. As of{' '}
         {formatDate(FY2027.asOf)}.
-      </p>
-      <p className="hint">
-        <strong>Expected</strong> is this app&apos;s own estimate, not an official number. It
-        assumes the next Congress finishes the budget in early 2027 close to the Senate bill:
-        where the chambers agree it takes their figure, where they differ it lands between them,
-        and a floor counts as the amount. If the year ends on a stopgap instead, programmes stay
-        at their 2026 level and new starts wait. Tap a mission for the reasoning.
       </p>
 
       <h3 className="budget-heading">Science</h3>

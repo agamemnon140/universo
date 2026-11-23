@@ -81,21 +81,9 @@ export function MissionDetail({ mission, onClose }: { mission: Mission; onClose:
             <dd>{m.budget.house}</dd>
             <dt>Senate bill</dt>
             <dd>{m.budget.senate}</dd>
-            {m.budget.expected && (
-              <>
-                <dt>Expected (estimate)</dt>
-                <dd>
-                  <strong>{m.budget.expected}</strong>
-                  {m.budget.why ? ` — ${m.budget.why}` : ''}
-                </dd>
-              </>
-            )}
           </dl>
           {m.budgetNote && <p className="hint">{m.budgetNote}</p>}
-          <p className="hint">
-            No final budget yet — figures as of {formatDate(FY2027.asOf)}. “Expected” is this
-            app&apos;s estimate, not an official number.
-          </p>
+          <p className="hint">No final budget yet — figures as of {formatDate(FY2027.asOf)}.</p>
         </>
       )}
 

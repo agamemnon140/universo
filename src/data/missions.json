@@ -20,9 +20,7 @@
     "budget": {
       "request": "—",
       "house": "—",
-      "senate": "≥25",
-      "expected": "~25",
-      "why": "Operations money; only the Senate names a figure."
+      "senate": "≥25"
     },
     "url": "https://science.nasa.gov/mission/parker-solar-probe/"
   },
@@ -89,9 +87,7 @@
     "budget": {
       "request": "cut",
       "house": "—",
-      "senate": "263",
-      "expected": "~260",
-      "why": "Funded if the Senate language holds; the least secure of the big lines."
+      "senate": "263"
     }
   },
   {
@@ -114,9 +110,7 @@
     "budget": {
       "request": "cut",
       "house": "—",
-      "senate": "49",
-      "expected": "~49",
-      "why": "Same exposure as DAVINCI, at a much smaller amount."
+      "senate": "49"
     }
   },
   {
@@ -365,9 +359,7 @@
     "budget": {
       "request": "—",
       "house": "—",
-      "senate": "98.6",
-      "expected": "~99",
-      "why": "A commitment to ESA; only the Senate names a figure."
+      "senate": "98.6"
     },
     "budgetNote": "Figures are NASA's contribution to the ESA mission."
   },
@@ -409,9 +401,7 @@
     "budget": {
       "request": "—",
       "house": "—",
-      "senate": "110",
-      "expected": "~110",
-      "why": "The helicopters ride a Science line; the reactor craft depends on exploration and technology money with no published line."
+      "senate": "110"
     },
     "budgetNote": "The Senate figure is the Mars Future Missions line in Science, which includes SkyFall; the House folds SkyFall into a 300 Mars Exploration line (request: 248).",
     "url": "https://www.nasa.gov/mission/space-reactor-1-freedom/"
@@ -437,9 +427,7 @@
     "budget": {
       "request": "—",
       "house": "—",
-      "senate": "backed",
-      "expected": "—",
-      "why": "No Science line expected; if it survives, it is inside Moon to Mars."
+      "senate": "backed"
     },
     "budgetNote": "The Senate bill moves it to the Moon-to-Mars programme as a demonstration for human missions."
   },
@@ -490,9 +478,7 @@
       "fy26": "19.9",
       "request": "0",
       "house": "20",
-      "senate": "≥22",
-      "expected": "~21",
-      "why": "Both chambers fund it and reject the request's zero."
+      "senate": "≥22"
     }
   },
   {
@@ -596,9 +582,7 @@
       "fy26": "300",
       "request": "283.7",
       "house": "≥283.7",
-      "senate": "—",
-      "expected": "~284",
-      "why": "The request and the House agree."
+      "senate": "—"
     }
   },
   {
@@ -647,9 +631,7 @@
       "fy26": "27.2",
       "request": "0",
       "house": "backed",
-      "senate": "27",
-      "expected": "~27",
-      "why": "Both chambers keep it flying."
+      "senate": "27"
     }
   },
   {
@@ -716,9 +698,7 @@
       "fy26": "500",
       "request": "423.9",
       "house": "≥423.9",
-      "senate": "430",
-      "expected": "~430",
-      "why": "All three plans agree within 2%."
+      "senate": "430"
     }
   },
   {
@@ -782,9 +762,7 @@
       "fy26": "15",
       "request": "0",
       "house": "backed",
-      "senate": "12",
-      "expected": "~12",
-      "why": "Both chambers keep it; the Senate names the amount."
+      "senate": "12"
     }
   },
   {
@@ -807,9 +785,7 @@
       "fy26": "10",
       "request": "0",
       "house": "backed",
-      "senate": "≥20",
-      "expected": "~20",
-      "why": "The Senate floor; a full-year stopgap would block the new start."
+      "senate": "≥20"
     },
     "budgetNote": "The Senate bill directs NASA to start the project."
   },
@@ -830,9 +806,7 @@
     "budget": {
       "request": "lower",
       "house": "92.8",
-      "senate": "≥98.3",
-      "expected": "~95",
-      "why": "Between the House figure and the Senate floor."
+      "senate": "≥98.3"
     },
     "budgetNote": "The request lists Webb and Hubble operations together, at 213."
   },
@@ -854,9 +828,7 @@
       "fy26": "63",
       "request": "0",
       "house": "backed",
-      "senate": "≥63",
-      "expected": "~63",
-      "why": "Both chambers reject the request's zero."
+      "senate": "≥63"
     }
   },
   {
@@ -877,9 +849,7 @@
     "budget": {
       "request": "—",
       "house": "≥208",
-      "senate": "208",
-      "expected": "~208",
-      "why": "The House and the Senate agree."
+      "senate": "208"
     },
     "budgetNote": "The request lists Webb and Hubble operations together, at 213."
   },
@@ -905,9 +875,7 @@
       "fy26": "300",
       "request": "166.8",
       "house": "≥166.8",
-      "senate": "166.8",
-      "expected": "~167",
-      "why": "The same figure in all three plans."
+      "senate": "166.8"
     }
   },
   {
@@ -929,9 +897,7 @@
     "budget": {
       "request": "—",
       "house": "80.5",
-      "senate": "129.9",
-      "expected": "~105",
-      "why": "Between the two chambers."
+      "senate": "129.9"
     },
     "budgetNote": "Figures are NASA's contribution to the ESA mission."
   },
@@ -955,9 +921,7 @@
       "fy26": "150",
       "request": "5",
       "house": "≥150",
-      "senate": "300",
-      "expected": "~250",
-      "why": "Between the House floor and the Senate figure; a full-year stopgap would hold it at 150."
+      "senate": "300"
     }
   }
 ]

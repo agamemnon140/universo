@@ -48,8 +48,7 @@ on GitHub Pages.
   marks arrival, dashed lines are plans. Filter by programme, status and lead agency; tap a
   row for the summary, milestones and — for NASA missions — where it stands in the US budget.
   Two budget-watch tables, science and exploration, line up the competing fiscal-2027
-  proposals (White House request, House bill, Senate bill) with an **Expected** column: the
-  app's own estimate of where each line ends up, with the reasoning in the detail sheet.
+  proposals (White House request, House bill, Senate bill).
 - **Telescopes** — 49 observatories placed on the electromagnetic spectrum (gamma → radio,
   log wavelength scale), color-coded by status (operating / construction / planned / retired),
   with separate lanes for gravitational-wave and neutrino detectors. Filter by status and
@@ -81,8 +80,6 @@ Every tab ends with the latest matching headlines from
   budget figures are a hand-maintained snapshot (November 2026). When a mission launches,
   arrives or ends, edit its entry; when a budget bill moves, update the `budget` fields and
   `FY2027` (totals, exploration lines, `asOf`) in [src/lib/missions.ts](src/lib/missions.ts).
-  `expected` and `why` are estimates, not data: they assume the final bill lands near the
-  Senate's, and should be replaced by the enacted figures once a budget passes.
 - Positions are computed in the browser by [src/lib/ephemeris.ts](src/lib/ephemeris.ts) and
   friends ([apsides.ts](src/lib/apsides.ts) for perihelion/perigee and vis-viva speeds,
   [libration.ts](src/lib/libration.ts) for libration, the sub-solar point and the nodal cycle,

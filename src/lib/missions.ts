@@ -65,7 +65,6 @@ export const FY2027: {
     request: '3,894',
     house: '6,000',
     senate: '7,430',
-    expected: '~7,300',
   },
   exploration: {
     name: 'All NASA exploration',
@@ -73,15 +72,14 @@ export const FY2027: {
     request: '8,514',
     house: '—',
     senate: '8,282',
-    expected: '~8,300',
   },
   explorationLines: [
-    { name: 'Space Launch System', request: '1,495', house: '1,575', senate: '1,495', expected: '~1,500' },
-    { name: 'Orion', fy26: '1,421', request: '1,222', house: '1,400', senate: '≥1,222', expected: '~1,300' },
-    { name: 'Human Landing System', request: '2,277', house: '2,277', senate: '≥2,277', expected: '~2,277' },
-    { name: 'Spacesuits & surface mobility', request: '830', house: '—', senate: '≥830', expected: '~830' },
-    { name: 'Exploration Ground Systems', request: '758', house: '—', senate: '—', expected: '~758' },
-    { name: 'Fission Surface Power', request: '—', house: '419.9', senate: '≤250', expected: '~300' },
+    { name: 'Space Launch System', request: '1,495', house: '1,575', senate: '1,495' },
+    { name: 'Orion', fy26: '1,421', request: '1,222', house: '1,400', senate: '≥1,222' },
+    { name: 'Human Landing System', request: '2,277', house: '2,277', senate: '≥2,277' },
+    { name: 'Spacesuits & surface mobility', request: '830', house: '—', senate: '≥830' },
+    { name: 'Exploration Ground Systems', request: '758', house: '—', senate: '—' },
+    { name: 'Fission Surface Power', request: '—', house: '419.9', senate: '≤250' },
   ],
 }
 
