@@ -10,6 +10,7 @@
 import {
   MOON_ORBIT_INCLINATION_DEG,
   OBLIQUITY_DEG,
+  DWARF_ORBITS,
   PLANET_ORBITS,
   SYNODIC_MONTH_DAYS,
   type OrbitalElements,
@@ -96,7 +97,7 @@ function positionFromElements(el: OrbitalElements): EclipticVector {
 }
 
 function elementsAt(id: string, jd: number): OrbitalElements {
-  const orbit = PLANET_ORBITS.find((p) => p.id === id)
+  const orbit = PLANET_ORBITS.find((p) => p.id === id) ?? DWARF_ORBITS.find((p) => p.id === id)
   if (!orbit) throw new Error(`No orbital elements for ${id}`)
   const T = centuriesJ2000(jd)
   const { j2000: b, rate: r } = orbit
