@@ -64,6 +64,56 @@ export const PLANET_ORBITS: PlanetOrbit[] = [
 
 export const PLANET_IDS = PLANET_ORBITS.map((p) => p.id)
 
+const J2000_JD = 2451545.0
+const NO_RATE = { a: 0, e: 0, i: 0, longPeri: 0, longNode: 0 }
+
+/**
+ * A fixed two-body ellipse from elements at one epoch (J2000 ecliptic, angles in degrees),
+ * recast in the table's form: the mean longitude is run back to J2000 at the mean motion.
+ */
+function fixedEllipse(
+  id: string,
+  epochJd: number,
+  el: { a: number; e: number; i: number; node: number; argPeri: number; meanAnomaly: number },
+  periodDays: number,
+): PlanetOrbit {
+  const degPerDay = 360 / periodDays
+  const longPeri = el.node + el.argPeri
+  return {
+    id,
+    j2000: {
+      a: el.a,
+      e: el.e,
+      i: el.i,
+      L: longPeri + el.meanAnomaly - degPerDay * (epochJd - J2000_JD),
+      longPeri,
+      longNode: el.node,
+    },
+    rate: { ...NO_RATE, L: degPerDay * 36525 },
+  }
+}
+
+/**
+ * Pluto and the other four dwarf planets, nearest first. Pluto is from the same JPL table
+ * as the planets. The rest have no such fit, so each is a fixed ellipse from published
+ * elements at a recent epoch: good to a degree or two near the present, looser toward 1800.
+ * Ceres uses its proper (long-term mean) period so the error does not build up over its
+ * ~50 orbits; Makemake's elements are barycentric, which wobble less than heliocentric ones.
+ */
+export const DWARF_ORBITS: PlanetOrbit[] = [
+  fixedEllipse('ceres', 2459600.5, { a: 2.767, e: 0.0785, i: 10.59, node: 80.3, argPeri: 73.6, meanAnomaly: 291.4 }, 1681.458),
+  {
+    id: 'pluto',
+    j2000: { a: 39.48211675, e: 0.2488273, i: 17.14001206, L: 238.92903833, longPeri: 224.06891629, longNode: 110.30393684 },
+    rate: { a: -0.00031596, e: 0.0000517, i: 0.00004818, L: 145.20780515, longPeri: -0.04062942, longNode: -0.01183482 },
+  },
+  fixedEllipse('haumea', 2459200.5, { a: 43.116, e: 0.19642, i: 28.2137, node: 122.167, argPeri: 239.041, meanAnomaly: 218.205 }, 103410),
+  fixedEllipse('makemake', 2461000.5, { a: 45.499, e: 0.1604, i: 29.002, node: 79.441, argPeri: 296.065, meanAnomaly: 170.497 }, 112022),
+  fixedEllipse('eris', 2459000.5, { a: 67.864, e: 0.43607, i: 44.04, node: 35.951, argPeri: 151.639, meanAnomaly: 205.989 }, 204199),
+]
+
+export const DWARF_IDS = DWARF_ORBITS.map((p) => p.id)
+
 /** Earth's axial tilt (obliquity of the ecliptic), degrees, J2000. */
 export const OBLIQUITY_DEG = 23.4393
 /** Inclination of the Moon's orbit to the ecliptic, degrees. */

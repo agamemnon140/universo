@@ -4,10 +4,10 @@ const SIZE = 700
 const CENTER = SIZE / 2
 const MAX_PLOT_R = SIZE / 2 - 40
 
-/** Log radial scale for orbit distances (0.3–40 AU). */
+/** Log radial scale for orbit distances (0.3–100 AU, so Eris at 68 AU fits). */
 function orbitRadius(au: number): number {
   const minLog = Math.log10(0.3)
-  const maxLog = Math.log10(45)
+  const maxLog = Math.log10(100)
   const f = (Math.log10(au) - minLog) / (maxLog - minLog)
   return 30 + f * (MAX_PLOT_R - 30)
 }
@@ -46,6 +46,7 @@ export function OrbitView({ onSelect }: { onSelect: (id: string) => void }) {
                 fill="none"
                 stroke="var(--line-strong)"
                 strokeWidth="1"
+                strokeDasharray={body.type === 'dwarf-planet' ? '3 5' : undefined}
               />
               <g className="map-star" onClick={() => onSelect(body.id)}>
                 <circle cx={x} cy={y} r={dotR} fill={body.color} />
@@ -64,7 +65,7 @@ export function OrbitView({ onSelect }: { onSelect: (id: string) => void }) {
           )
         })}
         <text x={CENTER} y={SIZE - 8} textAnchor="middle" fill="var(--text-faint)" fontSize="11">
-          orbit distances on log scale · positions are illustrative
+          orbit distances on log scale · dashed = dwarf planets · positions are illustrative
         </text>
       </svg>
     </div>

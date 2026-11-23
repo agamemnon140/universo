@@ -3,7 +3,18 @@ import { bodyById } from '../../data'
 import { sortBodies, sortCaption, type BodySort } from '../../lib/sortBodies'
 import { BodyCard } from './BodyCard'
 
-const MOON_GROUP_ORDER = ['earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto']
+const MOON_GROUP_ORDER = [
+  'earth',
+  'mars',
+  'jupiter',
+  'saturn',
+  'uranus',
+  'neptune',
+  'pluto',
+  'haumea',
+  'makemake',
+  'eris',
+]
 
 export function BodyGrid({
   bodies,

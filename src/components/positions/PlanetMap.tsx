@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { bodyById } from '../../data'
-import { PLANET_IDS } from '../../data/orbits'
+import { DWARF_IDS, PLANET_IDS } from '../../data/orbits'
 import {
   moonPosition,
   planetGeocentric,
@@ -21,28 +21,41 @@ const MIN_R = 30
 const DEG = Math.PI / 180
 
 type Centre = 'sun' | 'earth'
-type Scale = 'log' | 'inner' | 'outer'
+type Scale = 'log' | 'inner' | 'outer' | 'far'
 
 const INNER_IDS = ['mercury', 'venus', 'earth', 'mars']
 const OUTER_IDS = ['jupiter', 'saturn', 'uranus', 'neptune']
+/** The Far scale: Neptune for reference, then the dwarf planets beyond it. */
+const FAR_IDS = ['neptune', 'pluto', 'haumea', 'makemake', 'eris']
+const DWARF_SET = new Set(DWARF_IDS)
+/** What it takes to see each dwarf planet — none is a naked-eye object. */
+const DWARF_SKY: Record<string, string> = {
+  ceres: 'binoculars',
+  pluto: 'telescope',
+  haumea: 'large telescope',
+  makemake: 'large telescope',
+  eris: 'large telescope',
+}
 
 /** Ring radii (AU) drawn behind the geocentric map so distances from Earth can be read. */
 const GEO_RINGS: Record<Scale, number[]> = {
   log: [0.5, 1, 2, 5, 10, 20, 40],
   inner: [0.5, 1, 1.5, 2, 2.5],
   outer: [5, 10, 20, 30],
+  far: [20, 40, 60, 80],
 }
 
 /** Outer edge of each linear scale, AU (Mars at conjunction is 2.7 AU from Earth). */
 function linearMax(scale: Scale, centre: Centre): number {
   if (scale === 'inner') return centre === 'sun' ? 1.75 : 2.75
+  if (scale === 'far') return centre === 'sun' ? 100 : 101 // Eris reaches 97.5 AU
   return centre === 'sun' ? 31 : 32
 }
 
-function makeScale(scale: Scale, centre: Centre): (au: number) => number {
+function makeScale(scale: Scale, centre: Centre, withDwarfs: boolean): (au: number) => number {
   if (scale === 'log') {
     const minLog = Math.log10(0.2)
-    const maxLog = Math.log10(45)
+    const maxLog = Math.log10(withDwarfs ? 110 : 45)
     return (au) => {
       const f = (Math.log10(Math.max(au, 0.2)) - minLog) / (maxLog - minLog)
       return MIN_R + Math.min(1, f) * (MAX_R - MIN_R)
@@ -64,12 +77,13 @@ function vectorToScreen(v: EclipticVector, radius: (au: number) => number) {
 }
 
 function dotRadius(id: string): number {
+  if (DWARF_SET.has(id)) return 3
   const body = bodyById.get(id)
   const re = body?.radiusEarth ?? 1
   return Math.max(4, Math.min(11, Math.sqrt(re) * 3))
 }
 
-/** ?centre=earth&scale=inner preselect the map mode, so a view can be shared. */
+/** ?centre=earth&scale=inner&dwarfs=off preselect the map mode, so a view can be shared. */
 function fromUrl<T extends string>(key: string, allowed: readonly T[], fallback: T): T {
   const v = new URLSearchParams(window.location.search).get(key)
   return v && (allowed as readonly string[]).includes(v) ? (v as T) : fallback
@@ -77,31 +91,35 @@ function fromUrl<T extends string>(key: string, allowed: readonly T[], fallback:
 
 export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string) => void }) {
   const [centre, setCentre] = useState<Centre>(() => fromUrl<Centre>('centre', ['sun', 'earth'], 'sun'))
-  const [scale, setScale] = useState<Scale>(() => fromUrl<Scale>('scale', ['log', 'inner', 'outer'], 'log'))
+  const [scale, setScale] = useState<Scale>(() => fromUrl<Scale>('scale', ['log', 'inner', 'outer', 'far'], 'log'))
   const [showApsides, setShowApsides] = useState(false)
-  const radius = useMemo(() => makeScale(scale, centre), [scale, centre])
+  const [showDwarfs, setShowDwarfs] = useState(() => fromUrl('dwarfs', ['on', 'off'], 'on') === 'on')
+  // the Far scale exists to show the dwarf planets, so it always includes them
+  const withDwarfs = showDwarfs || scale === 'far'
+  const radius = useMemo(() => makeScale(scale, centre, withDwarfs), [scale, centre, withDwarfs])
+  const ids = useMemo(() => (withDwarfs ? [...PLANET_IDS, ...DWARF_IDS] : PLANET_IDS), [withDwarfs])
 
   const rows = useMemo(
     () =>
-      PLANET_IDS.map((id) => ({
+      ids.map((id) => ({
         id,
         body: bodyById.get(id)!,
         helio: planetHeliocentric(id, jd),
         geo: planetGeocentric(id, jd),
         shape: planetOrbitShape(id, jd),
       })),
-    [jd],
+    [ids, jd],
   )
   const sunGeo = useMemo(() => planetGeocentric('sun', jd), [jd])
   const moon = useMemo(() => moonPosition(jd), [jd])
   const orbits = useMemo(
-    () => (centre === 'sun' ? PLANET_IDS.map((id) => ({ id, path: planetOrbitPath(id, jd) })) : []),
-    [centre, jd],
+    () => (centre === 'sun' ? ids.map((id) => ({ id, path: planetOrbitPath(id, jd) })) : []),
+    [centre, ids, jd],
   )
 
   // which planets get a full dot + label at this scale
   const labelled = new Set(
-    scale === 'log' ? PLANET_IDS : scale === 'inner' ? INNER_IDS : OUTER_IDS,
+    scale === 'log' ? ids : scale === 'inner' ? INNER_IDS : scale === 'outer' ? OUTER_IDS : FAR_IDS,
   )
   const sun = bodyById.get('sun')!
   const earth = bodyById.get('earth')!
@@ -128,7 +146,18 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
           <button className={scale === 'outer' ? 'active' : ''} onClick={() => setScale('outer')}>
             Outer
           </button>
+          <button className={scale === 'far' ? 'active' : ''} onClick={() => setScale('far')}>
+            Far
+          </button>
         </div>
+        <button
+          className={`chip${withDwarfs ? ' on' : ''}`}
+          style={{ marginBottom: 12, ...(withDwarfs ? { background: 'var(--accent-cyan)' } : {}) }}
+          disabled={scale === 'far'}
+          onClick={() => setShowDwarfs((v) => !v)}
+        >
+          {withDwarfs ? 'hide' : 'show'} dwarf planets
+        </button>
         {centre === 'sun' && (
           <button
             className={`chip${showApsides ? ' on' : ''}`}
@@ -216,7 +245,13 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
             const apo = toScreen(shape.periLonDeg + 180, radius(shape.apoAU))
             return (
               <g key={id}>
-                <path d={d} fill="none" stroke="var(--line-strong)" strokeWidth="1" />
+                <path
+                  d={d}
+                  fill="none"
+                  stroke="var(--line-strong)"
+                  strokeWidth="1"
+                  strokeDasharray={DWARF_SET.has(id) ? '3 5' : undefined}
+                />
                 {/* nearest and farthest points of the orbit */}
                 {showApsides && (
                   <>
@@ -275,10 +310,10 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
             const full = labelled.has(id)
             // linear scales: bodies beyond the frame are dropped rather than pinned to the rim
             if (!full && (scale === 'inner' || centre === 'earth')) return null
-            const p =
-              centre === 'sun'
-                ? toScreen(helio.lonDeg, radius(helio.rAU))
-                : toScreen(geo.lonDeg, radius(geo.distAU))
+            // seen from ecliptic north: the flat (projected) distance keeps tilted orbits' dots on their curves
+            const au = centre === 'sun' ? Math.hypot(helio.x, helio.y) : geo.distAU
+            if (!full && scale !== 'log' && au > linearMax(scale, centre)) return null
+            const p = toScreen(centre === 'sun' ? helio.lonDeg : geo.lonDeg, radius(au))
             const r = full ? dotRadius(id) : 2.5
             const label =
               centre === 'sun'
@@ -301,10 +336,15 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
               {centre === 'sun' ? 'inner planets' : 'Sun & inner planets'}
             </text>
           )}
+          {scale === 'far' && (
+            <text x={CENTER} y={CENTER + 34} textAnchor="middle" fill="var(--text-faint)" fontSize="11">
+              {centre === 'sun' ? 'Sun to Uranus' : 'Sun & planets to Uranus'}
+            </text>
+          )}
 
           <text x={CENTER} y={SIZE + 14} textAnchor="middle" fill="var(--text-faint)" fontSize="11">
             {centre === 'sun'
-              ? `heliocentric longitude · ${scale === 'log' ? 'log distance scale' : 'true distance scale'} · view from ecliptic north${showApsides ? ' · amber dot = perihelion, cyan dot = aphelion' : ''}`
+              ? `heliocentric longitude · ${scale === 'log' ? 'log distance scale' : 'true distance scale'} · view from ecliptic north${withDwarfs ? ' · dashed = dwarf planets' : ''}${showApsides ? ' · amber dot = perihelion, cyan dot = aphelion' : ''}`
               : `geocentric view · elongation from the Sun (E = evening sky, W = morning sky) · outer band: tropical zodiac signs`}
           </text>
         </svg>
@@ -314,7 +354,7 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
       <table className="planet-table">
         <thead>
           <tr>
-            <th>Planet</th>
+            <th>Body</th>
             <th>Helio. lon.</th>
             <th>From Sun</th>
             <th>From Earth</th>
@@ -348,7 +388,10 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
                 </span>
                 e = {shape.e.toFixed(3)} · {formatNumber(shape.periAU)}–{formatNumber(shape.apoAU)} AU
               </td>
-              <td style={{ color: 'var(--text-dim)' }}>{id === 'earth' ? 'home' : visibilityHint(id, geo)}</td>
+              <td style={{ color: 'var(--text-dim)' }}>
+                {id === 'earth' ? 'home' : visibilityHint(id, geo)}
+                {DWARF_SKY[id] ? ` · ${DWARF_SKY[id]} only` : ''}
+              </td>
             </tr>
           ))}
         </tbody>
@@ -364,7 +407,9 @@ export function PlanetMap({ jd, onSelect }: { jd: number; onSelect: (id: string)
       )}
       <p className="not-to-scale">
         Planet positions from JPL Keplerian elements (about 1° accuracy, 1800–2050); the Moon&apos;s
-        ring is illustrative, its direction is real. Orbit shape: e is the eccentricity (0 = circle), then the
+        ring is illustrative, its direction is real. Pluto comes from the same table; Ceres, Haumea, Makemake
+        and Eris follow fixed ellipses from recent elements — a degree or two near the present, looser far
+        from it — and their steeply tilted orbits are drawn as seen from above. Orbit shape: e is the eccentricity (0 = circle), then the
         closest and farthest distance from the Sun; in the Inner and Outer scales the orbits are drawn true to shape.
       </p>
     </>
