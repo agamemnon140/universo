@@ -1,6 +1,12 @@
 import type { Mission } from '../../types'
 import { DetailSheet } from '../shell/DetailSheet'
-import { FY2027, MISSION_LANES, MISSION_STATUS_LABELS } from '../../lib/missions'
+import {
+  FY2027,
+  MISSION_LANES,
+  MISSION_PROGRAM_LABELS,
+  MISSION_STATUS_LABELS,
+  programOf,
+} from '../../lib/missions'
 import { formatDate } from '../../lib/format'
 
 export function MissionDetail({ mission, onClose }: { mission: Mission; onClose: () => void }) {
@@ -18,8 +24,9 @@ export function MissionDetail({ mission, onClose }: { mission: Mission; onClose:
           {MISSION_STATUS_LABELS[m.status]}
           {m.statusNote ? ` · ${m.statusNote}` : ''}
         </span>
+        <span className="chip">{MISSION_PROGRAM_LABELS[programOf(m)]}</span>
         <span className="chip">{m.kind}</span>
-        {lane && <span className="chip">{lane.label}</span>}
+        {lane && lane.id !== 'exploration' && <span className="chip">{lane.label}</span>}
       </div>
 
       <p style={{ margin: '10px 0 4px' }}>{m.summary}</p>
@@ -74,9 +81,28 @@ export function MissionDetail({ mission, onClose }: { mission: Mission; onClose:
             <dd>{m.budget.house}</dd>
             <dt>Senate bill</dt>
             <dd>{m.budget.senate}</dd>
+            {m.budget.expected && (
+              <>
+                <dt>Expected (estimate)</dt>
+                <dd>
+                  <strong>{m.budget.expected}</strong>
+                  {m.budget.why ? ` — ${m.budget.why}` : ''}
+                </dd>
+              </>
+            )}
           </dl>
           {m.budgetNote && <p className="hint">{m.budgetNote}</p>}
-          <p className="hint">No final budget yet — figures as of {formatDate(FY2027.asOf)}.</p>
+          <p className="hint">
+            No final budget yet — figures as of {formatDate(FY2027.asOf)}. “Expected” is this
+            app&apos;s estimate, not an official number.
+          </p>
+        </>
+      )}
+
+      {!m.budget && m.budgetNote && (
+        <>
+          <h3 style={{ fontSize: '0.95rem', margin: '14px 0 4px' }}>Funding</h3>
+          <p className="hint">{m.budgetNote}</p>
         </>
       )}
 

@@ -1107,6 +1107,16 @@
   color: var(--accent-amber);
 }
 
+.budget-table td.expected {
+  font-weight: 600;
+  color: var(--accent-cyan);
+}
+
+.budget-heading {
+  margin: 14px 0 6px;
+  font-size: 0.9rem;
+}
+
 /* Five tabs: tighten the bar so the labels still fit a phone. */
 @media (max-width: 520px) {
   .budget-table {
@@ -1116,6 +1126,11 @@
   .budget-table th,
   .budget-table td {
     padding: 6px 5px;
+  }
+
+  /* six columns do not fit a phone: last year's figure stays in the detail sheet */
+  .budget-table .fy26 {
+    display: none;
   }
 
   .tab-bar {

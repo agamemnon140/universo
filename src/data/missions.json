@@ -20,7 +20,9 @@
     "budget": {
       "request": "—",
       "house": "—",
-      "senate": "≥25"
+      "senate": "≥25",
+      "expected": "~25",
+      "why": "Operations money; only the Senate names a figure."
     },
     "url": "https://science.nasa.gov/mission/parker-solar-probe/"
   },
@@ -87,7 +89,9 @@
     "budget": {
       "request": "cut",
       "house": "—",
-      "senate": "263"
+      "senate": "263",
+      "expected": "~260",
+      "why": "Funded if the Senate language holds; the least secure of the big lines."
     }
   },
   {
@@ -110,7 +114,9 @@
     "budget": {
       "request": "cut",
       "house": "—",
-      "senate": "49"
+      "senate": "49",
+      "expected": "~49",
+      "why": "Same exposure as DAVINCI, at a much smaller amount."
     }
   },
   {
@@ -158,7 +164,7 @@
     "agency": "NASA",
     "lead": "NASA",
     "flag": "🇺🇸",
-    "lane": "moon",
+    "lane": "exploration",
     "target": "Around the Moon",
     "kind": "Crewed flyby",
     "status": "ended",
@@ -179,14 +185,15 @@
     "agency": "NASA",
     "lead": "NASA",
     "flag": "🇺🇸",
-    "lane": "moon",
+    "lane": "exploration",
     "target": "Earth orbit",
     "kind": "Crewed test flight",
     "status": "development",
     "launch": "2027",
     "launchLabel": "2027 (target)",
     "summary": "A crewed flight in Earth orbit to rehearse docking with the commercial lunar landers — not a landing.",
-    "milestones": []
+    "milestones": [],
+    "budgetNote": "Artemis is funded by system, not by flight: SLS, Orion, the landers and the suits each have a line in the exploration table."
   },
   {
     "id": "change-7",
@@ -211,13 +218,50 @@
     "agency": "NASA",
     "lead": "NASA",
     "flag": "🇺🇸",
-    "lane": "moon",
+    "lane": "exploration",
     "target": "Lunar surface",
     "kind": "Crewed landing",
     "status": "development",
     "launch": "2028",
     "launchLabel": "2028 (target)",
     "summary": "Planned as the first crewed Moon landing since Apollo 17.",
+    "milestones": [],
+    "budgetNote": "Artemis is funded by system, not by flight: SLS, Orion, the landers and the suits each have a line in the exploration table."
+  },
+  {
+    "id": "moon-base",
+    "name": "Moon Base",
+    "agency": "NASA",
+    "lead": "NASA",
+    "flag": "🇺🇸",
+    "lane": "exploration",
+    "target": "Lunar south pole",
+    "kind": "Permanent outpost",
+    "status": "proposed",
+    "launch": "2030",
+    "launchLabel": "as soon as 2030",
+    "summary": "A permanent outpost on the lunar surface, built up from the Artemis landings; hardware and money meant for the Gateway station are being turned toward it.",
+    "milestones": [
+      "2026 — the budget request redirects the Gateway programme to a surface base",
+      "2026 — the House committee backs an outpost as soon as 2030; the Senate bill moves Gateway funds to a continuous lunar presence"
+    ],
+    "budgetNote": "No line of its own: the request counts about 4,000 for the lunar base and related systems across the Exploration account."
+  },
+  {
+    "id": "china-crewed-moon",
+    "name": "China crewed",
+    "fullName": "China's crewed Moon landing",
+    "agency": "CMSA",
+    "lead": "CNSA",
+    "flag": "🇨🇳",
+    "lane": "exploration",
+    "target": "Lunar surface",
+    "kind": "Crewed landing",
+    "status": "development",
+    "launch": "2029",
+    "launchLabel": "before 2030 (target)",
+    "launchShort": "<2030",
+    "summary": "China's plan to put two astronauts on the Moon, using the Mengzhou spacecraft and the Lanyue lander.",
     "milestones": []
   },
   {
@@ -321,7 +365,9 @@
     "budget": {
       "request": "—",
       "house": "—",
-      "senate": "98.6"
+      "senate": "98.6",
+      "expected": "~99",
+      "why": "A commitment to ESA; only the Senate names a figure."
     },
     "budgetNote": "Figures are NASA's contribution to the ESA mission."
   },
@@ -347,7 +393,7 @@
     "agency": "NASA",
     "lead": "NASA",
     "flag": "🇺🇸",
-    "lane": "mars",
+    "lane": "exploration",
     "target": "Mars",
     "kind": "Nuclear-electric craft + 3 helicopters",
     "status": "development",
@@ -363,9 +409,11 @@
     "budget": {
       "request": "—",
       "house": "—",
-      "senate": "110"
+      "senate": "110",
+      "expected": "~110",
+      "why": "The helicopters ride a Science line; the reactor craft depends on exploration and technology money with no published line."
     },
-    "budgetNote": "The Senate figure is the Mars Future Missions line, which includes SkyFall.",
+    "budgetNote": "The Senate figure is the Mars Future Missions line in Science, which includes SkyFall; the House folds SkyFall into a 300 Mars Exploration line (request: 248).",
     "url": "https://www.nasa.gov/mission/space-reactor-1-freedom/"
   },
   {
@@ -389,7 +437,9 @@
     "budget": {
       "request": "—",
       "house": "—",
-      "senate": "backed"
+      "senate": "backed",
+      "expected": "—",
+      "why": "No Science line expected; if it survives, it is inside Moon to Mars."
     },
     "budgetNote": "The Senate bill moves it to the Moon-to-Mars programme as a demonstration for human missions."
   },
@@ -440,7 +490,9 @@
       "fy26": "19.9",
       "request": "0",
       "house": "20",
-      "senate": "≥22"
+      "senate": "≥22",
+      "expected": "~21",
+      "why": "Both chambers fund it and reject the request's zero."
     }
   },
   {
@@ -544,7 +596,9 @@
       "fy26": "300",
       "request": "283.7",
       "house": "≥283.7",
-      "senate": "—"
+      "senate": "—",
+      "expected": "~284",
+      "why": "The request and the House agree."
     }
   },
   {
@@ -593,7 +647,9 @@
       "fy26": "27.2",
       "request": "0",
       "house": "backed",
-      "senate": "27"
+      "senate": "27",
+      "expected": "~27",
+      "why": "Both chambers keep it flying."
     }
   },
   {
@@ -660,7 +716,9 @@
       "fy26": "500",
       "request": "423.9",
       "house": "≥423.9",
-      "senate": "430"
+      "senate": "430",
+      "expected": "~430",
+      "why": "All three plans agree within 2%."
     }
   },
   {
@@ -724,7 +782,9 @@
       "fy26": "15",
       "request": "0",
       "house": "backed",
-      "senate": "12"
+      "senate": "12",
+      "expected": "~12",
+      "why": "Both chambers keep it; the Senate names the amount."
     }
   },
   {
@@ -747,7 +807,9 @@
       "fy26": "10",
       "request": "0",
       "house": "backed",
-      "senate": "≥20"
+      "senate": "≥20",
+      "expected": "~20",
+      "why": "The Senate floor; a full-year stopgap would block the new start."
     },
     "budgetNote": "The Senate bill directs NASA to start the project."
   },
@@ -767,9 +829,12 @@
     "milestones": [],
     "budget": {
       "request": "lower",
-      "house": "—",
-      "senate": "≥98.3"
-    }
+      "house": "92.8",
+      "senate": "≥98.3",
+      "expected": "~95",
+      "why": "Between the House figure and the Senate floor."
+    },
+    "budgetNote": "The request lists Webb and Hubble operations together, at 213."
   },
   {
     "id": "chandra",
@@ -789,7 +854,9 @@
       "fy26": "63",
       "request": "0",
       "house": "backed",
-      "senate": "≥63"
+      "senate": "≥63",
+      "expected": "~63",
+      "why": "Both chambers reject the request's zero."
     }
   },
   {
@@ -809,9 +876,12 @@
     "milestones": [],
     "budget": {
       "request": "—",
-      "house": "—",
-      "senate": "208"
-    }
+      "house": "≥208",
+      "senate": "208",
+      "expected": "~208",
+      "why": "The House and the Senate agree."
+    },
+    "budgetNote": "The request lists Webb and Hubble operations together, at 213."
   },
   {
     "id": "roman",
@@ -834,8 +904,10 @@
     "budget": {
       "fy26": "300",
       "request": "166.8",
-      "house": "166.8",
-      "senate": "166.8"
+      "house": "≥166.8",
+      "senate": "166.8",
+      "expected": "~167",
+      "why": "The same figure in all three plans."
     }
   },
   {
@@ -856,8 +928,10 @@
     "milestones": [],
     "budget": {
       "request": "—",
-      "house": "—",
-      "senate": "129.9"
+      "house": "80.5",
+      "senate": "129.9",
+      "expected": "~105",
+      "why": "Between the two chambers."
     },
     "budgetNote": "Figures are NASA's contribution to the ESA mission."
   },
@@ -881,7 +955,9 @@
       "fy26": "150",
       "request": "5",
       "house": "≥150",
-      "senate": "300"
+      "senate": "300",
+      "expected": "~250",
+      "why": "Between the House floor and the Senate figure; a full-year stopgap would hold it at 150."
     }
   }
 ]

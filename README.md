@@ -18,9 +18,11 @@ on GitHub Pages.
   log-scale orbit view links to detail sheets with atmosphere, missions, and notable facts.
 - **Positions** — where the planets, Earth and the Moon really are on any date from 1800 to
   2050 (defaults to today, with a date picker, ±day/month/year steps and a play button), in
-  four views. *Planets* draws the eight planets on their true orbits, centred on the Sun
+  four views. *Planets* draws the eight planets — and, on a toggle, Pluto, Ceres, Haumea,
+  Makemake and Eris — on their true orbits, centred on the Sun
   (heliocentric longitude) or on Earth (elongation from the Sun, evening vs morning sky,
-  night-side shading), on a log scale or in true-scale inner/outer views, with a table of
+  night-side shading), on a log scale or in true-scale inner/outer/far views (Far runs to
+  100 AU for the dwarf planets), with a table of
   distances and visibility, each orbit's eccentricity and perihelion/aphelion marks, and — with
   Earth at the centre — the tropical zodiac band and each body's sign. *Earth* shows the 23.4°
   axis around the orbit with globes lit by real 3D geometry, a panel explaining the day–night
@@ -39,12 +41,15 @@ on GitHub Pages.
   every eclipse in the next ten years with type and class, and previous/next-eclipse buttons
   on the time control. Snapshots are shareable via
   `?date=2026-08-12&view=eclipses` (plus `centre=earth` / `scale=inner|outer` for the map).
-- **Missions** — 41 big missions (flying, in development, proposed, plus a few landmark ones
-  that ended) on one 2000–2040 timeline, grouped by destination and colour-coded by status:
-  solid bars for time in flight, fainter while en route, a diamond at arrival, dashed lines for
-  plans. Filter by status and lead agency; tap a row for the summary, milestones and — for
-  NASA missions — where it stands in the US budget. A budget-watch table lines up the
-  competing fiscal-2027 proposals (White House request, House bill, Senate bill).
+- **Missions** — 43 big missions (flying, in development, proposed, plus a few landmark ones
+  that ended) on one 2000–2040 timeline, colour-coded by status: human exploration (Artemis,
+  the Moon base, China's crewed landing) in its own lane, then the robotic science missions
+  grouped by destination. Solid bars are time in flight, fainter while en route, a diamond
+  marks arrival, dashed lines are plans. Filter by programme, status and lead agency; tap a
+  row for the summary, milestones and — for NASA missions — where it stands in the US budget.
+  Two budget-watch tables, science and exploration, line up the competing fiscal-2027
+  proposals (White House request, House bill, Senate bill) with an **Expected** column: the
+  app's own estimate of where each line ends up, with the reasoning in the detail sheet.
 - **Telescopes** — 49 observatories placed on the electromagnetic spectrum (gamma → radio,
   log wavelength scale), color-coded by status (operating / construction / planned / retired),
   with separate lanes for gravitational-wave and neutrino detectors. Filter by status and
@@ -75,7 +80,9 @@ Every tab ends with the latest matching headlines from
 - Missions live in [src/data/missions.json](src/data/missions.json): dates, statuses and the
   budget figures are a hand-maintained snapshot (November 2026). When a mission launches,
   arrives or ends, edit its entry; when a budget bill moves, update the `budget` fields and
-  `FY2027.asOf` in [src/lib/missions.ts](src/lib/missions.ts).
+  `FY2027` (totals, exploration lines, `asOf`) in [src/lib/missions.ts](src/lib/missions.ts).
+  `expected` and `why` are estimates, not data: they assume the final bill lands near the
+  Senate's, and should be replaced by the enacted figures once a budget passes.
 - Positions are computed in the browser by [src/lib/ephemeris.ts](src/lib/ephemeris.ts) and
   friends ([apsides.ts](src/lib/apsides.ts) for perihelion/perigee and vis-viva speeds,
   [libration.ts](src/lib/libration.ts) for libration, the sub-solar point and the nodal cycle,
@@ -88,6 +95,10 @@ Every tab ends with the latest matching headlines from
   Jupiter, Saturn and Mars, and the September 2026 equinox (within a minute). The eclipse
   finder reproduces every eclipse of 2026–2029 with its type; classes are right except in
   borderline cases, which are flagged, and where on Earth an eclipse is visible is out of scope.
+  Dwarf planets: Pluto is in the same JPL table; Ceres, Haumea, Makemake and Eris are fixed
+  ellipses from published elements at a recent epoch (Ceres with its proper period). Checked
+  against Pluto at its 1930 discovery and the 2015 flyby, Ceres at its 1801 discovery (about
+  2° off) and its 2021–2025 oppositions, and the current distances of the other three.
 - News: [.github/workflows/news.yml](.github/workflows/news.yml) runs weekly (Mondays 09:17
   UTC), fetches the Universe Today RSS feed via [scripts/fetch-news.mjs](scripts/fetch-news.mjs),
   classifies items per tab, and commits `public/news.json` only when content changed — then

@@ -1,24 +1,41 @@
-import type { MissionLead, MissionStatus } from '../../types'
+import type { MissionLead, MissionProgram, MissionStatus } from '../../types'
 import {
   MISSION_LEADS,
+  MISSION_PROGRAM_LABELS,
   MISSION_STATUSES,
   MISSION_STATUS_COLORS,
   MISSION_STATUS_LABELS,
 } from '../../lib/missions'
 
 export function MissionFilters({
+  program,
   status,
   lead,
+  onProgram,
   onStatus,
   onLead,
 }: {
+  program: MissionProgram | 'all'
   status: MissionStatus | 'all'
   lead: MissionLead | 'all'
+  onProgram: (p: MissionProgram | 'all') => void
   onStatus: (s: MissionStatus | 'all') => void
   onLead: (l: MissionLead | 'all') => void
 }) {
   return (
     <>
+      <div className="filter-row">
+        {(['all', 'science', 'exploration'] as const).map((p) => (
+          <button
+            key={p}
+            className={`chip${program === p ? ' on' : ''}`}
+            style={program === p ? { background: 'var(--accent-amber)' } : undefined}
+            onClick={() => onProgram(p)}
+          >
+            {p === 'all' ? 'Science + exploration' : MISSION_PROGRAM_LABELS[p]}
+          </button>
+        ))}
+      </div>
       <div className="filter-row">
         {(['all', ...MISSION_STATUSES] as const).map((s) => (
           <button

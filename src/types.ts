@@ -131,6 +131,7 @@ export interface BlackHole {
 export type MissionStatus = 'operating' | 'development' | 'proposed' | 'ended'
 
 export type MissionLane =
+  | 'exploration' // human spaceflight; every other lane is robotic science
   | 'sun'
   | 'inner'
   | 'moon'
@@ -152,7 +153,13 @@ export interface MissionBudget {
   request: string // White House request
   house: string // House Appropriations Committee bill
   senate: string // Senate CJS subcommittee bill
+  /** This app's own estimate of the final figure — a forecast, not a published number. */
+  expected?: string
+  /** One line on why the estimate is what it is. */
+  why?: string
 }
+
+export type MissionProgram = 'science' | 'exploration'
 
 export interface Mission {
   id: string

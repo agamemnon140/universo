@@ -1,4 +1,11 @@
-import type { Mission, MissionLane, MissionLead, MissionStatus } from '../types'
+import type {
+  Mission,
+  MissionBudget,
+  MissionLane,
+  MissionLead,
+  MissionProgram,
+  MissionStatus,
+} from '../types'
 
 export const MISSION_STATUS_LABELS: Record<MissionStatus, string> = {
   operating: 'Flying',
@@ -18,6 +25,7 @@ export const MISSION_STATUS_COLORS: Record<MissionStatus, string> = {
 export const MISSION_STATUSES: MissionStatus[] = ['operating', 'development', 'proposed', 'ended']
 
 export const MISSION_LANES: { id: MissionLane; label: string }[] = [
+  { id: 'exploration', label: 'Human exploration' },
   { id: 'sun', label: 'Sun' },
   { id: 'inner', label: 'Mercury & Venus' },
   { id: 'moon', label: 'Moon' },
@@ -39,9 +47,52 @@ export const MISSION_LEADS: { id: MissionLead; label: string }[] = [
  * US fiscal-2027 budget snapshot. Hand-maintained: update `asOf` and the
  * `budget` fields in missions.json when a bill moves.
  */
-export const FY2027 = {
+export interface BudgetLine extends MissionBudget {
+  name: string
+}
+
+export const FY2027: {
+  asOf: string
+  science: BudgetLine
+  exploration: BudgetLine
+  /** Artemis is funded by system, not by flight: the Exploration account's main lines. */
+  explorationLines: BudgetLine[]
+} = {
   asOf: '2026-11-22T12:00:00Z', // noon UTC, so every time zone shows the same day
-  science: { fy26: '7,250', request: '3,894', house: '6,000', senate: '7,430' },
+  science: {
+    name: 'All NASA science',
+    fy26: '7,250',
+    request: '3,894',
+    house: '6,000',
+    senate: '7,430',
+    expected: '~7,300',
+  },
+  exploration: {
+    name: 'All NASA exploration',
+    fy26: '7,783',
+    request: '8,514',
+    house: '—',
+    senate: '8,282',
+    expected: '~8,300',
+  },
+  explorationLines: [
+    { name: 'Space Launch System', request: '1,495', house: '1,575', senate: '1,495', expected: '~1,500' },
+    { name: 'Orion', fy26: '1,421', request: '1,222', house: '1,400', senate: '≥1,222', expected: '~1,300' },
+    { name: 'Human Landing System', request: '2,277', house: '2,277', senate: '≥2,277', expected: '~2,277' },
+    { name: 'Spacesuits & surface mobility', request: '830', house: '—', senate: '≥830', expected: '~830' },
+    { name: 'Exploration Ground Systems', request: '758', house: '—', senate: '—', expected: '~758' },
+    { name: 'Fission Surface Power', request: '—', house: '419.9', senate: '≤250', expected: '~300' },
+  ],
+}
+
+/** Human spaceflight has its own lane; everything else is robotic science. */
+export function programOf(mission: Mission): MissionProgram {
+  return mission.lane === 'exploration' ? 'exploration' : 'science'
+}
+
+export const MISSION_PROGRAM_LABELS: Record<MissionProgram, string> = {
+  science: 'Science',
+  exploration: 'Human exploration',
 }
 
 /** The timeline's year axis. Earlier launches and later plans are pinned to its edges. */
